@@ -95,8 +95,8 @@ export const PAGES_OTROS: Page[] = [
       eyebrow: "Bodas",
       title: "Transporte con chófer para bodas en Galicia",
       subtitle: "Berlina con chófer para los novios y autocares para los invitados. Puntualidad el día que no admite retrasos.",
-      image: "/images/finca-montesqueiro-corporativo-presentacion.jpg",
-      alt: "Finca en Galicia preparada para una celebración",
+      image: "/images/alquilar-coche-clasico-boda-galicia.jpg",
+      alt: "Coche clásico blanco con chófer preparado para una boda en Galicia",
     },
     blocks: [
       {
@@ -126,8 +126,8 @@ export const PAGES_OTROS: Page[] = [
               "El chófer conoce los tiempos de la ceremonia, las fotos y la llegada al banquete. Tú solo tienes que disfrutar.",
               "Para los invitados, horarios de vuelta escalonados: el primero al terminar la cena y el último al cierre de la fiesta.",
             ],
-            image: "/images/berlina-puerta-abierta.jpg",
-            alt: "Berlina con chófer y la puerta abierta esperando a los novios",
+            image: "/images/servicio-boda-luxegalicia.jpg",
+            alt: "Coche clásico negro para bodas junto a la Torre de Hércules, en A Coruña",
           },
         ],
       },

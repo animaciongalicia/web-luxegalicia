@@ -109,7 +109,7 @@ export const PAGES_MICE: Page[] = [
         items: [
           { title: "Congresos y convenciones", text: "Lanzaderas sede-hotel, aeropuertos y cenas de gala.", href: "/transporte-congresos-galicia", image: "/images/sala-eventos-empresas.jpg", alt: "Sala de congresos preparada para un evento corporativo en Galicia" },
           { title: "Incentivos", text: "Movilidad con chófer para viajes de incentivo de varios días.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego preparado para un evento de incentivo" },
-          { title: "Oporto, puerta de entrada", text: "Tus asistentes vuelan a Oporto. Los recoges y los llevas a Galicia sin fricciones.", href: "/oporto-galicia", image: "/images/van-avion-privado.png", alt: "Van con chófer esperando junto a un avión" },
+          { title: "Oporto, puerta de entrada", text: "Tus asistentes vuelan a Oporto. Los recoges y los llevas a Galicia sin fricciones.", href: "/oporto-galicia", image: "/images/van-avion-privado.jpg", alt: "Van con chófer esperando junto a un avión" },
         ],
       },
       {

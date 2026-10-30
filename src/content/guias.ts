@@ -487,7 +487,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Oporto, el aeropuerto que más importa en IFEVI",
-        image: {"src": "/images/van-avion-privado.png", "alt": "Van con chófer esperando junto a un avión"},
+        image: {"src": "/images/van-avion-privado.jpg", "alt": "Van con chófer esperando junto a un avión"},
         paragraphs: [
           "En ferias internacionales, buena parte de los expositores y compradores vuela a Oporto: más conexiones y, a menudo, mejores precios que los aeropuertos gallegos. Eso convierte el traslado Oporto–Vigo en una pieza central del plan de transporte.",
           "La forma más eficiente es agrupar llegadas por franjas horarias en vans o minibuses, con un vehículo de reserva para los vuelos retrasados.",
@@ -706,7 +706,65 @@ const GUIAS_BASE: Guide[] = [
   },
 ];
 
-export const GUIAS: Guide[] = [...GUIAS_BASE, ...ARTICULOS];
+// Fotos de apoyo para que ninguna guía quede como un muro de texto: se colocan
+// repartidas en secciones que no tienen imagen propia.
+const EXTRA_IMAGES: Record<string, { src: string; alt: string }[]> = {
+  "oporto-galicia-como-llegar": [
+    { src: "/images/viajero-aeropuerto.webp", alt: "Viajero recién llegado al aeropuerto con su equipaje" },
+    { src: "/images/van-clase-v-carretera.webp", alt: "Van ejecutiva en carretera entre Oporto y Galicia" },
+  ],
+  "transporte-camino-de-santiago": [
+    { src: "/images/minibus-interior.jpg", alt: "Interior de un minibús preparado para un grupo de peregrinos" },
+    { src: "/images/catedral-santiago-alameda.jpg", alt: "La catedral de Santiago vista desde la Alameda" },
+  ],
+  "transporte-palacio-congresos-santiago": [
+    { src: "/images/flota-vans-evento.webp", alt: "Vans con chófer preparadas para la salida de un congreso" },
+    { src: "/images/tours-santiago.jpg", alt: "Plaza del Obradoiro, en Santiago de Compostela" },
+  ],
+  "transporte-ifevi-vigo": [
+    { src: "/images/flota-minibuses-autocar.webp", alt: "Minibuses y autocar para lanzaderas a una feria" },
+    { src: "/images/van-equipaje-hotel.jpg", alt: "Van ejecutiva cargando equipaje en la puerta de un hotel" },
+  ],
+  "como-llegar-estadio-riazor": [
+    { src: "/images/autocar-conductor.png", alt: "Autocar con conductor para el desplazamiento de una peña" },
+    { src: "/images/minibus-sprinter-negro.jpg", alt: "Minibús para un grupo de aficionados" },
+  ],
+  "transporte-cidade-da-cultura": [{ src: "/images/cena-gala-evento-galicia.jpg", alt: "Salón preparado para una cena de gala" }],
+  "transporte-expocoruna": [{ src: "/images/flota-berlinas-vans-aerea.jpg", alt: "Berlinas y vans con chófer vistas desde el aire" }],
+  "oporto-vigo-tren-autobus-traslado": [{ src: "/images/chofer-interior-berlina.webp", alt: "Chófer al volante durante un traslado privado" }],
+  "camino-portugues-costa-etapas-grupos": [
+    { src: "/images/combarro-horreos.jpg", alt: "Hórreos de Combarro junto a la ría de Pontevedra" },
+    { src: "/images/van-carretera-galicia.webp", alt: "Van de apoyo en una carretera de la costa gallega" },
+  ],
+  "conxemar-transporte-vigo": [
+    { src: "/images/marisco-galicia.jpg", alt: "Marisco gallego, protagonista de Conxemar" },
+    { src: "/images/flota-berlinas-aparcamiento.jpg", alt: "Berlinas con chófer preparadas para visitas de feria" },
+  ],
+  "uber-taxi-chofer-santiago-de-compostela": [
+    { src: "/images/chofer-puerta-detalle.jpg", alt: "Chófer abriendo la puerta de una berlina" },
+  ],
+  "viajar-coruna-ver-deportivo": [
+    { src: "/images/coruna-torre-hercules.jpg", alt: "A Coruña, junto a la Torre de Hércules" },
+    { src: "/images/minibus-interior.jpg", alt: "Interior de un minibús para un grupo de aficionados" },
+  ],
+  "calendario-congresos-ferias-galicia-2027": [{ src: "/images/flota-vans-congreso.jpg", alt: "Vans con chófer en la entrada de un congreso" }],
+};
+
+function withExtraImages(g: Guide): Guide {
+  const extra = (EXTRA_IMAGES[g.slug] || []).filter((img) => img.src !== g.image);
+  if (!extra.length) return g;
+  const sections = g.sections.map((s) => ({ ...s }));
+  extra.forEach((img, k) => {
+    // Posición ideal repartida a lo largo del artículo; si ya tiene foto, la siguiente libre.
+    const ideal = Math.round(((k + 1) * sections.length) / (extra.length + 1)) - 1;
+    const order = sections.map((_, i) => i).sort((a, b) => Math.abs(a - ideal) - Math.abs(b - ideal));
+    const target = order.find((i) => !sections[i].image && (i === 0 || !sections[i - 1].image) && !sections[i + 1]?.image);
+    if (target !== undefined) sections[target].image = img;
+  });
+  return { ...g, sections };
+}
+
+export const GUIAS: Guide[] = [...GUIAS_BASE, ...ARTICULOS].map(withExtraImages);
 
 export function getGuia(slug: string) {
   return GUIAS.find((g) => g.slug === slug);

@@ -55,7 +55,7 @@ export default function GuiasPage() {
       {/* Destacado */}
       <section className="bg-white px-6 pt-14 lg:px-8">
         <Link href={`/guias/${featured.slug}`} className="group mx-auto grid max-w-6xl overflow-hidden rounded-3xl border border-gray-100 shadow-sm transition-shadow hover:shadow-lg md:grid-cols-5">
-          <div className="relative min-h-[260px] overflow-hidden md:col-span-3">
+          <div className="relative min-h-[260px] overflow-hidden bg-gray-100 md:col-span-3">
             <Image src={featured.image} alt={featured.alt} fill priority className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(min-width: 768px) 60vw, 100vw" />
           </div>
           <div className="flex flex-col justify-center p-8 md:col-span-2 md:p-10">
@@ -81,7 +81,7 @@ export default function GuiasPage() {
                 <div className="grid gap-5 md:grid-cols-2">
                   {items.map((x) => (
                     <Link key={x.slug} href={`/guias/${x.slug}`} className="group flex items-center gap-5 rounded-2xl border border-gray-100 p-3 transition-all hover:border-luxe-200 hover:shadow-md">
-                      <div className="relative h-24 w-32 shrink-0 overflow-hidden rounded-xl sm:h-28 sm:w-40">
+                      <div className="relative h-24 w-32 shrink-0 overflow-hidden rounded-xl bg-gray-100 sm:h-28 sm:w-40">
                         <Image src={x.image} alt={x.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="160px" />
                       </div>
                       <div className="min-w-0 pr-2">
@@ -96,7 +96,7 @@ export default function GuiasPage() {
                   {(w) =>
                     items.map((x) => (
                       <Link key={x.slug} href={`/guias/${x.slug}`} className={`group flex flex-col ${w}`}>
-                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gray-100">
                           <Image src={x.image} alt={x.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
                         </div>
                         <div className="pt-5">

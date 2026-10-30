@@ -67,11 +67,17 @@ const WP_WILDCARDS = [
 
 const nextConfig = {
   images: {
-    formats: ["image/avif", "image/webp"],
+    // WebP only: AVIF is slow to encode and made first loads lag on Vercel.
+    formats: ["image/webp"],
+    minimumCacheTTL: 2592000,
   },
 
   async headers() {
     return [
+      {
+        source: "/images/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=2592000, stale-while-revalidate=86400" }],
+      },
       {
         source: "/(.*)",
         headers: [

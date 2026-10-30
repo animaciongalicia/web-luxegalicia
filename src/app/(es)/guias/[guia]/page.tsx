@@ -6,6 +6,8 @@ import CTASection from "@/components/CTASection";
 import { DataTable, FaqSection } from "@/components/Blocks";
 import JsonLd from "@/components/JsonLd";
 import { GUIAS, getGuia } from "@/content/guias";
+import { PAGES_ES } from "@/content/pages";
+import { TOURS } from "@/content/tours";
 import { SITE, SITE_URL, absoluteUrl, whatsappLink } from "@/content/site";
 import { serif } from "@/lib/fonts";
 
@@ -18,6 +20,17 @@ function slugify(text: string) {
     .replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+}
+
+// Image and label for a "Sigue leyendo" card, whatever kind of page it links to.
+function relatedCard(href: string) {
+  const guide = href.startsWith("/guias/") ? getGuia(href.slice(7)) : undefined;
+  if (guide) return { image: guide.image, alt: guide.alt, label: guide.category };
+  const tour = TOURS.find((t) => href === `/tours-con-chofer-galicia/${t.slug}`);
+  if (tour) return { image: tour.image, alt: tour.alt, label: "Tour" };
+  const page = PAGES_ES.find((p) => href === `/${p.slug}`);
+  if (page) return { image: page.hero.image, alt: page.hero.alt || page.hero.title, label: "Servicio" };
+  return { image: "/images/flota-berlinas-fila.jpg", alt: "Flota de Luxe Galicia", label: "Servicio" };
 }
 
 // Headings may carry a manual "3. " prefix; the template numbers them itself.
@@ -50,7 +63,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
   const url = absoluteUrl(`/guias/${g.slug}`);
   const [lead, ...intro] = g.intro;
   const serviceAfter = Math.floor((g.sections.length - 1) / 2);
-  const related = g.related.map((r) => ({ ...r, guide: r.href.startsWith("/guias/") ? getGuia(r.href.slice(7)) : undefined }));
+  const related = g.related.map((r) => ({ ...r, ...relatedCard(r.href) }));
 
   return (
     <>
@@ -169,7 +182,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                   )}
                   {s.image && (
                     <figure className="mt-8">
-                      <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
+                      <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-gray-100">
                         <Image src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 1024px) 736px, 100vw" />
                       </div>
                       {s.image.caption && <figcaption className="mt-3 text-sm italic text-gray-500">{s.image.caption}</figcaption>}
@@ -247,15 +260,11 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
           <div className={`mt-8 grid gap-6 sm:grid-cols-2 ${related.length === 4 ? "lg:grid-cols-4" : related.length === 3 ? "lg:grid-cols-3" : ""}`}>
             {related.map((r) => (
               <Link key={r.href} href={r.href} className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
-                {r.guide ? (
-                  <div className="relative h-36 overflow-hidden">
-                    <Image src={r.guide.image} alt={r.guide.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 25vw, 50vw" />
-                  </div>
-                ) : (
-                  <div className="h-1.5 bg-luxe-600" />
-                )}
+                <div className="relative h-36 overflow-hidden bg-gray-100">
+                  <Image src={r.image} alt={r.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 25vw, 50vw" />
+                </div>
                 <div className="flex flex-1 flex-col p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">{r.guide ? r.guide.category : "Servicio"}</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">{r.label}</p>
                   <p className="mt-2 font-semibold leading-snug text-gray-900">{r.title}</p>
                   <span className="mt-auto pt-4 text-sm font-medium text-luxe-700">Leer →</span>
                 </div>

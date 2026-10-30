@@ -42,7 +42,7 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Desde A Coruña", text: "Toda Galicia, Oporto, Asturias y Madrid desde la base principal.", href: "/traslados-desde-coruna", image: "/images/coruna-torre-hercules.jpg", alt: "Monumento junto a la Torre de Hércules, en A Coruña" },
           { title: "Desde Santiago", text: "Aeropuerto Rosalía de Castro, estación de tren y el final del Camino.", href: "/traslados-desde-santiago", image: "/images/tours-santiago.jpg", alt: "Catedral de Santiago de Compostela" },
           { title: "Desde Vigo", text: "Rías Baixas, Oporto y puerto de cruceros.", href: "/traslados-desde-vigo", image: "/images/playa-rodas-islas-cies-suunia.jpg", alt: "Playa de Rodas en las Islas Cíes frente a Vigo" },
-          { title: "Oporto, puerta de Galicia", text: "Del aeropuerto de Oporto a cualquier punto de Galicia.", href: "/oporto-galicia", image: "/images/van-avion-privado.png", alt: "Van con chófer junto a un avión en el aeropuerto" },
+          { title: "Oporto, puerta de Galicia", text: "Del aeropuerto de Oporto a cualquier punto de Galicia.", href: "/oporto-galicia", image: "/images/van-avion-privado.jpg", alt: "Van con chófer junto a un avión en el aeropuerto" },
           { title: "Camino de Santiago", text: "Inicio de etapas, vehículo de apoyo y regreso para grupos.", href: "/transporte-camino-de-santiago", image: "/images/faro-de-Finisterre-1.jpg", alt: "Faro de Fisterra, final del Camino de Santiago" },
           { title: "Aeropuertos", text: "Santiago, A Coruña, Vigo y Oporto.", href: "/aeropuertos-galicia", image: "/images/viajero-aeropuerto.webp", alt: "Viajero en un aeropuerto viendo despegar un avión" },
         ],
@@ -556,7 +556,7 @@ export const PAGES_TRASLADOS: Page[] = [
               "Recogida a pie de pista o en la terminal de aviación general cuando el aeropuerto lo permite, con el vehículo listo a la hora de aterrizaje.",
               "Berlina de representación o van Clase V, chófer discreto y salida directa a la reunión.",
             ],
-            image: "/images/van-avion-privado.png",
+            image: "/images/van-avion-privado.jpg",
             alt: "Van ejecutiva esperando junto a un avión privado",
           },
         ],
@@ -593,8 +593,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Cruceros · A Coruña · Vigo",
       title: "Excursiones privadas para cruceros en Galicia",
       subtitle: "Tu barco hace escala unas horas. Aprovéchalas sin colas, sin autobuses de 50 personas y con regreso garantizado al barco.",
-      image: "/images/coruna-torre-hercules.jpg",
-      alt: "Monumento junto a la Torre de Hércules, en A Coruña",
+      image: "/images/cruceros-vigo-traslados.jpg",
+      alt: "Cruceros atracados en el puerto de Vigo al atardecer",
     },
     blocks: [
       {
@@ -616,8 +616,32 @@ export const PAGES_TRASLADOS: Page[] = [
         ],
       },
       {
+        type: "zigzag",
+        items: [
+          {
+            title: "Desde el puerto de A Coruña",
+            paragraphs: [
+              "La terminal está en pleno centro, junto a la Marina y la Ciudad Vieja. El chófer te espera a pie de terminal.",
+              "En escalas cortas, A Coruña a fondo. En escalas de siete horas o más, Santiago de Compostela, a unos 50 minutos.",
+            ],
+            image: "/images/cruceros-coruna.jpg",
+            alt: "Vista aérea del puerto de A Coruña con cruceros atracados",
+          },
+          {
+            title: "Desde el puerto de Vigo",
+            paragraphs: [
+              "La terminal de Vigo también está en el centro de la ciudad y a un paso de las Rías Baixas.",
+              "Baiona, Combarro o una bodega de albariño en media jornada, o Santiago en una hora si la escala lo permite.",
+            ],
+            image: "/images/puerto-rias-baixas.jpg",
+            alt: "Puerto pesquero en las Rías Baixas",
+          },
+        ],
+      },
+      {
         type: "checklist",
         heading: "Garantías para tu escala",
+        bg: "gray",
         items: [
           "Recogida a pie de terminal de cruceros.",
           "Regreso al barco con margen sobre la hora de embarque.",
