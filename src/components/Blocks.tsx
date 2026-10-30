@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import QuoteForm from "@/components/QuoteForm";
+import { rich } from "@/components/RichText";
 import CardGrid from "@/components/CardGrid";
 import { FLOTA } from "@/content/flota";
 import { PRECIOS, VEHICLE_LABELS, formatPrecio, type VehicleKey } from "@/content/precios";
@@ -44,7 +45,7 @@ export function DataTable({ head, rows }: { head: string[]; rows: string[][] }) 
                 ci === 0 ? (
                   <th key={ci} scope="row" className="px-4 py-3 font-semibold text-gray-900">{cell}</th>
                 ) : (
-                  <td key={ci} className="px-4 py-3">{cell}</td>
+                  <td key={ci} className="px-4 py-3">{rich(cell)}</td>
                 )
               )}
             </tr>

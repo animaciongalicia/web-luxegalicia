@@ -10,6 +10,7 @@ import { PAGES_ES } from "@/content/pages";
 import { TOURS } from "@/content/tours";
 import { SITE, SITE_URL, absoluteUrl, whatsappLink } from "@/content/site";
 import { serif } from "@/lib/fonts";
+import { rich } from "@/components/RichText";
 
 export const dynamicParams = false;
 
@@ -89,9 +90,9 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
         <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[minmax(0,1fr)_300px]">
           <article className="min-w-0 max-w-[46rem]">
             {/* Entrada */}
-            <p className={`${serif.className} text-xl leading-relaxed text-gray-800 sm:text-2xl sm:leading-relaxed`}>{lead}</p>
+            <p className={`${serif.className} text-xl leading-relaxed text-gray-800 sm:text-2xl sm:leading-relaxed`}>{rich(lead)}</p>
             {intro.map((p) => (
-              <p key={p} className="mt-5 text-lg leading-relaxed text-gray-600">{p}</p>
+              <p key={p} className="mt-5 text-lg leading-relaxed text-gray-600">{rich(p)}</p>
             ))}
 
             {g.stats && (
@@ -117,7 +118,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                       <svg aria-hidden="true" viewBox="0 0 20 20" className="mt-1 h-4 w-4 shrink-0 fill-amber-300">
                         <path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z" />
                       </svg>
-                      {li}
+                      <span>{rich(li)}</span>
                     </li>
                   ))}
                 </ul>
@@ -146,23 +147,23 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                   <p className="text-sm font-semibold tracking-widest text-luxe-600">{String(i + 1).padStart(2, "0")}</p>
                   <h2 className={`${serif.className} mt-1 text-2xl font-semibold leading-snug text-gray-900 sm:text-3xl`}>{cleanHeading(s.heading)}</h2>
                   {s.paragraphs?.map((p) => (
-                    <p key={p} className="mt-4 text-[17px] leading-relaxed text-gray-600">{p}</p>
+                    <p key={p} className="mt-4 text-[17px] leading-relaxed text-gray-600">{rich(p)}</p>
                   ))}
                   {s.list && (
                     <ul className="mt-6 divide-y divide-gray-100 rounded-2xl border border-gray-100">
                       {s.list.map((li) => {
                         const [head, ...rest] = li.split(": ");
-                        const hasHead = rest.length > 0 && head.length < 60;
+                        const hasHead = rest.length > 0 && head.length < 60 && !head.includes("[");
                         return (
                           <li key={li} className="flex gap-4 px-5 py-4 text-[15px] leading-relaxed text-gray-600">
                             <span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-luxe-500" />
                             <span>
                               {hasHead ? (
                                 <>
-                                  <strong className="font-semibold text-gray-900">{head}:</strong> {rest.join(": ")}
+                                  <strong className="font-semibold text-gray-900">{head}:</strong> {rich(rest.join(": "))}
                                 </>
                               ) : (
-                                li
+                                rich(li)
                               )}
                             </span>
                           </li>
@@ -189,7 +190,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                     </figure>
                   )}
                   {s.after?.map((p) => (
-                    <p key={p} className="mt-4 text-[17px] leading-relaxed text-gray-600">{p}</p>
+                    <p key={p} className="mt-4 text-[17px] leading-relaxed text-gray-600">{rich(p)}</p>
                   ))}
                   {s.tip && (
                     <div className="mt-8 flex gap-4 rounded-2xl bg-luxe-50 p-6">
@@ -198,7 +199,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                       </svg>
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-wider text-luxe-800">Consejo</p>
-                        <p className="mt-1 leading-relaxed text-gray-700">{s.tip}</p>
+                        <p className="mt-1 leading-relaxed text-gray-700">{rich(s.tip)}</p>
                       </div>
                     </div>
                   )}
@@ -240,7 +241,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                 </nav>
               )}
               <div className="rounded-2xl bg-gray-900 p-6 text-white">
-                <p className={`${serif.className} text-xl font-semibold`}>¿Lo organizamos?</p>
+                <p className={`${serif.className} text-xl font-semibold`}>¿Te lo organizo?</p>
                 <p className="mt-2 text-sm leading-relaxed text-gray-300">Fechas, personas y ciudades. Tienes propuesta en 24 horas.</p>
                 <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-5 w-full justify-center">WhatsApp</a>
                 <Link href="/presupuesto" className="mt-3 inline-flex w-full justify-center rounded-lg border border-white/30 px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-white/10">
