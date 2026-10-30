@@ -376,6 +376,185 @@ export const GUIAS: Guide[] = [
       { title: "Guía completa de transporte para eventos", href: "/guias/transporte-congresos-eventos-galicia" },
     ],
   },
+  {
+    slug: "transporte-expocoruna",
+    category: "Sede",
+    title: "Transporte para ferias y eventos en ExpoCoruña",
+    metaTitle: "Transporte para ferias y eventos en ExpoCoruña (A Coruña)",
+    metaDescription:
+      "Cómo organizar el transporte de una feria, congreso o gran evento en ExpoCoruña: ubicación, tiempos desde los aeropuertos de Alvedro, Santiago y Oporto, lanzaderas y aparcamiento.",
+    image: "/images/sala-eventos-empresas.jpg",
+    alt: "Recinto preparado para una feria profesional en A Coruña",
+    readMinutes: 6,
+    date: "2026-10-31",
+    intro: [
+      "ExpoCoruña es el recinto ferial de A Coruña para grandes formatos: ferias, congresos de muchos asistentes, conciertos y eventos corporativos que no caben en un palacio de congresos. Su gran espacio diáfano, el Hall, ronda los 13.500 m² según el propio recinto.",
+      "A diferencia de Palexco, que está en el puerto y rodeado de hoteles, ExpoCoruña está fuera del centro. Eso cambia por completo el plan de transporte: aquí casi nadie llega andando.",
+    ],
+    sections: [
+      {
+        heading: "Dónde está y cómo se llega",
+        paragraphs: [
+          "El recinto está en la rúa Juana Capdevielle, 2, en la zona de entrada a la ciudad, con acceso rápido a las vías principales y aparcamiento propio. Para asistentes que vienen de fuera, la clave es conectar tres puntos: aeropuerto o estación, hotel y recinto.",
+        ],
+        list: [
+          "Aeropuerto de A Coruña (Alvedro): ~10-15 min.",
+          "Centro de A Coruña y zona hotelera: ~10-15 min, según tráfico.",
+          "Palexco y puerto: ~10-15 min.",
+          "Aeropuerto de Santiago: ~45-55 min.",
+          "Aeropuerto de Oporto: ~3 h.",
+        ],
+      },
+      {
+        heading: "Por qué aquí la lanzadera es imprescindible",
+        paragraphs: [
+          "Con la sede fuera del núcleo urbano, cada asistente sin transporte organizado es un taxi más en la puerta a la hora de entrada y de salida. En eventos grandes, las colas de taxis y el aparcamiento lleno son la queja número uno.",
+          "Una lanzadera hotel-recinto con frecuencia fija en las horas punta y por bloques el resto del día resuelve el problema y da una imagen mucho más profesional.",
+        ],
+      },
+      {
+        heading: "Cómo se plantea una operativa en ExpoCoruña",
+        list: [
+          "Rutas circulares por los hoteles del centro con salidas cada 15-20 minutos en la franja de apertura.",
+          "Salidas escalonadas al cierre para evitar picos en la explanada.",
+          "Punto de subida y bajada de autocares acordado con el recinto y señalizado.",
+          "Berlinas a disposición para expositores principales, ponentes y organización.",
+          "Recogidas de aeropuerto agrupadas por franjas horarias de llegada.",
+          "Coordinador de transporte en el recinto durante los picos.",
+        ],
+      },
+      {
+        heading: "Montaje y desmontaje",
+        paragraphs: [
+          "En ferias, el transporte empieza antes de abrir: equipos de montaje, técnicos y personal de stand que llegan días antes y trabajan en horarios largos. Vans y minibuses con recogidas tempranas y regresos tardíos evitan depender del transporte público.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "¿Se puede llegar andando a ExpoCoruña desde el centro?", answer: "No es lo habitual: el recinto está fuera del centro. Para eventos con asistentes alojados en hoteles céntricos, lo recomendable es una lanzadera." },
+      { question: "¿Cuántos autocares necesita una feria en ExpoCoruña?", answer: "Depende de los asistentes que se alojan en hoteles y de la franja de entrada. Como referencia, cada autocar mueve unas 50 personas por rotación; con el programa y las cifras se calcula el plan exacto." },
+    ],
+    related: [
+      { title: "Transporte para eventos en Galicia", href: "/transporte-eventos-galicia" },
+      { title: "Transporte a Palexco", href: "/guias/transporte-palexco" },
+      { title: "Traslados desde A Coruña", href: "/traslados-desde-coruna" },
+      { title: "Guía completa de transporte para eventos", href: "/guias/transporte-congresos-eventos-galicia" },
+    ],
+  },
+  {
+    slug: "transporte-ifevi-vigo",
+    category: "Sede",
+    title: "Transporte para ferias y congresos en IFEVI (Vigo)",
+    metaTitle: "Transporte para ferias y eventos en IFEVI, Vigo",
+    metaDescription:
+      "Cómo organizar el transporte para una feria o congreso en IFEVI (Vigo): ubicación junto al aeropuerto de Peinador, tiempos desde Vigo, Santiago y Oporto, lanzaderas y montaje.",
+    image: "/images/galicia-fest-vigo.jpg",
+    alt: "Evento multitudinario en Vigo",
+    readMinutes: 6,
+    date: "2026-10-31",
+    intro: [
+      "IFEVI, la Institución Ferial de Vigo, es el gran recinto ferial del sur de Galicia. Acoge ferias internacionales como Conxemar, la gran cita del producto del mar congelado, además de congresos, convenciones y eventos de empresa.",
+      "Su ubicación es su gran ventaja: está en la avenida do Aeroporto, junto al aeropuerto de Peinador. Y también su reto: queda lejos del centro de Vigo, donde se aloja la mayoría de asistentes.",
+    ],
+    sections: [
+      {
+        heading: "Tiempos de referencia",
+        list: [
+          "Aeropuerto de Vigo (Peinador): a pocos minutos.",
+          "Centro de Vigo y zona hotelera: ~15-20 min, según tráfico.",
+          "Pontevedra: ~30-35 min.",
+          "Santiago de Compostela: ~1 h.",
+          "Aeropuerto de Oporto: ~1 h 40 min.",
+        ],
+      },
+      {
+        heading: "Oporto, el aeropuerto que más importa en IFEVI",
+        paragraphs: [
+          "En ferias internacionales, buena parte de los expositores y compradores vuela a Oporto: más conexiones y, a menudo, mejores precios que los aeropuertos gallegos. Eso convierte el traslado Oporto–Vigo en una pieza central del plan de transporte.",
+          "La forma más eficiente es agrupar llegadas por franjas horarias en vans o minibuses, con un vehículo de reserva para los vuelos retrasados.",
+        ],
+      },
+      {
+        heading: "Cómo se plantea una operativa en IFEVI",
+        list: [
+          "Lanzaderas desde los hoteles del centro de Vigo en la apertura y al cierre de cada jornada.",
+          "Traslados Oporto–Vigo agrupados por llegadas.",
+          "Berlinas para compradores clave y delegaciones internacionales.",
+          "Vans para equipos de montaje y personal de stand en horarios largos.",
+          "Cena o evento de networking en Vigo o en las Rías Baixas con vuelta escalonada.",
+          "Excursiones para acompañantes a Baiona, las Islas Cíes (en temporada) o las Rías Baixas.",
+        ],
+      },
+      {
+        heading: "Semana de feria: la ciudad se llena",
+        paragraphs: [
+          "Durante las grandes ferias, hoteles y transporte en Vigo se tensan. Reservar la flota con tiempo es la diferencia entre tener lanzaderas propias o depender de taxis que no llegan.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "¿Qué aeropuerto es mejor para una feria en IFEVI?", answer: "Peinador está junto al recinto, pero tiene menos vuelos. Para internacionales, Oporto suele ser la mejor opción, con un traslado de unos 1 h 40 min por carretera." },
+      { question: "¿Hacéis traslados de grupos desde Oporto a IFEVI?", answer: "Sí. Se agrupan las llegadas por franjas horarias en vans, minibuses o autocares, con coordinación de los vuelos." },
+    ],
+    related: [
+      { title: "Traslados desde Vigo", href: "/traslados-desde-vigo" },
+      { title: "Oporto ⇄ Galicia", href: "/oporto-galicia" },
+      { title: "Transporte para eventos en Galicia", href: "/transporte-eventos-galicia" },
+    ],
+  },
+  {
+    slug: "transporte-cidade-da-cultura",
+    category: "Sede",
+    title: "Transporte para eventos en la Cidade da Cultura (Santiago)",
+    metaTitle: "Transporte para eventos en la Cidade da Cultura de Santiago",
+    metaDescription:
+      "Cómo organizar el transporte de un evento en la Cidade da Cultura de Galicia (Monte Gaiás, Santiago): acceso, tiempos desde el centro y el aeropuerto, lanzaderas y cenas.",
+    image: "/images/tours-santiago.jpg",
+    alt: "Santiago de Compostela, sede de la Cidade da Cultura",
+    readMinutes: 5,
+    date: "2026-10-31",
+    intro: [
+      "La Cidade da Cultura de Galicia, en el monte Gaiás, es uno de los espacios de eventos más espectaculares de Galicia: un complejo arquitectónico de Peter Eisenman inaugurado en 2011, con auditorio, salas y espacios singulares para congresos, presentaciones y cenas de gala.",
+      "Está a unos 4 km del centro de Santiago, en lo alto del monte. Sin transporte organizado, tus asistentes dependen de un autobús urbano o de taxis.",
+    ],
+    sections: [
+      {
+        heading: "Tiempos de referencia",
+        list: [
+          "Centro de Santiago: ~10-15 min en vehículo.",
+          "Estación de tren de Santiago: ~10 min.",
+          "Aeropuerto de Santiago: ~15-20 min.",
+          "A Coruña: ~50 min.",
+          "Aeropuerto de Oporto: ~2 h 20 min.",
+        ],
+      },
+      {
+        heading: "Claves logísticas",
+        list: [
+          "Hay acceso por carretera desde la AP-9 y aparcamiento en el propio complejo, pero los asistentes alojados en el casco histórico no tienen forma cómoda de llegar a pie.",
+          "Las líneas urbanas que suben al monte Gaiás tienen frecuencias limitadas: no conviene que el programa dependa de ellas.",
+          "El casco histórico tiene el tráfico restringido: las recogidas se hacen en puntos accesibles cercanos a los hoteles.",
+          "Para cenas de gala en la Cidade da Cultura, la vuelta escalonada al centro y a los hoteles es esencial.",
+          "Llueve a menudo: el punto de subida y bajada debe quedar lo más cerca posible de la entrada al edificio.",
+        ],
+      },
+      {
+        heading: "Combinarlo con el Palacio de Congresos",
+        paragraphs: [
+          "Muchos congresos en Santiago celebran las sesiones en el Palacio de Congresos y la cena o un acto institucional en la Cidade da Cultura. Un mismo plan de transporte puede cubrir los dos recintos y los hoteles con la misma flota.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "¿Se puede ir andando del centro de Santiago a la Cidade da Cultura?", answer: "Se puede, pero es un paseo largo y cuesta arriba, poco práctico para asistentes a un evento. Lo recomendable es organizar lanzaderas." },
+      { question: "¿Llegan autocares grandes a la Cidade da Cultura?", answer: "Sí, el complejo tiene acceso rodado y aparcamiento. El punto exacto de subida y bajada se acuerda con la organización del recinto." },
+    ],
+    related: [
+      { title: "Palacio de Congresos de Santiago", href: "/guias/transporte-palacio-congresos-santiago" },
+      { title: "Traslados desde Santiago", href: "/traslados-desde-santiago" },
+      { title: "Transporte para congresos", href: "/transporte-congresos-galicia" },
+    ],
+  },
 ];
 
 export function getGuia(slug: string) {

@@ -198,7 +198,9 @@ export const PAGES_MICE: Page[] = [
         items: [
           { title: "Transporte a Palexco (A Coruña)", text: "Accesos, tiempos desde el aeropuerto de Alvedro y desde Santiago, y zonas de subida y bajada.", href: "/guias/transporte-palexco" },
           { title: "Palacio de Congresos de Santiago", text: "Cómo planificar lanzaderas entre el casco histórico, los hoteles y el palacio.", href: "/guias/transporte-palacio-congresos-santiago" },
-          { title: "Guía completa: transporte para congresos y eventos", text: "Cuántos vehículos, plazos y errores que se pagan caros.", href: "/guias/transporte-congresos-eventos-galicia" },
+          { title: "Transporte a ExpoCoruña", text: "Ferias y grandes eventos fuera del centro: lanzaderas y montaje.", href: "/guias/transporte-expocoruna" },
+          { title: "Transporte a IFEVI (Vigo)", text: "Ferias internacionales junto al aeropuerto de Peinador y con Oporto a 1 h 40 min.", href: "/guias/transporte-ifevi-vigo" },
+          { title: "Cidade da Cultura (Santiago)", text: "Eventos y cenas de gala en el monte Gaiás.", href: "/guias/transporte-cidade-da-cultura" },
         ],
       },
       { type: "fleet", heading: "Flota disponible para tu congreso" },

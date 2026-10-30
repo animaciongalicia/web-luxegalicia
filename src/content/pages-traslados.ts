@@ -248,6 +248,8 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Oporto, puerta de entrada a Galicia", href: "/oporto-galicia" },
           { title: "Excursiones para cruceros", href: "/excursiones-cruceros-galicia" },
           { title: "Tour Vigo e Islas Cíes", href: "/tours-con-chofer-galicia/vigo-islas-cies" },
+          { title: "Guía: transporte a IFEVI", href: "/guias/transporte-ifevi-vigo" },
+          { title: "Norte de Portugal con chófer", href: "/tours-con-chofer-galicia/norte-de-portugal" },
         ],
       },
     ],
@@ -311,7 +313,7 @@ export const PAGES_TRASLADOS: Page[] = [
         items: [
           { title: "Guía: cómo ir de Oporto a Galicia", text: "Tren, autobús, coche o chófer: tiempos y pros y contras.", href: "/guias/oporto-galicia-como-llegar" },
           { title: "Camino Portugués desde Oporto", text: "Transporte para grupos de peregrinos.", href: "/transporte-camino-de-santiago" },
-          { title: "Tours con chófer por Galicia", text: "Llega por Oporto y recorre Galicia en 3, 5 o 7 días.", href: "/tours-con-chofer-galicia" },
+          { title: "Oporto y Galicia en 5 días", text: "Aterriza en Oporto y sube por la costa hasta Santiago con chófer.", href: "/tours-con-chofer-galicia/oporto-y-galicia-5-dias" },
         ],
       },
       { type: "quote", heading: "Reserva tu traslado desde Oporto" },
