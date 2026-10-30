@@ -39,7 +39,7 @@ export const PAGES_TRASLADOS: Page[] = [
         heading: "Elige tu punto de partida",
         bg: "gray",
         items: [
-          { title: "Desde A Coruña", text: "Toda Galicia, Oporto, Asturias y Madrid desde la base principal.", href: "/traslados-desde-coruna", image: "/images/coruna-torre-hercules.jpg", alt: "Torre de Hércules en A Coruña" },
+          { title: "Desde A Coruña", text: "Toda Galicia, Oporto, Asturias y Madrid desde la base principal.", href: "/traslados-desde-coruna", image: "/images/coruna-torre-hercules.jpg", alt: "Monumento junto a la Torre de Hércules, en A Coruña" },
           { title: "Desde Santiago", text: "Aeropuerto Rosalía de Castro, estación de tren y el final del Camino.", href: "/traslados-desde-santiago", image: "/images/tours-santiago.jpg", alt: "Catedral de Santiago de Compostela" },
           { title: "Desde Vigo", text: "Rías Baixas, Oporto y puerto de cruceros.", href: "/traslados-desde-vigo", image: "/images/playa-rodas-islas-cies-suunia.jpg", alt: "Playa de Rodas en las Islas Cíes frente a Vigo" },
           { title: "Oporto, puerta de Galicia", text: "Del aeropuerto de Oporto a cualquier punto de Galicia.", href: "/oporto-galicia", image: "/images/traslados-chofer-coruna.jpg", alt: "Traslado con chófer desde el aeropuerto de Oporto" },
@@ -62,7 +62,7 @@ export const PAGES_TRASLADOS: Page[] = [
       title: "Traslados con chófer desde A Coruña",
       subtitle: "A cualquier punto de Galicia, a Oporto, a Asturias o a Madrid. Puerta a puerta, con precio claro.",
       image: "/images/coruna-torre-hercules.jpg",
-      alt: "Torre de Hércules, A Coruña",
+      alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     },
     blocks: [
       {
@@ -172,6 +172,7 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Transporte en el Camino de Santiago", href: "/transporte-camino-de-santiago" },
           { title: "Guía: Palacio de Congresos de Santiago", href: "/guias/transporte-palacio-congresos-santiago" },
           { title: "Tours con chófer desde Santiago", href: "/tours-con-chofer-galicia" },
+          { title: "Uber, taxi o chófer en Santiago", href: "/guias/uber-taxi-chofer-santiago-de-compostela" },
         ],
       },
     ],
@@ -312,6 +313,7 @@ export const PAGES_TRASLADOS: Page[] = [
         bg: "gray",
         items: [
           { title: "Guía: cómo ir de Oporto a Galicia", text: "Tren, autobús, coche o chófer: tiempos y pros y contras.", href: "/guias/oporto-galicia-como-llegar" },
+          { title: "De Oporto a Vigo: qué compensa", text: "Tren, autobús o traslado privado, comparados.", href: "/guias/oporto-vigo-tren-autobus-traslado" },
           { title: "Camino Portugués desde Oporto", text: "Transporte para grupos de peregrinos.", href: "/transporte-camino-de-santiago" },
           { title: "Oporto y Galicia en 5 días", text: "Aterriza en Oporto y sube por la costa hasta Santiago con chófer.", href: "/tours-con-chofer-galicia/oporto-y-galicia-5-dias" },
         ],
@@ -378,6 +380,8 @@ export const PAGES_TRASLADOS: Page[] = [
         bg: "gray",
         items: [
           { title: "Guía: transporte en el Camino de Santiago", href: "/guias/transporte-camino-de-santiago" },
+          { title: "Camino Portugués por la costa: etapas y logística", href: "/guias/camino-portugues-costa-etapas-grupos" },
+          { title: "Año Santo 2027: transporte de grupos", href: "/guias/ano-santo-2027-transporte-grupos" },
           { title: "Oporto ⇄ Galicia", href: "/oporto-galicia" },
           { title: "Traslados desde Santiago", href: "/traslados-desde-santiago" },
         ],
@@ -444,7 +448,7 @@ export const PAGES_TRASLADOS: Page[] = [
       title: "Excursiones privadas para cruceros en Galicia",
       subtitle: "Tu barco hace escala unas horas. Aprovéchalas sin colas, sin autobuses de 50 personas y con regreso garantizado al barco.",
       image: "/images/coruna-torre-hercules.jpg",
-      alt: "Torre de Hércules vista desde el puerto de A Coruña",
+      alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     },
     blocks: [
       {

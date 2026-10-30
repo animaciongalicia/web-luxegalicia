@@ -299,7 +299,7 @@ const GUIAS_BASE: Guide[] = [
     metaDescription:
       "Guía para organizar el transporte de un congreso en Palexco (A Coruña): llegadas por Alvedro, Santiago, Oporto y tren, hoteles, lanzaderas, ponentes, cena de gala y días de crucero.",
     image: "/images/coruna-torre-hercules.jpg",
-    alt: "Puerto de A Coruña, donde se encuentra Palexco",
+    alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     readMinutes: 8,
     date: "2026-10-31",
     intro: [
@@ -484,7 +484,7 @@ const GUIAS_BASE: Guide[] = [
     metaDescription:
       "Guía para llegar al estadio Abanca-Riazor el día de partido del Deportivo: desde el aeropuerto, la estación y el centro, aparcamiento, autocares de peñas y transporte con chófer para grupos.",
     image: "/images/coruna-torre-hercules.jpg",
-    alt: "Costa de A Coruña cerca del estadio de Riazor",
+    alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     readMinutes: 5,
     date: "2026-10-31",
     intro: [

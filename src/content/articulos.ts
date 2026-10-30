@@ -520,7 +520,7 @@ export const ARTICULOS: Guide[] = [
       "Durante esos días Vigo se llena: hoteles completos, taxis imposibles y el entorno de IFEVI saturado. Esta guía te ayuda a organizar los traslados para que tu equipo y tus clientes lleguen a tiempo a cada reunión.",
     ],
     summary: [
-      "Conxemar 2027 está prevista del 5 al 7 de octubre de 2027 en IFEVI (fechas por confirmar con la organización).",
+      "Conxemar 2027 se celebra del 5 al 7 de octubre de 2027 en IFEVI, según la web oficial de la feria.",
       "IFEVI está junto al aeropuerto de Peinador, a unos 15-20 minutos del centro de Vigo.",
       "Muchos visitantes internacionales vuelan a Oporto: está a unos 1 h 40 min de IFEVI por carretera.",
       "Con Vigo lleno, alojarse en Pontevedra, Baiona o Sanxenxo es habitual: necesitarás transporte diario.",
@@ -531,7 +531,7 @@ export const ARTICULOS: Guide[] = [
         heading: "Conxemar en datos",
         paragraphs: [
           "Organizada por la asociación española de mayoristas, importadores, exportadores y fabricantes de productos de la pesca y la acuicultura, Conxemar reúne a fabricantes, mayoristas, importadores, exportadores y empresas de frío, maquinaria y envasado. Según datos publicados de ediciones recientes, ronda los 700 expositores y supera los 25.000 visitantes profesionales de más de 40 países.",
-          "Las fechas de 2027 que circulan (5 a 7 de octubre) deben confirmarse en la web oficial de la feria.",
+          "La edición de 2027 se celebra del 5 al 7 de octubre, según la web oficial de Conxemar.",
         ],
       },
       {
@@ -583,7 +583,7 @@ export const ARTICULOS: Guide[] = [
       label: "Ver traslados desde Vigo",
     },
     faqs: [
-      { question: "¿Cuándo se celebra Conxemar 2027?", answer: "Las fechas previstas son del 5 al 7 de octubre de 2027 en IFEVI, Vigo. Confírmalas en la web oficial de la feria." },
+      { question: "¿Cuándo se celebra Conxemar 2027?", answer: "Del 5 al 7 de octubre de 2027 en IFEVI, Vigo, según la web oficial de la feria." },
       { question: "¿Cómo se llega a IFEVI desde el centro de Vigo?", answer: "En vehículo, en unos 15-20 minutos según el tráfico. Durante la feria conviene salir con margen." },
       { question: "¿Merece la pena volar a Oporto para ir a Conxemar?", answer: "Para muchos visitantes internacionales, sí: tiene más conexiones y está a unos 1 h 40 min de IFEVI por carretera con un traslado directo." },
     ],
@@ -591,6 +591,287 @@ export const ARTICULOS: Guide[] = [
       { title: "Transporte a IFEVI (Vigo)", href: "/guias/transporte-ifevi-vigo" },
       { title: "De Oporto a Vigo: qué compensa", href: "/guias/oporto-vigo-tren-autobus-traslado" },
       { title: "Traslados desde Vigo", href: "/traslados-desde-vigo" },
+    ],
+  },
+  // 7 · Uber, taxi o chófer en Santiago
+  {
+    slug: "uber-taxi-chofer-santiago-de-compostela",
+    category: "Artículo",
+    title: "Uber, taxi o chófer en Santiago de Compostela: qué te conviene en cada caso",
+    metaTitle: "Uber, taxi o chófer en Santiago de Compostela: qué te conviene",
+    metaDescription:
+      "Cómo moverte en Santiago de Compostela: taxi, VTC por aplicación (Uber, Cabify), autobús o coche con chófer. Desde el aeropuerto, por la ciudad y para grupos o empresas.",
+    image: "/images/traslados-chofer-coruna.jpg",
+    alt: "Coche con chófer esperando a un pasajero en Santiago de Compostela",
+    readMinutes: 6,
+    date: "2026-10-31",
+    intro: [
+      "Llegas a Santiago y necesitas moverte: del aeropuerto al hotel, del hotel a una reunión o del centro a la Cidade da Cultura. Tienes cuatro opciones: taxi, VTC por aplicación, autobús o un coche con chófer reservado.",
+      "Ninguna es la mejor siempre. Depende de cuántos sois, de cuántos trayectos haces y de cuánto te importa no esperar. Aquí tienes la guía para decidir rápido.",
+    ],
+    summary: [
+      "Para un trayecto suelto de una o dos personas, el taxi o una VTC por aplicación suelen ser suficientes.",
+      "En Galicia, las VTC funcionan con contratación previa, así que su disponibilidad inmediata puede variar.",
+      "El casco histórico tiene el tráfico restringido: ningún vehículo te deja en la puerta de la catedral.",
+      "Para grupos, empresas, varios trayectos al día o llegadas de madrugada, un chófer reservado da seguridad.",
+      "En fechas punta (Año Santo, congresos, verano), reservar con antelación marca la diferencia.",
+    ],
+    sections: [
+      {
+        heading: "Comparativa rápida",
+        table: {
+          head: ["Opción", "Mejor para", "Ventaja", "Inconveniente"],
+          rows: [
+            ["Taxi", "Trayectos sueltos, 1-4 personas", "Paradas en aeropuerto, estación y centro", "Colas en horas punta y días de evento"],
+            ["VTC por aplicación", "Quien ya usa Uber o Cabify", "Precio visible antes de pedir", "Disponibilidad variable; contratación previa"],
+            ["Autobús", "Viajeros con poco equipaje y sin prisa", "La opción más barata", "Horarios y paradas fijas"],
+            ["Chófer reservado", "Empresas, grupos, varios trayectos", "Te espera, sigue tu vuelo, mismo vehículo todo el día", "Hay que reservarlo con antelación"],
+          ],
+        },
+      },
+      {
+        heading: "Taxi",
+        paragraphs: [
+          "Santiago tiene paradas de taxi en el aeropuerto Rosalía de Castro, en la estación de tren y en varios puntos del centro. Para un trayecto suelto es una opción cómoda y rápida.",
+          "El problema aparece cuando todo el mundo lo necesita a la vez: la llegada de varios vuelos, la salida de un congreso, un día de lluvia o las fechas grandes del Año Santo. Ahí las colas pueden ser largas.",
+        ],
+      },
+      {
+        heading: "VTC por aplicación (Uber, Cabify)",
+        paragraphs: [
+          "Las aplicaciones de VTC operan en Santiago, pero hay un matiz importante: en Galicia los vehículos VTC se contratan con antelación (la normativa autonómica exige una precontratación mínima, aunque la Xunta ha propuesto eliminarla). En la práctica, la disponibilidad inmediata depende de cuántos vehículos haya en ese momento.",
+          "Para un viajero suelto que ya usa la aplicación, puede funcionar bien. Para un grupo o una agenda de empresa con horarios cerrados, depender de la disponibilidad del momento es un riesgo.",
+        ],
+        tip: "Si llegas en el último vuelo de la noche o en una fecha con mucha demanda, no confíes en encontrar vehículo al momento: resérvalo antes de volar.",
+      },
+      {
+        heading: "Autobús",
+        paragraphs: [
+          "Hay conexión en autobús entre el aeropuerto, el centro y la estación, y líneas urbanas que llegan a puntos como la Cidade da Cultura. Es la opción más económica, pero con horarios y paradas fijas, y poco práctica con equipaje o con un grupo.",
+        ],
+      },
+      {
+        heading: "Coche con chófer reservado",
+        paragraphs: [
+          "Un chófer reservado no es solo un traslado: sigue tu vuelo, te espera en llegadas con tu nombre y, si lo contratas por horas o por días, te acompaña en todos los trayectos de tu agenda.",
+          "Es la opción lógica cuando sois varios (el precio es por vehículo), cuando tienes varias reuniones en el día, cuando llegas de madrugada o cuando no puedes permitirte esperar.",
+        ],
+        list: [
+          "Empresas: aeropuerto, reuniones, Palacio de Congresos y vuelta, con el mismo chófer.",
+          "Grupos: una van o un minibús en lugar de tres taxis que llegan a horas distintas.",
+          "Familias con equipaje o peregrinos al final del Camino.",
+          "Excursiones desde Santiago: Rías Baixas, Costa da Morte o A Coruña.",
+        ],
+      },
+      {
+        heading: "El casco histórico: lo que nadie te cuenta",
+        paragraphs: [
+          "La zona monumental de Santiago tiene el tráfico restringido. Da igual que vayas en taxi, VTC o con chófer: el vehículo te deja en el punto accesible más cercano y el último tramo se hace a pie. Si tu hotel está dentro del casco histórico, conviene saber de antemano dónde será la parada.",
+        ],
+      },
+    ],
+    service: {
+      title: "Chófer en Santiago, cuando no puedes esperar",
+      text: "Traslados desde el aeropuerto, chófer por horas para empresas y vans para grupos.",
+      href: "/traslados-desde-santiago",
+      label: "Ver traslados desde Santiago",
+    },
+    faqs: [
+      { question: "¿Funciona Uber en Santiago de Compostela?", answer: "Sí, las aplicaciones de VTC operan en Santiago, pero en Galicia los VTC se contratan con antelación y la disponibilidad inmediata puede variar según la hora y la demanda." },
+      { question: "¿Cuánto se tarda del aeropuerto de Santiago al centro?", answer: "Entre 15 y 20 minutos en vehículo, según el tráfico y el punto exacto del centro." },
+      { question: "¿Un taxi puede llevarme hasta la catedral?", answer: "No. El casco histórico tiene el tráfico restringido y cualquier vehículo te deja en el punto accesible más cercano." },
+      { question: "¿Cuándo compensa un chófer frente al taxi?", answer: "Cuando sois tres o más personas, cuando tienes varios trayectos en el día, cuando llegas de madrugada o en fechas de mucha demanda." },
+    ],
+    related: [
+      { title: "Traslados desde Santiago", href: "/traslados-desde-santiago" },
+      { title: "Aeropuertos de Galicia", href: "/aeropuertos-galicia" },
+      { title: "Año Santo 2027: transporte de grupos", href: "/guias/ano-santo-2027-transporte-grupos" },
+    ],
+  },
+
+  // 8 · Ver al Deportivo
+  {
+    slug: "viajar-coruna-ver-deportivo",
+    category: "Artículo",
+    title: "Viajar a A Coruña a ver al Deportivo: guía para aficionados visitantes",
+    metaTitle: "Viajar a A Coruña para ver al Deportivo en Riazor: guía práctica",
+    metaDescription:
+      "Guía para aficionados y peñas que viajan a A Coruña a un partido en Riazor: cómo llegar en avión, tren o autocar, dónde alojarse, el día de partido y qué hacer en la ciudad.",
+    image: "/images/coruna-torre-hercules.jpg",
+    alt: "Monumento junto a la Torre de Hércules, en A Coruña",
+    readMinutes: 7,
+    date: "2026-10-31",
+    intro: [
+      "Con el Deportivo de vuelta en Primera División, A Coruña vuelve a recibir aficionados de toda España cada quince días. Riazor está en plena ciudad, junto a la playa, y el viaje puede ser mucho más que un partido.",
+      "Esta guía es para el aficionado visitante y para las peñas que organizan el desplazamiento: cómo llegar, dónde dormir, cómo moverse el día de partido y qué hacer el resto del fin de semana.",
+    ],
+    summary: [
+      "Riazor está en el centro de A Coruña: desde la zona hotelera se llega andando por el paseo marítimo.",
+      "El día de partido, aparcar cerca del estadio es casi imposible: mejor no depender del coche.",
+      "Llega por Alvedro (A Coruña), Santiago (a unos 50 minutos) o en tren de alta velocidad.",
+      "Las peñas en autocar deben coordinar la llegada con las zonas habilitadas para el partido.",
+      "Aprovecha el viaje: Torre de Hércules, Ciudad Vieja, tapas en la zona de la calle de la Estrella y la Franja.",
+    ],
+    sections: [
+      {
+        heading: "Cómo llegar a A Coruña",
+        table: {
+          head: ["Cómo", "Desde", "Tiempo hasta Riazor", "Ten en cuenta"],
+          rows: [
+            ["Avión a A Coruña (Alvedro)", "Madrid, Barcelona y otras ciudades", "~20 min", "Menos vuelos; resérvalo pronto"],
+            ["Avión a Santiago", "Más conexiones nacionales", "~55 min", "Necesitas traslado por carretera"],
+            ["Tren de alta velocidad", "Madrid y otras ciudades", "~10 min desde la estación", "Buena opción desde Madrid"],
+            ["Autocar de peña", "Tu ciudad", "Directo", "Coordina la zona de llegada para el partido"],
+          ],
+        },
+      },
+      {
+        heading: "Dónde alojarse",
+        list: [
+          "Centro y zona de la Marina: lo más cómodo; Riazor queda a un paseo y tienes todo cerca.",
+          "Riazor y Orzán: junto al estadio y a la playa; se llena pronto en días de partido.",
+          "Fuera de la ciudad (Oleiros, Santa Cristina, Arteixo): más disponibilidad, pero necesitarás transporte el día de partido.",
+          "Santiago: si quieres combinar fútbol y Santiago, está a 50 minutos con un traslado.",
+        ],
+      },
+      {
+        heading: "El día de partido",
+        paragraphs: [
+          "Riazor recibe a más de 30.000 personas y está en un barrio residencial junto al mar. El tráfico se corta en las calles cercanas y los aparcamientos se llenan pronto. Lo más cómodo es llegar andando desde el centro por el paseo marítimo o que te dejen y te recojan.",
+          "A la salida, decenas de miles de personas salen a la vez. Si vas en grupo, acordad de antemano un punto de encuentro algo alejado del estadio.",
+        ],
+        tip: "Si tenéis vuelo o tren de vuelta el mismo día, no lo pongáis justo después del partido: entre la salida del estadio y el tráfico, deja al menos dos horas de margen.",
+      },
+      {
+        heading: "Si vienes con una peña",
+        list: [
+          "Los autocares visitantes llegan a las zonas que se habilitan para cada partido según el dispositivo de seguridad.",
+          "Coordina con tu peña o con el club la hora y el punto de llegada.",
+          "Si el grupo duerme en A Coruña, el autocar o los minibuses pueden quedarse a disposición todo el fin de semana.",
+          "Para grupos pequeños, una van o un minibús con chófer es más flexible que un autocar grande.",
+        ],
+      },
+      {
+        heading: "Qué hacer en A Coruña antes o después del partido",
+        list: [
+          "Torre de Hércules: el faro romano en funcionamiento más antiguo del mundo, Patrimonio de la Humanidad.",
+          "Paseo marítimo: uno de los más largos de Europa, de Riazor a la Torre.",
+          "Ciudad Vieja y plaza de María Pita.",
+          "Tapas y raciones en la zona de la calle de la Estrella, la Franja y los alrededores.",
+          "Monte de San Pedro: las mejores vistas de la ciudad.",
+          "Si te quedas el domingo: excursión a Santiago o a la Costa da Morte.",
+        ],
+      },
+    ],
+    service: {
+      title: "Transporte para el partido",
+      text: "Traslados desde aeropuertos y estación, autocares para peñas y vans para grupos. También a Balaídos y otros eventos deportivos.",
+      href: "/transporte-eventos-deportivos",
+      label: "Ver transporte para el fútbol",
+    },
+    faqs: [
+      { question: "¿Se puede ir andando al estadio de Riazor desde el centro?", answer: "Sí. Desde la zona de la Marina y la plaza de María Pita son unos 20 minutos andando, gran parte por el paseo marítimo." },
+      { question: "¿Qué aeropuerto me conviene para ver al Deportivo?", answer: "Alvedro (A Coruña) es el más cercano, a unos 20 minutos de Riazor. Si no hay vuelos, Santiago está a unos 55 minutos por carretera." },
+      { question: "¿Dónde aparcan los autocares de aficionados visitantes?", answer: "En las zonas que se habilitan para cada partido según el dispositivo de seguridad. Conviene coordinarlo con antelación." },
+      { question: "¿Merece la pena quedarse el fin de semana?", answer: "Sí. A Coruña tiene mucho que ver y Santiago o la Costa da Morte están a una hora o poco más." },
+    ],
+    related: [
+      { title: "Cómo llegar al estadio de Riazor", href: "/guias/como-llegar-estadio-riazor" },
+      { title: "Transporte para partidos y eventos deportivos", href: "/transporte-eventos-deportivos" },
+      { title: "Traslados desde A Coruña", href: "/traslados-desde-coruna" },
+    ],
+  },
+
+  // 9 · Calendario 2027
+  {
+    slug: "calendario-congresos-ferias-galicia-2027",
+    category: "Artículo",
+    title: "Calendario de congresos y ferias en Galicia 2027",
+    metaTitle: "Calendario de congresos y ferias en Galicia 2027 | A Coruña, Santiago, Vigo",
+    metaDescription:
+      "Calendario 2027 de congresos, ferias y grandes eventos profesionales en A Coruña, Santiago de Compostela y Vigo: fechas, sedes y claves de transporte para cada uno.",
+    image: "/images/sala-eventos-empresas.jpg",
+    alt: "Sala de congresos en Galicia",
+    readMinutes: 6,
+    date: "2026-10-31",
+    intro: [
+      "2027 va a ser un año intenso para los eventos profesionales en Galicia: Año Santo en Santiago, congresos médicos y científicos en Palexco y la gran feria internacional del producto del mar en Vigo.",
+      "Este calendario recoge los congresos y ferias ya anunciados para 2027 en las tres grandes ciudades, con su sede y lo que conviene saber del transporte. Se actualiza a medida que se confirman nuevas fechas.",
+    ],
+    summary: [
+      "Todo 2027 es Año Santo: más demanda de hoteles y transporte en Santiago y alrededores.",
+      "Mayo y junio concentran congresos científicos en A Coruña y Santiago.",
+      "Conxemar (5-7 de octubre) es el gran pico de Vigo.",
+      "Las fechas marcadas como «por confirmar» proceden de fuentes no oficiales: compruébalas con la organización.",
+    ],
+    sections: [
+      {
+        heading: "A Coruña",
+        table: {
+          head: ["Fechas", "Evento", "Sede", "Estado"],
+          rows: [
+            ["5-7 mar 2027", "BioCultura A Coruña", "Palexco", "Por confirmar"],
+            ["4-6 abr 2027", "Fórum Gastronómico", "ExpoCoruña", "Por confirmar"],
+            ["19-21 may 2027", "Congreso SECOIR (Sociedad Española de Cirugía Ocular Implanto-Refractiva)", "Palexco", "Anunciado"],
+            ["14-16 jun 2027", "Encuentro internacional de la red de sostenibilidad de IAPS (500+ participantes)", "A Coruña", "Anunciado"],
+            ["2027 (fecha por anunciar)", "XIII Congreso Internacional de Psicología y Educación (CIPE)", "A Coruña", "Anunciado"],
+          ],
+        },
+        after: ["Claves de transporte en A Coruña: llegadas por Alvedro, Santiago y Oporto; lanzaderas para hoteles fuera del centro y cenas fuera de la ciudad."],
+      },
+      {
+        heading: "Santiago de Compostela",
+        table: {
+          head: ["Fechas", "Evento", "Sede", "Estado"],
+          rows: [
+            ["Todo el año", "Año Santo Compostelano 2027", "Catedral y ciudad", "Confirmado"],
+            ["12-14 may 2027", "49.º Congreso de la Sociedad Española de Endocrinología Pediátrica", "Santiago", "Anunciado"],
+            ["Junio 2027", "16.º Congreso Nacional y 3.º Ibérico de Ensayos No Destructivos (END)", "Cidade da Cultura", "Anunciado"],
+            ["25 jul 2027", "Día del Apóstol (domingo)", "Ciudad", "Confirmado"],
+          ],
+        },
+        after: ["Claves de transporte en Santiago: el casco histórico tiene el tráfico restringido y en Año Santo la demanda será alta todo el año; reserva la flota pronto."],
+      },
+      {
+        heading: "Vigo",
+        table: {
+          head: ["Fechas", "Evento", "Sede", "Estado"],
+          rows: [
+            ["27-29 abr 2027", "MindTech", "IFEVI", "Por confirmar"],
+            ["5-7 oct 2027", "Conxemar, Feria Internacional de Productos del Mar Congelados", "IFEVI", "Confirmado"],
+          ],
+        },
+        after: [
+          "Según el Vigo Convention Bureau, IFEVI tenía ya 52 eventos cerrados para 2027 a finales de 2026, así que el calendario de Vigo seguirá creciendo.",
+          "Claves de transporte en Vigo: IFEVI está junto al aeropuerto de Peinador; muchos visitantes internacionales llegan por Oporto, a 1 h 40 min.",
+        ],
+      },
+      {
+        heading: "Cómo usar este calendario",
+        list: [
+          "Si organizas un evento en 2027, comprueba que no coincide con un gran evento en la misma ciudad: hoteles y transporte se encarecen y escasean.",
+          "Si tu evento coincide con uno de estos, reserva el transporte con más antelación de lo habitual.",
+          "Si eres expositor o asistente, reserva traslados y alojamiento en cuanto confirmes tu participación.",
+          "¿Organizas un congreso o feria en Galicia en 2027 y no aparece? Escribe a info@luxegalicia.com para añadirlo.",
+        ],
+      },
+    ],
+    service: {
+      title: "¿Tu evento está en este calendario?",
+      text: "Asegura ahora la flota: lanzaderas, traslados de aeropuerto y vehículos para ponentes con un único responsable.",
+      href: "/transporte-eventos-galicia",
+      label: "Transporte para eventos",
+    },
+    faqs: [
+      { question: "¿Qué congresos se celebran en A Coruña en 2027?", answer: "Entre los anunciados figuran el congreso SECOIR en Palexco (19-21 de mayo), un encuentro internacional de la red de sostenibilidad de IAPS (14-16 de junio) y el XIII Congreso Internacional de Psicología y Educación, además de ferias en Palexco y ExpoCoruña." },
+      { question: "¿Cuándo es Conxemar 2027?", answer: "Del 5 al 7 de octubre de 2027 en IFEVI, Vigo." },
+      { question: "¿Cómo afecta el Año Santo a los congresos en Santiago?", answer: "Aumenta la demanda de hoteles y transporte durante todo el año, sobre todo en Semana Santa, julio y agosto. Conviene reservar con mucha antelación." },
+    ],
+    related: [
+      { title: "Transporte a Palexco", href: "/guias/transporte-palexco" },
+      { title: "Conxemar 2027: cómo moverse en Vigo", href: "/guias/conxemar-transporte-vigo" },
+      { title: "Año Santo 2027: transporte de grupos", href: "/guias/ano-santo-2027-transporte-grupos" },
+      { title: "Transporte para congresos", href: "/transporte-congresos-galicia" },
     ],
   },
 ];

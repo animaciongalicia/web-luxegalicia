@@ -386,6 +386,7 @@ export const PAGES_MICE: Page[] = [
         heading: "Más información",
         items: [
           { title: "Cómo llegar a Riazor", text: "Accesos, aparcamiento y consejos para grupos el día de partido.", href: "/guias/como-llegar-estadio-riazor" },
+          { title: "Viajar a A Coruña a ver al Deportivo", text: "Guía para aficionados y peñas visitantes.", href: "/guias/viajar-coruna-ver-deportivo" },
           { title: "Traslados desde A Coruña", text: "Precios orientativos a toda Galicia, Oporto, Asturias y Madrid.", href: "/traslados-desde-coruna" },
           { title: "Tours con chófer", text: "Convierte el partido en un fin de semana en Galicia.", href: "/tours-con-chofer-galicia" },
         ],
