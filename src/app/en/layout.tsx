@@ -5,6 +5,7 @@ import { SITE_URL } from "@/content/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || "g-8CHcDXCPDGZ0_D09bYLZWXPP2Ky0rgaffP8qe_-WQ" },
   title: {
     default: "Luxe Galicia – Ground transportation in Galicia & Porto",
     template: "%s",

@@ -50,6 +50,5 @@ Con `NEXT_PUBLIC_GA_ID` configurado se registran estos eventos (márcalos como c
 - Precios reales en `precios.ts`.
 - Razón social, CIF y domicilio (variables `NEXT_PUBLIC_LEGAL_*`).
 - Fotos definitivas de flota (modelos concretos) y de destinos.
-- ID de GA4 y verificación de Search Console.
 - Endpoint de formulario (sin él, el formulario abre el email del usuario).
 - Ajustes tras analizar Search Console y Analytics.

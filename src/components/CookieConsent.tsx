@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-XEJKTB7SZR";
 
 function initGA4(consentGranted: boolean) {
   if (!GA_ID || document.getElementById("ga4-script")) return;
