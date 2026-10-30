@@ -105,7 +105,6 @@ export const guia: Guide = {
   related: [
     { title: "Transporte en el Camino de Santiago para grupos", href: "/guias/transporte-camino-de-santiago" },
     { title: "Cómo ir de Oporto a Galicia", href: "/guias/oporto-galicia-como-llegar" },
-    { title: "Transporte para el Camino de Santiago", href: "/transporte-camino-de-santiago" },
     { title: "Excursión privada a la Costa da Morte", href: "/tours-con-chofer-galicia/costa-da-morte" },
   ],
 };

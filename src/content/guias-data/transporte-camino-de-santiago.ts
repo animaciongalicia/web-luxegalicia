@@ -56,7 +56,6 @@ export const guia: Guide = {
           ["Camino Inglés", "Ferrol", "~115-120 km, 5 etapas", "Grupos que buscan menos gente"],
         ],
       },
-      tip: "La variante de la costa tiene su propia guía: [Camino Portugués por la costa, etapas y logística para grupos](/guias/camino-portugues-costa-etapas-grupos).",
     },
     {
       heading: "Vehículo de apoyo: cuándo merece la pena",
@@ -86,7 +85,7 @@ export const guia: Guide = {
       paragraphs: [
         "En 2027 el Camino vive un año de máxima afluencia. Para grupos eso significa una cosa: reservar alojamiento y transporte con mucha más antelación de lo normal, sobre todo en Semana Santa y en verano.",
       ],
-      tip: "Lo tienes todo en la guía del [Año Santo 2027 para grupos y eventos](/guias/ano-santo-2027-transporte-grupos): fechas clave y cómo evitar los colapsos.",
+      tip: "Reserva alojamiento y transporte en cuanto tengas fechas. En Año Santo, quien reserva primero elige.",
     },
   ],
   service: {
@@ -103,6 +102,6 @@ export const guia: Guide = {
   related: [
     { title: "Camino Portugués por la costa", href: "/guias/camino-portugues-costa-etapas-grupos" },
     { title: "Año Santo 2027: transporte de grupos", href: "/guias/ano-santo-2027-transporte-grupos" },
-    { title: "Transporte para el Camino de Santiago", href: "/transporte-camino-de-santiago" },
+    { title: "Cómo ir de Oporto a Galicia", href: "/guias/oporto-galicia-como-llegar" },
   ],
 };

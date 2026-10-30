@@ -92,9 +92,8 @@ export const guia: Guide = {
       heading: "Congresos y eventos de empresa en 2027",
       paragraphs: [
         "Muchas sociedades científicas, asociaciones y empresas eligen Santiago en 2027 precisamente por el Año Santo. Si tu evento cae en fechas de alta afluencia, el plan de transporte tiene que contar con más tiempo en cada trayecto, puntos de subida y bajada acordados y lanzaderas entre hoteles dispersos.",
-        "La combinación que mejor funciona: sesiones en el [Palacio de Congresos de Santiago](/guias/transporte-palacio-congresos-santiago) o en la Cidade da Cultura, alojamiento repartido entre Santiago y A Coruña, y el [transporte para congresos en Santiago en Año Santo](/transporte-congresos-galicia) coordinado por una sola persona.",
+        "La combinación que mejor funciona: sesiones en el Palacio de Congresos de Santiago o en la Cidade da Cultura, alojamiento repartido entre Santiago y A Coruña, y el [transporte para congresos en Santiago en Año Santo](/transporte-congresos-galicia) coordinado por una sola persona.",
       ],
-      tip: "Mira qué otros eventos coinciden con tus fechas en el [calendario de congresos y ferias en Galicia 2027](/guias/calendario-congresos-ferias-galicia-2027).",
     },
   ],
   service: {
@@ -111,7 +110,7 @@ export const guia: Guide = {
   ],
   related: [
     { title: "Transporte en el Camino de Santiago para grupos", href: "/guias/transporte-camino-de-santiago" },
-    { title: "Uber, taxi o chófer en Santiago", href: "/guias/uber-taxi-chofer-santiago-de-compostela" },
+    { title: "Camino Portugués por la costa para grupos", href: "/guias/camino-portugues-costa-etapas-grupos" },
     { title: "Traslados privados desde Santiago", href: "/traslados-desde-santiago" },
     { title: "Transporte para eventos en Galicia", href: "/transporte-eventos-galicia" },
   ],

@@ -63,7 +63,7 @@ export const guia: Guide = {
         list: [
           "Días de crucero: con barcos atracados en la terminal de al lado, el entorno del puerto se llena de autobuses y peatones. Mira el calendario de escalas y suma margen.",
           "Punto de subida y bajada: acuérdalo con el recinto y comunícalo bien. Un autocar parado donde no debe es atasco y multa.",
-          "Lluvia: lo que con sol es un paseo de diez minutos, con lluvia se convierte en doscientas personas buscando taxi. La ciudad no los tiene. Y si ese día juega el Deportivo en Riazor, menos aún: lo cuento en [cómo llegar al estadio de Riazor](/guias/como-llegar-estadio-riazor).",
+          "Lluvia: lo que con sol es un paseo de diez minutos, con lluvia se convierte en doscientas personas buscando taxi. La ciudad no los tiene. Y si ese día juega el Deportivo en Riazor, menos aún.",
           "Niebla en Alvedro: en ciertas épocas hay desvíos a Santiago. Si tu proveedor tiene flota disponible, reubica las recogidas en minutos.",
         ],
         tip: "Ten una lanzadera de reserva para los días de lluvia. Es lo que más agradecen los asistentes y lo que menos se presupuesta.",

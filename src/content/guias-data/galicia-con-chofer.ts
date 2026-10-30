@@ -44,7 +44,7 @@ export const guia: Guide = {
         ],
       },
       after: [
-        "Tienes las tablas completas en [traslados con conductor desde A Coruña](/traslados-desde-coruna), [traslados privados desde Santiago de Compostela](/traslados-desde-santiago) y [traslados con chófer desde Vigo](/traslados-desde-vigo).",
+        "Tienes los destinos y tiempos completos en [traslados privados desde Santiago de Compostela](/traslados-desde-santiago), y lo mismo para A Coruña y Vigo en la sección de traslados.",
       ],
     },
     {
@@ -66,7 +66,7 @@ export const guia: Guide = {
       image: { src: "/images/combarro-horreos.jpg", alt: "Hórreos de Combarro junto a la ría de Pontevedra" },
       list: [
         "Rías Baixas: Combarro, Cambados y O Grove en un día, con cata de albariño. Es la [excursión privada a las Rías Baixas](/tours-con-chofer-galicia/rias-baixas).",
-        "Ribeira Sacra: miradores del Sil, monasterios y bodegas por carreteras de curvas. Mira la [ruta por la Ribeira Sacra con conductor](/tours-con-chofer-galicia/ribeira-sacra).",
+        "Ribeira Sacra: miradores del Sil, monasterios y bodegas por carreteras de curvas.",
         "Costa da Morte: faros y acantilados hasta Fisterra, con la vuelta de noche resuelta.",
       ],
       quote: "En Galicia el paisaje está en las carreteras secundarias. Y ahí es donde menos quieres conducir.",
@@ -81,7 +81,7 @@ export const guia: Guide = {
         "La AP-9, que une A Coruña, Santiago, Pontevedra y Vigo, es de peaje.",
         "Aparcar en el centro y en los pueblos de costa en verano es complicado.",
       ],
-      tip: "En Santiago, el coche no entra al casco histórico. Si te lo estás pensando, lee [Uber, taxi o chófer en Santiago de Compostela](/guias/uber-taxi-chofer-santiago-de-compostela).",
+      tip: "En Santiago, el coche no entra al casco histórico: cualquier vehículo te deja en el punto accesible más cercano y el último tramo es a pie.",
     },
     {
       heading: "Qué vehículo elegir",
@@ -95,7 +95,6 @@ export const guia: Guide = {
           ["20 o más", "Autocar", "Congresos, excursiones, eventos"],
         ],
       },
-      after: ["Detalles de cada vehículo en la [flota de berlinas, vans y minibuses con conductor](/flota)."],
     },
   ],
   service: {

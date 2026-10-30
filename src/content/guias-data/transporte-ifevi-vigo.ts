@@ -70,7 +70,7 @@ export const guia: Guide = {
       image: { src: "/images/van-equipaje-hotel.jpg", alt: "Van ejecutiva cargando equipaje en la puerta de un hotel" },
       paragraphs: [
         "Durante las grandes ferias, hoteles y transporte en Vigo se tensan. La diferencia entre tener lanzaderas propias y depender de taxis que no llegan es haber reservado a tiempo.",
-        "El caso más claro es Conxemar, la gran feria del producto del mar congelado. Lo cuento en detalle en [Conxemar 2027: cómo moverse en Vigo durante la feria](/guias/conxemar-transporte-vigo).",
+        "El caso más claro es Conxemar, la gran feria del producto del mar congelado. Lo cuento en detalle en la guía de Conxemar 2027.",
       ],
       quote: "En semana de feria, el que no reservó a tiempo hace cola de taxi.",
     },

@@ -108,7 +108,7 @@ export const guia: Guide = {
   ],
   related: [
     { title: "Fam trip en Galicia", href: "/guias/fam-trip-galicia-como-organizarlo" },
-    { title: "Transporte para viajes de incentivo", href: "/transporte-incentivos-galicia" },
+    { title: "Partner de transporte para agencias MICE", href: "/agencias-mice" },
     { title: "Excursión privada por las Rías Baixas", href: "/tours-con-chofer-galicia/rias-baixas" },
   ],
 };

@@ -31,8 +31,8 @@ export const guia: Guide = {
       table: {
         head: ["Fechas", "Evento", "Sede", "Estado"],
         rows: [
-          ["5-7 mar 2027", "BioCultura A Coruña", "[Palexco](/guias/transporte-palexco)", "Por confirmar"],
-          ["4-6 abr 2027", "Fórum Gastronómico", "[ExpoCoruña](/guias/transporte-expocoruna)", "Por confirmar"],
+          ["5-7 mar 2027", "BioCultura A Coruña", "Palexco", "Por confirmar"],
+          ["4-6 abr 2027", "Fórum Gastronómico", "ExpoCoruña", "Por confirmar"],
           ["19-21 may 2027", "Congreso SECOIR (Sociedad Española de Cirugía Ocular Implanto-Refractiva)", "Palexco", "Anunciado"],
           ["14-16 jun 2027", "Encuentro internacional de la red de sostenibilidad de IAPS (500+ participantes)", "A Coruña", "Anunciado"],
           ["2027 (fecha por anunciar)", "XIII Congreso Internacional de Psicología y Educación (CIPE)", "A Coruña", "Anunciado"],
@@ -50,7 +50,7 @@ export const guia: Guide = {
         rows: [
           ["Todo el año", "Año Santo Compostelano 2027", "Catedral y ciudad", "Confirmado"],
           ["12-14 may 2027", "49.º Congreso de la Sociedad Española de Endocrinología Pediátrica", "Santiago", "Anunciado"],
-          ["Junio 2027", "16.º Congreso Nacional y 3.º Ibérico de Ensayos No Destructivos (END)", "[Cidade da Cultura](/guias/transporte-cidade-da-cultura)", "Anunciado"],
+          ["Junio 2027", "16.º Congreso Nacional y 3.º Ibérico de Ensayos No Destructivos (END)", "Cidade da Cultura", "Anunciado"],
           ["25 jul 2027", "Día del Apóstol (domingo)", "Ciudad", "Confirmado"],
         ],
       },
@@ -64,7 +64,7 @@ export const guia: Guide = {
       table: {
         head: ["Fechas", "Evento", "Sede", "Estado"],
         rows: [
-          ["27-29 abr 2027", "MindTech", "[IFEVI](/guias/transporte-ifevi-vigo)", "Por confirmar"],
+          ["27-29 abr 2027", "MindTech", "IFEVI", "Por confirmar"],
           ["5-7 oct 2027", "Conxemar, Feria Internacional de Productos del Mar Congelados", "IFEVI", "Confirmado"],
         ],
       },
@@ -83,7 +83,7 @@ export const guia: Guide = {
       ],
       quote: "Elegir bien la fecha ahorra más dinero que cualquier negociación con proveedores.",
       after: [
-        "Si organizas desde fuera, el [partner de transporte en Galicia para agencias y organizadores](/agencias-mice) te asegura la flota para tus fechas. Y para el plan completo, la [guía de transporte para congresos y eventos en Galicia](/guias/transporte-congresos-eventos-galicia).",
+        "Si organizas desde fuera, el [partner de transporte en Galicia para agencias y organizadores](/agencias-mice) te asegura la flota para tus fechas.",
       ],
     },
   ],
@@ -100,8 +100,8 @@ export const guia: Guide = {
   ],
   related: [
     { title: "Transporte para congresos en Palexco", href: "/guias/transporte-palexco" },
-    { title: "Conxemar 2027: cómo moverse en Vigo", href: "/guias/conxemar-transporte-vigo" },
-    { title: "Año Santo 2027: transporte de grupos", href: "/guias/ano-santo-2027-transporte-grupos" },
-    { title: "Transporte para congresos en Galicia", href: "/transporte-congresos-galicia" },
+    { title: "Transporte para ferias en IFEVI", href: "/guias/transporte-ifevi-vigo" },
+    { title: "Transporte para ferias en ExpoCoruña", href: "/guias/transporte-expocoruna" },
+    { title: "Eventos en la Cidade da Cultura", href: "/guias/transporte-cidade-da-cultura" },
   ],
 };

@@ -81,7 +81,7 @@ export const guia: Guide = {
     { question: "¿Llegan autocares grandes a la Cidade da Cultura?", answer: "Sí, el complejo tiene acceso rodado y aparcamiento. El punto exacto de subida y bajada se acuerda con la organización del recinto." },
   ],
   related: [
-    { title: "Palacio de Congresos de Santiago", href: "/guias/transporte-palacio-congresos-santiago" },
+    { title: "Transporte para congresos y eventos: guía completa", href: "/guias/transporte-congresos-eventos-galicia" },
     { title: "Traslados privados desde Santiago", href: "/traslados-desde-santiago" },
     { title: "Año Santo 2027: transporte de grupos y eventos", href: "/guias/ano-santo-2027-transporte-grupos" },
   ],

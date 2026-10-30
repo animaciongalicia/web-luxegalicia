@@ -43,7 +43,6 @@ export const guia: Guide = {
           ["Aeropuerto de Oporto", "~3 h"],
         ],
       },
-      after: ["Para las llegadas, [traslados desde el aeropuerto de A Coruña y de Santiago](/aeropuertos-galicia) agrupados por franjas de vuelo."],
     },
     {
       heading: "Por qué aquí la lanzadera es imprescindible",
@@ -76,7 +75,7 @@ export const guia: Guide = {
         "Vans y minibuses con recogidas tempranas y regresos tardíos evitan depender del transporte público. Si buscas un [chófer para empresas expositoras en A Coruña](/transporte-empresas-galicia), esta es la parte que más se agradece.",
         "En conciertos y grandes producciones pasa lo mismo, multiplicado: artistas, técnicos y equipo con horarios imposibles. Para eso está el [transporte para artistas, técnicos y producciones](/transporte-festivales-producciones).",
       ],
-      tip: "Si tu evento es un congreso y no una feria, la sede natural es el centro. Compara con la [guía de Palexco](/guias/transporte-palexco).",
+      tip: "Si tu evento es un congreso y no una feria, la sede natural es el centro. Compara con la guía de Palexco, al final de esta página.",
     },
   ],
   service: {

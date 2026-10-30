@@ -102,7 +102,7 @@ export const guia: Guide = {
   related: [
     { title: "Cómo ir de Oporto a Galicia", href: "/guias/oporto-galicia-como-llegar" },
     { title: "Conxemar 2027: cómo moverse en Vigo", href: "/guias/conxemar-transporte-vigo" },
-    { title: "Traslados con chófer desde Vigo", href: "/traslados-desde-vigo" },
+    { title: "Traslados de aeropuerto en Galicia", href: "/aeropuertos-galicia" },
     { title: "Tour por el norte de Portugal", href: "/tours-con-chofer-galicia/norte-de-portugal" },
   ],
 };

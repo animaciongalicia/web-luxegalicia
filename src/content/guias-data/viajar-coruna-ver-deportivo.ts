@@ -54,7 +54,7 @@ export const guia: Guide = {
       heading: "El día de partido",
       paragraphs: [
         "Riazor recibe a más de 30.000 personas en un barrio residencial junto al mar. Se cortan calles y los aparcamientos se llenan pronto. Lo cómodo: llegar andando desde el centro por el paseo marítimo, o que te dejen y te recojan.",
-        "A la salida, decenas de miles de personas salen a la vez. Si vas en grupo, fijad antes un punto de encuentro algo alejado del estadio. Tienes los detalles en [cómo llegar al estadio de Riazor](/guias/como-llegar-estadio-riazor).",
+        "A la salida, decenas de miles de personas salen a la vez. Si vas en grupo, fijad antes un punto de encuentro algo alejado del estadio.",
       ],
       quote: "Vienes por el partido. Que el atasco de la salida no sea lo que recuerdes.",
       tip: "Si tenéis vuelo o tren de vuelta el mismo día, no lo pongáis justo después del partido: entre la salida del estadio y el tráfico, deja al menos dos horas de margen.",
@@ -98,7 +98,7 @@ export const guia: Guide = {
   ],
   related: [
     { title: "Cómo llegar al estadio de Riazor", href: "/guias/como-llegar-estadio-riazor" },
-    { title: "Transporte para partidos y eventos deportivos", href: "/transporte-eventos-deportivos" },
+    { title: "Excursión privada a la Costa da Morte", href: "/tours-con-chofer-galicia/costa-da-morte" },
     { title: "Traslados con conductor desde A Coruña", href: "/traslados-desde-coruna" },
   ],
 };

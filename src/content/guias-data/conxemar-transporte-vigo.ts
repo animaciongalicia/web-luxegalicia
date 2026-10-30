@@ -69,7 +69,6 @@ export const guia: Guide = {
       image: { src: "/images/flota-berlinas-aparcamiento.jpg", alt: "Berlinas con chófer preparadas para visitas de feria" },
       paragraphs: [
         "Los días antes y después de la feria, los equipos de montaje trabajan en horarios largos. Una van a disposición, con recogidas tempranas y regreso tardío, evita depender de taxis en un recinto alejado del centro.",
-        "Tienes el detalle del recinto en la [guía de transporte para ferias en IFEVI](/guias/transporte-ifevi-vigo).",
       ],
     },
     {
@@ -97,6 +96,6 @@ export const guia: Guide = {
   related: [
     { title: "Transporte para ferias en IFEVI", href: "/guias/transporte-ifevi-vigo" },
     { title: "Calendario de congresos y ferias 2027", href: "/guias/calendario-congresos-ferias-galicia-2027" },
-    { title: "Traslados con chófer desde Vigo", href: "/traslados-desde-vigo" },
+    { title: "Traslados de aeropuerto en Galicia", href: "/aeropuertos-galicia" },
   ],
 };

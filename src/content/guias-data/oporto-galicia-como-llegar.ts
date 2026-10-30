@@ -47,7 +47,6 @@ export const guia: Guide = {
       heading: "Tren",
       paragraphs: [
         "Hay tren entre Oporto y Vigo, pero con pocas frecuencias al día. Antes tienes que ir del aeropuerto a la estación de Oporto, y desde Vigo seguir hacia Santiago o A Coruña. Barato, sí. Pero lento y atado a horarios.",
-        "Si te interesa solo el tramo Oporto – Vigo, lo tienes desmenuzado en [de Oporto a Vigo: tren, autobús o traslado privado](/guias/oporto-vigo-tren-autobus-traslado).",
       ],
     },
     {
@@ -109,7 +108,7 @@ export const guia: Guide = {
   ],
   related: [
     { title: "De Oporto a Vigo: tren, autobús o traslado", href: "/guias/oporto-vigo-tren-autobus-traslado" },
-    { title: "Traslados con chófer desde Vigo", href: "/traslados-desde-vigo" },
+    { title: "Moverse por Galicia con chófer", href: "/guias/galicia-con-chofer" },
     { title: "Tour Oporto y Galicia en 5 días", href: "/tours-con-chofer-galicia/oporto-y-galicia-5-dias" },
   ],
 };

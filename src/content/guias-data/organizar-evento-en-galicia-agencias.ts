@@ -34,9 +34,9 @@ export const guia: Guide = {
       table: {
         head: ["Ciudad", "Encaja mejor con", "Sedes de referencia", "Aeropuerto"],
         rows: [
-          ["A Coruña", "Congresos médicos y científicos, convenciones", "[Palexco](/guias/transporte-palexco), [ExpoCoruña](/guias/transporte-expocoruna)", "Alvedro, a 10-15 min"],
-          ["Santiago", "Imagen institucional, Año Santo, actos singulares", "[Palacio de Congresos](/guias/transporte-palacio-congresos-santiago), [Cidade da Cultura](/guias/transporte-cidade-da-cultura)", "Rosalía de Castro, a 15 min"],
-          ["Vigo", "Ferias internacionales, industria, puerta a Oporto", "[IFEVI](/guias/transporte-ifevi-vigo), Auditorio Mar de Vigo", "Peinador, junto a IFEVI"],
+          ["A Coruña", "Congresos médicos y científicos, convenciones", "Palexco, ExpoCoruña", "Alvedro, a 10-15 min"],
+          ["Santiago", "Imagen institucional, Año Santo, actos singulares", "Palacio de Congresos, Cidade da Cultura", "Rosalía de Castro, a 15 min"],
+          ["Vigo", "Ferias internacionales, industria, puerta a Oporto", "IFEVI, Auditorio Mar de Vigo", "Peinador, junto a IFEVI"],
         ],
       },
     },
@@ -56,7 +56,6 @@ export const guia: Guide = {
         "Vigo – aeropuerto de Oporto: ~1 h 35 min.",
         "Santiago – Ribeira Sacra: ~1 h 45 min.",
       ],
-      after: ["Tienes todos los tiempos entre ciudades en la guía para [moverse por Galicia con chófer](/guias/galicia-con-chofer)."],
     },
     {
       heading: "Temporadas",
@@ -117,6 +116,6 @@ export const guia: Guide = {
   related: [
     { title: "Transporte para congresos y eventos: guía completa", href: "/guias/transporte-congresos-eventos-galicia" },
     { title: "Viaje de incentivos en Galicia", href: "/guias/viaje-incentivos-galicia" },
-    { title: "Partner de transporte para agencias MICE", href: "/agencias-mice" },
+    { title: "Transporte para congresos en Palexco", href: "/guias/transporte-palexco" },
   ],
 };

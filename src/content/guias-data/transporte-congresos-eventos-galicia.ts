@@ -60,14 +60,14 @@ export const guia: Guide = {
         "Siempre: una berlina de reserva para imprevistos con invitados especiales.",
       ],
       after: [
-        "Si tu evento necesita grupos grandes, mira cómo funciona el [alquiler de autocares y minibuses con conductor en Galicia](/alquiler-autocar-con-conductor-galicia). Y para ver qué entra en cada vehículo, la [flota de berlinas, vans y minibuses con chófer](/flota).",
+        "Si tu evento necesita grupos grandes, mira cómo funciona el [alquiler de autocares y minibuses con conductor en Galicia](/alquiler-autocar-con-conductor-galicia).",
       ],
     },
     {
       heading: "Lanzaderas: frecuencia fija o por bloques",
       paragraphs: [
         "Frecuencia fija, cada 15 o 20 minutos, funciona cuando los hoteles están cerca y las sesiones empiezan escalonadas. Por bloques, con salidas a hora cerrada antes de cada plenaria, funciona cuando todo el mundo empieza a la vez.",
-        "Y la ciudad cambia el plan. En A Coruña, con [Palexco en pleno puerto](/guias/transporte-palexco), mucha gente va andando: la lanzadera se reserva para hoteles alejados y para la cena. En Santiago, con el [Palacio de Congresos fuera del casco histórico](/guias/transporte-palacio-congresos-santiago), la lanzadera es casi obligatoria.",
+        "Y la ciudad cambia el plan. En A Coruña, con Palexco en pleno puerto, mucha gente va andando: la lanzadera se reserva para hoteles alejados y para la cena. En Santiago, con el [Palacio de Congresos fuera del casco histórico](/guias/transporte-palacio-congresos-santiago), la lanzadera es casi obligatoria.",
       ],
       quote: "No calcules la flota con el total de inscritos. Calcúlala con el pico.",
     },

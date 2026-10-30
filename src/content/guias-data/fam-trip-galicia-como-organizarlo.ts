@@ -32,7 +32,7 @@ export const guia: Guide = {
       heading: "Qué es un fam trip y para qué sirve",
       paragraphs: [
         "Reúne a profesionales que venden o recomiendan destinos (agencias, organizadores MICE, turoperadores, prensa especializada) para que conozcan en primera persona hoteles, sedes, proveedores y experiencias.",
-        "En Galicia, las instituciones turísticas y el sector MICE organizan fam trips con hosted buyers que visitan A Coruña, Santiago y Vigo. Pero cualquier hotel, DMC o grupo de proveedores puede montar el suyo. Si eres agencia y lo organizas desde fuera, empieza por [cómo organizar un evento en Galicia desde fuera](/guias/organizar-evento-en-galicia-agencias).",
+        "En Galicia, las instituciones turísticas y el sector MICE organizan fam trips con hosted buyers que visitan A Coruña, Santiago y Vigo. Pero cualquier hotel, DMC o grupo de proveedores puede montar el suyo.",
       ],
     },
     {
@@ -93,7 +93,6 @@ export const guia: Guide = {
         "Valoración de los participantes recogida al final del viaje.",
         "Publicaciones y menciones, si el grupo incluía prensa.",
       ],
-      tip: "Si el objetivo final son viajes de incentivo, lee también [qué funciona en un viaje de incentivos en Galicia](/guias/viaje-incentivos-galicia).",
     },
   ],
   service: {

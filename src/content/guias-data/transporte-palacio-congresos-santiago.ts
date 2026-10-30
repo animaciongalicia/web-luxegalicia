@@ -73,13 +73,13 @@ export const guia: Guide = {
       after: [
         "Para los bloques grandes, lo que funciona son las [lanzaderas en autocar para congresos en Santiago](/transporte-congresos-galicia). Para los hoteles más alejados, un [minibús con conductor](/alquiler-autocar-con-conductor-galicia) llena mejor y gasta menos.",
       ],
-      tip: "En el Año Santo 2027 cuenta con más asistentes alojados fuera de Santiago. Tienes las claves en la guía del [Año Santo 2027 para eventos](/guias/ano-santo-2027-transporte-grupos).",
+      tip: "En el Año Santo 2027 cuenta con más asistentes alojados fuera de Santiago.",
     },
     {
       heading: "Un mismo plan para dos sedes",
       image: { src: "/images/tours-santiago.jpg", alt: "Plaza del Obradoiro, en Santiago de Compostela" },
       paragraphs: [
-        "Muchos congresos en Santiago hacen las sesiones en el Palacio y la cena o un acto institucional en la [Cidade da Cultura, en el monte Gaiás](/guias/transporte-cidade-da-cultura). Con un buen plan, la misma flota cubre los dos recintos y los hoteles.",
+        "Muchos congresos en Santiago hacen las sesiones en el Palacio y la cena o un acto institucional en la Cidade da Cultura, en el monte Gaiás. Con un buen plan, la misma flota cubre los dos recintos y los hoteles.",
         "Y para quien se queda un día más: [traslado con conductor desde Santiago a cualquier aeropuerto](/traslados-desde-santiago) a cualquier aeropuerto o ciudad de Galicia.",
       ],
     },

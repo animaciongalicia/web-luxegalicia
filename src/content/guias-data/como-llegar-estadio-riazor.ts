@@ -70,7 +70,7 @@ export const guia: Guide = {
       image: { src: "/images/minibus-sprinter-negro.jpg", alt: "Minibús para un grupo de invitados a un partido" },
       paragraphs: [
         "Cada vez más empresas usan el partido para invitar a clientes. Ahí el transporte es parte de la experiencia: recogida en el hotel, llegada sin colas y vuelta tranquila a la cena.",
-        "Para eso funcionan los [traslados a partidos del Deportivo para empresas](/transporte-eventos-deportivos) con berlina, van o minibús, según el tamaño del grupo.",
+        "Para eso funcionan los traslados con berlina, van o minibús, según el tamaño del grupo.",
       ],
     },
     {
@@ -78,7 +78,6 @@ export const guia: Guide = {
       paragraphs: [
         "Muchos aficionados que vienen de fuera aprovechan para conocer A Coruña o Santiago, o hacen al día siguiente una [excursión con chófer a la Costa da Morte](/tours-con-chofer-galicia/costa-da-morte).",
       ],
-      tip: "Si vienes de fuera a ver al Dépor, tienes la guía completa en [viajar a A Coruña a ver al Deportivo](/guias/viajar-coruna-ver-deportivo).",
     },
   ],
   service: {
@@ -94,7 +93,7 @@ export const guia: Guide = {
   ],
   related: [
     { title: "Viajar a A Coruña a ver al Deportivo", href: "/guias/viajar-coruna-ver-deportivo" },
-    { title: "Transporte para partidos y eventos deportivos", href: "/transporte-eventos-deportivos" },
+    { title: "Excursión privada a Santiago de Compostela", href: "/tours-con-chofer-galicia/santiago-de-compostela" },
     { title: "Traslados con conductor desde A Coruña", href: "/traslados-desde-coruna" },
   ],
 };
