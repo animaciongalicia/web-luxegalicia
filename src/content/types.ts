@@ -72,7 +72,18 @@ export type Guide = {
   readMinutes: number;
   date: string;
   intro: string[];
-  sections: { heading: string; paragraphs?: string[]; list?: string[] }[];
+  /** Puntos clave que se muestran en una caja al principio. */
+  summary?: string[];
+  sections: {
+    heading: string;
+    paragraphs?: string[];
+    list?: string[];
+    table?: { head: string[]; rows: string[][] };
+    tip?: string;
+    after?: string[];
+  }[];
+  /** Llamada al servicio relacionado, que se muestra a mitad del artículo. */
+  service?: { title: string; text: string; href: string; label: string };
   faqs: Faq[];
   related: { title: string; href: string }[];
 };

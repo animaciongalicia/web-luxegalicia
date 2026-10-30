@@ -1,6 +1,7 @@
 import type { Guide } from "./types";
+import { ARTICULOS } from "./articulos";
 
-export const GUIAS: Guide[] = [
+const GUIAS_BASE: Guide[] = [
   {
     slug: "transporte-congresos-eventos-galicia",
     category: "Guía",
@@ -654,6 +655,8 @@ export const GUIAS: Guide[] = [
     ],
   },
 ];
+
+export const GUIAS: Guide[] = [...GUIAS_BASE, ...ARTICULOS];
 
 export function getGuia(slug: string) {
   return GUIAS.find((g) => g.slug === slug);

@@ -10,6 +10,15 @@ import { SITE_URL, absoluteUrl } from "@/content/site";
 
 export const dynamicParams = false;
 
+function slugify(text: string) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export function generateStaticParams() {
   return GUIAS.map((g) => ({ guia: g.slug }));
 }
@@ -49,23 +58,98 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
               <p key={p}>{p}</p>
             ))}
           </div>
-          {g.sections.map((s) => (
-            <section key={s.heading} className="mt-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900">{s.heading}</h2>
-              {s.paragraphs?.map((p) => (
-                <p key={p} className="mt-4 leading-relaxed text-gray-600">{p}</p>
-              ))}
-              {s.list && (
-                <ul className="mt-4 space-y-3">
-                  {s.list.map((li) => (
-                    <li key={li} className="flex gap-3 leading-relaxed text-gray-600">
-                      <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-luxe-600" />
-                      {li}
-                    </li>
-                  ))}
-                </ul>
+          {g.summary && (
+            <div className="mt-10 rounded-2xl border border-gray-100 bg-gray-50 p-6 sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">En resumen</p>
+              <ul className="mt-4 space-y-3">
+                {g.summary.map((li) => (
+                  <li key={li} className="flex gap-3 leading-relaxed text-gray-700">
+                    <span aria-hidden="true" className="text-luxe-600">✓</span>
+                    {li}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {g.sections.length >= 4 && (
+            <nav aria-label="Índice" className="mt-10 border-l-2 border-luxe-200 pl-5">
+              <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">En esta guía</p>
+              <ol className="mt-3 space-y-2 text-sm">
+                {g.sections.map((s) => (
+                  <li key={s.heading}>
+                    <a href={`#${slugify(s.heading)}`} className="text-gray-600 hover:text-luxe-700">{s.heading}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+
+          {g.sections.map((s, i) => (
+            <div key={s.heading}>
+              <section id={slugify(s.heading)} className="mt-12 scroll-mt-24">
+                <h2 className="text-2xl font-bold tracking-tight text-gray-900">{s.heading}</h2>
+                {s.paragraphs?.map((p) => (
+                  <p key={p} className="mt-4 leading-relaxed text-gray-600">{p}</p>
+                ))}
+                {s.list && (
+                  <ul className="mt-4 space-y-3">
+                    {s.list.map((li) => (
+                      <li key={li} className="flex gap-3 leading-relaxed text-gray-600">
+                        <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-luxe-600" />
+                        {li}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {s.table && (
+                  <div className="mt-6 overflow-x-auto rounded-xl border border-gray-100">
+                    <table className="w-full min-w-[520px] text-left text-sm">
+                      <thead className="bg-luxe-50 text-xs uppercase tracking-wider text-luxe-800">
+                        <tr>
+                          {s.table.head.map((h) => (
+                            <th key={h} scope="col" className="px-4 py-3 font-semibold">{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100">
+                        {s.table.rows.map((row) => (
+                          <tr key={row.join("|")} className="text-gray-600">
+                            {row.map((cell, ci) =>
+                              ci === 0 ? (
+                                <th key={ci} scope="row" className="px-4 py-3 font-semibold text-gray-900">{cell}</th>
+                              ) : (
+                                <td key={ci} className="px-4 py-3">{cell}</td>
+                              )
+                            )}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+                {s.after?.map((p) => (
+                  <p key={p} className="mt-4 leading-relaxed text-gray-600">{p}</p>
+                ))}
+                {s.tip && (
+                  <p className="mt-6 rounded-xl border-l-4 border-amber-400 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-900">
+                    <strong className="font-semibold">Consejo: </strong>
+                    {s.tip}
+                  </p>
+                )}
+              </section>
+              {g.service && i === Math.floor((g.sections.length - 1) / 2) && (
+                <aside className="mt-12 flex flex-col gap-4 rounded-2xl bg-luxe-800 p-8 text-white sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="text-lg font-semibold">{g.service.title}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-luxe-100">{g.service.text}</p>
+                  </div>
+                  <Link href={g.service.href} className="inline-flex shrink-0 items-center rounded-lg bg-white px-6 py-3 text-sm font-semibold text-luxe-800 transition-colors hover:bg-luxe-50">
+                    {g.service.label}
+                  </Link>
+                </aside>
               )}
-            </section>
+            </div>
           ))}
 
           <aside className="mt-16 rounded-2xl border border-luxe-100 bg-luxe-50 p-8">
