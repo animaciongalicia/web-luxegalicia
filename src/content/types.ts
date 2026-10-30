@@ -21,7 +21,10 @@ export type Block =
   | { type: "fleet"; heading?: string; intro?: string; bg?: "gray" }
   | { type: "quote"; heading?: string; intro?: string; bg?: "gray" }
   | { type: "suunia"; text: string }
-  | { type: "prose"; heading?: string; paragraphs: string[] };
+  | { type: "table"; heading: string; intro?: string; head: string[]; rows: string[][]; note?: string; bg?: "gray" }
+  | { type: "legal"; updated: string; sections: LegalSection[] };
+
+export type LegalSection = { heading: string; paragraphs?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } };
 
 export type Faq = { question: string; answer: string };
 
@@ -80,6 +83,8 @@ export type Guide = {
     list?: string[];
     table?: { head: string[]; rows: string[][] };
     tip?: string;
+    /** Frase destacada (cita) que se muestra grande dentro de la sección. */
+    quote?: string;
     after?: string[];
     image?: { src: string; alt: string; caption?: string };
   }[];

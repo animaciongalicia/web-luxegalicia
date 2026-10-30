@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "@/components/Logo";
 import { SITE, whatsappLink } from "@/content/site";
 import type { Lang } from "@/content/types";
 
@@ -11,13 +11,13 @@ const COLUMNS: Record<Lang, Column[]> = {
       title: "Eventos & empresas",
       href: "/transporte-eventos-galicia",
       links: [
-        { name: "Transporte para eventos", href: "/transporte-eventos-galicia" },
-        { name: "Para agencias MICE", href: "/agencias-mice" },
-        { name: "Congresos y convenciones", href: "/transporte-congresos-galicia" },
+        { name: "Eventos", href: "/transporte-eventos-galicia" },
+        { name: "Agencias MICE", href: "/agencias-mice" },
+        { name: "Congresos", href: "/transporte-congresos-galicia" },
         { name: "Incentivos", href: "/transporte-incentivos-galicia" },
         { name: "Festivales y producciones", href: "/transporte-festivales-producciones" },
-        { name: "Fútbol y eventos deportivos", href: "/transporte-eventos-deportivos" },
-        { name: "Transporte para empresas", href: "/transporte-empresas-galicia" },
+        { name: "Eventos deportivos", href: "/transporte-eventos-deportivos" },
+        { name: "Para empresas", href: "/transporte-empresas-galicia" },
         { name: "Flota", href: "/flota" },
       ],
     },
@@ -28,10 +28,10 @@ const COLUMNS: Record<Lang, Column[]> = {
         { name: "Desde A Coruña", href: "/traslados-desde-coruna" },
         { name: "Desde Santiago", href: "/traslados-desde-santiago" },
         { name: "Desde Vigo", href: "/traslados-desde-vigo" },
-        { name: "Oporto ⇄ Galicia", href: "/oporto-galicia" },
+        { name: "Oporto", href: "/oporto-galicia" },
         { name: "Camino de Santiago", href: "/transporte-camino-de-santiago" },
         { name: "Aeropuertos", href: "/aeropuertos-galicia" },
-        { name: "Autocares y minibuses", href: "/alquiler-autocar-con-conductor-galicia" },
+        { name: "Autocares", href: "/alquiler-autocar-con-conductor-galicia" },
       ],
     },
     {
@@ -42,7 +42,7 @@ const COLUMNS: Record<Lang, Column[]> = {
         { name: "Rías Baixas", href: "/tours-con-chofer-galicia/rias-baixas" },
         { name: "Ribeira Sacra", href: "/tours-con-chofer-galicia/ribeira-sacra" },
         { name: "Ourense termal", href: "/tours-con-chofer-galicia/ourense-termal" },
-        { name: "Excursiones para cruceros", href: "/excursiones-cruceros-galicia" },
+        { name: "Cruceros", href: "/excursiones-cruceros-galicia" },
         { name: "Bodas", href: "/transporte-bodas-galicia" },
       ],
     },
@@ -50,11 +50,11 @@ const COLUMNS: Record<Lang, Column[]> = {
       title: "Guías",
       href: "/guias",
       links: [
-        { name: "Transporte para eventos", href: "/guias/transporte-congresos-eventos-galicia" },
-        { name: "Organizar un evento en Galicia", href: "/guias/organizar-evento-en-galicia-agencias" },
+        { name: "Congresos y eventos", href: "/guias/transporte-congresos-eventos-galicia" },
+        { name: "Organizar un evento", href: "/guias/organizar-evento-en-galicia-agencias" },
         { name: "De Oporto a Galicia", href: "/guias/oporto-galicia-como-llegar" },
-        { name: "Transporte en el Camino", href: "/guias/transporte-camino-de-santiago" },
-        { name: "Transporte a Palexco", href: "/guias/transporte-palexco" },
+        { name: "El Camino en grupo", href: "/guias/transporte-camino-de-santiago" },
+        { name: "Palexco", href: "/guias/transporte-palexco" },
       ],
     },
   ],
@@ -62,9 +62,9 @@ const COLUMNS: Record<Lang, Column[]> = {
     {
       title: "Services",
       links: [
-        { name: "MICE ground transportation", href: "/en/mice-ground-transportation" },
-        { name: "Porto ⇄ Galicia chauffeur", href: "/en/porto-galicia-private-chauffeur" },
-        { name: "Galicia chauffeur tours", href: "/en/galicia-chauffeur-tours" },
+        { name: "MICE & agencies", href: "/en/mice-ground-transportation" },
+        { name: "Porto ⇄ Galicia", href: "/en/porto-galicia-private-chauffeur" },
+        { name: "Chauffeur tours", href: "/en/galicia-chauffeur-tours" },
       ],
     },
     {
@@ -103,12 +103,12 @@ export default function Footer({ lang = "es" }: { lang?: Lang }) {
           {/* Marca + contacto */}
           <div className="lg:col-span-2">
             <Link href={lang === "en" ? "/en" : "/"} className="inline-flex">
-              <Image src="/images/logo-luxe-galicia.png" alt="Luxe Galicia" width={835} height={516} className="h-16 w-auto rounded-lg" />
+              <Logo size="lg" />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-500">
               {lang === "en"
-                ? `Ground transportation in Galicia and Northern Portugal since ${SITE.since}. Congresses, incentives, companies and private chauffeur tours.`
-                : `Transporte con chófer en Galicia y norte de Portugal desde ${SITE.since}. Congresos, incentivos, empresas y tours con chófer.`}
+                ? `Corporate and event transport in Galicia and Northern Portugal since ${SITE.since}.`
+                : `Transporte corporativo y para eventos en Galicia y norte de Portugal desde ${SITE.since}.`}
             </p>
             <ul className="mt-4 space-y-2.5 text-sm text-gray-500">
               <li>

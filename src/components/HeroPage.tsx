@@ -44,7 +44,7 @@ export default function HeroPage({
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href={lang === "en" ? "#quote" : "/presupuesto"}
+            href={lang === "en" ? "/en#quote" : "/presupuesto"}
             className="inline-flex items-center gap-2 rounded-lg bg-luxe-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-700 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
           >
             {lang === "en" ? "Get a quote" : "Pedir presupuesto"}

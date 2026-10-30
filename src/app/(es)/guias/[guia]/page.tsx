@@ -3,10 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CTASection from "@/components/CTASection";
-import { FaqSection } from "@/components/Blocks";
+import { DataTable, FaqSection } from "@/components/Blocks";
 import JsonLd from "@/components/JsonLd";
 import { GUIAS, getGuia } from "@/content/guias";
-import { SITE_URL, absoluteUrl } from "@/content/site";
+import { SITE, SITE_URL, absoluteUrl, whatsappLink } from "@/content/site";
+import { serif } from "@/lib/fonts";
 
 export const dynamicParams = false;
 
@@ -14,9 +15,17 @@ function slugify(text: string) {
   return text
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
+}
+
+// Headings may carry a manual "3. " prefix; the template numbers them itself.
+const cleanHeading = (h: string) => h.replace(/^\d+\.\s*/, "");
+
+function formatDate(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 }
 
 export function generateStaticParams() {
@@ -39,166 +48,225 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
   const g = getGuia(params.guia);
   if (!g) notFound();
   const url = absoluteUrl(`/guias/${g.slug}`);
+  const [lead, ...intro] = g.intro;
+  const serviceAfter = Math.floor((g.sections.length - 1) / 2);
+  const related = g.related.map((r) => ({ ...r, guide: r.href.startsWith("/guias/") ? getGuia(r.href.slice(7)) : undefined }));
+
   return (
     <>
-      <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden pt-16">
+      {/* Hero */}
+      <section className="relative flex min-h-[58vh] items-end overflow-hidden pt-16">
         <Image src={g.image} alt={g.alt} fill className="object-cover" priority quality={75} sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
-        <div className="relative z-10 mx-auto max-w-4xl px-6 py-20 text-center text-white">
-          <span className="rounded-full bg-white/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">{g.category}</span>
-          <h1 className="mt-6 text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">{g.title}</h1>
-          <p className="mt-6 text-sm text-gray-300">Lectura de {g.readMinutes} min · Por Luxe Galicia</p>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20" />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-12 pt-24 text-white lg:px-8">
+          <nav aria-label="Ruta de navegación" className="text-sm text-white/70">
+            <Link href="/" className="hover:text-white">Inicio</Link>
+            <span aria-hidden="true" className="mx-2">/</span>
+            <Link href="/guias" className="hover:text-white">Guías</Link>
+          </nav>
+          <p className="mt-6 text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">{g.category}</p>
+          <h1 className={`${serif.className} mt-3 max-w-4xl text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl`}>{g.title}</h1>
+          <p className="mt-6 text-sm text-white/75">
+            {g.readMinutes} min de lectura · Actualizado el {formatDate(g.date)}
+          </p>
         </div>
       </section>
 
-      <article className="section-padding bg-white">
-        <div className="mx-auto max-w-3xl">
-          <div className="space-y-5 text-lg leading-relaxed text-gray-600">
-            {g.intro.map((p) => (
-              <p key={p}>{p}</p>
+      <div className="bg-white px-6 py-14 lg:px-8 lg:py-20">
+        <div className="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[minmax(0,1fr)_300px]">
+          <article className="min-w-0 max-w-[46rem]">
+            {/* Entrada */}
+            <p className={`${serif.className} text-xl leading-relaxed text-gray-800 sm:text-2xl sm:leading-relaxed`}>{lead}</p>
+            {intro.map((p) => (
+              <p key={p} className="mt-5 text-lg leading-relaxed text-gray-600">{p}</p>
             ))}
-          </div>
-          {g.stats && (
-            <dl className={`mt-10 grid gap-4 ${g.stats.length % 4 === 0 ? "grid-cols-2 md:grid-cols-4" : g.stats.length % 3 === 0 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2"}`}>
-              {g.stats.map((s) => (
-                <div key={s.label} className="rounded-2xl border border-luxe-100 bg-luxe-50 px-4 py-5 text-center">
-                  <dt className="sr-only">{s.label}</dt>
-                  <dd>
-                    <span className="block text-2xl font-bold tracking-tight text-luxe-800">{s.value}</span>
-                    <span className="mt-1 block text-xs leading-snug text-gray-600">{s.label}</span>
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          )}
 
-          {g.summary && (
-            <div className="mt-10 rounded-2xl border border-gray-100 bg-gray-50 p-6 sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">En resumen</p>
-              <ul className="mt-4 space-y-3">
-                {g.summary.map((li) => (
-                  <li key={li} className="flex gap-3 leading-relaxed text-gray-700">
-                    <span aria-hidden="true" className="text-luxe-600">✓</span>
-                    {li}
-                  </li>
+            {g.stats && (
+              <dl className={`mt-10 grid grid-cols-2 divide-gray-100 overflow-hidden rounded-2xl border border-gray-100 sm:divide-x ${g.stats.length === 4 ? "sm:grid-cols-4" : ""}`}>
+                {g.stats.map((s) => (
+                  <div key={s.label} className="bg-gray-50/60 px-4 py-5 text-center">
+                    <dt className="sr-only">{s.label}</dt>
+                    <dd>
+                      <span className="block text-2xl font-bold tracking-tight text-luxe-800">{s.value}</span>
+                      <span className="mt-1 block text-xs leading-snug text-gray-500">{s.label}</span>
+                    </dd>
+                  </div>
                 ))}
-              </ul>
-            </div>
-          )}
+              </dl>
+            )}
 
-          {g.sections.length >= 4 && (
-            <nav aria-label="Índice" className="mt-10 border-l-2 border-luxe-200 pl-5">
-              <p className="text-xs font-semibold uppercase tracking-wider text-gray-500">En esta guía</p>
-              <ol className="mt-3 space-y-2 text-sm">
-                {g.sections.map((s) => (
-                  <li key={s.heading}>
-                    <a href={`#${slugify(s.heading)}`} className="text-gray-600 hover:text-luxe-700">{s.heading}</a>
-                  </li>
-                ))}
-              </ol>
-            </nav>
-          )}
+            {g.summary && (
+              <div className="mt-10 rounded-2xl bg-luxe-900 p-7 text-white sm:p-9">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">Lo esencial</p>
+                <ul className="mt-5 space-y-4">
+                  {g.summary.map((li) => (
+                    <li key={li} className="flex gap-3 leading-relaxed text-luxe-50">
+                      <svg aria-hidden="true" viewBox="0 0 20 20" className="mt-1 h-4 w-4 shrink-0 fill-amber-300">
+                        <path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z" />
+                      </svg>
+                      {li}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-          {g.sections.map((s, i) => (
-            <div key={s.heading}>
-              <section id={slugify(s.heading)} className="mt-12 scroll-mt-24">
-                <h2 className="text-2xl font-bold tracking-tight text-gray-900">{s.heading}</h2>
-                {s.paragraphs?.map((p) => (
-                  <p key={p} className="mt-4 leading-relaxed text-gray-600">{p}</p>
-                ))}
-                {s.list && (
-                  <ul className="mt-4 space-y-3">
-                    {s.list.map((li) => (
-                      <li key={li} className="flex gap-3 leading-relaxed text-gray-600">
-                        <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-luxe-600" />
-                        {li}
+            {/* Índice en móvil */}
+            {g.sections.length >= 4 && (
+              <details className="mt-10 rounded-2xl border border-gray-100 bg-gray-50 p-5 lg:hidden">
+                <summary className="cursor-pointer text-sm font-semibold text-gray-900">En esta guía</summary>
+                <ol className="mt-4 space-y-2 text-sm">
+                  {g.sections.map((s, i) => (
+                    <li key={s.heading}>
+                      <a href={`#${slugify(s.heading)}`} className="text-gray-600 hover:text-luxe-700">
+                        {String(i + 1).padStart(2, "0")} · {cleanHeading(s.heading)}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </details>
+            )}
+
+            {g.sections.map((s, i) => (
+              <div key={s.heading}>
+                <section id={slugify(s.heading)} className="mt-16 scroll-mt-24">
+                  <p className="text-sm font-semibold tracking-widest text-luxe-600">{String(i + 1).padStart(2, "0")}</p>
+                  <h2 className={`${serif.className} mt-1 text-2xl font-semibold leading-snug text-gray-900 sm:text-3xl`}>{cleanHeading(s.heading)}</h2>
+                  {s.paragraphs?.map((p) => (
+                    <p key={p} className="mt-4 text-[17px] leading-relaxed text-gray-600">{p}</p>
+                  ))}
+                  {s.list && (
+                    <ul className="mt-6 divide-y divide-gray-100 rounded-2xl border border-gray-100">
+                      {s.list.map((li) => {
+                        const [head, ...rest] = li.split(": ");
+                        const hasHead = rest.length > 0 && head.length < 60;
+                        return (
+                          <li key={li} className="flex gap-4 px-5 py-4 text-[15px] leading-relaxed text-gray-600">
+                            <span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-luxe-500" />
+                            <span>
+                              {hasHead ? (
+                                <>
+                                  <strong className="font-semibold text-gray-900">{head}:</strong> {rest.join(": ")}
+                                </>
+                              ) : (
+                                li
+                              )}
+                            </span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                  {s.table && (
+                    <div className="mt-6">
+                      <DataTable head={s.table.head} rows={s.table.rows} />
+                    </div>
+                  )}
+                  {s.quote && (
+                    <blockquote className={`${serif.className} my-10 border-l-4 border-amber-400 pl-6 text-2xl leading-snug text-gray-900`}>
+                      {s.quote}
+                    </blockquote>
+                  )}
+                  {s.image && (
+                    <figure className="mt-8">
+                      <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
+                        <Image src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 1024px) 736px, 100vw" />
+                      </div>
+                      {s.image.caption && <figcaption className="mt-3 text-sm italic text-gray-500">{s.image.caption}</figcaption>}
+                    </figure>
+                  )}
+                  {s.after?.map((p) => (
+                    <p key={p} className="mt-4 text-[17px] leading-relaxed text-gray-600">{p}</p>
+                  ))}
+                  {s.tip && (
+                    <div className="mt-8 flex gap-4 rounded-2xl bg-luxe-50 p-6">
+                      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 shrink-0 fill-none stroke-luxe-700" strokeWidth={1.8}>
+                        <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3Z" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-wider text-luxe-800">Consejo</p>
+                        <p className="mt-1 leading-relaxed text-gray-700">{s.tip}</p>
+                      </div>
+                    </div>
+                  )}
+                </section>
+
+                {g.service && i === serviceAfter && (
+                  <aside className="relative mt-16 overflow-hidden rounded-2xl">
+                    <Image src={g.image} alt="" fill className="object-cover" sizes="736px" />
+                    <div className="absolute inset-0 bg-luxe-950/85" />
+                    <div className="relative flex flex-col gap-5 p-8 text-white sm:flex-row sm:items-center sm:justify-between sm:p-10">
+                      <div>
+                        <p className={`${serif.className} text-2xl font-semibold`}>{g.service.title}</p>
+                        <p className="mt-2 max-w-md text-sm leading-relaxed text-luxe-100">{g.service.text}</p>
+                      </div>
+                      <Link href={g.service.href} className="inline-flex shrink-0 items-center rounded-lg bg-white px-6 py-3 text-sm font-semibold text-luxe-900 transition-colors hover:bg-amber-50">
+                        {g.service.label} →
+                      </Link>
+                    </div>
+                  </aside>
+                )}
+              </div>
+            ))}
+          </article>
+
+          {/* Lateral */}
+          <aside className="hidden lg:block">
+            <div className="sticky top-28 space-y-6">
+              {g.sections.length >= 4 && (
+                <nav aria-label="Índice" className="rounded-2xl border border-gray-100 p-6">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">En esta guía</p>
+                  <ol className="mt-4 space-y-3 text-sm">
+                    {g.sections.map((s, i) => (
+                      <li key={s.heading} className="flex gap-3">
+                        <span className="font-semibold text-luxe-600">{String(i + 1).padStart(2, "0")}</span>
+                        <a href={`#${slugify(s.heading)}`} className="leading-snug text-gray-600 hover:text-luxe-700">{cleanHeading(s.heading)}</a>
                       </li>
                     ))}
-                  </ul>
-                )}
-                {s.table && (
-                  <div className="mt-6 overflow-x-auto rounded-xl border border-gray-100">
-                    <table className="w-full min-w-[520px] text-left text-sm">
-                      <thead className="bg-luxe-50 text-xs uppercase tracking-wider text-luxe-800">
-                        <tr>
-                          {s.table.head.map((h) => (
-                            <th key={h} scope="col" className="px-4 py-3 font-semibold">{h}</th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-gray-100">
-                        {s.table.rows.map((row) => (
-                          <tr key={row.join("|")} className="text-gray-600">
-                            {row.map((cell, ci) =>
-                              ci === 0 ? (
-                                <th key={ci} scope="row" className="px-4 py-3 font-semibold text-gray-900">{cell}</th>
-                              ) : (
-                                <td key={ci} className="px-4 py-3">{cell}</td>
-                              )
-                            )}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                )}
-                {s.image && (
-                  <figure className="mt-8">
-                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
-                      <Image src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 768px) 768px, 100vw" />
-                    </div>
-                    {s.image.caption && <figcaption className="mt-3 text-center text-sm text-gray-500">{s.image.caption}</figcaption>}
-                  </figure>
-                )}
-                {s.after?.map((p) => (
-                  <p key={p} className="mt-4 leading-relaxed text-gray-600">{p}</p>
-                ))}
-                {s.tip && (
-                  <p className="mt-6 rounded-xl border-l-4 border-amber-400 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-900">
-                    <strong className="font-semibold">Consejo: </strong>
-                    {s.tip}
-                  </p>
-                )}
-              </section>
-              {g.service && i === Math.floor((g.sections.length - 1) / 2) && (
-                <aside className="mt-12 flex flex-col gap-4 rounded-2xl bg-luxe-800 p-8 text-white sm:flex-row sm:items-center sm:justify-between">
-                  <div>
-                    <p className="text-lg font-semibold">{g.service.title}</p>
-                    <p className="mt-2 text-sm leading-relaxed text-luxe-100">{g.service.text}</p>
-                  </div>
-                  <Link href={g.service.href} className="inline-flex shrink-0 items-center rounded-lg bg-white px-6 py-3 text-sm font-semibold text-luxe-800 transition-colors hover:bg-luxe-50">
-                    {g.service.label}
-                  </Link>
-                </aside>
+                  </ol>
+                </nav>
               )}
+              <div className="rounded-2xl bg-gray-900 p-6 text-white">
+                <p className={`${serif.className} text-xl font-semibold`}>¿Lo organizamos?</p>
+                <p className="mt-2 text-sm leading-relaxed text-gray-300">Fechas, personas y ciudades. Tienes propuesta en 24 horas.</p>
+                <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="btn-whatsapp mt-5 w-full justify-center">WhatsApp</a>
+                <Link href="/presupuesto" className="mt-3 inline-flex w-full justify-center rounded-lg border border-white/30 px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-white/10">
+                  Pedir presupuesto
+                </Link>
+                <p className="mt-4 text-center text-xs text-gray-400">{SITE.phone}</p>
+              </div>
             </div>
-          ))}
-
-          <aside className="mt-16 rounded-2xl border border-luxe-100 bg-luxe-50 p-8">
-            <h2 className="text-lg font-semibold text-luxe-900">Sigue leyendo</h2>
-            <ul className="mt-4 space-y-2">
-              {g.related.map((r) => (
-                <li key={r.href}>
-                  <Link href={r.href} className="text-luxe-700 underline decoration-luxe-300 underline-offset-2 hover:decoration-luxe-600">{r.title}</Link>
-                </li>
-              ))}
-            </ul>
           </aside>
         </div>
-      </article>
+      </div>
 
-      <CTASection />
+      {/* Sigue leyendo */}
+      <section className="bg-gray-50 px-6 py-16 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <h2 className={`${serif.className} text-2xl font-semibold text-gray-900 sm:text-3xl`}>Sigue leyendo</h2>
+          <div className={`mt-8 grid gap-6 sm:grid-cols-2 ${related.length === 4 ? "lg:grid-cols-4" : related.length === 3 ? "lg:grid-cols-3" : ""}`}>
+            {related.map((r) => (
+              <Link key={r.href} href={r.href} className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
+                {r.guide ? (
+                  <div className="relative h-36 overflow-hidden">
+                    <Image src={r.guide.image} alt={r.guide.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 25vw, 50vw" />
+                  </div>
+                ) : (
+                  <div className="h-1.5 bg-luxe-600" />
+                )}
+                <div className="flex flex-1 flex-col p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">{r.guide ? r.guide.category : "Servicio"}</p>
+                  <p className="mt-2 font-semibold leading-snug text-gray-900">{r.title}</p>
+                  <span className="mt-auto pt-4 text-sm font-medium text-luxe-700">Leer →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <FaqSection faqs={g.faqs} />
-
-      <nav aria-label="Ruta de navegación" className="border-t border-gray-100 bg-gray-50 px-6 py-6">
-        <ol className="mx-auto flex max-w-3xl flex-wrap gap-2 text-sm text-gray-500">
-          <li><Link href="/" className="hover:text-luxe-700">Inicio</Link></li>
-          <li aria-hidden="true">/</li>
-          <li><Link href="/guias" className="hover:text-luxe-700">Guías</Link></li>
-          <li aria-hidden="true">/</li>
-          <li className="text-gray-700">{g.title}</li>
-        </ol>
-      </nav>
+      <CTASection />
 
       <JsonLd
         data={{

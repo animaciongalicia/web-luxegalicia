@@ -8,13 +8,13 @@ import JsonLd from "@/components/JsonLd";
 import { SITE, SITE_URL, absoluteUrl } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Luxe Galicia – Transporte con chófer para congresos, eventos y empresas en Galicia",
+  title: "Luxe Galicia – Transporte corporativo y para eventos en Galicia",
   description:
-    "Transporte con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans ejecutivas, minibuses y autocares. Desde 2013. Presupuesto en 24 h.",
+    "Servicios de transporte corporativo y para eventos en Galicia y Oporto: congresos, incentivos, empresas y agencias MICE. Berlinas, vans, minibuses y autocares con conductor desde 2013.",
   alternates: { canonical: SITE_URL, languages: { es: SITE_URL, en: absoluteUrl("/en") } },
   openGraph: {
-    title: "Luxe Galicia – Transporte con chófer en Galicia",
-    description: "Congresos, incentivos, empresas y tours con chófer en Galicia y Oporto.",
+    title: "Luxe Galicia – Transporte corporativo y para eventos en Galicia",
+    description: "Congresos, incentivos, empresas y traslados con conductor en Galicia y Oporto.",
     url: SITE_URL,
     images: [{ url: "/images/flota-berlinas-fila.jpg", width: 1200, height: 630, alt: "Flota con chófer de Luxe Galicia" }],
   },
@@ -39,7 +39,7 @@ const destacados = [
   },
   {
     title: "Empresas",
-    text: "Visitas, inspecciones, desarrollo comercial y chófer a disposición por horas o días.",
+    text: "Clientes, directivos, visitas y eventos de empresa. Para empresas de Galicia y de fuera.",
     href: "/transporte-empresas-galicia",
     image: "/images/chofer-abriendo-puerta.jpg",
     alt: "Chófer abriendo la puerta de una berlina a un ejecutivo",
@@ -88,9 +88,9 @@ export default function Home() {
         <Image src="/images/flota-berlinas-fila.jpg" alt="Flota de berlinas y vans con chófer de Luxe Galicia" fill className="object-cover" priority quality={75} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center text-white lg:py-32">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Transporte con chófer · Galicia &amp; Oporto</p>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Congresos · Empresas · Traslados · Galicia &amp; Oporto</p>
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            Transporte con chófer para congresos, eventos y empresas en Galicia
+            Servicios de transporte corporativo y para eventos en Galicia
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl">
             Berlinas, vans ejecutivas, minibuses y autocares con chófer. Una sola llamada, un único interlocutor y toda la operativa resuelta, de una persona a quinientas.
@@ -119,10 +119,10 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900">¿Qué hace Luxe Galicia?</h3>
               <p className="mt-4 leading-relaxed text-gray-600">
-                Planifica y ejecuta el transporte con chófer de congresos, incentivos, festivales y empresas que vienen a Galicia. Pone a tu disposición la flota que necesitas, del coche ejecutivo al autocar, y la coordina como una sola operativa.
+                Planifica y ejecuta el transporte de congresos, incentivos, festivales y empresas en Galicia. Pone a tu disposición la flota que necesitas, del coche ejecutivo al autocar, y la coordina como una sola operativa.
               </p>
               <p className="mt-4 leading-relaxed text-gray-600">
-                Trabaja sobre todo para <Link href="/agencias-mice" className="text-luxe-700 underline decoration-luxe-300 underline-offset-2 hover:decoration-luxe-600">agencias MICE</Link> y empresas de fuera que necesitan un partner local fiable.
+                Trabaja sobre todo para <Link href="/agencias-mice" className="text-luxe-700 underline decoration-luxe-300 underline-offset-2 hover:decoration-luxe-600">agencias MICE</Link> y empresas, de Galicia y de fuera, que necesitan un proveedor de transporte fiable.
               </p>
             </div>
             <div>

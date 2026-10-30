@@ -26,6 +26,35 @@ function Arrow() {
   );
 }
 
+export function DataTable({ head, rows }: { head: string[]; rows: string[][] }) {
+  return (
+    <div className="overflow-x-auto rounded-xl border border-gray-100 bg-white">
+      <table className="w-full min-w-[560px] text-left text-sm">
+        <thead className="bg-luxe-50 text-xs uppercase tracking-wider text-luxe-800">
+          <tr>
+            {head.map((h) => (
+              <th key={h} scope="col" className="px-4 py-3 font-semibold">{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100">
+          {rows.map((row) => (
+            <tr key={row.join("|")} className="text-gray-600">
+              {row.map((cell, ci) =>
+                ci === 0 ? (
+                  <th key={ci} scope="row" className="px-4 py-3 font-semibold text-gray-900">{cell}</th>
+                ) : (
+                  <td key={ci} className="px-4 py-3">{cell}</td>
+                )
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 function SectionHeading({ heading, intro }: { heading?: string; intro?: string }) {
   if (!heading) return null;
   return (
@@ -128,16 +157,53 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
         </section>
       );
 
-    case "prose":
+    case "table":
       return (
-        <section className="section-padding bg-white">
+        <section className={`section-padding ${sectionBg(block.bg)}`}>
+          <AnimateOnScroll className="mx-auto max-w-5xl">
+            <SectionHeading heading={block.heading} intro={block.intro} />
+            <DataTable head={block.head} rows={block.rows} />
+            {block.note && <p className="mt-4 text-center text-sm text-gray-500">{block.note}</p>}
+          </AnimateOnScroll>
+        </section>
+      );
+
+    case "legal":
+      return (
+        <section className="bg-white px-6 py-16 md:px-12">
           <div className="mx-auto max-w-3xl">
-            {block.heading && <h2 className="text-2xl font-bold tracking-tight text-gray-900">{block.heading}</h2>}
-            <div className="mt-4 space-y-4 leading-relaxed text-gray-600">
-              {block.paragraphs.map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-            </div>
+            <p className="text-sm text-gray-500">Última actualización: {block.updated}</p>
+            <nav aria-label="Índice" className="mt-6 rounded-2xl border border-gray-100 bg-gray-50 p-6">
+              <ol className="grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
+                {block.sections.map((s, i) => (
+                  <li key={s.heading}>
+                    <a href={`#s${i + 1}`} className="text-gray-600 hover:text-luxe-700">
+                      {i + 1}. {s.heading}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+            {block.sections.map((s, i) => (
+              <div key={s.heading} id={`s${i + 1}`} className="mt-10 scroll-mt-24">
+                <h2 className="text-xl font-semibold text-gray-900">
+                  {i + 1}. {s.heading}
+                </h2>
+                <div className="mt-3 space-y-3 leading-relaxed text-gray-600">
+                  {s.paragraphs?.map((p) => <p key={p}>{p}</p>)}
+                </div>
+                {s.list && (
+                  <ul className="mt-3 list-disc space-y-2 pl-5 leading-relaxed text-gray-600 marker:text-luxe-600">
+                    {s.list.map((li) => <li key={li}>{li}</li>)}
+                  </ul>
+                )}
+                {s.table && (
+                  <div className="mt-4">
+                    <DataTable head={s.table.head} rows={s.table.rows} />
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </section>
       );
@@ -301,13 +367,13 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
 
     case "suunia":
       return (
-        <section className="bg-white px-6 pb-4 md:px-12 lg:px-20 xl:px-32">
-          <div className="mx-auto flex max-w-4xl flex-col items-start gap-4 rounded-2xl border border-luxe-100 bg-luxe-50 p-8 sm:flex-row sm:items-center sm:justify-between">
-            <p className="leading-relaxed text-luxe-900">{block.text}</p>
-            <a href={SITE.suuniaUrl} className="btn-outline shrink-0">
-              Suunia DMC
+        <section className="bg-white px-6 py-6">
+          <p className="mx-auto max-w-3xl border-t border-gray-100 pt-6 text-center text-sm leading-relaxed text-gray-500">
+            {block.text}{" "}
+            <a href={SITE.suuniaUrl} className="whitespace-nowrap font-medium text-luxe-700 underline decoration-luxe-200 underline-offset-4 hover:decoration-luxe-600">
+              Conocer Suunia →
             </a>
-          </div>
+          </p>
         </section>
       );
   }

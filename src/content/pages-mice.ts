@@ -45,7 +45,6 @@ export const PAGES_MICE: Page[] = [
         ],
       },
       { type: "fleet", heading: "Flota disponible para eventos", bg: "gray" },
-      { type: "quote", heading: "Cuéntame tu evento" },
     ],
     faqs: [
       { question: "¿Qué tipo de eventos cubrís?", answer: "Congresos, convenciones, incentivos, eventos corporativos, festivales, giras, rodajes, partidos de fútbol y eventos deportivos, y bodas, en toda Galicia y el norte de Portugal." },
@@ -127,9 +126,8 @@ export const PAGES_MICE: Page[] = [
       },
       {
         type: "suunia",
-        text: "¿Necesitas además alojamiento, restauración, actividades o guías? Suunia, DMC partner de Luxe Galicia, organiza el programa completo en destino.",
+        text: "¿Además necesitas hoteles, restauración o actividades? Suunia, DMC partner, organiza el programa completo en destino.",
       },
-      { type: "quote", heading: "Pide tu propuesta", intro: "Cuantos más datos, más precisa la propuesta. En 24 horas laborables la tienes.", bg: "gray" },
     ],
     cta: {
       title: "Cuando tu evento esté en Galicia, ya sabes a quién llamar",
@@ -206,7 +204,6 @@ export const PAGES_MICE: Page[] = [
         ],
       },
       { type: "fleet", heading: "Flota disponible para tu congreso" },
-      { type: "quote", heading: "Cuéntame tu congreso", bg: "gray" },
     ],
     cta: {
       title: "Tu congreso merece un plan de transporte, no una lista de coches",
@@ -263,9 +260,8 @@ export const PAGES_MICE: Page[] = [
       },
       {
         type: "suunia",
-        text: "El programa completo del incentivo (hoteles, experiencias, gastronomía, actividades) lo diseña Suunia, DMC partner. Luxe Galicia se ocupa de que todo el grupo llegue a cada sitio.",
+        text: "El programa completo del incentivo (hoteles, experiencias, gastronomía) lo diseña Suunia, DMC partner.",
       },
-      { type: "quote", heading: "Cuéntame tu incentivo", bg: "gray" },
     ],
     faqs: [
       { question: "¿Qué vehículo recomendáis para un incentivo de 12 personas?", answer: "Un minibús de hasta 19 plazas o dos vans Clase V, según el estilo del programa. Las vans dan más flexibilidad para dividir el grupo." },
@@ -328,7 +324,6 @@ export const PAGES_MICE: Page[] = [
           { title: "Traslados desde Vigo", href: "/traslados-desde-vigo" },
         ],
       },
-      { type: "quote", heading: "Pásame la hoja de producción" },
     ],
     faqs: [
       { question: "¿Trabajáis de madrugada?", answer: "Sí. En festivales y giras los traslados de madrugada son la norma, y la operativa se diseña con turnos de chóferes para cumplir los descansos legales." },
@@ -391,7 +386,6 @@ export const PAGES_MICE: Page[] = [
           { title: "Tours con chófer", text: "Convierte el partido en un fin de semana en Galicia.", href: "/tours-con-chofer-galicia" },
         ],
       },
-      { type: "quote", heading: "Reserva tu traslado al partido", bg: "gray" },
     ],
     cta: {
       title: "El partido empieza cuando sales del hotel",
@@ -406,14 +400,14 @@ export const PAGES_MICE: Page[] = [
   },
   {
     slug: "transporte-empresas-galicia",
-    metaTitle: "Transporte para empresas en Galicia | Chófer y visitas de negocio",
+    metaTitle: "Transporte para empresas en Galicia | Chófer, clientes y eventos de empresa",
     metaDescription:
-      "Transporte con chófer para empresas que visitan Galicia: inspecciones, auditorías, visitas a fábricas y proveedores, desarrollo comercial, ferias y chófer a disposición por horas o días.",
+      "Transporte con conductor para empresas en Galicia: chófer para directivos, recogida de clientes y proveedores, visitas e inspecciones, cenas y eventos de empresa. Cuenta de empresa y factura mensual.",
     serviceType: "Transporte ejecutivo para empresas",
     hero: {
       eyebrow: "Empresas",
-      title: "Transporte para empresas que vienen a Galicia",
-      subtitle: "Inspecciones, visitas comerciales, ferias y agendas apretadas. Tu equipo trabaja; el chófer se ocupa del resto.",
+      title: "Transporte para empresas en Galicia",
+      subtitle: "Para las empresas de aquí y para las que vienen de fuera. Directivos, clientes, visitas y eventos de empresa, con un solo proveedor.",
       image: "/images/chofer-abriendo-puerta.jpg",
       alt: "Chófer abriendo la puerta de una berlina a un ejecutivo",
     },
@@ -421,62 +415,72 @@ export const PAGES_MICE: Page[] = [
       {
         type: "intro",
         paragraphs: [
-          "Vienes a Galicia a trabajar, no a pelearte con un coche de alquiler, los aparcamientos de un polígono o una carretera comarcal a las ocho de la mañana.",
-          "Luxe Galicia pone a tu disposición berlinas y vans ejecutivas con chófer para que tu agenda de visitas se cumpla, se alargue lo que haga falta y termine a tiempo para el vuelo de vuelta.",
+          "Tu empresa mueve gente todo el año: el cliente que aterriza en Alvedro, el comité que va a Vigo, el auditor que pasa tres días en planta o la plantilla que va a la cena de Navidad.",
+          "Cuando todo eso pasa por un solo proveedor, con un contacto y una factura al mes, dejas de improvisar taxis y de pedir favores. Es para eso.",
+        ],
+      },
+      {
+        type: "features",
+        heading: "Dos tipos de empresa, un mismo servicio",
+        columns: 2,
+        bg: "gray",
+        items: [
+          { title: "Tu empresa está en Galicia", text: "Recogida de clientes y proveedores en aeropuerto o estación, chófer para dirección, desplazamientos entre sedes, cenas y eventos de empresa. Cuenta de empresa y facturación mensual." },
+          { title: "Tu empresa viene a Galicia", text: "Inspecciones, auditorías, visitas a fábricas, desarrollo comercial y ferias. Recogida en Santiago, A Coruña, Vigo u Oporto y agenda de visitas encadenada." },
         ],
       },
       {
         type: "zigzag",
-        bg: "gray",
         items: [
           {
-            title: "Visitas, inspecciones y auditorías",
+            title: "Clientes y visitas que recibes",
             paragraphs: [
-              "Auditorías de calidad, visitas a fábricas, homologación de proveedores, inspecciones técnicas. Galicia tiene industria repartida entre polígonos, puertos y zonas rurales: A Coruña, Arteixo, Ferrol, Santiago, Vigo, Ourense.",
-              "El chófer te recoge en el aeropuerto o en el hotel, encadena las visitas del día y espera lo que haga falta. Tú llegas con la cabeza en la reunión.",
+              "La primera impresión de tu empresa empieza en el aeropuerto. Un chófer esperando con el nombre del cliente dice más que cualquier presentación.",
+              "Recogida, traslado al hotel o a planta, comida de trabajo y vuelta al vuelo. Tú te ocupas de la reunión; el resto está resuelto.",
             ],
             image: "/images/chofer-junto-a-berlina.jpg",
-            alt: "Chófer junto a una berlina preparada para una visita de empresa",
+            alt: "Chófer junto a una berlina esperando a un cliente de empresa",
           },
           {
-            title: "Desarrollo comercial, ferias y roadshows",
+            title: "Visitas, inspecciones y desarrollo comercial",
             paragraphs: [
-              "Visitas a clientes en varias ciudades en un mismo día, presentaciones de producto, ferias en IFEVI o ExpoCoruña, reuniones con distribuidores.",
-              "Se diseña la ruta para que aproveches cada hora: A Coruña, Santiago, Vigo y Oporto están a menos de tres horas entre sí. Con chófer, el coche se convierte en tu oficina entre reunión y reunión.",
+              "Auditorías, homologación de proveedores, visitas a clientes en varias ciudades el mismo día. Galicia tiene la industria repartida entre polígonos, puertos y zonas rurales: Arteixo, Ferrol, Santiago, Vigo, Ourense.",
+              "El chófer encadena las visitas y espera lo que haga falta. El coche se convierte en tu oficina entre reunión y reunión.",
             ],
             image: "/images/chofer-interior-berlina.webp",
-            alt: "Chófer al volante de una berlina durante una ruta comercial",
+            alt: "Chófer al volante de una berlina durante una ruta de visitas",
           },
           {
-            title: "Chófer a disposición por horas o días",
+            title: "Eventos de empresa",
             paragraphs: [
-              "Para directivos, comités de dirección y clientes estratégicos. Un vehículo y un chófer a tu servicio durante la jornada o durante toda la estancia.",
-              "Berlina ejecutiva para una persona, berlina de representación para la alta dirección o van Clase V para el comité completo.",
+              "Cena de Navidad, convención anual, jornada de equipo, inauguración o visita de una delegación. Autocares y minibuses con horarios de ida y vuelta para que nadie conduzca.",
+              "Y para la dirección, berlina o van Clase V a disposición durante toda la jornada.",
             ],
-            image: "/images/van-mercedes-clase-v.jpg",
-            alt: "Van Mercedes Clase V con chófer a disposición de un comité de dirección",
+            image: "/images/flota-minibuses-autocar.webp",
+            alt: "Minibuses y autocar preparados para un evento de empresa",
           },
         ],
       },
       {
         type: "checklist",
-        heading: "Por qué las empresas de fuera lo prefieren",
+        heading: "Lo que ganas trabajando con un solo proveedor",
+        bg: "gray",
         items: [
-          "Sin alquilar coche, sin aparcar, sin conducir cansado de vuelta al aeropuerto.",
-          "Agenda con varias visitas en ciudades distintas el mismo día.",
-          "Factura a nombre de la empresa y condiciones para servicios recurrentes.",
-          "Recogida en Santiago, A Coruña, Vigo u Oporto según tu vuelo.",
-          "Chóferes discretos, puntuales y con experiencia con ejecutivos.",
-          "Un solo contacto para todas las visitas de tu equipo durante el año.",
+          "Un contacto para todos los servicios del año, sin buscar taxis ni favores.",
+          "Factura a nombre de la empresa, mensual si trabajas con frecuencia.",
+          "Chófer por horas, por jornada o por días.",
+          "Del traslado de una persona al evento de 300.",
+          "Seguimiento de vuelos y trenes: si se retrasa, se espera.",
+          "Chóferes discretos, puntuales y con experiencia con directivos.",
         ],
       },
-      { type: "quote", heading: "Cuéntame tu agenda de visitas", bg: "gray" },
     ],
     faqs: [
-      { question: "¿Puedo contratar un chófer para un día completo de visitas?", answer: "Sí. Es el servicio más habitual para empresas: chófer y vehículo a disposición por horas o por jornada, con la ruta adaptada a tu agenda." },
-      { question: "¿Me recogéis en el aeropuerto de Oporto si mi visita es en Vigo?", answer: "Sí. Muchas empresas vuelan a Oporto por la oferta de vuelos internacionales y hacen el trayecto a Vigo, Pontevedra o Santiago con chófer." },
-      { question: "¿Facturáis a la empresa?", answer: "Sí, con factura a nombre de la empresa. Para equipos que viajan a Galicia con frecuencia se acuerdan condiciones de cliente recurrente." },
-      { question: "¿Cuál es la antelación mínima?", answer: "Para traslados ejecutivos suele bastar con 24-48 horas. Para agendas de varios días o varios vehículos, cuanto antes mejor." },
+      { question: "Mi empresa está en Galicia, ¿puedo abrir cuenta de empresa?", answer: "Sí. Para empresas con servicios frecuentes se acuerdan condiciones de cliente recurrente y una factura mensual con todos los servicios." },
+      { question: "¿Puedo contratar un chófer para un día completo de visitas?", answer: "Sí. Es uno de los servicios más habituales: chófer y vehículo a disposición por horas o por jornada, con la ruta adaptada a tu agenda." },
+      { question: "¿Organizáis el transporte de la cena de Navidad o de una convención?", answer: "Sí. Autocares y minibuses con horarios de ida y vuelta escalonados, y berlinas para la dirección si hace falta." },
+      { question: "¿Me recogéis en el aeropuerto de Oporto si mi visita es en Vigo?", answer: "Sí. Muchas empresas vuelan a Oporto por su oferta internacional y hacen el trayecto a Vigo, Pontevedra o Santiago con chófer." },
+      { question: "¿Cuál es la antelación mínima?", answer: "Para traslados ejecutivos suele bastar con 24-48 horas. Para eventos o agendas de varios días, cuanto antes mejor." },
     ],
   },
 ];

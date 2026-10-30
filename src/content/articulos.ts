@@ -120,7 +120,7 @@ export const ARTICULOS: Guide[] = [
     metaTitle: "Fam trip en Galicia: cómo organizarlo para que funcione | Guía práctica",
     metaDescription:
       "Cómo organizar un fam trip en Galicia para agentes de viajes, organizadores MICE o prensa: objetivos, programa tipo de 3 días, logística, errores habituales y cómo medir el resultado.",
-    image: "/images/finca-montesqueiro-corporativo-presentacion.jpg",
+    image: "/images/pazo-galicia-jardines.jpg",
     alt: "Finca preparada para la presentación de un fam trip en Galicia",
     readMinutes: 8,
     date: "2026-10-31",
@@ -525,7 +525,7 @@ export const ARTICULOS: Guide[] = [
     metaTitle: "Conxemar 2027: transporte, aeropuertos y hoteles en Vigo",
     metaDescription:
       "Guía práctica para expositores y visitantes de Conxemar en Vigo: cómo llegar a IFEVI, qué aeropuerto elegir (Vigo, Santiago u Oporto), dónde alojarse y cómo organizar traslados.",
-    image: "/images/playa-rodas-islas-cies-suunia.jpg",
+    image: "/images/puerto-rias-baixas.jpg",
     alt: "Ría de Vigo, ciudad sede de Conxemar",
     readMinutes: 7,
     date: "2026-10-31",
@@ -715,7 +715,7 @@ export const ARTICULOS: Guide[] = [
     metaTitle: "Viajar a A Coruña para ver al Deportivo en Riazor: guía práctica",
     metaDescription:
       "Guía para aficionados y peñas que viajan a A Coruña a un partido en Riazor: cómo llegar en avión, tren o autocar, dónde alojarse, el día de partido y qué hacer en la ciudad.",
-    image: "/images/coruna-torre-hercules.jpg",
+    image: "/images/traslados-chofer-coruna.jpg",
     alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     readMinutes: 7,
     date: "2026-10-31",
@@ -809,7 +809,7 @@ export const ARTICULOS: Guide[] = [
     metaTitle: "Calendario de congresos y ferias en Galicia 2027 | A Coruña, Santiago, Vigo",
     metaDescription:
       "Calendario 2027 de congresos, ferias y grandes eventos profesionales en A Coruña, Santiago de Compostela y Vigo: fechas, sedes y claves de transporte para cada uno.",
-    image: "/images/sala-eventos-empresas.jpg",
+    image: "/images/finca-montesqueiro-corporativo-presentacion.jpg",
     alt: "Sala de congresos en Galicia",
     readMinutes: 6,
     date: "2026-10-31",

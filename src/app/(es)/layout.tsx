@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || "g-8CHcDXCPDGZ0_D09bYLZWXPP2Ky0rgaffP8qe_-WQ" },
   title: {
-    default: "Luxe Galicia – Transporte con chófer para congresos, eventos y empresas en Galicia",
+    default: "Luxe Galicia – Transporte corporativo y para eventos en Galicia",
     template: "%s",
   },
   description:
-    "Transporte con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans ejecutivas, minibuses y autocares desde 2013.",
+    "Servicios de transporte corporativo y para eventos en Galicia y Oporto: congresos, incentivos, empresas y agencias MICE. Berlinas, vans, minibuses y autocares con conductor desde 2013.",
   icons: { icon: [{ url: "/icon.png", type: "image/png" }, { url: "/favicon.ico" }], apple: "/apple-touch-icon.png" },
   openGraph: { type: "website", locale: "es_ES", siteName: "Luxe Galicia", images: ["/images/flota-luxe-galicia.jpg"] },
   twitter: { card: "summary_large_image" },

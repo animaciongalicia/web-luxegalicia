@@ -67,14 +67,21 @@ export default function PageTemplate({ page }: { page: Page }) {
 
   return (
     <>
-      <HeroPage
-        title={page.hero.title}
-        subtitle={page.hero.subtitle}
-        eyebrow={page.hero.eyebrow}
-        imageSrc={page.hero.image}
-        alt={page.hero.alt}
-        lang={lang}
-      />
+      {page.noindex ? (
+        <section className="border-b border-gray-100 bg-gray-50 px-6 pb-10 pt-32 text-center">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">{page.hero.title}</h1>
+          <p className="mx-auto mt-3 max-w-2xl text-gray-500">{page.hero.subtitle}</p>
+        </section>
+      ) : (
+        <HeroPage
+          title={page.hero.title}
+          subtitle={page.hero.subtitle}
+          eyebrow={page.hero.eyebrow}
+          imageSrc={page.hero.image}
+          alt={page.hero.alt}
+          lang={lang}
+        />
+      )}
       {page.blocks.map((block, i) => (
         <BlockRenderer key={i} block={block} lang={lang} />
       ))}

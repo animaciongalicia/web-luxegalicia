@@ -64,7 +64,7 @@ export const UI: Record<Lang, { quote: string; quoteHref: string; whatsapp: stri
     whatsapp: "WhatsApp",
     switchLabel: "EN",
     switchHref: "/en",
-    tagline: "Transporte con chófer · Galicia",
+    tagline: "Transporte corporativo y eventos",
     skip: "Ir al contenido",
   },
   en: {
@@ -73,7 +73,7 @@ export const UI: Record<Lang, { quote: string; quoteHref: string; whatsapp: stri
     whatsapp: "WhatsApp",
     switchLabel: "ES",
     switchHref: "/",
-    tagline: "Ground transportation · Galicia",
+    tagline: "Corporate & event transport",
     skip: "Skip to content",
   },
 };

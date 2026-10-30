@@ -48,7 +48,6 @@ export const PAGES_EN: Page[] = [
           "Full programmes with hotels and experiences through Suunia, our DMC partner.",
         ],
       },
-      { type: "quote", heading: "Request your proposal" },
     ],
     faqs: [
       { question: "Do you work with agencies from outside Spain?", answer: "Yes. International and national MICE agencies are the main clients. Service is provided in Spanish and English." },
@@ -102,7 +101,6 @@ export const PAGES_EN: Page[] = [
           "Optional stops on the way (Valença, Tui, Baiona).",
         ],
       },
-      { type: "quote", heading: "Book your transfer" },
     ],
     faqs: [
       { question: "What is the fastest way from Porto to Santiago de Compostela?", answer: "A direct road transfer: about 2 hours 20 minutes from Porto airport. Public transport requires changes and takes considerably longer." },
@@ -162,7 +160,6 @@ export const PAGES_EN: Page[] = [
           "English-speaking drivers on request.",
         ],
       },
-      { type: "quote", heading: "Plan your tour" },
     ],
     faqs: [
       { question: "How many days do I need to see Galicia?", answer: "Three days cover the essentials (Santiago and the Rías Baixas); five days the whole Atlantic coast; seven days add the inland highlights such as the Ribeira Sacra and Lugo." },

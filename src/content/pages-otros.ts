@@ -4,6 +4,7 @@ import type { Page } from "./types";
 const titular = SITE.legalName || "[PENDIENTE: razón social]";
 const cif = SITE.taxId || "[PENDIENTE: CIF]";
 const domicilio = SITE.address || "[PENDIENTE: domicilio social]";
+const ACTUALIZADO = "octubre de 2026";
 
 export const PAGES_OTROS: Page[] = [
   {
@@ -59,12 +60,12 @@ export const PAGES_OTROS: Page[] = [
   },
   {
     slug: "presupuesto",
-    metaTitle: "Pedir presupuesto de transporte con chófer en Galicia | Luxe Galicia",
+    metaTitle: "Contacto y presupuesto de transporte en Galicia | Luxe Galicia",
     metaDescription:
-      "Solicita presupuesto de transporte con chófer en Galicia y Oporto: congresos, eventos, empresas, traslados y tours. Respuesta en menos de 24 horas laborables.",
+      "Contacto y presupuesto de transporte corporativo y para eventos en Galicia y Oporto. Respuesta en menos de 24 horas laborables. Teléfono, WhatsApp o formulario.",
     hero: {
-      eyebrow: "Presupuesto",
-      title: "Pide tu presupuesto",
+      eyebrow: "Contacto",
+      title: "Contacto y presupuesto",
       subtitle: "Cuéntame el servicio y tienes una propuesta clara en menos de 24 horas laborables. Para urgencias, WhatsApp.",
       image: "/images/planificacion-transporte-evento.webp",
       alt: "Planificación del transporte de un evento en una tableta",
@@ -140,29 +141,79 @@ export const PAGES_OTROS: Page[] = [
     slug: "aviso-legal",
     noindex: true,
     metaTitle: "Aviso legal | Luxe Galicia",
-    metaDescription: "Aviso legal del sitio web luxegalicia.com.",
-    hero: { title: "Aviso legal", subtitle: "Información legal del titular del sitio web.", image: "/images/flota-luxe-galicia.jpg" },
+    metaDescription: "Aviso legal del sitio web luxegalicia.com: titular, condiciones de uso, responsabilidad y propiedad intelectual.",
+    hero: { title: "Aviso legal", subtitle: "Quién está detrás de esta web y en qué condiciones puedes usarla.", image: "/images/flota-luxe-galicia.jpg" },
     blocks: [
       {
-        type: "prose",
-        heading: "Titular del sitio web",
-        paragraphs: [
-          `En cumplimiento de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico, se informa de que el titular de este sitio web es ${titular}, con CIF ${cif} y domicilio en ${domicilio}. Contacto: ${SITE.email} · ${SITE.phone}.`,
-        ],
-      },
-      {
-        type: "prose",
-        heading: "Condiciones de uso",
-        paragraphs: [
-          "El acceso a este sitio web es gratuito e implica la aceptación de estas condiciones. El usuario se compromete a hacer un uso adecuado de los contenidos y a no emplearlos para actividades ilícitas.",
-          "Los precios publicados son orientativos. El precio de cada servicio es el que figura en el presupuesto aceptado por escrito.",
-        ],
-      },
-      {
-        type: "prose",
-        heading: "Propiedad intelectual",
-        paragraphs: [
-          "Los textos, diseños y logotipos de este sitio web pertenecen a su titular o se utilizan con autorización. Queda prohibida su reproducción sin consentimiento expreso. Las marcas de vehículos citadas pertenecen a sus respectivos titulares y se mencionan solo a efectos descriptivos.",
+        type: "legal",
+        updated: ACTUALIZADO,
+        sections: [
+          {
+            heading: "Titular del sitio web",
+            paragraphs: [
+              "En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSI-CE), estos son los datos del titular de luxegalicia.com:",
+            ],
+            list: [
+              `Titular: ${titular}`,
+              `CIF: ${cif}`,
+              `Domicilio: ${domicilio}`,
+              `Email: ${SITE.email}`,
+              `Teléfono: ${SITE.phone}`,
+              "Nombre comercial: Luxe Galicia",
+            ],
+          },
+          {
+            heading: "Objeto",
+            paragraphs: [
+              "Esta web informa sobre los servicios de transporte con conductor de Luxe Galicia en Galicia y el norte de Portugal: traslados, transporte para congresos, eventos y empresas, y tours, y permite solicitar presupuesto.",
+              "Los servicios se prestan con vehículos y conductores debidamente autorizados para el transporte de viajeros, propios o de empresas colaboradoras, según el tipo de servicio.",
+            ],
+          },
+          {
+            heading: "Condiciones de uso",
+            paragraphs: [
+              "El acceso a esta web es gratuito y supone aceptar este aviso legal. Te comprometes a usar la web y sus contenidos de forma lícita, sin dañar la imagen del titular ni de terceros y sin introducir virus o código dañino.",
+              "Para pedir presupuesto debes facilitar datos veraces. Si los datos son de otra persona (por ejemplo, de los asistentes a un evento), garantizas que tienes su permiso para comunicarlos.",
+            ],
+          },
+          {
+            heading: "Precios y presupuestos",
+            paragraphs: [
+              "Los precios y tiempos que aparecen en la web son orientativos. El precio de cada servicio es el que figura en el presupuesto aceptado por escrito, que recoge el vehículo, el itinerario, los horarios y las condiciones de cancelación.",
+            ],
+          },
+          {
+            heading: "Responsabilidad",
+            paragraphs: [
+              "El titular procura que la información de la web sea correcta y esté actualizada, pero no garantiza la ausencia de errores ni responde de las decisiones tomadas solo a partir de ella. Distancias, tiempos de viaje, fechas de eventos y datos de terceros pueden cambiar.",
+              "Tampoco responde de interrupciones técnicas ajenas a su control ni de los daños que pueda causar el uso indebido de la web.",
+            ],
+          },
+          {
+            heading: "Enlaces a otras webs",
+            paragraphs: [
+              "La web incluye enlaces a sitios de terceros (organismos, recintos, partners). El titular no controla esos sitios ni responde de sus contenidos. Si detectas un enlace a un contenido ilícito, escribe a " + SITE.email + " y se retirará.",
+            ],
+          },
+          {
+            heading: "Propiedad intelectual e industrial",
+            paragraphs: [
+              "Los textos, el diseño, el logotipo y la marca Luxe Galicia pertenecen al titular o se usan con autorización. Las fotografías son propias, cedidas por colaboradores o de bancos de imágenes con licencia. No se permite su reproducción, distribución o transformación sin permiso por escrito.",
+              "Las marcas de vehículos y los nombres de recintos y eventos citados pertenecen a sus titulares y se mencionan solo a efectos descriptivos.",
+            ],
+          },
+          {
+            heading: "Protección de datos y cookies",
+            paragraphs: [
+              "El tratamiento de tus datos personales se explica en la política de privacidad, y el uso de cookies, en la política de cookies.",
+            ],
+          },
+          {
+            heading: "Legislación aplicable",
+            paragraphs: [
+              "Este aviso legal se rige por la legislación española. Para cualquier conflicto, las partes se someten a los juzgados y tribunales de A Coruña, salvo que la ley establezca otro fuero, como en el caso de los consumidores, que pueden acudir a los de su domicilio.",
+            ],
+          },
         ],
       },
     ],
@@ -171,28 +222,90 @@ export const PAGES_OTROS: Page[] = [
     slug: "politica-privacidad",
     noindex: true,
     metaTitle: "Política de privacidad | Luxe Galicia",
-    metaDescription: "Política de privacidad de luxegalicia.com.",
-    hero: { title: "Política de privacidad", subtitle: "Cómo se tratan tus datos personales.", image: "/images/flota-luxe-galicia.jpg" },
+    metaDescription: "Política de privacidad de luxegalicia.com: qué datos se tratan, para qué, durante cuánto tiempo y cómo ejercer tus derechos.",
+    hero: { title: "Política de privacidad", subtitle: "Qué datos se tratan, para qué y cómo ejercer tus derechos.", image: "/images/flota-luxe-galicia.jpg" },
     blocks: [
       {
-        type: "prose",
-        heading: "Responsable del tratamiento",
-        paragraphs: [`${titular}, CIF ${cif}, ${domicilio}. Email: ${SITE.email}.`],
-      },
-      {
-        type: "prose",
-        heading: "Finalidad y legitimación",
-        paragraphs: [
-          "Los datos que envías a través del formulario de presupuesto, el email o WhatsApp se usan únicamente para responder a tu solicitud y, si la aceptas, para prestar el servicio contratado. La base legal es tu consentimiento y la ejecución de un contrato o de medidas precontractuales.",
-          "Los datos se conservan mientras dure la relación comercial y durante los plazos legalmente exigidos.",
-        ],
-      },
-      {
-        type: "prose",
-        heading: "Destinatarios y derechos",
-        paragraphs: [
-          "Los datos solo se comunican a los colaboradores necesarios para prestar el servicio (por ejemplo, el conductor asignado) o cuando lo exija la ley.",
-          `Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a ${SITE.email}. También puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).`,
+        type: "legal",
+        updated: ACTUALIZADO,
+        sections: [
+          {
+            heading: "Responsable del tratamiento",
+            list: [
+              `Responsable: ${titular}`,
+              `CIF: ${cif}`,
+              `Domicilio: ${domicilio}`,
+              `Email para temas de privacidad: ${SITE.email}`,
+            ],
+          },
+          {
+            heading: "Qué datos se tratan",
+            list: [
+              "Datos de contacto: nombre, empresa, email y teléfono.",
+              "Datos del servicio: fechas, horarios, número de personas, itinerario, vuelos o trenes y necesidades especiales.",
+              "Datos de pasajeros que nos facilites para prestar el servicio (por ejemplo, el nombre para el cartel de recogida).",
+              "Datos de navegación, solo si aceptas las cookies de analítica.",
+            ],
+            paragraphs: ["No se piden datos especialmente protegidos. Si comunicas alguno (por ejemplo, una necesidad de movilidad reducida), se usa solo para adaptar el servicio."],
+          },
+          {
+            heading: "Para qué se usan y con qué base legal",
+            table: {
+              head: ["Finalidad", "Base legal"],
+              rows: [
+                ["Responder a tu solicitud de presupuesto o consulta", "Medidas precontractuales a petición tuya (art. 6.1.b RGPD)"],
+                ["Prestar y facturar el servicio contratado", "Ejecución del contrato y obligaciones legales (art. 6.1.b y 6.1.c RGPD)"],
+                ["Enviarte información sobre servicios similares, si eres cliente", "Interés legítimo (art. 6.1.f RGPD y art. 21 LSSI). Puedes oponerte en cualquier momento"],
+                ["Medir el uso de la web con Google Analytics", "Tu consentimiento (art. 6.1.a RGPD)"],
+              ],
+            },
+          },
+          {
+            heading: "Cuánto tiempo se conservan",
+            paragraphs: [
+              "Las solicitudes de presupuesto que no se convierten en servicio se conservan un máximo de un año. Los datos de clientes, mientras dure la relación comercial y después durante los plazos legales (seis años para la documentación contable y fiscal). Después se bloquean y se suprimen.",
+            ],
+          },
+          {
+            heading: "A quién se comunican",
+            paragraphs: ["No se venden ni se ceden datos a terceros. Solo acceden a ellos quienes los necesitan para prestar el servicio o por obligación legal:"],
+            list: [
+              "Empresas de transporte y conductores colaboradores que realizan el servicio.",
+              "Proveedores tecnológicos que actúan como encargados del tratamiento: alojamiento web (Vercel Inc.), analítica (Google Ireland Ltd.), correo electrónico y el servicio de envío del formulario.",
+              "WhatsApp (Meta Platforms), si eliges contactar por ese canal.",
+              "Administraciones públicas, juzgados o fuerzas de seguridad cuando lo exija la ley.",
+            ],
+          },
+          {
+            heading: "Transferencias internacionales",
+            paragraphs: [
+              "Algunos proveedores (Vercel, Google, Meta) pueden tratar datos en Estados Unidos. Estas transferencias se amparan en el Marco de Privacidad de Datos UE-EE. UU. o en las cláusulas contractuales tipo aprobadas por la Comisión Europea.",
+            ],
+          },
+          {
+            heading: "Tus derechos",
+            paragraphs: [`Puedes ejercer en cualquier momento estos derechos escribiendo a ${SITE.email}, indicando qué derecho ejerces:`],
+            list: [
+              "Acceso: saber qué datos tuyos se tratan.",
+              "Rectificación: corregir datos inexactos.",
+              "Supresión: pedir que se borren.",
+              "Oposición y limitación del tratamiento.",
+              "Portabilidad: recibir tus datos en un formato estándar.",
+              "Retirar el consentimiento dado, sin que afecte a lo tratado antes.",
+            ],
+          },
+          {
+            heading: "Reclamaciones",
+            paragraphs: [
+              "Si consideras que tus datos no se tratan correctamente, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).",
+            ],
+          },
+          {
+            heading: "Seguridad",
+            paragraphs: [
+              "La web funciona con conexión cifrada (HTTPS) y los datos se guardan con medidas técnicas y organizativas adecuadas para evitar su pérdida, alteración o acceso no autorizado.",
+            ],
+          },
         ],
       },
     ],
@@ -201,22 +314,56 @@ export const PAGES_OTROS: Page[] = [
     slug: "politica-cookies",
     noindex: true,
     metaTitle: "Política de cookies | Luxe Galicia",
-    metaDescription: "Política de cookies de luxegalicia.com.",
+    metaDescription: "Política de cookies de luxegalicia.com: qué cookies se usan, para qué y cómo gestionarlas.",
     hero: { title: "Política de cookies", subtitle: "Qué cookies usa esta web y cómo gestionarlas.", image: "/images/flota-luxe-galicia.jpg" },
     blocks: [
       {
-        type: "prose",
-        heading: "Qué cookies se usan",
-        paragraphs: [
-          "Esta web usa una cookie técnica en el almacenamiento local del navegador para recordar tu elección sobre las cookies.",
-          "Si aceptas, se activan cookies de analítica de Google Analytics 4 para medir de forma agregada el uso de la web. Si las rechazas, Google Analytics funciona en modo sin cookies (Consent Mode) y no almacena identificadores en tu navegador.",
-        ],
-      },
-      {
-        type: "prose",
-        heading: "Cómo gestionarlas",
-        paragraphs: [
-          "Puedes cambiar tu elección borrando los datos de este sitio en tu navegador. También puedes bloquear o eliminar cookies desde la configuración de Chrome, Firefox, Safari o Edge.",
+        type: "legal",
+        updated: ACTUALIZADO,
+        sections: [
+          {
+            heading: "Qué son las cookies",
+            paragraphs: [
+              "Son pequeños archivos que una web guarda en tu navegador para recordar información sobre tu visita. Algunas son necesarias para que la web funcione y otras sirven para medir cómo se usa.",
+            ],
+          },
+          {
+            heading: "Qué cookies usa esta web",
+            paragraphs: ["Esta web no usa cookies publicitarias ni de redes sociales. Solo estas:"],
+            table: {
+              head: ["Nombre", "Titular", "Para qué", "Duración"],
+              rows: [
+                ["cookie-consent", "Luxe Galicia", "Recordar si aceptas o rechazas la analítica (almacenamiento local, técnica)", "Hasta que la borres"],
+                ["_ga", "Google", "Distinguir usuarios de forma anónima en Google Analytics 4", "2 años"],
+                ["_ga_XEJKTB7SZR", "Google", "Mantener el estado de la sesión en Google Analytics 4", "2 años"],
+              ],
+            },
+          },
+          {
+            heading: "Cómo funciona tu elección",
+            paragraphs: [
+              "Las cookies de Google Analytics solo se instalan si pulsas Aceptar en el aviso de cookies.",
+              "Si las rechazas, Google Analytics funciona en modo sin cookies (Consent Mode): no guarda identificadores en tu navegador y solo recibe señales agregadas y anónimas.",
+            ],
+          },
+          {
+            heading: "Cómo cambiar o retirar el consentimiento",
+            paragraphs: [
+              "Borra los datos de este sitio en tu navegador y el aviso volverá a aparecer en tu próxima visita. También puedes bloquear o eliminar cookies desde la configuración del navegador:",
+            ],
+            list: [
+              "Chrome: Configuración → Privacidad y seguridad → Cookies.",
+              "Safari: Ajustes → Privacidad → Gestionar datos de sitios web.",
+              "Firefox: Ajustes → Privacidad y seguridad → Cookies y datos del sitio.",
+              "Edge: Configuración → Cookies y permisos del sitio.",
+            ],
+          },
+          {
+            heading: "Más información",
+            paragraphs: [
+              "Sobre cómo trata Google los datos de Analytics: policies.google.com/privacy. Sobre tus datos personales en esta web: política de privacidad.",
+            ],
+          },
         ],
       },
     ],

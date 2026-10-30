@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "@/components/Logo";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { NAV, UI } from "@/content/navigation";
@@ -110,15 +110,8 @@ export default function Header({ lang = "es" }: { lang?: Lang }) {
             onClick={closeAll}
             className="flex items-center gap-2.5 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-luxe-600 focus-visible:ring-offset-2"
           >
-            <Image
-              src="/images/logo-luxe-galicia.png"
-              alt="Luxe Galicia"
-              width={835}
-              height={516}
-              priority
-              className="h-11 w-auto rounded-md"
-            />
-            <span className="hidden text-[10px] font-medium uppercase leading-tight tracking-widest text-gray-500 sm:block">
+            <Logo />
+            <span className="ml-1.5 hidden border-l border-gray-200 pl-3.5 text-[10px] font-medium uppercase leading-tight tracking-widest text-gray-500 sm:block">
               {ui.tagline}
             </span>
           </Link>

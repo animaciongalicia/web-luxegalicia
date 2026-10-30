@@ -39,7 +39,7 @@ export default function CTASection({
             {lang === "en" ? "WhatsApp us" : "Escribir por WhatsApp"}
           </a>
           <Link
-            href={lang === "en" ? "#quote" : "/presupuesto"}
+            href={lang === "en" ? "/en#quote" : "/presupuesto"}
             className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10"
           >
             {lang === "en" ? "Request a quote" : "Pedir presupuesto"}

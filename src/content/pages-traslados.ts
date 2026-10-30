@@ -318,7 +318,6 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Oporto y Galicia en 5 días", text: "Aterriza en Oporto y sube por la costa hasta Santiago con chófer.", href: "/tours-con-chofer-galicia/oporto-y-galicia-5-dias" },
         ],
       },
-      { type: "quote", heading: "Reserva tu traslado desde Oporto" },
     ],
     faqs: [
       { question: "¿El chófer me espera si el vuelo a Oporto se retrasa?", answer: "Sí. Se hace seguimiento del vuelo y el chófer ajusta la hora de recogida. El tiempo de espera razonable está incluido." },
@@ -386,7 +385,6 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Traslados desde Santiago", href: "/traslados-desde-santiago" },
         ],
       },
-      { type: "quote", heading: "Cuéntame vuestro Camino" },
     ],
     faqs: [
       { question: "¿Lleváis a un grupo del aeropuerto de Santiago a Sarria?", answer: "Sí, es uno de los traslados más solicitados: aproximadamente 1 hora y 20 minutos hasta Sarria, punto de inicio de los últimos 100 km del Camino Francés." },
@@ -458,7 +456,6 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Vigo", text: "IFEVI, puerto de cruceros, Rías Baixas y Oporto.", href: "/traslados-desde-vigo" },
         ],
       },
-      { type: "quote", heading: "Pide presupuesto para tu grupo" },
     ],
     cta: {
       title: "¿Cuántos autocares necesita tu evento?",
@@ -476,7 +473,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "aeropuertos-galicia",
     metaTitle: "Traslados aeropuerto con chófer: Santiago, A Coruña, Vigo y Oporto",
     metaDescription:
-      "Traslados privados con chófer desde y hacia los aeropuertos de Santiago (SCQ), A Coruña (LCG), Vigo (VGO) y Oporto (OPO). Control de vuelos, recibimiento con cartel y precio cerrado.",
+      "Traslados privados desde y hacia los aeropuertos de Santiago (SCQ), A Coruña (LCG), Vigo (VGO) y Oporto (OPO). Tiempos a cada ciudad, seguimiento del vuelo, recibimiento con cartel y grupos.",
     serviceType: "Traslados de aeropuerto con chófer",
     hero: {
       eyebrow: "Aeropuertos",
@@ -487,31 +484,102 @@ export const PAGES_TRASLADOS: Page[] = [
     },
     blocks: [
       {
+        type: "intro",
+        paragraphs: [
+          "Galicia tiene tres aeropuertos a menos de dos horas entre sí, y a 1 h 35 min de Vigo está Oporto, el de más conexiones internacionales del noroeste.",
+          "Elegir bien por dónde llegar ahorra horas y dinero. Y el traslado empieza antes de aterrizar: con el número de vuelo, la recogida se ajusta sola.",
+        ],
+      },
+      {
         type: "links",
         heading: "Elige aeropuerto",
+        bg: "gray",
         items: [
-          { title: "Santiago (SCQ)", text: "El de más vuelos de Galicia. A 15 min del centro de Santiago y 50 min de A Coruña.", href: "/traslados-desde-santiago" },
+          { title: "Santiago (SCQ)", text: "Rosalía de Castro. El de más vuelos de Galicia, a 15 min del centro de Santiago.", href: "/traslados-desde-santiago" },
           { title: "A Coruña (LCG)", text: "Alvedro, a 10 minutos del centro de A Coruña y de Palexco.", href: "/traslados-desde-coruna" },
-          { title: "Vigo (VGO)", text: "Peinador, junto a IFEVI y a 30 min de las Rías Baixas.", href: "/traslados-desde-vigo" },
-          { title: "Oporto (OPO)", text: "La gran puerta internacional del noroeste. 1 h 35 min de Vigo.", href: "/oporto-galicia" },
+          { title: "Vigo (VGO)", text: "Peinador, junto a IFEVI y a 30 min de Pontevedra y las Rías Baixas.", href: "/traslados-desde-vigo" },
+          { title: "Oporto (OPO)", text: "Francisco Sá Carneiro. Vuelos directos a medio mundo, a 1 h 35 min de Vigo.", href: "/oporto-galicia" },
+        ],
+      },
+      {
+        type: "table",
+        heading: "Tiempos desde cada aeropuerto",
+        intro: "Tiempos orientativos en coche, sin tráfico. Sirven para elegir aeropuerto y calcular la hora de salida hacia el vuelo de vuelta.",
+        head: ["Aeropuerto", "A Coruña", "Santiago", "Vigo", "Pontevedra"],
+        rows: [
+          ["Santiago (SCQ)", "50 min", "15 min", "1 h", "50 min"],
+          ["A Coruña (LCG)", "10 min", "55 min", "1 h 45 min", "1 h 25 min"],
+          ["Vigo (VGO)", "1 h 45 min", "1 h", "15 min", "30 min"],
+          ["Oporto (OPO)", "3 h", "2 h 20 min", "1 h 35 min", "1 h 50 min"],
+        ],
+        note: "Para el vuelo de vuelta se calcula la recogida con margen para facturar y pasar el control.",
+      },
+      {
+        type: "features",
+        heading: "¿Por qué aeropuerto te conviene llegar?",
+        columns: 2,
+        bg: "gray",
+        items: [
+          { title: "Vas a A Coruña o Ferrol", text: "Alvedro, si hay vuelo directo. Si no, Santiago está a 50 minutos y tiene muchas más frecuencias." },
+          { title: "Vas a Santiago o al centro de Galicia", text: "Santiago (SCQ). Es el aeropuerto con más rutas nacionales y europeas de Galicia." },
+          { title: "Vas a Vigo, Pontevedra o las Rías Baixas", text: "Vigo (VGO) para vuelos nacionales. Para vuelos internacionales, Oporto suele ser más rápido en total." },
+          { title: "Llegas desde fuera de Europa", text: "Oporto (OPO). Tiene vuelos directos a Norteamérica, Brasil y gran parte de Europa, y evita una escala en Madrid." },
         ],
       },
       {
         type: "features",
         heading: "Así funciona un traslado de aeropuerto",
         columns: 4,
-        bg: "gray",
         items: [
-          { title: "Seguimiento del vuelo", text: "Hora de recogida ajustada a la llegada real." },
+          { title: "Seguimiento del vuelo", text: "La hora de recogida se ajusta a la llegada real." },
           { title: "Recibimiento", text: "Chófer en la sala de llegadas con cartel." },
           { title: "Ayuda con el equipaje", text: "Del carro al maletero, sin prisas." },
           { title: "Precio confirmado", text: "Por escrito y antes del servicio." },
         ],
       },
+      {
+        type: "zigzag",
+        bg: "gray",
+        items: [
+          {
+            title: "Grupos y congresos que llegan en varios vuelos",
+            paragraphs: [
+              "En un congreso, los asistentes no llegan juntos: llegan en diez vuelos repartidos entre la mañana y la noche, y a veces por dos aeropuertos distintos.",
+              "Se organizan recogidas por franjas horarias, con vehículos del tamaño de cada franja y un punto de encuentro claro en llegadas. Nadie espera dos horas a que se llene un autocar.",
+            ],
+            image: "/images/llegada-aeropuerto-coches.webp",
+            alt: "Vehículos con chófer esperando a un grupo en la llegada del aeropuerto",
+          },
+          {
+            title: "Directivos y vuelos privados",
+            paragraphs: [
+              "Recogida a pie de pista o en la terminal de aviación general cuando el aeropuerto lo permite, con el vehículo listo a la hora de aterrizaje.",
+              "Berlina de representación o van Clase V, chófer discreto y salida directa a la reunión.",
+            ],
+            image: "/images/van-avion-privado.png",
+            alt: "Van ejecutiva esperando junto a un avión privado",
+          },
+        ],
+      },
+      {
+        type: "checklist",
+        heading: "Qué necesito para reservar",
+        items: [
+          "Número de vuelo, fecha y hora de llegada.",
+          "Nombre del pasajero para el cartel y teléfono de contacto.",
+          "Número de personas y de maletas.",
+          "Dirección de destino o del hotel.",
+          "Equipaje especial: palos de golf, bicicletas, material de stand.",
+          "Para grupos, la lista de vuelos de llegada.",
+        ],
+      },
     ],
     faqs: [
       { question: "¿Qué pasa si mi vuelo llega con retraso?", answer: "El chófer sigue el vuelo y ajusta la hora. El tiempo de espera razonable está incluido en el servicio." },
-      { question: "¿Podéis recoger a un grupo que llega en varios vuelos?", answer: "Sí. Se planifican recogidas escalonadas con varios vehículos o con un vehículo que espera a los últimos vuelos, según lo que convenga al grupo." },
+      { question: "¿Dónde me espera el chófer?", answer: "En la sala de llegadas, a la salida de recogida de equipajes, con un cartel con tu nombre o el de tu empresa. Recibes su nombre y teléfono antes del viaje." },
+      { question: "¿Podéis recoger a un grupo que llega en varios vuelos?", answer: "Sí. Se planifican recogidas escalonadas por franjas horarias, con varios vehículos o con uno que espera a los últimos vuelos, según lo que convenga al grupo." },
+      { question: "¿Y si mi vuelo internacional llega a Madrid?", answer: "También es posible el traslado con chófer desde Madrid, aunque suele compensar más un vuelo de conexión a Santiago, A Coruña o Vigo y la recogida allí." },
+      { question: "¿Cubrís vuelos de primera hora o de madrugada?", answer: "Sí, bajo reserva. Indica la hora del vuelo al pedir presupuesto." },
       VEHICULOS_FAQ,
     ],
   },
@@ -559,7 +627,6 @@ export const PAGES_TRASLADOS: Page[] = [
           "Operativas de grupo para agencias de excursiones y consignatarias.",
         ],
       },
-      { type: "quote", heading: "Reserva tu excursión" },
     ],
     faqs: [
       { question: "¿Da tiempo a ver Santiago en una escala en A Coruña?", answer: "Sí, en escalas de 7 horas o más. El trayecto es de unos 50 minutos y se planifica el regreso con margen sobre el embarque." },
