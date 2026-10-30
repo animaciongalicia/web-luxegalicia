@@ -29,9 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/", 1, "weekly"),
     ...PAGES_ES.filter((p) => !p.noindex).map((p) => entry(`/${p.slug}`, PRIORITY[p.slug] ?? 0.7)),
     entry("/tours-con-chofer-galicia", 0.85),
-    ...TOURS.map((t) => entry(`/tours-con-chofer-galicia/${t.slug}`, 0.7)),
+    ...TOURS.map((t) => entry(`/tours-con-chofer-galicia/${t.slug}`, t.slug === "pazos-y-camelias" ? 0.4 : 0.7)),
     entry("/guias", 0.7, "weekly"),
-    ...GUIAS.map((g) => entry(`/guias/${g.slug}`, g.category === "Guía" ? 0.75 : 0.65)),
+    ...GUIAS.map((g) => entry(`/guias/${g.slug}`, g.slug === "transporte-palexco" ? 0.85 : g.category === "Guía" ? 0.75 : 0.65)),
     entry("/en", 0.8),
     ...PAGES_EN.map((p) => entry(`/en/${p.slug}`, 0.75)),
   ];

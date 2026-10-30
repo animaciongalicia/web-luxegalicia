@@ -415,6 +415,36 @@ export const TOURS: Tour[] = [
     ],
   },
   {
+    slug: "norte-de-portugal",
+    kind: "un-dia",
+    name: "Norte de Portugal desde Galicia con chófer",
+    metaTitle: "Tour privado norte de Portugal desde Galicia: Valença, Braga y Guimarães",
+    metaDescription:
+      "Excursión privada con chófer desde Vigo o las Rías Baixas al norte de Portugal: Valença, Ponte de Lima, Braga y Guimarães. Un día en Portugal sin conducir.",
+    image: "/images/van-lujo-galicia.jpg",
+    alt: "Van de lujo con chófer para una excursión al norte de Portugal",
+    duration: "9-10 horas",
+    distance: "~300 km",
+    base: "Vigo, Pontevedra o Rías Baixas",
+    vehicle: "Berlina, van o minibús",
+    summary: "Fortalezas, ciudades históricas y la cuna de Portugal.",
+    intro: [
+      "Desde el sur de Galicia, Portugal está a media hora. En un día se recorren la fortaleza de Valença, Ponte de Lima, Braga y Guimarães, la ciudad donde nació Portugal.",
+      "Sin preocuparte por los peajes electrónicos portugueses ni por aparcar en cascos históricos: el chófer lo resuelve.",
+    ],
+    stops: [
+      { title: "Valença", text: "Fortaleza amurallada sobre el Miño, frente a Tui." },
+      { title: "Ponte de Lima", text: "Una de las villas más antiguas de Portugal y su puente medieval." },
+      { title: "Braga", text: "Centro histórico y santuario de Bom Jesus do Monte." },
+      { title: "Guimarães", text: "Castillo y casco histórico, Patrimonio de la Humanidad." },
+    ],
+    includes: INCLUYE_BASE,
+    notIncluded: NO_INCLUYE,
+    faqs: [
+      { question: "¿Hace falta pasaporte?", answer: "Para ciudadanos de la UE basta el DNI. Viajeros de otros países deben llevar la documentación con la que entraron en el espacio Schengen." },
+    ],
+  },
+  {
     slug: "pazos-y-camelias",
     kind: "un-dia",
     name: "Pazos y jardines de Galicia con chófer",
@@ -443,36 +473,6 @@ export const TOURS: Tour[] = [
     faqs: [
       { question: "¿Cuándo es la mejor época?", answer: "Para ver camelias en flor, de enero a abril. Los pazos y sus jardines merecen la visita todo el año." },
       { question: "¿Se pueden visitar todos los pazos?", answer: "No todos abren al público y algunos solo con visita concertada. El itinerario se cierra según disponibilidad en tus fechas." },
-    ],
-  },
-  {
-    slug: "norte-de-portugal",
-    kind: "un-dia",
-    name: "Norte de Portugal desde Galicia con chófer",
-    metaTitle: "Tour privado norte de Portugal desde Galicia: Valença, Braga y Guimarães",
-    metaDescription:
-      "Excursión privada con chófer desde Vigo o las Rías Baixas al norte de Portugal: Valença, Ponte de Lima, Braga y Guimarães. Un día en Portugal sin conducir.",
-    image: "/images/van-lujo-galicia.jpg",
-    alt: "Van de lujo con chófer para una excursión al norte de Portugal",
-    duration: "9-10 horas",
-    distance: "~300 km",
-    base: "Vigo, Pontevedra o Rías Baixas",
-    vehicle: "Berlina, van o minibús",
-    summary: "Fortalezas, ciudades históricas y la cuna de Portugal.",
-    intro: [
-      "Desde el sur de Galicia, Portugal está a media hora. En un día se recorren la fortaleza de Valença, Ponte de Lima, Braga y Guimarães, la ciudad donde nació Portugal.",
-      "Sin preocuparte por los peajes electrónicos portugueses ni por aparcar en cascos históricos: el chófer lo resuelve.",
-    ],
-    stops: [
-      { title: "Valença", text: "Fortaleza amurallada sobre el Miño, frente a Tui." },
-      { title: "Ponte de Lima", text: "Una de las villas más antiguas de Portugal y su puente medieval." },
-      { title: "Braga", text: "Centro histórico y santuario de Bom Jesus do Monte." },
-      { title: "Guimarães", text: "Castillo y casco histórico, Patrimonio de la Humanidad." },
-    ],
-    includes: INCLUYE_BASE,
-    notIncluded: NO_INCLUYE,
-    faqs: [
-      { question: "¿Hace falta pasaporte?", answer: "Para ciudadanos de la UE basta el DNI. Viajeros de otros países deben llevar la documentación con la que entraron en el espacio Schengen." },
     ],
   },
 ];
