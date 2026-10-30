@@ -33,6 +33,18 @@ Para añadir una página de servicio basta con añadir un objeto al array corres
 
 Ver `.env.example`: URL del sitio, GA4, verificación de Search Console, endpoint del formulario y datos legales (razón social, CIF, domicilio).
 
+## Medición (GA4)
+
+Con `NEXT_PUBLIC_GA_ID` configurado se registran estos eventos (márcalos como conversión en GA4):
+
+| Evento | Cuándo |
+|---|---|
+| `generate_lead` | Envío del formulario de presupuesto (`method`: form, email o whatsapp) |
+| `contact_whatsapp` | Clic en cualquier enlace de WhatsApp |
+| `contact_phone` | Clic en un teléfono |
+| `contact_email` | Clic en el email |
+| `quote_cta_click` | Clic en un botón que lleva al presupuesto |
+
 ## Pendiente
 
 - Precios reales en `precios.ts`.

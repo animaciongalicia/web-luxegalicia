@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import CookieConsent from "@/components/CookieConsent";
+import ClickTracker from "@/components/ClickTracker";
 import JsonLd from "@/components/JsonLd";
 import { SITE, SITE_URL } from "@/content/site";
 import type { Lang } from "@/content/types";
@@ -39,6 +40,7 @@ export default function SiteShell({ lang, children }: { lang: Lang; children: Re
         <Footer lang={lang} />
         <WhatsAppFloat />
         <CookieConsent lang={lang} />
+        <ClickTracker />
         <JsonLd data={organization} />
       </body>
     </html>

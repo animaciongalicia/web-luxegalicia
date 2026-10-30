@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Lang } from "@/content/types";
+import { track } from "@/lib/track";
 
 const EMAIL = "info@luxegalicia.com";
 const WHATSAPP = "34678288284";
@@ -94,6 +95,7 @@ export default function QuoteForm({ lang = "es" }: { lang?: Lang }) {
     e.preventDefault();
     const fields = read(e.currentTarget);
     if (!ENDPOINT) {
+      track("generate_lead", { method: "email", service: fields.service, pax: fields.pax });
       const subject = `${lang === "en" ? "Quote request" : "Solicitud de presupuesto"} · ${fields.service}`;
       window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(summary(fields))}`;
       return;
@@ -106,6 +108,7 @@ export default function QuoteForm({ lang = "es" }: { lang?: Lang }) {
         body: JSON.stringify({ ...fields, lang, page: window.location.pathname }),
       });
       setStatus(res.ok ? "sent" : "error");
+      if (res.ok) track("generate_lead", { method: "form", service: fields.service, pax: fields.pax });
     } catch {
       setStatus("error");
     }
@@ -114,7 +117,9 @@ export default function QuoteForm({ lang = "es" }: { lang?: Lang }) {
   function sendWhatsapp(e: React.MouseEvent<HTMLButtonElement>) {
     const form = e.currentTarget.form;
     if (!form || !form.reportValidity()) return;
-    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(summary(read(form)))}`, "_blank", "noopener");
+    const fields = read(form);
+    track("generate_lead", { method: "whatsapp", service: fields.service, pax: fields.pax });
+    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(summary(fields))}`, "_blank", "noopener");
   }
 
   const input =
