@@ -6,7 +6,7 @@ export const PAGES_EN: Page[] = [
     lang: "en",
     metaTitle: "MICE ground transportation in Galicia, Spain | Luxe Galicia",
     metaDescription:
-      "Ground transportation partner in Galicia for MICE agencies and DMCs: sedans, luxury vans, minibuses and coaches, on-site coordinator, single invoice, quote within 24 hours.",
+      "Ground transportation partner in Galicia for MICE agencies and DMCs: sedans, executive vans, minibuses and coaches, on-site coordinator, single invoice, quote within 24 hours.",
     serviceType: "MICE ground transportation",
     alternate: "/agencias-mice",
     hero: {
@@ -21,7 +21,7 @@ export const PAGES_EN: Page[] = [
         type: "intro",
         paragraphs: [
           "Events rarely fail because of a vehicle. They fail because of coordination: the coach at the wrong hotel, the speaker waiting at Santiago airport, the late-night schedule change nobody handles.",
-          "Local transport companies in Galicia are small. Your congress needs fifteen vehicles on the same morning. Since 2013, Luxe Galicia has coordinated premium fleets across Galicia and Northern Portugal for agencies that need capacity, punctuality and someone who answers the phone.",
+          "Local transport companies in Galicia are small. Your congress needs fifteen vehicles on the same morning. Since 2013, Luxe Galicia has coordinated chauffeur-driven fleets across Galicia and Northern Portugal for agencies that need capacity, punctuality and someone who answers the phone.",
         ],
       },
       {
@@ -31,7 +31,7 @@ export const PAGES_EN: Page[] = [
         bg: "gray",
         items: [
           { title: "Single point of contact", text: "One person accountable for the whole transport operation, before, during and after the event." },
-          { title: "Real capacity", text: "From one sedan to 500 attendees: sedans, luxury vans, VIP minibuses and coaches in a single operation." },
+          { title: "Real capacity", text: "From one sedan to 500 attendees: sedans, executive vans, minibuses and coaches in a single operation." },
           { title: "One invoice", text: "One proposal, one invoice, clear terms." },
           { title: "On-site coordinator", text: "For group operations, a coordinator on the ground manages pick-ups and real-time changes." },
           { title: "White label", text: "Drivers can operate under your agency's branding and protocol." },
@@ -97,7 +97,7 @@ export const PAGES_EN: Page[] = [
           "Flight tracking: your driver adjusts to your real arrival time.",
           "Meet and greet with a name sign in arrivals.",
           "Tolls, fuel and reasonable waiting time.",
-          "Premium sedan, luxury van or minibus depending on your group.",
+          "Executive sedan, executive van or minibus depending on your group.",
           "English-speaking drivers on request.",
           "Optional stops on the way (Valença, Tui, Baiona).",
         ],
@@ -121,7 +121,7 @@ export const PAGES_EN: Page[] = [
     hero: {
       eyebrow: "Private chauffeur tours",
       title: "Discover Galicia with your own chauffeur",
-      subtitle: "Santiago de Compostela, Albariño wine country, Atlantic lighthouses and river canyons. A luxury van, a professional driver and an itinerary that adapts to you.",
+      subtitle: "Santiago de Compostela, Albariño wine country, Atlantic lighthouses and river canyons. A executive van, a professional driver and an itinerary that adapts to you.",
       image: "/images/tours-rias-baixas.jpg",
       alt: "Albariño vineyards in the Rías Baixas, Galicia",
     },
@@ -154,7 +154,7 @@ export const PAGES_EN: Page[] = [
         heading: "Included",
         bg: "gray",
         items: [
-          "Premium vehicle and professional chauffeur for the whole trip.",
+          "Executive vehicle and professional chauffeur for the whole trip.",
           "Fuel, tolls and parking.",
           "Driver's accommodation and meals on multi-day tours.",
           "Pick-up and drop-off at any airport, including Porto.",

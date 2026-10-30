@@ -8,8 +8,8 @@
 export type VehicleKey = "berlina" | "van" | "minibus" | "autocar";
 
 export const VEHICLE_LABELS: Record<VehicleKey, { es: string; en: string; pax: string }> = {
-  berlina: { es: "Berlina premium", en: "Premium sedan", pax: "1-3" },
-  van: { es: "Van de lujo", en: "Luxury van", pax: "1-7" },
+  berlina: { es: "Berlina ejecutiva", en: "Executive sedan", pax: "1-3" },
+  van: { es: "Van ejecutiva", en: "Executive van", pax: "1-7" },
   minibus: { es: "Minibús", en: "Minibus", pax: "8-19" },
   autocar: { es: "Autocar", en: "Coach", pax: "20-55" },
 };

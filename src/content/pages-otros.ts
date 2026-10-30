@@ -10,10 +10,10 @@ export const PAGES_OTROS: Page[] = [
     slug: "flota",
     metaTitle: "Flota con chófer en Galicia: berlinas, vans, minibuses y autocares",
     metaDescription:
-      "Flota premium con chófer disponible en Galicia: berlinas Mercedes Clase E y Clase S, vans Clase V, minibuses VIP y autocares para empresas, congresos y tours.",
+      "Flota con chófer con chófer disponible en Galicia: berlinas Mercedes Clase E y Clase S, vans Clase V, minibuses y autocares para empresas, congresos y tours.",
     hero: {
       eyebrow: "Flota",
-      title: "Flota premium con chófer en Galicia",
+      title: "Flota con chófer con chófer en Galicia",
       subtitle: "De una berlina a una operativa de 500 personas. El vehículo adecuado para cada servicio, con chóferes profesionales.",
       image: "/images/flota-luxe-galicia.jpg",
       alt: "Mercedes Clase S y Clase V de la flota Luxe Galicia",
@@ -23,7 +23,7 @@ export const PAGES_OTROS: Page[] = [
         type: "intro",
         paragraphs: [
           "Cada servicio pide un vehículo distinto. Un consejero delegado no viaja igual que un equipo técnico, y un congreso de 300 personas no se mueve igual que una familia de cinco.",
-          "La flota disponible cubre desde berlinas premium y de lujo hasta autocares de gran turismo, siempre con conductor profesional, seguro de viajeros y vehículos de gama alta en perfecto estado.",
+          "La flota disponible cubre desde berlinas ejecutivas y de representación hasta autocares de gran turismo, siempre con conductor profesional, seguro de viajeros y vehículos de gama alta en perfecto estado.",
         ],
       },
       { type: "fleet", heading: "Vehículos disponibles", bg: "gray" },
@@ -77,14 +77,14 @@ export const PAGES_OTROS: Page[] = [
     ],
   },
   {
-    slug: "bodas-premium",
+    slug: "transporte-bodas-galicia",
     metaTitle: "Coches con chófer para bodas en Galicia | Luxe Galicia",
     metaDescription:
-      "Coches de lujo con chófer para bodas en Galicia: berlinas para los novios y autocares para los invitados entre ceremonia, celebración y alojamiento.",
+      "Coches con chófer para bodas en Galicia: berlinas para los novios y autocares para los invitados entre ceremonia, celebración y alojamiento.",
     serviceType: "Transporte para bodas",
     hero: {
       eyebrow: "Bodas",
-      title: "Transporte premium para bodas en Galicia",
+      title: "Transporte con chófer para bodas en Galicia",
       subtitle: "Berlina con chófer para los novios y autocares para los invitados. Puntualidad el día que no admite retrasos.",
       image: "/images/finca-montesqueiro-corporativo-presentacion.jpg",
       alt: "Finca en Galicia preparada para una celebración",
@@ -94,7 +94,7 @@ export const PAGES_OTROS: Page[] = [
         type: "intro",
         paragraphs: [
           "Una boda en Galicia suele implicar una iglesia, un pazo o una finca a media hora y cien invitados que no deberían conducir de vuelta.",
-          "Se cubren dos servicios: berlina de lujo con chófer para los novios y familia directa, y autocares o minibuses para los invitados entre ceremonia, celebración y alojamiento.",
+          "Se cubren dos servicios: berlina de representación con chófer para los novios y familia directa, y autocares o minibuses para los invitados entre ceremonia, celebración y alojamiento.",
         ],
       },
       {
@@ -103,7 +103,7 @@ export const PAGES_OTROS: Page[] = [
         columns: 2,
         bg: "gray",
         items: [
-          { title: "Novios y familia", text: "Berlina de lujo con chófer, decoración discreta y tiempos medidos para las fotos." },
+          { title: "Novios y familia", text: "Berlina de representación con chófer, decoración discreta y tiempos medidos para las fotos." },
           { title: "Invitados", text: "Autocares y minibuses con horarios de ida y vuelta escalonados, para que nadie conduzca." },
         ],
       },

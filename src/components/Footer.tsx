@@ -41,7 +41,7 @@ const COLUMNS: Record<Lang, Column[]> = {
         { name: "Ribeira Sacra", href: "/tours-con-chofer-galicia/ribeira-sacra" },
         { name: "Ourense termal", href: "/tours-con-chofer-galicia/ourense-termal" },
         { name: "Excursiones para cruceros", href: "/excursiones-cruceros-galicia" },
-        { name: "Bodas premium", href: "/bodas-premium" },
+        { name: "Bodas", href: "/transporte-bodas-galicia" },
       ],
     },
     {
@@ -108,8 +108,8 @@ export default function Footer({ lang = "es" }: { lang?: Lang }) {
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-500">
               {lang === "en"
-                ? `Premium ground transportation in Galicia and Northern Portugal since ${SITE.since}. Congresses, incentives, companies and private chauffeur tours.`
-                : `Transporte premium en Galicia y norte de Portugal desde ${SITE.since}. Congresos, incentivos, empresas y tours con chófer.`}
+                ? `Ground transportation in Galicia and Northern Portugal since ${SITE.since}. Congresses, incentives, companies and private chauffeur tours.`
+                : `Transporte con chófer en Galicia y norte de Portugal desde ${SITE.since}. Congresos, incentivos, empresas y tours con chófer.`}
             </p>
             <ul className="mt-4 space-y-2.5 text-sm text-gray-500">
               <li>

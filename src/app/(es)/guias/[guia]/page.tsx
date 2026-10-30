@@ -58,6 +58,20 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
               <p key={p}>{p}</p>
             ))}
           </div>
+          {g.stats && (
+            <dl className={`mt-10 grid gap-4 ${g.stats.length % 4 === 0 ? "grid-cols-2 md:grid-cols-4" : g.stats.length % 3 === 0 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2"}`}>
+              {g.stats.map((s) => (
+                <div key={s.label} className="rounded-2xl border border-luxe-100 bg-luxe-50 px-4 py-5 text-center">
+                  <dt className="sr-only">{s.label}</dt>
+                  <dd>
+                    <span className="block text-2xl font-bold tracking-tight text-luxe-800">{s.value}</span>
+                    <span className="mt-1 block text-xs leading-snug text-gray-600">{s.label}</span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          )}
+
           {g.summary && (
             <div className="mt-10 rounded-2xl border border-gray-100 bg-gray-50 p-6 sm:p-8">
               <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">En resumen</p>
@@ -127,6 +141,14 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                       </tbody>
                     </table>
                   </div>
+                )}
+                {s.image && (
+                  <figure className="mt-8">
+                    <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
+                      <Image src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 768px) 768px, 100vw" />
+                    </div>
+                    {s.image.caption && <figcaption className="mt-3 text-center text-sm text-gray-500">{s.image.caption}</figcaption>}
+                  </figure>
                 )}
                 {s.after?.map((p) => (
                   <p key={p} className="mt-4 leading-relaxed text-gray-600">{p}</p>

@@ -13,6 +13,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Catedral de Santiago de Compostela, centro del Año Santo 2027",
     readMinutes: 9,
     date: "2026-10-31",
+    stats: [{"value": "31/12/2026", "label": "apertura de la Puerta Santa"}, {"value": "25/07/2027", "label": "Día del Apóstol, en domingo"}, {"value": "21-28 mar", "label": "Semana Santa 2027"}, {"value": "2032", "label": "próximo Año Santo"}],
     intro: [
       "2027 es Año Santo Compostelano. Pasa cuando el 25 de julio, día del Apóstol, cae en domingo, y no se repetirá hasta 2032. Para Santiago y para toda Galicia significa una cosa: más grupos, más eventos y mucha más presión sobre hoteles y transporte.",
       "Si organizas una peregrinación, un viaje de grupo, un congreso o un evento de empresa en Galicia en 2027, esta guía te ahorra el error más caro del Año Santo: dejar el transporte para el final.",
@@ -27,6 +28,7 @@ export const ARTICULOS: Guide[] = [
     sections: [
       {
         heading: "Qué es el Año Santo y por qué cambia la logística",
+        image: {"src": "/images/catedral-santiago-alameda.jpg", "alt": "Catedral de Santiago de Compostela desde la Alameda"},
         paragraphs: [
           "El Año Santo Compostelano, o Xacobeo, se celebra los años en que el 25 de julio cae en domingo. Durante todo el año, la Puerta Santa de la catedral permanece abierta y Santiago se convierte en destino de peregrinaciones organizadas, grupos parroquiales, colegios, asociaciones y empresas que aprovechan el tirón para hacer el Camino o celebrar eventos.",
           "A la demanda del peregrino individual se suma la de los grupos organizados, que son justo los que necesitan transporte: llegar al inicio de etapa, volver desde Santiago, moverse entre hoteles y visitas. Y eso ocurre sobre una flota que en Galicia no es enorme: la mayoría de empresas de transporte con chófer son pequeñas.",
@@ -51,8 +53,9 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Los tres problemas de transporte que vas a encontrar",
+        image: {"src": "/images/celebracion-multitud-galicia.jpg", "alt": "Multitud en una celebración en Galicia", "caption": "En las fechas grandes, los accesos y la capacidad de transporte son el cuello de botella."},
         list: [
-          "Capacidad: en fechas punta los autocares y las vans premium se reservan con meses de antelación. Quien llega tarde se queda sin vehículo o paga lo que le pidan.",
+          "Capacidad: en fechas punta los autocares y las vans ejecutivas se reservan con meses de antelación. Quien llega tarde se queda sin vehículo o paga lo que le pidan.",
           "Accesos: el casco histórico de Santiago tiene el tráfico restringido y en los días grandes se amplían los cortes. Los autocares solo pueden subir y bajar pasajeros en puntos concretos.",
           "Alojamiento disperso: con Santiago lleno, muchos grupos se alojan en A Coruña, Pontevedra, las Rías Baixas o incluso Oporto. Eso convierte cada día del programa en una pequeña operación de transporte.",
         ],
@@ -74,8 +77,8 @@ export const ARTICULOS: Guide[] = [
         table: {
           head: ["Tipo de grupo", "Vehículo recomendado", "Antelación en Año Santo"],
           rows: [
-            ["Familia o directivos (1-3)", "Berlina premium", "2-4 semanas; en julio, más"],
-            ["Grupo reducido (4-7)", "Van de lujo", "1-2 meses"],
+            ["Familia o directivos (1-3)", "Berlina ejecutiva", "2-4 semanas; en julio, más"],
+            ["Grupo reducido (4-7)", "Van ejecutiva", "1-2 meses"],
             ["Peregrinación o grupo mediano (8-19)", "Minibús", "2-4 meses"],
             ["Grupo grande o congreso (20-55+)", "Uno o varios autocares", "4-6 meses o más"],
           ],
@@ -121,6 +124,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Finca preparada para la presentación de un fam trip en Galicia",
     readMinutes: 8,
     date: "2026-10-31",
+    stats: [{"value": "8-16", "label": "participantes ideales"}, {"value": "3 días", "label": "formato más habitual"}, {"value": "< 2 h", "label": "de carretera al día"}, {"value": "6 meses", "label": "de seguimiento posterior"}],
     intro: [
       "Un fam trip (viaje de familiarización) no es un viaje de regalo. Es una herramienta de venta: llevas a agentes de viajes, organizadores de eventos o periodistas a conocer un destino para que después lo vendan, lo recomienden o escriban sobre él.",
       "Galicia tiene todo para que un fam trip funcione: gastronomía, paisaje, sedes con carácter y distancias cortas. Pero un mal fam trip deja peor imagen que no hacer ninguno. Esta guía te cuenta cómo hacerlo bien.",
@@ -128,7 +132,7 @@ export const ARTICULOS: Guide[] = [
     summary: [
       "Define antes qué tiene que vender el agente al volver: el programa se diseña para eso.",
       "No más de 2 horas de carretera al día: el tiempo en el autobús es tiempo perdido.",
-      "Grupos de 8 a 16 personas en minibús premium o vans funcionan mejor que un autocar medio vacío.",
+      "Grupos de 8 a 16 personas en minibús o vans funcionan mejor que un autocar medio vacío.",
       "Mezcla visitas técnicas (sedes, hoteles) con experiencias que el agente pueda contar.",
       "La logística ES el mensaje: si el transporte falla, el agente piensa que el destino falla.",
     ],
@@ -145,13 +149,14 @@ export const ARTICULOS: Guide[] = [
         list: [
           "¿Quieres que vendan Galicia para incentivos? Enseña pazos, bodegas, experiencias en barco y hoteles con capacidad para grupos.",
           "¿Quieres congresos? Prioriza sedes (Palexco, Palacio de Congresos de Santiago, Cidade da Cultura), plazas hoteleras cerca y conectividad aérea.",
-          "¿Quieres viajes de lujo a medida? Paradores, hoteles boutique, gastronomía de autor y tours con chófer.",
+          "¿Quieres viajes a medida de alto nivel? Paradores, hoteles boutique, gastronomía de autor y tours con chófer.",
           "¿Quieres prensa? Historias y experiencias únicas que se puedan contar y fotografiar.",
         ],
         tip: "Escribe en una frase qué debe poder vender el agente al volver. Si una visita no ayuda a esa frase, sobra.",
       },
       {
         heading: "Programa tipo de 3 días",
+        image: {"src": "/images/bodega-albarino-rias-baixas.jpg", "alt": "Bodega de albariño en las Rías Baixas, parada habitual de un fam trip"},
         table: {
           head: ["Día", "Programa", "Transporte"],
           rows: [
@@ -164,11 +169,12 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Logística: donde se gana o se pierde un fam trip",
+        image: {"src": "/images/minibus-galicia.jpg", "alt": "Minibús con chófer para un grupo de agentes de viajes"},
         paragraphs: [
           "Los participantes de un fam trip son profesionales que organizan viajes. Detectan al momento un retraso, un vehículo inadecuado o una espera innecesaria. Y lo trasladan al destino: si el transporte falla, piensan que Galicia es complicada.",
         ],
         list: [
-          "Usa vehículos premium y del tamaño justo: un minibús de 19 plazas para 14 personas, no un autocar de 55.",
+          "Usa vehículos ejecutivos y del tamaño justo: un minibús de 19 plazas para 14 personas, no un autocar de 55.",
           "Ten el mismo chófer y vehículo todo el viaje: genera confianza y simplifica la coordinación.",
           "Agrupa las llegadas por franjas horarias y ten un vehículo de reserva para retrasos.",
           "Calcula tiempos reales: Galicia es corta en el mapa, pero las carreteras secundarias son lentas.",
@@ -197,7 +203,7 @@ export const ARTICULOS: Guide[] = [
     ],
     service: {
       title: "¿Organizas un fam trip en Galicia?",
-      text: "Minibuses premium y vans con el mismo chófer todo el viaje, recogidas por franjas de vuelo y un único responsable de la logística.",
+      text: "Minibuses y vans ejecutivas con el mismo chófer todo el viaje, recogidas por franjas de vuelo y un único responsable de la logística.",
       href: "/agencias-mice",
       label: "Transporte para agencias",
     },
@@ -205,7 +211,7 @@ export const ARTICULOS: Guide[] = [
       { question: "¿Cuántos días debe durar un fam trip?", answer: "Lo habitual es entre 2 y 4 días. Tres días permiten enseñar dos zonas de Galicia sin sobrecargar el programa." },
       { question: "¿Cuántos participantes es lo ideal?", answer: "Entre 8 y 16. Permite atención personalizada, networking real y moverse en minibús o vans, que dan mejor imagen que un autocar." },
       { question: "¿Qué aeropuertos conviene usar?", answer: "Santiago para participantes nacionales y Oporto para internacionales. A Coruña y Vigo son buenas alternativas según el programa." },
-      { question: "¿Quién debería organizarlo?", answer: "Un DMC local como Suunia para el programa y los proveedores, y un proveedor de transporte con flota premium para la logística." },
+      { question: "¿Quién debería organizarlo?", answer: "Un DMC local como Suunia para el programa y los proveedores, y un proveedor de transporte con flota con chófer para la logística." },
     ],
     related: [
       { title: "Para agencias MICE", href: "/agencias-mice" },
@@ -226,6 +232,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Coche con chófer en la autopista entre Oporto y Vigo",
     readMinutes: 7,
     date: "2026-10-31",
+    stats: [{"value": "~150 km", "label": "entre Oporto y Vigo"}, {"value": "1 h 35 min", "label": "por carretera desde el aeropuerto"}, {"value": "~2", "label": "trenes directos al día"}, {"value": "-1 h", "label": "Portugal respecto a España"}],
     intro: [
       "Oporto y Vigo están a unos 150 kilómetros y muy conectados por carretera. Aun así, quien aterriza en el aeropuerto de Oporto con destino Vigo se encuentra con una duda: ¿tren, autobús, coche o traslado privado?",
       "Aquí tienes la comparación sin rodeos, con los datos que importan: cuánto se tarda de verdad, desde dónde sale cada opción y cuándo compensa cada una.",
@@ -275,6 +282,7 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Traslado privado con chófer",
+        image: {"src": "/images/van-ejecutiva-galicia.jpg", "alt": "Van ejecutiva con chófer para el trayecto Oporto–Vigo"},
         paragraphs: [
           "El chófer sigue tu vuelo, te espera en llegadas con tu nombre, carga el equipaje y te deja en la puerta del hotel, de la empresa o del recinto ferial. Sin transbordos, sin horarios y sin pensar en peajes.",
           "El precio es por vehículo, así que se reparte entre los viajeros: para tres o más personas, o para viajes de empresa en los que el tiempo vale dinero, se acerca mucho más de lo que parece a las otras opciones.",
@@ -293,7 +301,7 @@ export const ARTICULOS: Guide[] = [
     ],
     service: {
       title: "Del aeropuerto de Oporto a Vigo, puerta a puerta",
-      text: "Berlinas, vans de lujo y minibuses con seguimiento de vuelo. Consulta los precios orientativos.",
+      text: "Berlinas, vans ejecutivas y minibuses con seguimiento de vuelo. Consulta los precios orientativos.",
       href: "/traslados-desde-vigo",
       label: "Ver traslados Oporto–Vigo",
     },
@@ -323,6 +331,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Baiona, etapa del Camino Portugués por la costa",
     readMinutes: 9,
     date: "2026-10-31",
+    stats: [{"value": "~270 km", "label": "de Oporto a Santiago"}, {"value": "12-13", "label": "etapas desde Oporto"}, {"value": "~120 km", "label": "desde Baiona"}, {"value": "6", "label": "etapas desde Baiona"}],
     intro: [
       "El Camino Portugués por la costa es una de las rutas jacobeas que más crece: sale de Oporto, sube pegado al Atlántico por el norte de Portugal, entra en Galicia por A Guarda y se une al Camino Portugués central en Redondela antes de llegar a Santiago.",
       "Para un peregrino solo, la logística es sencilla. Para un grupo, no tanto: hay que llegar a Oporto, mover equipajes, cruzar el Miño, apoyar a quien no puede con una etapa y volver desde Santiago. Esta guía te lo ordena.",
@@ -360,6 +369,7 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Logística para grupos",
+        image: {"src": "/images/minibus-galicia.jpg", "alt": "Minibús de apoyo para un grupo de peregrinos"},
         list: [
           "Llegada: recogida en el aeropuerto de Oporto y traslado a Oporto, Matosinhos o el punto de inicio elegido. Si empezáis en Baiona, mejor por Vigo u Oporto.",
           "Equipaje: el grupo camina con mochila ligera y el equipaje viaja en vehículo entre alojamientos.",
@@ -375,7 +385,7 @@ export const ARTICULOS: Guide[] = [
         table: {
           head: ["Tamaño del grupo", "Apoyo recomendado"],
           rows: [
-            ["4-7 peregrinos", "Una van de lujo para apoyo y equipaje"],
+            ["4-7 peregrinos", "Una van ejecutiva para apoyo y equipaje"],
             ["8-16 peregrinos", "Minibús de apoyo (equipaje en el maletero o en vehículo aparte)"],
             ["17-30 peregrinos", "Minibús de apoyo + vehículo para equipaje"],
             ["Grupos grandes", "Autocar para llegada y regreso + vehículos de apoyo por etapas"],
@@ -421,6 +431,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Pazo gallego preparado para un viaje de incentivos",
     readMinutes: 8,
     date: "2026-10-31",
+    stats: [{"value": "3 días", "label": "formato más habitual"}, {"value": "< 2 h", "label": "de carretera al día"}, {"value": "may-oct", "label": "mejor temporada"}, {"value": "1", "label": "chófer para todo el programa"}],
     intro: [
       "Un viaje de incentivos es un premio. Tu cliente quiere que sus mejores comerciales, distribuidores o empleados vuelvan contando lo que han vivido y con ganas de ganarse el siguiente. Si vuelven hablando del autobús, algo ha fallado.",
       "Galicia funciona muy bien para incentivos: es auténtica, se come de maravilla, no está masificada y tiene experiencias que no se encuentran en otros destinos. Esta guía te cuenta qué funciona, qué no y cómo mover al grupo sin que la logística se coma la experiencia.",
@@ -429,12 +440,13 @@ export const ARTICULOS: Guide[] = [
       "Lo que más funciona: gastronomía de producto, el mar, los pazos y la Ribeira Sacra.",
       "El enemigo número uno: demasiadas horas de carretera. Elige una o dos zonas, no cinco.",
       "Un plan B a cubierto para cada día: en Galicia llueve, y eso no puede estropear el premio.",
-      "El transporte forma parte de la experiencia: vehículos premium y el mismo chófer todo el viaje.",
+      "El transporte forma parte de la experiencia: vehículos ejecutivos y el mismo chófer todo el viaje.",
       "Para grupos de 10 a 20, varias vans dan más flexibilidad que un autocar.",
     ],
     sections: [
       {
         heading: "Lo que funciona en Galicia",
+        image: {"src": "/images/marisco-galicia.jpg", "alt": "Bandeja de marisco gallego en una comida de incentivo"},
         list: [
           "Gastronomía de producto: marisco en las Rías Baixas, pulpo, carne gallega y restaurantes con estrella Michelin.",
           "El mar: salida en barco privado por la ría, visita a una batea de mejillón o navegación a vela.",
@@ -457,6 +469,7 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Programa tipo de 3 días",
+        image: {"src": "/images/veleros-ria-galicia.jpg", "alt": "Veleros navegando por la ría durante un incentivo"},
         table: {
           head: ["Día", "Programa", "Movilidad"],
           rows: [
@@ -469,12 +482,13 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Cómo mover al grupo",
+        image: {"src": "/images/cena-gala-evento-galicia.jpg", "alt": "Salón preparado para la cena de un viaje de incentivo"},
         table: {
           head: ["Tamaño del grupo", "Opción recomendada", "Por qué"],
           rows: [
-            ["Hasta 7", "Una van de lujo", "Todos juntos y con trato muy personal"],
-            ["8-20", "Varias vans o un minibús premium", "Flexibilidad para dividir el grupo en actividades"],
-            ["20-50", "Autocar de gran turismo + berlina para la dirección", "Eficiencia sin perder el detalle VIP"],
+            ["Hasta 7", "Una van ejecutiva", "Todos juntos y con trato muy personal"],
+            ["8-20", "Varias vans o un minibús", "Flexibilidad para dividir el grupo en actividades"],
+            ["20-50", "Autocar de gran turismo + berlina para la dirección", "Eficiencia sin descuidar a la dirección"],
             ["50+", "Varios autocares coordinados", "Rotaciones y llegadas escalonadas"],
           ],
         },
@@ -486,8 +500,8 @@ export const ARTICULOS: Guide[] = [
       },
     ],
     service: {
-      title: "Movilidad premium para tu incentivo",
-      text: "Vans de lujo, minibuses VIP y autocares con chófer a disposición durante todo el programa.",
+      title: "Movilidad con chófer para tu incentivo",
+      text: "Vans ejecutivas, minibuses y autocares con chófer a disposición durante todo el programa.",
       href: "/transporte-incentivos-galicia",
       label: "Ver transporte para incentivos",
     },
@@ -515,6 +529,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Ría de Vigo, ciudad sede de Conxemar",
     readMinutes: 7,
     date: "2026-10-31",
+    stats: [{"value": "5-7 oct", "label": "Conxemar 2027"}, {"value": "~700", "label": "expositores en ediciones recientes"}, {"value": "40+", "label": "países representados"}, {"value": "~1 h 40 min", "label": "desde el aeropuerto de Oporto"}],
     intro: [
       "Conxemar, la Feria Internacional de Productos del Mar Congelados, es uno de los grandes encuentros mundiales del sector pesquero. Se celebra cada octubre en IFEVI, el recinto ferial de Vigo, y reúne a cientos de expositores y a miles de profesionales de decenas de países.",
       "Durante esos días Vigo se llena: hoteles completos, taxis imposibles y el entorno de IFEVI saturado. Esta guía te ayuda a organizar los traslados para que tu equipo y tus clientes lleguen a tiempo a cada reunión.",
@@ -549,6 +564,7 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Dónde alojarse y cómo moverse cada día",
+        image: {"src": "/images/parador-baiona.jpg", "alt": "Baiona, una de las alternativas de alojamiento durante Conxemar"},
         paragraphs: [
           "Los hoteles del centro de Vigo se llenan pronto durante la feria. Muchas empresas alojan a su equipo en Pontevedra, Baiona, Sanxenxo o Redondela, a 20-50 minutos de IFEVI. La distancia no es un problema si el transporte diario está organizado.",
         ],
@@ -605,6 +621,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Coche con chófer esperando a un pasajero en Santiago de Compostela",
     readMinutes: 6,
     date: "2026-10-31",
+    stats: [{"value": "15-20 min", "label": "aeropuerto – centro"}, {"value": "4", "label": "formas de moverte"}],
     intro: [
       "Llegas a Santiago y necesitas moverte: del aeropuerto al hotel, del hotel a una reunión o del centro a la Cidade da Cultura. Tienes cuatro opciones: taxi, VTC por aplicación, autobús o un coche con chófer reservado.",
       "Ninguna es la mejor siempre. Depende de cuántos sois, de cuántos trayectos haces y de cuánto te importa no esperar. Aquí tienes la guía para decidir rápido.",
@@ -665,6 +682,7 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "El casco histórico: lo que nadie te cuenta",
+        image: {"src": "/images/catedral-santiago-alameda.jpg", "alt": "Casco histórico de Santiago de Compostela con la catedral"},
         paragraphs: [
           "La zona monumental de Santiago tiene el tráfico restringido. Da igual que vayas en taxi, VTC o con chófer: el vehículo te deja en el punto accesible más cercano y el último tramo se hace a pie. Si tu hotel está dentro del casco histórico, conviene saber de antemano dónde será la parada.",
         ],
@@ -701,6 +719,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     readMinutes: 7,
     date: "2026-10-31",
+    stats: [{"value": "~32.500", "label": "espectadores en Riazor"}, {"value": "~20 min", "label": "a pie desde el centro"}, {"value": "~20 min", "label": "aeropuerto de Alvedro"}, {"value": "~55 min", "label": "aeropuerto de Santiago"}],
     intro: [
       "Con el Deportivo de vuelta en Primera División, A Coruña vuelve a recibir aficionados de toda España cada quince días. Riazor está en plena ciudad, junto a la playa, y el viaje puede ser mucho más que un partido.",
       "Esta guía es para el aficionado visitante y para las peñas que organizan el desplazamiento: cómo llegar, dónde dormir, cómo moverse el día de partido y qué hacer el resto del fin de semana.",
@@ -794,6 +813,7 @@ export const ARTICULOS: Guide[] = [
     alt: "Sala de congresos en Galicia",
     readMinutes: 6,
     date: "2026-10-31",
+    stats: [{"value": "3", "label": "ciudades de congresos"}, {"value": "Todo 2027", "label": "Año Santo en Santiago"}],
     intro: [
       "2027 va a ser un año intenso para los eventos profesionales en Galicia: Año Santo en Santiago, congresos médicos y científicos en Palexco y la gran feria internacional del producto del mar en Vigo.",
       "Este calendario recoge los congresos y ferias ya anunciados para 2027 en las tres grandes ciudades, con su sede y lo que conviene saber del transporte. Se actualiza a medida que se confirman nuevas fechas.",
@@ -821,6 +841,7 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Santiago de Compostela",
+        image: {"src": "/images/catedral-santiago-alameda.jpg", "alt": "Catedral de Santiago de Compostela, ciudad del Año Santo 2027"},
         table: {
           head: ["Fechas", "Evento", "Sede", "Estado"],
           rows: [

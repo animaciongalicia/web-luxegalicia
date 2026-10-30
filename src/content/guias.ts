@@ -11,8 +11,9 @@ const GUIAS_BASE: Guide[] = [
       "Cómo planificar el transporte de un congreso o evento en Galicia: cuántos vehículos necesitas, plazos, aeropuertos, sedes, lanzaderas y los errores que más caro salen.",
     image: "/images/sala-eventos-empresas.jpg",
     alt: "Sala de congresos preparada en Galicia",
-    readMinutes: 9,
+    readMinutes: 10,
     date: "2026-10-30",
+    stats: [{"value": "4", "label": "aeropuertos en juego"}, {"value": "1-500", "label": "personas por operativa"}, {"value": "~50 min", "label": "A Coruña – Santiago"}, {"value": "3-6 meses", "label": "antelación en grandes congresos"}],
     intro: [
       "Organizar el transporte de un congreso parece sencillo hasta que haces números: 400 asistentes, seis hoteles, tres aeropuertos posibles, una cena de gala a 25 kilómetros y un programa que cambia la semana anterior.",
       "Esta guía resume lo que funciona en Galicia después de más de una década moviendo congresos, incentivos y eventos corporativos. Sin teoría: decisiones que puedes tomar hoy.",
@@ -27,13 +28,14 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "2. Cuántos vehículos necesitas",
+        image: {"src": "/images/flota-luxe-galicia.jpg", "alt": "Berlinas y vans con chófer preparadas para un congreso", "caption": "La flota se dimensiona por el pico de asistentes en una misma franja de 30 minutos."},
         paragraphs: ["La regla rápida para lanzaderas sede-hotel: calcula el pico de personas que tienen que llegar en la misma franja de 30 minutos y divide por la capacidad del vehículo, sumando un 15 % de margen."],
         list: [
-          "1-3 personas: berlina premium (ponentes, VIP, comité).",
-          "4-7 personas: van de lujo.",
+          "1-3 personas: berlina ejecutiva (ponentes, invitados especiales, comité).",
+          "4-7 personas: van ejecutiva.",
           "8-19 personas: minibús.",
           "20-55 personas: autocar. Para 300 asistentes en un mismo bloque horario, 6 autocares en una o dos rotaciones.",
-          "Siempre: una berlina de reserva para imprevistos con VIP.",
+          "Siempre: una berlina de reserva para imprevistos con invitados especiales.",
         ],
       },
       {
@@ -68,6 +70,7 @@ const GUIAS_BASE: Guide[] = [
           "La pieza que más se subestima. Un coordinador de transporte con línea directa con la secretaría técnica resuelve en minutos lo que, sin él, se convierte en veinte llamadas. Es lo que diferencia una operativa profesional de una lista de coches.",
         ],
       },
+      {"heading": "7. La cena de gala: el momento más delicado", "paragraphs": ["La cena de gala suele ser el pico de transporte de todo el congreso: todos los asistentes salen a la vez hacia un pazo, una finca o un restaurante fuera de la ciudad, y vuelven a horas distintas.", "La clave está en la vuelta. Un primer autocar sale al terminar la cena, otro una hora después y un último al cierre. Así nadie se queda esperando y nadie se va antes de tiempo."], "image": {"src": "/images/cena-gala-evento-galicia.jpg", "alt": "Salón preparado para una cena de gala de un congreso en Galicia"}, "tip": "Pide al restaurante la hora real de fin del servicio y planifica la primera salida 15 minutos después, no antes."},
     ],
     faqs: [
       { question: "¿Qué aeropuerto es mejor para un congreso en A Coruña?", answer: "Alvedro (A Coruña) está a 10 minutos de la ciudad, pero tiene menos vuelos. Santiago, a 50 minutos, concentra más conexiones. Lo habitual es combinar ambos y, para internacionales, Oporto." },
@@ -89,14 +92,16 @@ const GUIAS_BASE: Guide[] = [
       "Guía para agencias MICE de Madrid, Barcelona y extranjero que organizan eventos en Galicia: sedes, aeropuertos, distancias, temporadas, proveedores y logística.",
     image: "/images/pazo-eventos-corporativos.jpg",
     alt: "Pazo gallego preparado para un evento corporativo",
-    readMinutes: 8,
+    readMinutes: 11,
     date: "2026-10-30",
+    stats: [{"value": "3", "label": "ciudades de eventos: A Coruña, Santiago y Vigo"}, {"value": "4", "label": "aeropuertos, incluido Oporto"}, {"value": "< 1 h 40 min", "label": "entre las tres ciudades por carretera"}, {"value": "mayo-oct", "label": "mejor temporada"}],
     intro: [
       "Galicia funciona muy bien para eventos: buena gastronomía, sedes con carácter, distancias cortas y una imagen todavía fresca para los asistentes. Pero tiene sus reglas, y si organizas desde Madrid, Barcelona o el extranjero, conviene conocerlas antes de cerrar nada.",
     ],
     sections: [
       {
         heading: "Las tres ciudades de eventos",
+        image: {"src": "/images/catedral-santiago-alameda.jpg", "alt": "Catedral de Santiago de Compostela vista desde la Alameda"},
         list: [
           "A Coruña: Palexco en el puerto, ExpoCoruña para grandes formatos, hoteles céntricos y aeropuerto a 10 minutos.",
           "Santiago de Compostela: Palacio de Congresos, Cidade da Cultura y la marca Santiago. Aeropuerto con más vuelos de Galicia.",
@@ -132,6 +137,10 @@ const GUIAS_BASE: Guide[] = [
           "Para el programa completo (hoteles, restauración, actividades), un DMC local como Suunia; para el transporte, Luxe Galicia.",
         ],
       },
+      {"heading": "Qué tipo de evento encaja en cada ciudad", "table": {"head": ["Ciudad", "Encaja mejor con", "Sedes de referencia", "Aeropuerto"], "rows": [["A Coruña", "Congresos médicos y científicos, convenciones de empresa", "Palexco, ExpoCoruña", "Alvedro (10-15 min)"], ["Santiago", "Congresos con imagen institucional, Año Santo, actos singulares", "Palacio de Congresos, Cidade da Cultura", "Rosalía de Castro (15 min)"], ["Vigo", "Ferias internacionales, eventos de industria, puerta a Oporto", "IFEVI, Auditorio Mar de Vigo", "Peinador (junto a IFEVI)"]]}},
+      {"heading": "Calendario de trabajo para una agencia de fuera", "list": ["12 meses antes: elección de ciudad y sede, bloqueo de hoteles.", "6-9 meses antes: visita de inspección, proveedores locales y reserva de flota para las fechas clave.", "3 meses antes: programa social cerrado (cena de gala, actividades, acompañantes).", "1 mes antes: lista de llegadas por vuelo y hotel; plan de transporte definitivo.", "1 semana antes: hoja de ruta con horarios, vehículos, chóferes y contactos.", "Durante el evento: un coordinador local con línea directa con tu equipo."]},
+      {"heading": "Experiencias que diferencian un evento en Galicia", "paragraphs": ["Lo que más recuerdan los asistentes no es la sala, es lo que pasa alrededor: una cena de marisco frente a la ría, una salida en velero, una cata de albariño en una bodega o un paseo por Santiago al anochecer."], "image": {"src": "/images/veleros-ria-galicia.jpg", "alt": "Veleros navegando por una ría gallega durante una actividad de empresa"}, "after": ["Para el programa social completo, Suunia, DMC partner, diseña y coordina las experiencias. El transporte entre ellas, Luxe Galicia."]},
+      {"heading": "Checklist para tu visita de inspección", "list": ["Recorre el trayecto aeropuerto–hotel–sede a la hora real del evento.", "Comprueba dónde pueden parar los autocares en la sede y en los hoteles.", "Mide el tiempo real hasta el lugar de la cena de gala.", "Pregunta por otros eventos en la ciudad en tus fechas.", "Conoce en persona al responsable local del transporte."]},
     ],
     faqs: [
       { question: "¿Cuál es la mejor ciudad de Galicia para un congreso?", answer: "Depende del tamaño y del perfil. A Coruña ofrece sede en el centro y hoteles a pie; Santiago, la marca y la conectividad aérea; Vigo, cercanía con Oporto y tejido industrial." },
@@ -151,8 +160,9 @@ const GUIAS_BASE: Guide[] = [
       "Cómo ir del aeropuerto de Oporto a Vigo, Santiago de Compostela o A Coruña: tren, autobús, coche de alquiler o traslado privado con chófer. Tiempos, ventajas y desventajas.",
     image: "/images/traslados-coruna-santiago.jpg",
     alt: "Carretera entre Oporto y Galicia",
-    readMinutes: 6,
+    readMinutes: 8,
     date: "2026-10-30",
+    stats: [{"value": "1 h 35 min", "label": "aeropuerto de Oporto – Vigo"}, {"value": "2 h 20 min", "label": "aeropuerto de Oporto – Santiago"}, {"value": "3 h", "label": "aeropuerto de Oporto – A Coruña"}, {"value": "-1 h", "label": "Portugal respecto a España"}],
     intro: [
       "El aeropuerto de Oporto es la gran puerta internacional del noroeste peninsular. Si vas a Galicia y tu vuelo aterriza allí, tienes cuatro opciones. Esta es la comparación sin rodeos.",
     ],
@@ -181,10 +191,13 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Traslado privado con chófer",
+        image: {"src": "/images/van-ejecutiva-galicia.jpg", "alt": "Van ejecutiva con chófer esperando a viajeros llegados a Oporto"},
         paragraphs: [
           "El chófer te espera en llegadas aunque el vuelo se retrase, carga el equipaje y te deja en la puerta del hotel. Para dos o más personas, o para viajes de empresa, el coste por persona se acerca mucho más de lo que parece a las otras opciones, y el tiempo que ganas es enorme.",
         ],
       },
+      {"heading": "Comparativa rápida", "table": {"head": ["Opción", "Duración a Santiago", "Flexibilidad", "Mejor para"], "rows": [["Traslado privado", "~2 h 20 min", "Total: sale cuando llegas", "Empresas, familias y grupos"], ["Autobús", "~2 h 30 min - 3 h", "Horarios fijos", "Viajeros solos sin prisa"], ["Tren", "Más de 3 h con transbordos", "Baja", "Quien ya está en Oporto ciudad"], ["Coche de alquiler", "~2 h 20 min", "Alta", "Viajes largos por libre"]]}, "after": ["Tiempos orientativos desde el aeropuerto de Oporto en condiciones normales de tráfico."]},
+      {"heading": "Consejos para el día de llegada", "list": ["Recuerda que Portugal tiene una hora menos: revisa la hora local de llegada al reservar el traslado.", "Si alquilas coche, resuelve antes el peaje electrónico de las autopistas portuguesas.", "Si llegas en el último vuelo de la noche, reserva el transporte antes: a esas horas hay menos opciones.", "Para grupos con llegadas en varios vuelos, agrupa las recogidas por franjas horarias."], "tip": "Para empresas y congresos, Oporto suele ofrecer más vuelos y mejores precios que los aeropuertos gallegos. Con un traslado organizado, la distancia deja de ser un problema."},
     ],
     faqs: [
       { question: "¿Cuál es la forma más rápida de ir de Oporto a Santiago?", answer: "Por carretera: unas 2 horas y 20 minutos desde el aeropuerto con un traslado directo. El transporte público requiere transbordos y suele tardar bastante más." },
@@ -205,8 +218,9 @@ const GUIAS_BASE: Guide[] = [
       "Cómo organizar el transporte de un grupo en el Camino de Santiago: llegar al inicio de etapa (Sarria, Tui, Oporto, Ferrol), vehículo de apoyo, equipaje y regreso desde Santiago.",
     image: "/images/faro-de-Finisterre-1.jpg",
     alt: "Faro de Fisterra, final del Camino de Santiago",
-    readMinutes: 7,
+    readMinutes: 9,
     date: "2026-10-30",
+    stats: [{"value": "100 km", "label": "mínimo a pie para la Compostela"}, {"value": "~1 h 20 min", "label": "Santiago – Sarria"}, {"value": "~1 h 30 min", "label": "aeropuerto de Oporto – Tui"}, {"value": "2027", "label": "Año Santo"}],
     intro: [
       "El Camino se hace a pie. Pero antes de dar el primer paso hay que llegar al punto de salida, y al final hay que volver a casa. Para un grupo, esas dos piezas deciden si la experiencia empieza y termina bien.",
     ],
@@ -229,10 +243,14 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "El regreso",
+        image: {"src": "/images/faro-de-Finisterre-1.jpg", "alt": "Faro de Fisterra al atardecer, final del Camino", "caption": "Muchos grupos cierran el Camino con una excursión a Fisterra y Muxía."},
         paragraphs: [
           "Desde Santiago se vuelve al aeropuerto de Santiago, A Coruña, Vigo u Oporto, o se añade un día a Fisterra y Muxía. Planifícalo antes de salir: el día de llegada todo el mundo quiere celebrar, no buscar transporte.",
         ],
       },
+      {"heading": "Qué ruta elegir según el grupo", "table": {"head": ["Ruta", "Inicio habitual", "Distancia aprox.", "Para quién"], "rows": [["Camino Francés", "Sarria", "~115 km, 5 etapas", "El más concurrido y con más servicios"], ["Portugués central", "Tui", "~115-120 km, 6 etapas", "Grupos que llegan por Vigo u Oporto"], ["Portugués por la costa", "Baiona", "~120 km, 6 etapas", "Quien quiere mar y paisaje"], ["Camino Inglés", "Ferrol", "~115-120 km, 5 etapas", "Grupos que buscan menos gente"]]}},
+      {"heading": "El equipaje del grupo", "paragraphs": ["Caminar con mochila ligera cambia la experiencia. El equipaje viaja en vehículo de alojamiento en alojamiento y el grupo solo lleva lo del día.", "Para grupos, lo más eficiente es que el mismo vehículo de apoyo se encargue del equipaje: un único responsable, horarios coordinados con la ruta y nada de maletas perdidas entre empresas distintas."]},
+      {"heading": "Año Santo 2027", "paragraphs": ["En 2027 el Camino vivirá un año de máxima afluencia. Para grupos, eso significa reservar alojamiento y transporte con mucha más antelación de lo habitual, sobre todo en Semana Santa y en verano."]},
     ],
     faqs: [
       { question: "¿Cuánto se tarda del aeropuerto de Santiago a Sarria?", answer: "Alrededor de 1 hora y 20 minutos por carretera." },
@@ -251,10 +269,11 @@ const GUIAS_BASE: Guide[] = [
     metaTitle: "Moverse por Galicia con chófer: distancias, rutas y tiempos reales",
     metaDescription:
       "Distancias y tiempos reales entre las ciudades de Galicia y Oporto, rutas recomendadas y cuándo compensa viajar con chófer frente a coche de alquiler o transporte público.",
-    image: "/images/van-lujo-galicia.jpg",
-    alt: "Van de lujo con chófer recorriendo Galicia",
-    readMinutes: 6,
+    image: "/images/van-ejecutiva-galicia.jpg",
+    alt: "Van ejecutiva con chófer recorriendo Galicia",
+    readMinutes: 8,
     date: "2026-10-30",
+    stats: [{"value": "~50 min", "label": "A Coruña – Santiago"}, {"value": "~1 h", "label": "Santiago – Vigo"}, {"value": "~1 h 35 min", "label": "Vigo – Oporto"}, {"value": "~5 h 45 min", "label": "A Coruña – Madrid"}],
     intro: [
       "Galicia es compacta en el mapa y lenta en la realidad: costa recortada, carreteras secundarias con curvas y pueblos que no salen en las rutas rápidas. Saber los tiempos reales es la base de cualquier itinerario.",
     ],
@@ -274,6 +293,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Cuándo compensa el chófer",
+        image: {"src": "/images/bodega-albarino-rias-baixas.jpg", "alt": "Bodega de albariño entre viñedos en las Rías Baixas", "caption": "Las rutas con cata de vino son el ejemplo perfecto: nadie del grupo tiene que conducir."},
         list: [
           "Viajes de empresa con agenda apretada.",
           "Grupos de 3 o más personas: el coste por persona baja mucho.",
@@ -282,6 +302,8 @@ const GUIAS_BASE: Guide[] = [
           "Carreteras complicadas: Ribeira Sacra, Costa da Morte.",
         ],
       },
+      {"heading": "Tres rutas que funcionan muy bien con chófer", "list": ["Rías Baixas: Combarro, Cambados y O Grove en un día, con cata de albariño.", "Ribeira Sacra: miradores del Sil, monasterios y bodegas por carreteras de curvas.", "Costa da Morte: faros y acantilados hasta Fisterra, con la vuelta de noche resuelta."], "image": {"src": "/images/combarro-horreos.jpg", "alt": "Hórreos de Combarro junto a la ría de Pontevedra"}},
+      {"heading": "Conducir en Galicia: lo que no te cuentan", "list": ["Muchas carreteras secundarias son estrechas y con curvas: los tiempos del navegador se quedan cortos.", "La niebla y la lluvia son habituales en invierno y en la costa.", "Los cascos históricos de Santiago, Pontevedra o Lugo tienen el tráfico restringido.", "La autopista AP-9, que une A Coruña, Santiago, Pontevedra y Vigo, es de peaje.", "Aparcar en el centro de las ciudades y en los pueblos de costa en verano es complicado."]},
     ],
     faqs: [
       { question: "¿Cuántos días hacen falta para ver Galicia?", answer: "Con 3 días ves lo esencial (Santiago y Rías Baixas); con 5, la costa atlántica completa; con 7, también el interior (Ribeira Sacra, Lugo) y la Playa de las Catedrales." },
@@ -302,6 +324,7 @@ const GUIAS_BASE: Guide[] = [
     alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     readMinutes: 8,
     date: "2026-10-31",
+    stats: [{"value": "~15 min", "label": "aeropuerto de Alvedro"}, {"value": "~50-60 min", "label": "aeropuerto de Santiago"}, {"value": "~3 h", "label": "aeropuerto de Oporto"}, {"value": "~10 min", "label": "estación de tren"}],
     intro: [
       "Palexco, el Palacio de Exposiciones y Congresos de A Coruña, es la sede de referencia de la ciudad para congresos médicos, de sociedades científicas y convenciones de empresa. Está en el muelle de Trasatlánticos, en pleno centro, con la ciudad y los hoteles alrededor.",
       "Esa ubicación lo cambia todo. En Palexco el problema no es llevar a la gente a un recinto lejano: es coordinar llegadas desde cuatro aeropuertos, ponentes con agendas imposibles, hoteles repartidos por la ciudad y una cena de gala fuera del centro, todo en una zona con tráfico de puerto, paseo marítimo y, algunos días, cruceros atracados al lado.",
@@ -326,6 +349,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "El perfil de un congreso en Palexco",
+        image: {"src": "/images/sala-eventos-empresas.jpg", "alt": "Sala preparada para las sesiones de un congreso"},
         paragraphs: [
           "Un congreso médico o científico tipo reúne a varios cientos de asistentes durante dos a cuatro días, con ponentes nacionales e internacionales, una zona de exposición con la industria, cursos precongreso y, casi siempre, una cena de clausura. La secretaría técnica coordina decenas de llegadas en pocas horas el primer día.",
           "Cada uno de esos elementos tiene su propia necesidad de transporte, y es ahí donde un plan profesional marca la diferencia.",
@@ -354,6 +378,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Cuántos vehículos necesitas",
+        image: {"src": "/images/cena-gala-evento-galicia.jpg", "alt": "Salón de una cena de gala de congreso", "caption": "La cena de clausura suele ser el pico de transporte del congreso."},
         paragraphs: [
           "Como referencia, para un congreso de 400 asistentes en Palexco con la mitad alojados fuera del centro: dos o tres autocares en rotación en las franjas punta, un minibús de apoyo, tres o cuatro berlinas para ponentes y comité, y la flota de la cena de gala, que suele ser el pico del congreso. Con el programa y la lista de hoteles se calcula el plan exacto.",
         ],
@@ -381,8 +406,9 @@ const GUIAS_BASE: Guide[] = [
       "Cómo organizar el transporte de un congreso en el Palacio de Congresos de Santiago de Compostela: lanzaderas con el casco histórico y hoteles, aeropuerto y tiempos.",
     image: "/images/tours-santiago.jpg",
     alt: "Santiago de Compostela, sede de congresos",
-    readMinutes: 5,
+    readMinutes: 7,
     date: "2026-10-30",
+    stats: [{"value": "~10-15 min", "label": "aeropuerto de Santiago"}, {"value": "~10-15 min", "label": "centro de Santiago"}, {"value": "~50 min", "label": "A Coruña"}, {"value": "~2 h 20 min", "label": "aeropuerto de Oporto"}],
     intro: [
       "El Palacio de Congresos y Exposiciones de Galicia está en Santiago, fuera del casco histórico y cerca de la salida hacia el aeropuerto. Muchos asistentes se alojan en el centro, así que la lanzadera es parte esencial del plan.",
     ],
@@ -398,6 +424,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Claves logísticas",
+        image: {"src": "/images/catedral-santiago-alameda.jpg", "alt": "Catedral de Santiago vista desde la Alameda, junto al casco histórico"},
         list: [
           "El casco histórico tiene el tráfico restringido: las recogidas se hacen en puntos accesibles cercanos a los hoteles.",
           "Lanzaderas por bloques antes de las sesiones plenarias y salidas escalonadas al final del día.",
@@ -405,6 +432,8 @@ const GUIAS_BASE: Guide[] = [
           "Programa de acompañantes: Rías Baixas o Costa da Morte con chófer mientras dura el congreso.",
         ],
       },
+      {"heading": "Qué congresos se celebran aquí", "paragraphs": ["El Palacio de Congresos y Exposiciones de Galicia acoge congresos nacionales de sociedades médicas y científicas. Un ejemplo: el 48.º Congreso Nacional de SEMERGEN, en octubre de 2026, reunió a más de 4.500 médicos de familia en Santiago.", "Con esos volúmenes, el transporte deja de ser un detalle: miles de personas alojadas por toda la ciudad, y muchas fuera de ella, que tienen que llegar a la misma hora."]},
+      {"heading": "Cómo dimensionar las lanzaderas", "list": ["Agrupa los hoteles por zonas (casco histórico, ensanche, salida hacia el aeropuerto, fuera de la ciudad).", "Una ruta circular por zona, con salidas cada 15-20 minutos en la franja de entrada.", "Salidas por bloques al final de cada jornada, coordinadas con el programa.", "Berlinas para ponentes y comité, independientes de las lanzaderas.", "Si hay hoteles en A Coruña o en las Rías Baixas, autocares directos con horario fijo."], "tip": "En Año Santo 2027, cuenta con más asistentes alojados fuera de Santiago y con más tiempo en cada trayecto."},
     ],
     faqs: [
       { question: "¿Se puede llegar en autocar al casco histórico de Santiago?", answer: "No directamente: el acceso está restringido. Se usan puntos de subida y bajada en el perímetro del casco histórico." },
@@ -426,6 +455,7 @@ const GUIAS_BASE: Guide[] = [
     alt: "Evento multitudinario en Vigo",
     readMinutes: 6,
     date: "2026-10-31",
+    stats: [{"value": "minutos", "label": "del aeropuerto de Vigo"}, {"value": "~15-20 min", "label": "del centro de Vigo"}, {"value": "~1 h", "label": "Santiago"}, {"value": "~1 h 40 min", "label": "aeropuerto de Oporto"}],
     intro: [
       "IFEVI, la Institución Ferial de Vigo, es el gran recinto ferial del sur de Galicia. Acoge ferias internacionales como Conxemar, la gran cita del producto del mar congelado, además de congresos, convenciones y eventos de empresa.",
       "Su ubicación es su gran ventaja: está en la avenida do Aeroporto, junto al aeropuerto de Peinador. Y también su reto: queda lejos del centro de Vigo, donde se aloja la mayoría de asistentes.",
@@ -443,6 +473,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Oporto, el aeropuerto que más importa en IFEVI",
+        image: {"src": "/images/traslados-coruna-santiago.jpg", "alt": "Berlina con chófer en la autopista entre Oporto y Vigo"},
         paragraphs: [
           "En ferias internacionales, buena parte de los expositores y compradores vuela a Oporto: más conexiones y, a menudo, mejores precios que los aeropuertos gallegos. Eso convierte el traslado Oporto–Vigo en una pieza central del plan de transporte.",
           "La forma más eficiente es agrupar llegadas por franjas horarias en vans o minibuses, con un vehículo de reserva para los vuelos retrasados.",
@@ -487,6 +518,7 @@ const GUIAS_BASE: Guide[] = [
     alt: "Monumento junto a la Torre de Hércules, en A Coruña",
     readMinutes: 5,
     date: "2026-10-31",
+    stats: [{"value": "~32.500", "label": "espectadores"}, {"value": "~20 min", "label": "a pie desde el centro"}, {"value": "~20 min", "label": "aeropuerto de Alvedro"}, {"value": "~55 min", "label": "aeropuerto de Santiago"}],
     intro: [
       "El estadio de Riazor, casa del Deportivo, está en pleno A Coruña, entre las playas de Riazor y Orzán y el paseo marítimo. Tiene capacidad para unos 32.500 espectadores y, con el equipo de vuelta en Primera División, los días de partido la ciudad se llena.",
       "Su ubicación es una maravilla para ir andando desde el centro y un problema para quien llega en coche o en grupo. Esta guía te ayuda a planificarlo.",
@@ -547,6 +579,7 @@ const GUIAS_BASE: Guide[] = [
     alt: "Santiago de Compostela, sede de la Cidade da Cultura",
     readMinutes: 5,
     date: "2026-10-31",
+    stats: [{"value": "~4 km", "label": "del centro de Santiago"}, {"value": "~10-15 min", "label": "en vehículo desde el centro"}, {"value": "~15-20 min", "label": "aeropuerto de Santiago"}, {"value": "2011", "label": "año de inauguración"}],
     intro: [
       "La Cidade da Cultura de Galicia, en el monte Gaiás, es uno de los espacios de eventos más espectaculares de Galicia: un complejo arquitectónico de Peter Eisenman inaugurado en 2011, con auditorio, salas y espacios singulares para congresos, presentaciones y cenas de gala.",
       "Está a unos 4 km del centro de Santiago, en lo alto del monte. Sin transporte organizado, tus asistentes dependen de un autobús urbano o de taxis.",
@@ -564,6 +597,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Claves logísticas",
+        image: {"src": "/images/cena-gala-evento-galicia.jpg", "alt": "Espacio preparado para una cena de gala"},
         list: [
           "Hay acceso por carretera desde la AP-9 y aparcamiento en el propio complejo, pero los asistentes alojados en el casco histórico no tienen forma cómoda de llegar a pie.",
           "Las líneas urbanas que suben al monte Gaiás tienen frecuencias limitadas: no conviene que el programa dependa de ellas.",
@@ -600,6 +634,7 @@ const GUIAS_BASE: Guide[] = [
     alt: "Recinto preparado para una feria profesional en A Coruña",
     readMinutes: 6,
     date: "2026-10-31",
+    stats: [{"value": "~13.500 m²", "label": "Hall principal"}, {"value": "~10-15 min", "label": "aeropuerto de Alvedro"}, {"value": "~10-15 min", "label": "centro de A Coruña"}, {"value": "~45-55 min", "label": "aeropuerto de Santiago"}],
     intro: [
       "ExpoCoruña es el recinto ferial de A Coruña para grandes formatos: ferias, conciertos y eventos que necesitan mucho espacio diáfano. Los congresos médicos y científicos suelen celebrarse en Palexco, en el centro; ExpoCoruña entra en juego cuando el formato es más grande. Su gran espacio diáfano, el Hall, ronda los 13.500 m² según el propio recinto.",
       "A diferencia de Palexco, que está en el puerto y rodeado de hoteles, ExpoCoruña está fuera del centro. Eso cambia por completo el plan de transporte: aquí casi nadie llega andando.",
@@ -627,6 +662,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Cómo se plantea una operativa en ExpoCoruña",
+        image: {"src": "/images/minibus-galicia.jpg", "alt": "Minibús preparado para una lanzadera de feria"},
         list: [
           "Rutas circulares por los hoteles del centro con salidas cada 15-20 minutos en la franja de apertura.",
           "Salidas escalonadas al cierre para evitar picos en la explanada.",

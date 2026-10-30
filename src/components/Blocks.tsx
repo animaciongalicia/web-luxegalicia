@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import QuoteForm from "@/components/QuoteForm";
+import CardGrid from "@/components/CardGrid";
 import { FLOTA } from "@/content/flota";
 import { PRECIOS, VEHICLE_LABELS, formatPrecio, type VehicleKey } from "@/content/precios";
 import { SITE } from "@/content/site";
@@ -74,9 +75,9 @@ export function RouteTable({ rows, lang = "es" }: { rows: { destino: string; km:
 
 export function FleetGrid({ lang = "es" }: { lang?: Lang }) {
   return (
-    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {FLOTA.map((v) => (
-        <article key={v.key} className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
+    <CardGrid count={FLOTA.length}>
+      {(w) => FLOTA.map((v) => (
+        <article key={v.key} className={`flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm ${w}`}>
           <div className="relative h-48 bg-gray-100">
             <Image src={v.image} alt={v.alt} fill className="object-cover" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
           </div>
@@ -88,7 +89,7 @@ export function FleetGrid({ lang = "es" }: { lang?: Lang }) {
           </div>
         </article>
       ))}
-    </div>
+    </CardGrid>
   );
 }
 
@@ -142,19 +143,20 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
       );
 
     case "features": {
-      const cols = { 2: "md:grid-cols-2", 3: "md:grid-cols-3", 4: "sm:grid-cols-2 lg:grid-cols-4" }[block.columns || 3];
       return (
         <section className={`section-padding ${sectionBg(block.bg)}`}>
           <AnimateOnScroll className="mx-auto max-w-7xl">
             <SectionHeading heading={block.heading} intro={block.intro} />
-            <div className={`grid gap-8 ${cols}`}>
-              {block.items.map((item) => (
-                <div key={item.title} className="card-elegant stagger-child">
-                  <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.text}</p>
-                </div>
-              ))}
-            </div>
+            <CardGrid count={block.items.length} maxCols={block.columns || 3}>
+              {(w) =>
+                block.items.map((item) => (
+                  <div key={item.title} className={`card-elegant stagger-child flex flex-col ${w}`}>
+                    <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.text}</p>
+                  </div>
+                ))
+              }
+            </CardGrid>
           </AnimateOnScroll>
         </section>
       );
@@ -242,32 +244,34 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
         <section className={`section-padding ${sectionBg(block.bg)}`}>
           <AnimateOnScroll className="mx-auto max-w-7xl">
             <SectionHeading heading={block.heading} intro={block.intro} />
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {block.items.map((item) =>
-                item.image ? (
-                  <Link key={item.href + item.title} href={item.href} className="group stagger-child overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-                    <div className="relative h-56 overflow-hidden">
-                      <Image src={item.image} alt={item.alt || item.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
-                    </div>
-                    <div className="p-6">
+            <CardGrid count={block.items.length}>
+              {(w) =>
+                block.items.map((item) =>
+                  item.image ? (
+                    <Link key={item.href + item.title} href={item.href} className={`group stagger-child flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${w}`}>
+                      <div className="relative h-56 shrink-0 overflow-hidden">
+                        <Image src={item.image} alt={item.alt || item.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                      </div>
+                      <div className="flex flex-1 flex-col p-6">
+                        <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
+                        {item.text && <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.text}</p>}
+                        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-luxe-700">
+                          {lang === "en" ? "See more" : "Ver más"} <Arrow />
+                        </span>
+                      </div>
+                    </Link>
+                  ) : (
+                    <Link key={item.href + item.title} href={item.href} className={`card-elegant group stagger-child flex flex-col ${w}`}>
                       <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
                       {item.text && <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.text}</p>}
-                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-luxe-700">
+                      <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-luxe-700">
                         {lang === "en" ? "See more" : "Ver más"} <Arrow />
                       </span>
-                    </div>
-                  </Link>
-                ) : (
-                  <Link key={item.href + item.title} href={item.href} className="card-elegant group stagger-child block">
-                    <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                    {item.text && <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.text}</p>}
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-luxe-700">
-                      {lang === "en" ? "See more" : "Ver más"} <Arrow />
-                    </span>
-                  </Link>
+                    </Link>
+                  )
                 )
-              )}
-            </div>
+              }
+            </CardGrid>
           </AnimateOnScroll>
         </section>
       );

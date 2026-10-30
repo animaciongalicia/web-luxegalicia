@@ -1,7 +1,7 @@
 import type { Tour } from "./types";
 
 const INCLUYE_BASE = [
-  "Vehículo premium con chófer profesional durante todo el recorrido",
+  "Vehículo ejecutivo con chófer profesional durante todo el recorrido",
   "Combustible, peajes y aparcamientos",
   "Recogida y regreso en hotel, aeropuerto, estación o puerto",
   "Itinerario adaptable sobre la marcha",
@@ -22,17 +22,17 @@ export const TOURS: Tour[] = [
     name: "Galicia en 3 días con chófer",
     metaTitle: "Galicia en 3 días con chófer privado: Santiago y Rías Baixas",
     metaDescription:
-      "Tour privado de 3 días por Galicia con chófer y van de lujo: Santiago de Compostela, Rías Baixas, Combarro, Cambados y Pontevedra. Salida desde Santiago, Vigo u Oporto.",
+      "Tour privado de 3 días por Galicia con chófer y van ejecutiva: Santiago de Compostela, Rías Baixas, Combarro, Cambados y Pontevedra. Salida desde Santiago, Vigo u Oporto.",
     image: "/images/tours-santiago.jpg",
     alt: "Plaza del Obradoiro y catedral de Santiago de Compostela",
     duration: "3 días",
     distance: "~350 km",
     base: "Santiago, Vigo u Oporto",
-    vehicle: "Berlina premium o van de lujo",
+    vehicle: "Berlina ejecutiva o van ejecutiva",
     summary: "Lo esencial de Galicia en un fin de semana largo: Santiago, albariño y rías.",
     intro: [
       "Tres días bastan para entender por qué Galicia engancha: la catedral de Santiago, las rías, el marisco y el albariño. Con chófer, el tiempo se va en disfrutar, no en buscar aparcamiento.",
-      "Ideal para viajes de empresa cortos, clientes VIP o viajeros que llegan por Santiago u Oporto.",
+      "Ideal para viajes de empresa cortos, clientes clave o viajeros que llegan por Santiago u Oporto.",
     ],
     stops: [
       { title: "Día 1 · Santiago de Compostela", text: "Recogida en el aeropuerto o en Oporto. Traslado al hotel y tarde libre para la catedral, el Obradoiro y el casco histórico. Cena en la zona vieja." },
@@ -52,13 +52,13 @@ export const TOURS: Tour[] = [
     name: "Galicia en 5 días con chófer",
     metaTitle: "Galicia en 5 días con chófer: A Coruña, Costa da Morte, Santiago y Rías Baixas",
     metaDescription:
-      "Tour privado de 5 días por Galicia con chófer: A Coruña, Costa da Morte y Fisterra, Santiago de Compostela, Rías Baixas y Vigo. En berlina o van de lujo.",
+      "Tour privado de 5 días por Galicia con chófer: A Coruña, Costa da Morte y Fisterra, Santiago de Compostela, Rías Baixas y Vigo. En berlina o van ejecutiva.",
     image: "/images/tours-costa-da-morte.jpg",
     alt: "Acantilados de la Costa da Morte en Galicia",
     duration: "5 días",
     distance: "~600 km",
     base: "A Coruña, Santiago u Oporto",
-    vehicle: "Berlina premium o van de lujo",
+    vehicle: "Berlina ejecutiva o van ejecutiva",
     summary: "La Galicia atlántica completa: ciudad, fin del mundo, Santiago y rías.",
     intro: [
       "Cinco días para recorrer la costa gallega de norte a sur: la A Coruña de la Torre de Hércules, los faros de la Costa da Morte, Santiago y las Rías Baixas, terminando en Vigo o en Oporto.",
@@ -75,26 +75,26 @@ export const TOURS: Tour[] = [
     notIncluded: NO_INCLUYE,
     faqs: [
       { question: "¿Se puede hacer en sentido inverso, desde Oporto?", answer: "Sí. Empezar en Oporto y terminar en A Coruña o Santiago funciona igual de bien." },
-      { question: "¿Qué vehículo recomendáis para 6 personas?", answer: "Una van de lujo tipo Mercedes Clase V: viajan juntos, con espacio para el equipaje de cinco días." },
+      { question: "¿Qué vehículo recomendáis para 6 personas?", answer: "Una van ejecutiva tipo Mercedes Clase V: viajan juntos, con espacio para el equipaje de cinco días." },
     ],
   },
   {
     slug: "galicia-7-dias",
     kind: "varios-dias",
     name: "Galicia en 7 días con chófer",
-    metaTitle: "Galicia en 7 días con chófer privado | Ruta completa en van de lujo",
+    metaTitle: "Galicia en 7 días con chófer privado | Ruta completa en van ejecutiva",
     metaDescription:
-      "Tour privado de 7 días por Galicia con chófer: A Coruña, Costa da Morte, Santiago, Rías Baixas, Ribeira Sacra, Lugo y Playa de las Catedrales. Van de lujo o berlina.",
+      "Tour privado de 7 días por Galicia con chófer: A Coruña, Costa da Morte, Santiago, Rías Baixas, Ribeira Sacra, Lugo y Playa de las Catedrales. Van ejecutiva o berlina.",
     image: "/images/ribeira-sacra-bodegas-top.jpg",
     alt: "Viñedos en bancales sobre el cañón del Sil en la Ribeira Sacra",
     duration: "7 días",
     distance: "~1.000 km",
     base: "A Coruña o Santiago",
-    vehicle: "Van de lujo o berlina premium",
+    vehicle: "Van ejecutiva o berlina ejecutiva",
     summary: "La Galicia completa: costa, interior, vino y piedra.",
     intro: [
       "Una semana para ver todo lo que hace única a Galicia: la costa atlántica, Santiago, las rías, los cañones de la Ribeira Sacra, la muralla romana de Lugo y la Playa de las Catedrales.",
-      "Con chófer y van de lujo, cada día tiene su ritmo y el viaje se adapta sobre la marcha al tiempo, al grupo y a los planes.",
+      "Con chófer y van ejecutiva, cada día tiene su ritmo y el viaje se adapta sobre la marcha al tiempo, al grupo y a los planes.",
     ],
     stops: [
       { title: "Día 1 · A Coruña", text: "Llegada y paseo por la ciudad: Torre de Hércules, paseo marítimo y Ciudad Vieja." },
@@ -234,15 +234,15 @@ export const TOURS: Tour[] = [
     slug: "oporto-y-galicia-5-dias",
     kind: "varios-dias",
     name: "Oporto y Galicia en 5 días con chófer",
-    metaTitle: "Oporto y Galicia en 5 días con chófer privado | Tour en van de lujo",
+    metaTitle: "Oporto y Galicia en 5 días con chófer privado | Tour en van ejecutiva",
     metaDescription:
-      "Tour privado de 5 días con chófer desde Oporto: Valença y Tui, Baiona, Vigo, Rías Baixas y Santiago de Compostela. Ideal si vuelas a Oporto. Berlina o van de lujo.",
+      "Tour privado de 5 días con chófer desde Oporto: Valença y Tui, Baiona, Vigo, Rías Baixas y Santiago de Compostela. Ideal si vuelas a Oporto. Berlina o van ejecutiva.",
     image: "/images/parador-baiona.jpg",
     alt: "Parador de Baiona sobre la costa de las Rías Baixas",
     duration: "5 días",
     distance: "~550 km",
     base: "Aeropuerto de Oporto",
-    vehicle: "Berlina premium o van de lujo",
+    vehicle: "Berlina ejecutiva o van ejecutiva",
     summary: "Aterriza en Oporto y sube por la costa hasta Santiago.",
     intro: [
       "Si vuelas desde América o desde muchas ciudades europeas, lo lógico es aterrizar en Oporto. Este tour convierte ese trayecto en parte del viaje: cruzas la frontera por Valença y Tui, bajas a la costa en Baiona y subes por las Rías Baixas hasta Santiago.",
@@ -330,8 +330,8 @@ export const TOURS: Tour[] = [
     metaTitle: "Tour privado Pontevedra y Combarro con chófer | Rías Baixas",
     metaDescription:
       "Excursión privada con chófer a Pontevedra y Combarro: casco histórico de Pontevedra, Santuario da Peregrina, hórreos de Combarro y miradores de la ría. Desde Santiago o Vigo.",
-    image: "/images/puerto-rias-baixas.jpg",
-    alt: "Puerto pesquero de las Rías Baixas con barcas de colores",
+    image: "/images/combarro-horreos.jpg",
+    alt: "Hórreos de Combarro junto a la ría de Pontevedra",
     duration: "6-7 horas",
     distance: "~120 km",
     base: "Santiago, Vigo o Sanxenxo",
@@ -360,8 +360,8 @@ export const TOURS: Tour[] = [
     metaTitle: "Tour privado Playa de las Catedrales, Ribadeo y Mondoñedo con chófer",
     metaDescription:
       "Excursión privada con chófer a la Playa de las Catedrales, Ribadeo, Mondoñedo y la costa de A Mariña lucense. Desde A Coruña, Lugo o Santiago. Gestión de la reserva de acceso.",
-    image: "/images/costa-cantabrica-galicia.jpg",
-    alt: "Acantilados verdes de la costa norte de Galicia",
+    image: "/images/playa-catedrales-galicia.jpg",
+    alt: "Arcos de roca de la Playa de las Catedrales con marea baja",
     duration: "10-11 horas",
     distance: "~350 km",
     base: "A Coruña, Lugo o Santiago",
@@ -421,8 +421,8 @@ export const TOURS: Tour[] = [
     metaTitle: "Tour privado norte de Portugal desde Galicia: Valença, Braga y Guimarães",
     metaDescription:
       "Excursión privada con chófer desde Vigo o las Rías Baixas al norte de Portugal: Valença, Ponte de Lima, Braga y Guimarães. Un día en Portugal sin conducir.",
-    image: "/images/van-lujo-galicia.jpg",
-    alt: "Van de lujo con chófer para una excursión al norte de Portugal",
+    image: "/images/van-ejecutiva-galicia.jpg",
+    alt: "Van ejecutiva con chófer para una excursión al norte de Portugal",
     duration: "9-10 horas",
     distance: "~300 km",
     base: "Vigo, Pontevedra o Rías Baixas",
@@ -460,7 +460,7 @@ export const TOURS: Tour[] = [
     summary: "Casas señoriales, jardines centenarios y vino en su origen.",
     intro: [
       "Los pazos son las casas señoriales de Galicia: piedra, jardines centenarios, capillas, hórreos y, en muchos casos, su propia bodega. Entre enero y abril sus camelios florecen y dan nombre a la Ruta de la Camelia.",
-      "Es un tour elegante y tranquilo, muy adecuado para incentivos, clientes VIP y programas de acompañantes. Algunos pazos solo abren con visita concertada: se gestiona al reservar.",
+      "Es un tour elegante y tranquilo, muy adecuado para incentivos, clientes clave y programas de acompañantes. Algunos pazos solo abren con visita concertada: se gestiona al reservar.",
     ],
     stops: [
       { title: "Pazo de Oca", text: "Conocido como el Versalles gallego, con sus estanques y jardines." },

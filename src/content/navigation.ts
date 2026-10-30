@@ -63,7 +63,7 @@ export const UI: Record<Lang, { quote: string; quoteHref: string; whatsapp: stri
     whatsapp: "WhatsApp",
     switchLabel: "EN",
     switchHref: "/en",
-    tagline: "Transporte premium · Galicia",
+    tagline: "Transporte con chófer · Galicia",
     skip: "Ir al contenido",
   },
   en: {

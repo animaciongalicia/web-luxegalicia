@@ -5,7 +5,7 @@ export const PAGES_MICE: Page[] = [
     slug: "transporte-eventos-galicia",
     metaTitle: "Transporte para eventos en Galicia | Congresos, incentivos y festivales",
     metaDescription:
-      "Empresa de transporte para eventos en Galicia: congresos, incentivos, festivales y eventos corporativos. Berlinas, vans de lujo, minibuses y autocares con coordinación en destino.",
+      "Empresa de transporte para eventos en Galicia: congresos, incentivos, festivales y eventos corporativos. Berlinas, vans ejecutivas, minibuses y autocares con coordinación en destino.",
     serviceType: "Transporte para eventos",
     hero: {
       eyebrow: "Eventos",
@@ -27,11 +27,11 @@ export const PAGES_MICE: Page[] = [
         heading: "Elige tu tipo de evento",
         bg: "gray",
         items: [
-          { title: "Para agencias MICE", text: "Partner en destino para agencias de Madrid, Barcelona y extranjero. Marca blanca y factura única.", href: "/agencias-mice", image: "/images/flota-luxe-galicia.jpg", alt: "Flota premium para agencias MICE" },
+          { title: "Para agencias MICE", text: "Partner en destino para agencias de Madrid, Barcelona y extranjero. Marca blanca y factura única.", href: "/agencias-mice", image: "/images/flota-luxe-galicia.jpg", alt: "Flota con chófer para agencias MICE" },
           { title: "Congresos y convenciones", text: "Lanzaderas sede-hotel, aeropuertos, ponentes y cena de gala.", href: "/transporte-congresos-galicia", image: "/images/sala-eventos-empresas.jpg", alt: "Sala de congresos en Galicia" },
-          { title: "Incentivos", text: "Vans de lujo y minibuses VIP a disposición durante todo el viaje.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego para un incentivo" },
+          { title: "Incentivos", text: "Vans ejecutivas y minibuses a disposición durante todo el viaje.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego para un incentivo" },
           { title: "Festivales y producciones", text: "Artistas, técnicos, giras y rodajes con cambios en tiempo real.", href: "/transporte-festivales-producciones", image: "/images/electronica-GozoFestival.jpg", alt: "Escenario de festival en Galicia" },
-          { title: "Fútbol y eventos deportivos", text: "Peñas, empresas con invitados y equipos: al Deportivo en Riazor o al Celta en Balaídos.", href: "/transporte-eventos-deportivos", image: "/images/van-lujo-galicia.jpg", alt: "Van de lujo con chófer para ir a un partido" },
+          { title: "Fútbol y eventos deportivos", text: "Peñas, empresas con invitados y equipos: al Deportivo en Riazor o al Celta en Balaídos.", href: "/transporte-eventos-deportivos", image: "/images/van-ejecutiva-galicia.jpg", alt: "Van ejecutiva con chófer para ir a un partido" },
         ],
       },
       {
@@ -75,7 +75,7 @@ export const PAGES_MICE: Page[] = [
         paragraphs: [
           "Falla por la coordinación. Por el autocar que llega al hotel equivocado. Por el ponente que espera 40 minutos en el aeropuerto de Santiago. Por el cambio de horario a las once de la noche que nadie gestiona.",
           "Cuando organizas un congreso, un incentivo o un roadshow en Galicia desde Madrid, Barcelona o fuera de España, no conoces a los proveedores locales. Y los proveedores locales son pequeños: tres berlinas aquí, dos vans allá. Tu evento necesita quince vehículos el mismo día.",
-          "Luxe Galicia resuelve justo eso. Desde 2013 coordina flota premium en toda Galicia y el norte de Portugal para agencias que necesitan capacidad, puntualidad y alguien que conteste al teléfono.",
+          "Luxe Galicia resuelve justo eso. Desde 2013 coordina flota con chófer en toda Galicia y el norte de Portugal para agencias que necesitan capacidad, puntualidad y alguien que conteste al teléfono.",
         ],
       },
       {
@@ -86,7 +86,7 @@ export const PAGES_MICE: Page[] = [
         bg: "gray",
         items: [
           { title: "Un único interlocutor", text: "Una persona responsable de toda la operativa de transporte. Antes, durante y después del evento. Sin rebotes entre empresas." },
-          { title: "Capacidad real", text: "De una berlina a 500 asistentes. Berlinas premium y de lujo, vans Clase V, minibuses VIP y autocares coordinados en una sola operativa." },
+          { title: "Capacidad real", text: "De una berlina a 500 asistentes. Berlinas ejecutivas y de representación, vans Clase V, minibuses y autocares coordinados en una sola operativa." },
           { title: "Factura única", text: "Un presupuesto, una factura y unas condiciones claras. Tu departamento financiero lo agradece." },
           { title: "Coordinador en destino", text: "En operativas de grupo, un coordinador sobre el terreno controla horarios, recogidas y cambios en tiempo real." },
           { title: "Marca blanca", text: "Si lo necesitas, los chóferes trabajan en nombre de tu agencia: cartelería, protocolo y comunicación con tu imagen." },
@@ -109,7 +109,7 @@ export const PAGES_MICE: Page[] = [
         bg: "gray",
         items: [
           { title: "Congresos y convenciones", text: "Lanzaderas sede-hotel, aeropuertos y cenas de gala.", href: "/transporte-congresos-galicia", image: "/images/sala-eventos-empresas.jpg", alt: "Sala de congresos preparada para un evento corporativo en Galicia" },
-          { title: "Incentivos", text: "Movilidad premium para viajes de incentivo de varios días.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego preparado para un evento de incentivo" },
+          { title: "Incentivos", text: "Movilidad con chófer para viajes de incentivo de varios días.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego preparado para un evento de incentivo" },
           { title: "Oporto, puerta de entrada", text: "Tus asistentes vuelan a Oporto. Los recoges y los llevas a Galicia sin fricciones.", href: "/oporto-galicia", image: "/images/traslados-coruna-santiago.jpg", alt: "Traslado con chófer entre Oporto y Galicia" },
         ],
       },
@@ -147,7 +147,7 @@ export const PAGES_MICE: Page[] = [
     slug: "transporte-congresos-galicia",
     metaTitle: "Transporte para congresos en Galicia | Lanzaderas y traslados",
     metaDescription:
-      "Transporte para congresos y convenciones en Galicia: lanzaderas sede-hotel, traslados de aeropuerto, cenas de gala y ponentes VIP. Palexco, Santiago, Vigo. Presupuesto en 24 h.",
+      "Transporte para congresos y convenciones en Galicia: lanzaderas sede-hotel, traslados de aeropuerto, cenas de gala y ponentes e invitados especiales. Palexco, Santiago, Vigo. Presupuesto en 24 h.",
     serviceType: "Transporte para congresos",
     hero: {
       eyebrow: "Congresos y convenciones",
@@ -161,7 +161,7 @@ export const PAGES_MICE: Page[] = [
         type: "intro",
         paragraphs: [
           "Un congreso son cientos de personas que tienen que estar en el sitio correcto a la hora correcta. Varias veces al día. Durante varios días.",
-          "Si lo organizas en A Coruña, Santiago o Vigo, Luxe Galicia diseña el plan de transporte completo: cuántos vehículos, qué rutas, qué frecuencia y qué margen. Y lo ejecuta con flota premium y coordinación en tiempo real.",
+          "Si lo organizas en A Coruña, Santiago o Vigo, Luxe Galicia diseña el plan de transporte completo: cuántos vehículos, qué rutas, qué frecuencia y qué margen. Y lo ejecuta con flota con chófer y coordinación en tiempo real.",
         ],
       },
       {
@@ -172,7 +172,7 @@ export const PAGES_MICE: Page[] = [
         items: [
           { title: "Llegadas y salidas", text: "Recogida en los aeropuertos de Santiago, A Coruña, Vigo y Oporto, y en estaciones de tren, con cartelería y control de vuelos." },
           { title: "Lanzaderas sede-hotel", text: "Circuitos con frecuencia fija o por bloques de sesión entre hoteles y sede, ajustados al programa." },
-          { title: "Ponentes y VIP", text: "Berlinas premium o de lujo con chófer a disposición para ponentes, comité organizador y autoridades." },
+          { title: "Ponentes e invitados", text: "Berlinas ejecutivas o de representación con chófer a disposición para ponentes, comité organizador y autoridades." },
           { title: "Cena de gala y actividades", text: "Traslados a pazos, bodegas o restaurantes fuera del núcleo urbano, con vuelta escalonada." },
           { title: "Programa de acompañantes", text: "Excursiones con chófer a Santiago, Rías Baixas o Costa da Morte mientras se celebra el congreso." },
           { title: "Coordinación en sede", text: "Coordinador de transporte en el punto de salida, en contacto directo con la secretaría técnica." },
@@ -223,11 +223,11 @@ export const PAGES_MICE: Page[] = [
     slug: "transporte-incentivos-galicia",
     metaTitle: "Transporte para viajes de incentivo en Galicia | Luxe Galicia",
     metaDescription:
-      "Movilidad premium para viajes de incentivo en Galicia: vans de lujo, minibuses VIP y berlinas con chófer para grupos de empresa. Rías Baixas, Ribeira Sacra, Santiago.",
+      "Movilidad con chófer para viajes de incentivo en Galicia: vans ejecutivas, minibuses y berlinas con chófer para grupos de empresa. Rías Baixas, Ribeira Sacra, Santiago.",
     serviceType: "Transporte para viajes de incentivo",
     hero: {
       eyebrow: "Viajes de incentivo",
-      title: "Transporte premium para incentivos en Galicia",
+      title: "Transporte con chófer para incentivos en Galicia",
       subtitle: "Un incentivo se recuerda por los detalles. El vehículo, el chófer y la puntualidad también cuentan.",
       image: "/images/pazo-eventos-corporativos.jpg",
       alt: "Pazo gallego preparado para un evento de incentivo de empresa",
@@ -237,7 +237,7 @@ export const PAGES_MICE: Page[] = [
         type: "intro",
         paragraphs: [
           "Tu cliente ha premiado a su mejor equipo con un viaje a Galicia. Lo último que quieres es un autocar cualquiera esperando en una rotonda.",
-          "Luxe Galicia pone la movilidad a la altura del incentivo: vans Clase V y minibuses VIP para grupos reducidos, autocares de gran turismo para grupos grandes y berlinas de lujo para la dirección. Con chóferes que conocen las rutas, los tiempos y el protocolo.",
+          "Luxe Galicia pone la movilidad a la altura del incentivo: vans Clase V y minibuses para grupos reducidos, autocares de gran turismo para grupos grandes y berlinas de representación para la dirección. Con chóferes que conocen las rutas, los tiempos y el protocolo.",
         ],
       },
       {
@@ -248,7 +248,7 @@ export const PAGES_MICE: Page[] = [
         items: [
           { title: "Vehículos a disposición por días", text: "El grupo no depende de horarios rígidos: el vehículo y el chófer acompañan todo el programa." },
           { title: "Rutas que suman experiencia", text: "Rías Baixas, Ribeira Sacra, Costa da Morte o Santiago con paradas en miradores, bodegas y pazos." },
-          { title: "Imagen cuidada", text: "Vehículos premium, chóferes uniformados y protocolo de bienvenida con la imagen de tu cliente si lo necesitas." },
+          { title: "Imagen cuidada", text: "Vehículos ejecutivos, chóferes uniformados y protocolo de bienvenida con la imagen de tu cliente si lo necesitas." },
           { title: "Coordinación con el programa", text: "Trabajo directo con la agencia o con Suunia, el DMC partner, para encajar cada traslado en la agenda." },
         ],
       },
@@ -268,7 +268,7 @@ export const PAGES_MICE: Page[] = [
       { type: "quote", heading: "Cuéntame tu incentivo", bg: "gray" },
     ],
     faqs: [
-      { question: "¿Qué vehículo recomendáis para un incentivo de 12 personas?", answer: "Un minibús premium de hasta 19 plazas o dos vans Clase V, según el estilo del programa. Las vans dan más flexibilidad para dividir el grupo." },
+      { question: "¿Qué vehículo recomendáis para un incentivo de 12 personas?", answer: "Un minibús de hasta 19 plazas o dos vans Clase V, según el estilo del programa. Las vans dan más flexibilidad para dividir el grupo." },
       { question: "¿El chófer puede acompañar al grupo varios días?", answer: "Sí. Es la fórmula más habitual en incentivos: vehículo y chófer a disposición durante todo el programa, con alojamiento del chófer incluido en el presupuesto cuando el viaje es itinerante." },
       { question: "¿Podéis trabajar con el DMC que ya tenga la agencia?", answer: "Sí. Luxe Galicia trabaja con cualquier agencia o DMC. Si no tienes, Suunia puede encargarse del programa completo." },
     ],
@@ -277,7 +277,7 @@ export const PAGES_MICE: Page[] = [
     slug: "transporte-festivales-producciones",
     metaTitle: "Transporte para festivales, giras y rodajes en Galicia",
     metaDescription:
-      "Transporte para festivales, conciertos, giras y rodajes en Galicia: artistas, técnicos, producción y público VIP. Operativa coordinada con producción y cambios en tiempo real.",
+      "Transporte para festivales, conciertos, giras y rodajes en Galicia: artistas, técnicos, producción y invitados. Operativa coordinada con producción y cambios en tiempo real.",
     serviceType: "Transporte para festivales y producciones",
     hero: {
       eyebrow: "Festivales · Giras · Rodajes",
@@ -291,7 +291,7 @@ export const PAGES_MICE: Page[] = [
         type: "intro",
         paragraphs: [
           "En un festival, el horario de un artista no se negocia. Un retraso de veinte minutos en un traslado se convierte en un concierto que empieza tarde y en una producción que se juega su reputación.",
-          "Luxe Galicia trabaja con productoras y promotores en festivales, giras y rodajes de toda Galicia: traslados de artistas y bandas, movimiento de técnicos, lanzaderas de público VIP y vehículos a disposición durante todo el evento.",
+          "Luxe Galicia trabaja con productoras y promotores en festivales, giras y rodajes de toda Galicia: traslados de artistas y bandas, movimiento de técnicos, lanzaderas de invitados y vehículos a disposición durante todo el evento.",
         ],
       },
       {
@@ -300,9 +300,9 @@ export const PAGES_MICE: Page[] = [
         columns: 3,
         bg: "gray",
         items: [
-          { title: "Artistas y bandas", text: "Aeropuerto-hotel-recinto con berlinas y vans de lujo. Discreción total y chóferes acostumbrados a horarios imposibles." },
+          { title: "Artistas y bandas", text: "Aeropuerto-hotel-recinto con berlinas y vans ejecutivas. Discreción total y chóferes acostumbrados a horarios imposibles." },
           { title: "Técnicos y producción", text: "Vans y minibuses para equipos de montaje, con recogidas múltiples y turnos de madrugada." },
-          { title: "Público VIP y patrocinadores", text: "Lanzaderas desde hoteles y ciudades cercanas con acceso directo al recinto." },
+          { title: "Invitados y patrocinadores", text: "Lanzaderas desde hoteles y ciudades cercanas con acceso directo al recinto." },
           { title: "Rodajes", text: "Vehículos a disposición para equipo artístico y técnico, desplazamientos entre localizaciones." },
           { title: "Cambios en tiempo real", text: "Un responsable conectado con producción que reasigna vehículos al momento." },
           { title: "Toda Galicia y norte de Portugal", text: "Festivales en costa e interior, con salidas desde los aeropuertos de Galicia y Oporto." },
@@ -340,7 +340,7 @@ export const PAGES_MICE: Page[] = [
     slug: "transporte-eventos-deportivos",
     metaTitle: "Transporte para partidos del Deportivo y eventos deportivos en Galicia",
     metaDescription:
-      "Transporte con chófer para ir a ver al Deportivo en Riazor o al Celta en Balaídos: peñas y aficionados visitantes, grupos de empresa con invitados VIP, equipos y eventos deportivos en Galicia.",
+      "Transporte con chófer para ir a ver al Deportivo en Riazor o al Celta en Balaídos: peñas y aficionados visitantes, grupos de empresa con invitados, equipos y eventos deportivos en Galicia.",
     serviceType: "Transporte para eventos deportivos",
     hero: {
       eyebrow: "Fútbol y eventos deportivos",
@@ -377,7 +377,7 @@ export const PAGES_MICE: Page[] = [
           "Bajada en el punto más cercano permitido según el dispositivo de tráfico del día.",
           "Punto de encuentro acordado para la vuelta, lejos del atasco de la salida.",
           "Seguimiento del horario: si hay prórroga o retraso, el chófer espera.",
-          "Vehículos para cualquier grupo: berlina, van de lujo, minibús o autocar.",
+          "Vehículos para cualquier grupo: berlina, van ejecutiva, minibús o autocar.",
           "También en Balaídos (Vigo) y en otros eventos deportivos de Galicia.",
         ],
       },
@@ -422,7 +422,7 @@ export const PAGES_MICE: Page[] = [
         type: "intro",
         paragraphs: [
           "Vienes a Galicia a trabajar, no a pelearte con un coche de alquiler, los aparcamientos de un polígono o una carretera comarcal a las ocho de la mañana.",
-          "Luxe Galicia pone a tu disposición berlinas y vans premium con chófer para que tu agenda de visitas se cumpla, se alargue lo que haga falta y termine a tiempo para el vuelo de vuelta.",
+          "Luxe Galicia pone a tu disposición berlinas y vans ejecutivas con chófer para que tu agenda de visitas se cumpla, se alargue lo que haga falta y termine a tiempo para el vuelo de vuelta.",
         ],
       },
       {
@@ -445,16 +445,16 @@ export const PAGES_MICE: Page[] = [
               "Se diseña la ruta para que aproveches cada hora: A Coruña, Santiago, Vigo y Oporto están a menos de tres horas entre sí. Con chófer, el coche se convierte en tu oficina entre reunión y reunión.",
             ],
             image: "/images/flota-luxe-galicia.jpg",
-            alt: "Berlinas y vans premium para roadshows comerciales en Galicia",
+            alt: "Berlinas y vans ejecutivas para roadshows comerciales en Galicia",
           },
           {
             title: "Chófer a disposición por horas o días",
             paragraphs: [
               "Para directivos, comités de dirección y clientes estratégicos. Un vehículo y un chófer a tu servicio durante la jornada o durante toda la estancia.",
-              "Berlina premium para una persona, berlina de lujo para la alta dirección o van Clase V para el comité completo.",
+              "Berlina ejecutiva para una persona, berlina de representación para la alta dirección o van Clase V para el comité completo.",
             ],
-            image: "/images/van-lujo-galicia.jpg",
-            alt: "Van de lujo Mercedes con chófer a disposición de un comité de dirección",
+            image: "/images/van-ejecutiva-galicia.jpg",
+            alt: "Van ejecutiva Mercedes con chófer a disposición de un comité de dirección",
           },
         ],
       },

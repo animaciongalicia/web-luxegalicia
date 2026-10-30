@@ -10,21 +10,21 @@ import { SITE, SITE_URL, absoluteUrl } from "@/content/site";
 const URL = absoluteUrl("/en");
 
 export const metadata: Metadata = {
-  title: "Luxe Galicia – Premium ground transportation in Galicia & Porto",
+  title: "Luxe Galicia – Ground transportation in Galicia & Porto",
   description:
-    "Premium chauffeur services in Galicia, Spain and Porto: MICE ground transportation, Porto–Galicia transfers and private chauffeur tours. Sedans, luxury vans, minibuses and coaches since 2013.",
+    "Professional chauffeur services in Galicia, Spain and Porto: MICE ground transportation, Porto–Galicia transfers and private chauffeur tours. Sedans, executive vans, minibuses and coaches since 2013.",
   alternates: { canonical: URL, languages: { es: SITE_URL, en: URL } },
-  openGraph: { url: URL, locale: "en_GB", images: [{ url: "/images/flota-luxe-galicia.jpg", alt: "Luxe Galicia premium fleet" }] },
+  openGraph: { url: URL, locale: "en_GB", images: [{ url: "/images/flota-luxe-galicia.jpg", alt: "Luxe Galicia chauffeur fleet" }] },
 };
 
 const cards = [
   { title: "MICE & agencies", text: "Congresses, incentives and corporate events. One partner on the ground for your whole transport operation.", href: "/en/mice-ground-transportation", image: "/images/sala-eventos-empresas.jpg", alt: "Congress room in Galicia" },
   { title: "Porto ⇄ Galicia", text: "Land in Porto and reach Vigo, Santiago or A Coruña door to door with a private chauffeur.", href: "/en/porto-galicia-private-chauffeur", image: "/images/traslados-coruna-santiago.jpg", alt: "Chauffeur-driven car between Porto and Galicia" },
-  { title: "Chauffeur tours", text: "Galicia in 3, 5 or 7 days in a luxury van: Santiago, Albariño country, Atlantic lighthouses.", href: "/en/galicia-chauffeur-tours", image: "/images/tours-rias-baixas.jpg", alt: "Albariño vineyards in the Rías Baixas" },
+  { title: "Chauffeur tours", text: "Galicia in 3, 5 or 7 days in a executive van: Santiago, Albariño country, Atlantic lighthouses.", href: "/en/galicia-chauffeur-tours", image: "/images/tours-rias-baixas.jpg", alt: "Albariño vineyards in the Rías Baixas" },
 ];
 
 const faqs = [
-  { question: "What does Luxe Galicia do?", answer: "Premium ground transportation with professional chauffeurs in Galicia, Spain and Northern Portugal: MICE and congress transport, business travel, airport and Porto transfers, Camino de Santiago groups and private chauffeur tours." },
+  { question: "What does Luxe Galicia do?", answer: "Ground transportation with professional chauffeurs in Galicia, Spain and Northern Portugal: MICE and congress transport, business travel, airport and Porto transfers, Camino de Santiago groups and private chauffeur tours." },
   { question: "Which airports do you cover?", answer: "Santiago de Compostela (SCQ), A Coruña (LCG), Vigo (VGO) and Porto (OPO)." },
   { question: "How quickly do I get a quote?", answer: "Within 24 business hours. For urgent requests, WhatsApp is the fastest channel." },
 ];
@@ -37,9 +37,9 @@ export default function HomeEn() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center text-white lg:py-32">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Ground transportation · Galicia &amp; Porto</p>
-          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">Premium chauffeur services in Galicia, Spain</h1>
+          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">Professional chauffeur services in Galicia, Spain</h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl">
-            For MICE agencies, companies and travellers. Sedans, luxury vans, minibuses and coaches, one point of contact and everything coordinated, from one passenger to five hundred.
+            For MICE agencies, companies and travellers. Sedans, executive vans, minibuses and coaches, one point of contact and everything coordinated, from one passenger to five hundred.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="#quote" className="inline-flex items-center gap-2 rounded-lg bg-luxe-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-700 hover:shadow-lg">

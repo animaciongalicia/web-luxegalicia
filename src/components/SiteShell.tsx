@@ -16,7 +16,7 @@ const organization = {
   logo: `${SITE_URL}/images/logo-luxegalicia.png`,
   image: `${SITE_URL}/images/flota-luxe-galicia.jpg`,
   description:
-    "Transporte premium con chófer en Galicia y Oporto para congresos, incentivos, empresas, agencias MICE y tours privados. Berlinas, vans de lujo, minibuses y autocares.",
+    "Transporte con chófer con chófer en Galicia y Oporto para congresos, incentivos, empresas, agencias MICE y tours privados. Berlinas, vans ejecutivas, minibuses y autocares.",
   telephone: "+34678288284",
   email: SITE.email,
   foundingDate: String(SITE.since),

@@ -8,15 +8,15 @@ import JsonLd from "@/components/JsonLd";
 import { SITE, SITE_URL, absoluteUrl } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Luxe Galicia – Transporte premium para congresos, eventos y empresas en Galicia",
+  title: "Luxe Galicia – Transporte con chófer para congresos, eventos y empresas en Galicia",
   description:
-    "Transporte premium con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans de lujo, minibuses y autocares. Desde 2013. Presupuesto en 24 h.",
+    "Transporte con chófer con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans ejecutivas, minibuses y autocares. Desde 2013. Presupuesto en 24 h.",
   alternates: { canonical: SITE_URL, languages: { es: SITE_URL, en: absoluteUrl("/en") } },
   openGraph: {
-    title: "Luxe Galicia – Transporte premium en Galicia",
+    title: "Luxe Galicia – Transporte con chófer en Galicia",
     description: "Congresos, incentivos, empresas y tours con chófer en Galicia y Oporto.",
     url: SITE_URL,
-    images: [{ url: "/images/flota-luxe-galicia.jpg", width: 1200, height: 630, alt: "Flota premium de Luxe Galicia" }],
+    images: [{ url: "/images/flota-luxe-galicia.jpg", width: 1200, height: 630, alt: "Flota con chófer de Luxe Galicia" }],
   },
 };
 
@@ -25,7 +25,7 @@ const problemas = [
   "Organizas desde Madrid, Barcelona o fuera de España y no conoces a nadie en destino.",
   "El programa cambia a las once de la noche y alguien tiene que reorganizarlo todo.",
   "Tus asistentes llegan por cuatro aeropuertos distintos: Santiago, A Coruña, Vigo y Oporto.",
-  "Tu cliente VIP no puede esperar ni un minuto en la sala de llegadas.",
+  "Tu cliente más importante no puede esperar ni un minuto en la sala de llegadas.",
   "Quieres un presupuesto claro y una sola factura, no cinco proveedores.",
 ];
 
@@ -46,7 +46,7 @@ const destacados = [
   },
   {
     title: "Tours con chófer",
-    text: "Galicia en 3, 5 o 7 días en van de lujo, o excursiones de un día por las Rías Baixas y la Ribeira Sacra.",
+    text: "Galicia en 3, 5 o 7 días en van ejecutiva, o excursiones de un día por las Rías Baixas y la Ribeira Sacra.",
     href: "/tours-con-chofer-galicia",
     image: "/images/tours-rias-baixas.jpg",
     alt: "Viñedos de albariño en las Rías Baixas",
@@ -57,7 +57,7 @@ const servicios = [
   { title: "Traslados desde A Coruña, Santiago y Vigo", text: "A toda Galicia, Oporto, Asturias y Madrid, con precios orientativos por trayecto y vehículo.", href: "/traslados" },
   { title: "Oporto, puerta de entrada a Galicia", text: "Del aeropuerto de Oporto a Vigo, Rías Baixas, Santiago o A Coruña, puerta a puerta.", href: "/oporto-galicia" },
   { title: "Camino de Santiago", text: "Inicio de etapa, vehículo de apoyo y regreso para grupos y agencias del Camino.", href: "/transporte-camino-de-santiago" },
-  { title: "Flota disponible", text: "Berlinas premium y de lujo, vans Clase V, minibuses VIP y autocares.", href: "/flota" },
+  { title: "Flota disponible", text: "Berlinas ejecutivas y de representación, vans Clase V, minibuses y autocares.", href: "/flota" },
 ];
 
 const partners = [
@@ -74,7 +74,7 @@ const motivos = [
 ];
 
 const faqs = [
-  { question: "¿Qué tipo de servicios de transporte ofrece Luxe Galicia?", answer: "Transporte premium con chófer para congresos, incentivos, festivales y eventos corporativos; transporte para empresas (visitas, inspecciones, desarrollo comercial); traslados desde A Coruña, Santiago, Vigo y Oporto; transporte para grupos del Camino de Santiago y tours con chófer por Galicia." },
+  { question: "¿Qué tipo de servicios de transporte ofrece Luxe Galicia?", answer: "Transporte con chófer con chófer para congresos, incentivos, festivales y eventos corporativos; transporte para empresas (visitas, inspecciones, desarrollo comercial); traslados desde A Coruña, Santiago, Vigo y Oporto; transporte para grupos del Camino de Santiago y tours con chófer por Galicia." },
   { question: "¿En qué zonas trabajáis?", answer: "Toda Galicia, con bases en A Coruña, Santiago y Vigo, y traslados a Oporto, Asturias, León y Madrid." },
   { question: "¿Cuánto se tarda en recibir un presupuesto?", answer: "Menos de 24 horas laborables. Para urgencias, WhatsApp directo." },
   { question: "¿Trabajáis con agencias de fuera de Galicia?", answer: "Sí. Agencias MICE, DMC y organizadores de Madrid, Barcelona y otros países son el cliente principal, con condiciones específicas y opción de marca blanca." },
@@ -88,12 +88,12 @@ export default function Home() {
         <Image src="/images/flota-luxe-galicia.jpg" alt="Berlinas Mercedes Clase S y vans Clase V de Luxe Galicia" fill className="object-cover" priority quality={75} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center text-white lg:py-32">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Transporte premium · Galicia &amp; Oporto</p>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Transporte con chófer · Galicia &amp; Oporto</p>
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            Transporte premium para congresos, eventos y empresas en Galicia
+            Transporte con chófer para congresos, eventos y empresas en Galicia
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl">
-            Berlinas, vans de lujo, minibuses y autocares con chófer. Una sola llamada, un único interlocutor y toda la operativa resuelta, de una persona a quinientas.
+            Berlinas, vans ejecutivas, minibuses y autocares con chófer. Una sola llamada, un único interlocutor y toda la operativa resuelta, de una persona a quinientas.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link href="/presupuesto" className="inline-flex items-center gap-2 rounded-lg bg-luxe-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-700 hover:shadow-lg">

@@ -11,7 +11,7 @@ const URL = absoluteUrl("/tours-con-chofer-galicia");
 export const metadata: Metadata = {
   title: "Tours con chófer por Galicia: 3, 5 y 7 días y excursiones de un día",
   description:
-    "Tours privados con chófer por Galicia en van de lujo o berlina: rutas de 3, 5 y 7 días y excursiones a Rías Baixas, Ribeira Sacra, Ourense termal y Vigo e Islas Cíes.",
+    "Tours privados con chófer por Galicia en van ejecutiva o berlina: rutas de 3, 5 y 7 días y excursiones a Rías Baixas, Ribeira Sacra, Ourense termal y Vigo e Islas Cíes.",
   alternates: { canonical: URL, languages: { es: URL, en: absoluteUrl("/en/galicia-chauffeur-tours") } },
   openGraph: { url: URL, images: ["/images/tours-rias-baixas.jpg"] },
 };
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const faqs = [
   { question: "¿Qué diferencia hay entre un tour con chófer y un viaje organizado?", answer: "En un tour con chófer contratas el vehículo, el chófer y la ruta. Hoteles, comidas y actividades los reservas tú o, si quieres el programa completo, Suunia (DMC partner) lo organiza todo." },
   { question: "¿Se pueden personalizar los itinerarios?", answer: "Sí. Los itinerarios son una base: se ajustan a tus fechas, intereses, aeropuerto de llegada y número de personas." },
-  { question: "¿Para cuántas personas?", answer: "De 1 a 3 en berlina, hasta 7 en van de lujo y grupos mayores en minibús o autocar." },
+  { question: "¿Para cuántas personas?", answer: "De 1 a 3 en berlina, hasta 7 en van ejecutiva y grupos mayores en minibús o autocar." },
 ];
 
 export default function ToursPage() {
@@ -32,7 +32,7 @@ export default function ToursPage() {
       <HeroPage
         eyebrow="Tours privados con chófer"
         title="Tours con chófer por Galicia"
-        subtitle="Van de lujo o berlina, chófer profesional y una ruta pensada para ti. De una excursión de un día a una semana recorriendo Galicia."
+        subtitle="Van ejecutiva o berlina, chófer profesional y una ruta pensada para ti. De una excursión de un día a una semana recorriendo Galicia."
         imageSrc="/images/tours-rias-baixas.jpg"
         alt="Viñedos de albariño en las Rías Baixas"
       />
@@ -41,7 +41,7 @@ export default function ToursPage() {
           type: "intro",
           paragraphs: [
             "Galicia no se entiende desde la autopista. Está en los miradores del Sil, en una bodega de Cambados, en el faro de Fisterra a última hora. Llegar a esos sitios conduciendo tú, con curvas, sin aparcamiento y con una copa de albariño en la mano, no tiene sentido.",
-            "Estos tours están pensados para empresas que vienen a conocer Galicia (viajes de inspección, clientes VIP, comités) y para viajeros que quieren verla bien. Llegas por Santiago, A Coruña, Vigo u Oporto y el chófer se ocupa del resto.",
+            "Estos tours están pensados para empresas que vienen a conocer Galicia (viajes de inspección, clientes clave, comités) y para viajeros que quieren verla bien. Llegas por Santiago, A Coruña, Vigo u Oporto y el chófer se ocupa del resto.",
           ],
         }}
       />

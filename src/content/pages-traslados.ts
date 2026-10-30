@@ -3,7 +3,7 @@ import type { Page } from "./types";
 const VEHICULOS_FAQ = {
   question: "¿Qué vehículo necesito según el número de personas?",
   answer:
-    "Berlina premium para 1-3 personas, van de lujo para hasta 7, minibús para 8-19 y autocar a partir de 20. Para grupos grandes se combinan varios vehículos en la misma operativa.",
+    "Berlina ejecutiva para 1-3 personas, van ejecutiva para hasta 7, minibús para 8-19 y autocar a partir de 20. Para grupos grandes se combinan varios vehículos en la misma operativa.",
 };
 
 const PRECIO_FAQ = {
@@ -17,7 +17,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "traslados",
     metaTitle: "Traslados con chófer en Galicia, Oporto, Madrid y Asturias",
     metaDescription:
-      "Traslados privados con chófer desde A Coruña, Santiago y Vigo a toda Galicia, Oporto, Asturias y Madrid. Berlinas, vans de lujo, minibuses y autocares. Precios orientativos.",
+      "Traslados privados con chófer desde A Coruña, Santiago y Vigo a toda Galicia, Oporto, Asturias y Madrid. Berlinas, vans ejecutivas, minibuses y autocares. Precios orientativos.",
     serviceType: "Traslados privados con chófer",
     hero: {
       eyebrow: "Traslados privados",
@@ -44,7 +44,7 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Desde Vigo", text: "Rías Baixas, Oporto y puerto de cruceros.", href: "/traslados-desde-vigo", image: "/images/playa-rodas-islas-cies-suunia.jpg", alt: "Playa de Rodas en las Islas Cíes frente a Vigo" },
           { title: "Oporto, puerta de Galicia", text: "Del aeropuerto de Oporto a cualquier punto de Galicia.", href: "/oporto-galicia", image: "/images/traslados-chofer-coruna.jpg", alt: "Traslado con chófer desde el aeropuerto de Oporto" },
           { title: "Camino de Santiago", text: "Inicio de etapas, vehículo de apoyo y regreso para grupos.", href: "/transporte-camino-de-santiago", image: "/images/faro-de-Finisterre-1.jpg", alt: "Faro de Fisterra, final del Camino de Santiago" },
-          { title: "Aeropuertos", text: "Santiago, A Coruña, Vigo y Oporto.", href: "/aeropuertos-galicia", image: "/images/van-lujo-galicia.jpg", alt: "Van de lujo esperando en un aeropuerto de Galicia" },
+          { title: "Aeropuertos", text: "Santiago, A Coruña, Vigo y Oporto.", href: "/aeropuertos-galicia", image: "/images/van-ejecutiva-galicia.jpg", alt: "Van ejecutiva esperando en un aeropuerto de Galicia" },
         ],
       },
       { type: "fleet", heading: "Tipos de vehículo" },
@@ -55,7 +55,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "traslados-desde-coruna",
     metaTitle: "Traslados con chófer desde A Coruña | Precios orientativos",
     metaDescription:
-      "Traslados privados con chófer desde A Coruña a Santiago, Vigo, Lugo, Ourense, Oporto, Asturias y Madrid. Berlinas, vans de lujo, minibuses y autocares. Tabla de precios.",
+      "Traslados privados con chófer desde A Coruña a Santiago, Vigo, Lugo, Ourense, Oporto, Asturias y Madrid. Berlinas, vans ejecutivas, minibuses y autocares. Tabla de precios.",
     serviceType: "Traslados con chófer desde A Coruña",
     hero: {
       eyebrow: "Base principal · A Coruña",
@@ -111,7 +111,7 @@ export const PAGES_TRASLADOS: Page[] = [
       },
     ],
     faqs: [
-      { question: "¿Hacéis traslados de A Coruña a Madrid por carretera?", answer: "Sí. Es una alternativa habitual para grupos y familias con equipaje o para quien prefiere un trayecto puerta a puerta. En van de lujo el grupo viaja junto y sin escalas." },
+      { question: "¿Hacéis traslados de A Coruña a Madrid por carretera?", answer: "Sí. Es una alternativa habitual para grupos y familias con equipaje o para quien prefiere un trayecto puerta a puerta. En van ejecutiva el grupo viaja junto y sin escalas." },
       { question: "¿Recogéis en el puerto de cruceros de A Coruña?", answer: "Sí. El puerto está en pleno centro, junto a Palexco. Se recoge a pie de terminal para traslados o excursiones privadas a Santiago." },
       VEHICULOS_FAQ,
       PRECIO_FAQ,
@@ -345,7 +345,7 @@ export const PAGES_TRASLADOS: Page[] = [
         type: "intro",
         paragraphs: [
           "Organizar el Camino para un grupo tiene un punto ciego: la logística entre etapas. Cómo llegar al punto de inicio desde el aeropuerto, qué pasa si alguien no puede seguir, cómo se mueve el equipaje y cómo vuelve todo el grupo desde Santiago.",
-          "Luxe Galicia trabaja con agencias del Camino, turoperadores extranjeros y grupos organizados con vans de lujo, minibuses y autocares adaptados a cada etapa.",
+          "Luxe Galicia trabaja con agencias del Camino, turoperadores extranjeros y grupos organizados con vans ejecutivas, minibuses y autocares adaptados a cada etapa.",
         ],
       },
       {
@@ -404,8 +404,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Aeropuertos",
       title: "Traslados de aeropuerto en Galicia y Oporto",
       subtitle: "Santiago, A Coruña, Vigo y Oporto. El chófer sigue tu vuelo y te espera en llegadas con tu nombre.",
-      image: "/images/van-lujo-galicia.jpg",
-      alt: "Van de lujo con chófer esperando en un aeropuerto",
+      image: "/images/van-ejecutiva-galicia.jpg",
+      alt: "Van ejecutiva con chófer esperando en un aeropuerto",
     },
     blocks: [
       {
@@ -455,7 +455,7 @@ export const PAGES_TRASLADOS: Page[] = [
         type: "intro",
         paragraphs: [
           "Los puertos de A Coruña y Vigo están en pleno centro, y Santiago de Compostela queda a una hora de ambos. En una escala de ocho o diez horas da tiempo a ver la catedral, comer bien y volver al barco con margen.",
-          "La diferencia con la excursión de la naviera: vas a tu ritmo, en una berlina o una van de lujo, con un chófer que conoce los tiempos de la escala.",
+          "La diferencia con la excursión de la naviera: vas a tu ritmo, en una berlina o una van ejecutiva, con un chófer que conoce los tiempos de la escala.",
         ],
       },
       {

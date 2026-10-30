@@ -81,7 +81,10 @@ export type Guide = {
     table?: { head: string[]; rows: string[][] };
     tip?: string;
     after?: string[];
+    image?: { src: string; alt: string; caption?: string };
   }[];
+  /** Cifras clave (usar 2 o 4 para que la fila quede cuadrada). */
+  stats?: { value: string; label: string }[];
   /** Llamada al servicio relacionado, que se muestra a mitad del artículo. */
   service?: { title: string; text: string; href: string; label: string };
   faqs: Faq[];
