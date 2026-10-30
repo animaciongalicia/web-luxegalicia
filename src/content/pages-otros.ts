@@ -28,6 +28,14 @@ export const PAGES_OTROS: Page[] = [
       },
       { type: "fleet", heading: "Vehículos disponibles", bg: "gray" },
       {
+        type: "links",
+        heading: "Grupos grandes",
+        items: [
+          { title: "Autocares y minibuses con conductor", text: "Para congresos, eventos, excursiones y traslados de grupos en toda Galicia.", href: "/alquiler-autocar-con-conductor-galicia" },
+          { title: "Transporte para congresos", text: "Lanzaderas, aeropuertos y cena de gala.", href: "/transporte-congresos-galicia" },
+        ],
+      },
+      {
         type: "checklist",
         heading: "En todos los servicios",
         items: [

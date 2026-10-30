@@ -30,6 +30,7 @@ const COLUMNS: Record<Lang, Column[]> = {
         { name: "Oporto ⇄ Galicia", href: "/oporto-galicia" },
         { name: "Camino de Santiago", href: "/transporte-camino-de-santiago" },
         { name: "Aeropuertos", href: "/aeropuertos-galicia" },
+        { name: "Autocares y minibuses", href: "/alquiler-autocar-con-conductor-galicia" },
       ],
     },
     {

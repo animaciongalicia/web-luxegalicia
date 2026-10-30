@@ -395,6 +395,84 @@ export const PAGES_TRASLADOS: Page[] = [
     ],
   },
   {
+    slug: "alquiler-autocar-con-conductor-galicia",
+    metaTitle: "Alquiler de autocares y minibuses con conductor en Galicia",
+    metaDescription:
+      "Alquiler de autocares y minibuses con conductor en Galicia para congresos, eventos, empresas, excursiones y traslados de grupos. Salidas desde A Coruña, Santiago y Vigo.",
+    serviceType: "Alquiler de autocares con conductor",
+    hero: {
+      eyebrow: "Autocares y minibuses",
+      title: "Alquiler de autocares y minibuses con conductor en Galicia",
+      subtitle: "Para congresos, eventos, empresas y grupos. De 8 a cientos de personas, con salidas desde A Coruña, Santiago y Vigo y un solo responsable de toda la operativa.",
+      image: "/images/minibus-galicia.jpg",
+      alt: "Minibús con conductor preparado para un traslado de grupo en Galicia",
+    },
+    blocks: [
+      {
+        type: "intro",
+        paragraphs: [
+          "Mover a un grupo no es alquilar un autocar. Es saber cuántos vehículos hacen falta, de qué tamaño, a qué hora tiene que salir cada uno y qué pasa si el programa cambia. Ahí es donde se gana o se pierde un evento.",
+          "Luxe Galicia coordina autocares y minibuses con conductor en toda Galicia: lanzaderas de congresos, traslados de aeropuerto para grupos, excursiones, eventos de empresa, festivales y traslados de invitados. Con una sola persona responsable de que todo salga a la hora.",
+        ],
+      },
+      {
+        type: "features",
+        heading: "Qué vehículo necesita tu grupo",
+        columns: 3,
+        bg: "gray",
+        items: [
+          { title: "Minibús · 8-19 plazas", text: "Grupos medianos, visitas técnicas, comités y traslados de aeropuerto. Ágil en cascos urbanos y carreteras secundarias." },
+          { title: "Midibús · 20-35 plazas", text: "Grupos de empresa, excursiones y lanzaderas con hoteles de tamaño medio." },
+          { title: "Autocar · hasta 55 plazas", text: "Congresos, eventos y traslados de grupos grandes. Para más personas, varios autocares coordinados." },
+        ],
+      },
+      {
+        type: "checklist",
+        heading: "Para qué se contratan",
+        items: [
+          "Lanzaderas de congresos entre hoteles y sede (Palexco, Palacio de Congresos de Santiago, IFEVI).",
+          "Traslados de grupos desde los aeropuertos de Santiago, A Coruña, Vigo y Oporto.",
+          "Eventos de empresa, convenciones y cenas de gala con vuelta escalonada.",
+          "Excursiones de grupo por Galicia: Santiago, Rías Baixas, Costa da Morte.",
+          "Festivales, conciertos y eventos deportivos.",
+          "Traslado de invitados en bodas y celebraciones.",
+        ],
+      },
+      {
+        type: "steps",
+        heading: "Cómo se organiza",
+        items: [
+          { title: "Datos del grupo", text: "Número de personas, fechas, horarios y puntos de recogida." },
+          { title: "Plan de vehículos", text: "Tamaño y número de autocares o minibuses y rotaciones necesarias." },
+          { title: "Precio cerrado", text: "Presupuesto detallado con tiempos de espera y kilómetros incluidos." },
+          { title: "Coordinación", text: "Un responsable en contacto con tu equipo durante todo el servicio." },
+        ],
+      },
+      {
+        type: "links",
+        heading: "Salidas desde",
+        bg: "gray",
+        items: [
+          { title: "A Coruña", text: "Grupos y congresos en Palexco y ExpoCoruña, aeropuerto de Alvedro y puerto.", href: "/traslados-desde-coruna" },
+          { title: "Santiago de Compostela", text: "Palacio de Congresos, Cidade da Cultura, aeropuerto y Camino.", href: "/traslados-desde-santiago" },
+          { title: "Vigo", text: "IFEVI, puerto de cruceros, Rías Baixas y Oporto.", href: "/traslados-desde-vigo" },
+        ],
+      },
+      { type: "quote", heading: "Pide presupuesto para tu grupo" },
+    ],
+    cta: {
+      title: "¿Cuántos autocares necesita tu evento?",
+      description: "Pásame el número de personas, los horarios y los puntos de recogida. Te propongo el plan de vehículos y el precio en 24 horas laborables.",
+    },
+    faqs: [
+      { question: "¿Cuántas plazas tiene un autocar?", answer: "Los autocares de gran turismo suelen tener hasta 55 plazas. Para grupos más pequeños hay midibuses de 20 a 35 plazas y minibuses de 8 a 19." },
+      { question: "¿El precio incluye el conductor?", answer: "Sí. Todos los autocares y minibuses se contratan con conductor profesional. El presupuesto indica las horas de servicio, los kilómetros y los tiempos de espera incluidos." },
+      { question: "¿Podéis coordinar varios autocares para un congreso?", answer: "Sí. Se planifican rotaciones y lanzaderas con varios vehículos trabajando en paralelo, coordinados por una sola persona." },
+      { question: "¿Trabajáis fuera de Galicia?", answer: "Sí. Se hacen traslados de grupos a Oporto, Asturias, León y Madrid." },
+      { question: "¿Con cuánta antelación hay que reservar?", answer: "Para grandes grupos en temporada alta (mayo a octubre) y en el Año Santo 2027, cuanto antes mejor: de 2 a 6 meses según el tamaño." },
+    ],
+  },
+  {
     slug: "aeropuertos-galicia",
     metaTitle: "Traslados aeropuerto con chófer: Santiago, A Coruña, Vigo y Oporto",
     metaDescription:

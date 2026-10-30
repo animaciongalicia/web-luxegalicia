@@ -14,6 +14,7 @@ const PRIORITY: Record<string, number> = {
   "transporte-empresas-galicia": 0.9,
   "oporto-galicia": 0.9,
   traslados: 0.85,
+  "alquiler-autocar-con-conductor-galicia": 0.9,
   "traslados-desde-coruna": 0.85,
   "traslados-desde-santiago": 0.85,
   "traslados-desde-vigo": 0.85,
