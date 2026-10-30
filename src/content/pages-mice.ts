@@ -2,6 +2,57 @@ import type { Page } from "./types";
 
 export const PAGES_MICE: Page[] = [
   {
+    slug: "transporte-eventos-galicia",
+    metaTitle: "Transporte para eventos en Galicia | Congresos, incentivos y festivales",
+    metaDescription:
+      "Empresa de transporte para eventos en Galicia: congresos, incentivos, festivales y eventos corporativos. Berlinas, vans de lujo, minibuses y autocares con coordinación en destino.",
+    serviceType: "Transporte para eventos",
+    hero: {
+      eyebrow: "Eventos",
+      title: "Transporte para eventos en Galicia",
+      subtitle: "Congresos, incentivos, festivales y eventos corporativos. De diez invitados a quinientos asistentes, con un solo responsable de todo el movimiento.",
+      image: "/images/sala-eventos-empresas.jpg",
+      alt: "Sala preparada para un evento corporativo en Galicia",
+    },
+    blocks: [
+      {
+        type: "intro",
+        paragraphs: [
+          "Un evento no falla por el vehículo. Falla por la coordinación: horarios que no cuadran, asistentes que llegan por cuatro aeropuertos distintos y cambios de última hora que nadie gestiona.",
+          "Luxe Galicia planifica y ejecuta el transporte de eventos en toda Galicia y el norte de Portugal desde 2013. Tú defines el evento; el movimiento de tu gente queda resuelto.",
+        ],
+      },
+      {
+        type: "links",
+        heading: "Elige tu tipo de evento",
+        bg: "gray",
+        items: [
+          { title: "Para agencias MICE", text: "Partner en destino para agencias de Madrid, Barcelona y extranjero. Marca blanca y factura única.", href: "/agencias-mice", image: "/images/flota-luxe-galicia.jpg", alt: "Flota premium para agencias MICE" },
+          { title: "Congresos y convenciones", text: "Lanzaderas sede-hotel, aeropuertos, ponentes y cena de gala.", href: "/transporte-congresos-galicia", image: "/images/sala-eventos-empresas.jpg", alt: "Sala de congresos en Galicia" },
+          { title: "Incentivos", text: "Vans de lujo y minibuses VIP a disposición durante todo el viaje.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego para un incentivo" },
+          { title: "Festivales y producciones", text: "Artistas, técnicos, giras y rodajes con cambios en tiempo real.", href: "/transporte-festivales-producciones", image: "/images/electronica-GozoFestival.jpg", alt: "Escenario de festival en Galicia" },
+        ],
+      },
+      {
+        type: "steps",
+        heading: "Cómo se organiza el transporte de un evento",
+        items: [
+          { title: "Brief", text: "Fechas, asistentes, hoteles, sedes y horarios." },
+          { title: "Plan de transporte", text: "Vehículos, rutas, frecuencias y precio cerrado." },
+          { title: "Asignación", text: "Chóferes, vehículos, contactos y hoja de ruta." },
+          { title: "Ejecución", text: "Coordinación en tiempo real y cierre con informe." },
+        ],
+      },
+      { type: "fleet", heading: "Flota disponible para eventos", bg: "gray" },
+      { type: "quote", heading: "Cuéntame tu evento" },
+    ],
+    faqs: [
+      { question: "¿Qué tipo de eventos cubrís?", answer: "Congresos, convenciones, incentivos, eventos corporativos, festivales, giras, rodajes y bodas, en toda Galicia y el norte de Portugal." },
+      { question: "¿Cuántas personas podéis mover en un mismo evento?", answer: "De una berlina para un ponente a operativas de cientos de asistentes con autocares, minibuses, vans y berlinas coordinados." },
+      { question: "¿Con cuánta antelación hay que reservar?", answer: "Para eventos de más de 200 personas en temporada alta, de 3 a 6 meses. Para eventos pequeños, de 2 a 4 semanas suele bastar." },
+    ],
+  },
+  {
     slug: "agencias-mice",
     metaTitle: "Transporte para agencias MICE en Galicia | Luxe Galicia",
     metaDescription:

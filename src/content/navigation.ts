@@ -9,8 +9,8 @@ export type NavItem = {
 export const NAV: Record<Lang, NavItem[]> = {
   es: [
     {
-      name: "Congresos & MICE",
-      href: "/agencias-mice",
+      name: "Eventos",
+      href: "/transporte-eventos-galicia",
       children: [
         { name: "Para agencias MICE", href: "/agencias-mice" },
         { name: "Congresos y convenciones", href: "/transporte-congresos-galicia" },
@@ -32,7 +32,7 @@ export const NAV: Record<Lang, NavItem[]> = {
       ],
     },
     {
-      name: "Tours con chófer",
+      name: "Tours",
       href: "/tours-con-chofer-galicia",
       children: [
         { name: "Galicia en 3 días", href: "/tours-con-chofer-galicia/galicia-3-dias" },

@@ -31,9 +31,9 @@ const problemas = [
 
 const destacados = [
   {
-    title: "Congresos & MICE",
-    text: "Lanzaderas, aeropuertos, ponentes y cena de gala. Para agencias y organizadores que vienen de fuera.",
-    href: "/agencias-mice",
+    title: "Eventos & MICE",
+    text: "Congresos, incentivos y festivales: lanzaderas, aeropuertos, ponentes y cena de gala. Para agencias y organizadores que vienen de fuera.",
+    href: "/transporte-eventos-galicia",
     image: "/images/sala-eventos-empresas.jpg",
     alt: "Sala de congresos preparada en Galicia",
   },

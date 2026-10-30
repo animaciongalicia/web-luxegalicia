@@ -7,9 +7,10 @@ type Column = { title: string; href?: string; links: { name: string; href: strin
 const COLUMNS: Record<Lang, Column[]> = {
   es: [
     {
-      title: "Congresos & empresas",
-      href: "/agencias-mice",
+      title: "Eventos & empresas",
+      href: "/transporte-eventos-galicia",
       links: [
+        { name: "Transporte para eventos", href: "/transporte-eventos-galicia" },
         { name: "Para agencias MICE", href: "/agencias-mice" },
         { name: "Congresos y convenciones", href: "/transporte-congresos-galicia" },
         { name: "Incentivos", href: "/transporte-incentivos-galicia" },
@@ -31,7 +32,7 @@ const COLUMNS: Record<Lang, Column[]> = {
       ],
     },
     {
-      title: "Tours con chófer",
+      title: "Tours",
       href: "/tours-con-chofer-galicia",
       links: [
         { name: "Galicia en 3, 5 y 7 días", href: "/tours-con-chofer-galicia" },

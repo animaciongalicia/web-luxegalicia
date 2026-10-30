@@ -10,10 +10,10 @@ export const SITE = {
   whatsapp: "34678288284",
   email: "info@luxegalicia.com",
   city: "A Coruña",
-  // PENDIENTE: razón social, CIF y dirección fiscal. Mientras estén vacíos no se muestran.
-  legalName: process.env.NEXT_PUBLIC_LEGAL_NAME || "",
-  taxId: process.env.NEXT_PUBLIC_TAX_ID || "",
-  address: process.env.NEXT_PUBLIC_LEGAL_ADDRESS || "",
+  // Titular (mismo que Suunia). Se puede sobrescribir con variables de entorno.
+  legalName: process.env.NEXT_PUBLIC_LEGAL_NAME || "Inversiones SHISO SL",
+  taxId: process.env.NEXT_PUBLIC_TAX_ID || "B70319223",
+  address: process.env.NEXT_PUBLIC_LEGAL_ADDRESS || "Ronda de Montealto, 4 – 5ºA · 15002 A Coruña",
   suuniaUrl: "https://www.suunia.com",
 };
 

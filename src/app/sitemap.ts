@@ -8,6 +8,7 @@ const LAST_MODIFIED = new Date("2026-10-30");
 
 const PRIORITY: Record<string, number> = {
   "agencias-mice": 0.95,
+  "transporte-eventos-galicia": 0.95,
   "transporte-congresos-galicia": 0.9,
   "transporte-empresas-galicia": 0.9,
   "oporto-galicia": 0.9,
