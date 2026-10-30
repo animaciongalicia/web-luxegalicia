@@ -11,8 +11,8 @@ export const PAGES_MICE: Page[] = [
       eyebrow: "Eventos",
       title: "Transporte para eventos en Galicia",
       subtitle: "Congresos, incentivos, festivales y eventos corporativos. De diez invitados a quinientos asistentes, con un solo responsable de todo el movimiento.",
-      image: "/images/sala-eventos-empresas.jpg",
-      alt: "Sala preparada para un evento corporativo en Galicia",
+      image: "/images/flota-vans-evento.webp",
+      alt: "Flota de vans con chófer preparada para un evento en Galicia",
     },
     blocks: [
       {
@@ -31,7 +31,7 @@ export const PAGES_MICE: Page[] = [
           { title: "Congresos y convenciones", text: "Lanzaderas sede-hotel, aeropuertos, ponentes y cena de gala.", href: "/transporte-congresos-galicia", image: "/images/sala-eventos-empresas.jpg", alt: "Sala de congresos en Galicia" },
           { title: "Incentivos", text: "Vans ejecutivas y minibuses a disposición durante todo el viaje.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego para un incentivo" },
           { title: "Festivales y producciones", text: "Artistas, técnicos, giras y rodajes con cambios en tiempo real.", href: "/transporte-festivales-producciones", image: "/images/electronica-GozoFestival.jpg", alt: "Escenario de festival en Galicia" },
-          { title: "Fútbol y eventos deportivos", text: "Peñas, empresas con invitados y equipos: al Deportivo en Riazor o al Celta en Balaídos.", href: "/transporte-eventos-deportivos", image: "/images/van-ejecutiva-galicia.jpg", alt: "Van ejecutiva con chófer para ir a un partido" },
+          { title: "Fútbol y eventos deportivos", text: "Peñas, empresas con invitados y equipos: al Deportivo en Riazor o al Celta en Balaídos.", href: "/transporte-eventos-deportivos", image: "/images/vans-berlinas-conciertos.jpg", alt: "Vans y berlinas con chófer para un evento deportivo" },
         ],
       },
       {
@@ -65,8 +65,8 @@ export const PAGES_MICE: Page[] = [
       title: "Tu partner de transporte en Galicia",
       subtitle:
         "Organizas el evento desde fuera. Yo muevo a tu gente en destino. Berlinas, vans, minibuses y autocares con un único interlocutor y una sola factura.",
-      image: "/images/flota-luxe-galicia.jpg",
-      alt: "Flota de berlinas Mercedes Clase S y vans Clase V para agencias MICE en Galicia",
+      image: "/images/flota-berlinas-vans-aerea.jpg",
+      alt: "Flota de berlinas y vans con chófer para agencias MICE en Galicia",
     },
     blocks: [
       {
@@ -110,7 +110,7 @@ export const PAGES_MICE: Page[] = [
         items: [
           { title: "Congresos y convenciones", text: "Lanzaderas sede-hotel, aeropuertos y cenas de gala.", href: "/transporte-congresos-galicia", image: "/images/sala-eventos-empresas.jpg", alt: "Sala de congresos preparada para un evento corporativo en Galicia" },
           { title: "Incentivos", text: "Movilidad con chófer para viajes de incentivo de varios días.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego preparado para un evento de incentivo" },
-          { title: "Oporto, puerta de entrada", text: "Tus asistentes vuelan a Oporto. Los recoges y los llevas a Galicia sin fricciones.", href: "/oporto-galicia", image: "/images/traslados-coruna-santiago.jpg", alt: "Traslado con chófer entre Oporto y Galicia" },
+          { title: "Oporto, puerta de entrada", text: "Tus asistentes vuelan a Oporto. Los recoges y los llevas a Galicia sin fricciones.", href: "/oporto-galicia", image: "/images/van-avion-privado.png", alt: "Van con chófer esperando junto a un avión" },
         ],
       },
       {
@@ -153,8 +153,8 @@ export const PAGES_MICE: Page[] = [
       eyebrow: "Congresos y convenciones",
       title: "Transporte para congresos en Galicia",
       subtitle: "Lanzaderas, aeropuertos, ponentes y cena de gala. Todo el movimiento de tu congreso planificado al minuto y con un solo responsable.",
-      image: "/images/sala-eventos-empresas.jpg",
-      alt: "Sala de un congreso en Galicia preparada para los asistentes",
+      image: "/images/flota-vans-congreso.jpg",
+      alt: "Vans y berlinas con chófer esperando a los asistentes de un congreso",
     },
     blocks: [
       {
@@ -346,8 +346,8 @@ export const PAGES_MICE: Page[] = [
       eyebrow: "Fútbol y eventos deportivos",
       title: "Transporte para ver al Deportivo y grandes eventos deportivos",
       subtitle: "Con el Dépor de vuelta en Primera, Riazor vuelve a llenarse. Llega al partido sin pelearte por aparcar y vuelve sin esperar un taxi que no llega.",
-      image: "/images/flota-luxe-galicia.jpg",
-      alt: "Flota de berlinas y vans con chófer para ir al estadio",
+      image: "/images/flota-minibuses-autocar.webp",
+      alt: "Minibuses y autocar con conductor para desplazamientos a partidos",
     },
     blocks: [
       {
@@ -414,8 +414,8 @@ export const PAGES_MICE: Page[] = [
       eyebrow: "Empresas",
       title: "Transporte para empresas que vienen a Galicia",
       subtitle: "Inspecciones, visitas comerciales, ferias y agendas apretadas. Tu equipo trabaja; el chófer se ocupa del resto.",
-      image: "/images/traslados-chofer-coruna.jpg",
-      alt: "Chófer abriendo la puerta de una berlina a un ejecutivo en A Coruña",
+      image: "/images/chofer-abriendo-puerta.jpg",
+      alt: "Chófer abriendo la puerta de una berlina a un ejecutivo",
     },
     blocks: [
       {
@@ -435,8 +435,8 @@ export const PAGES_MICE: Page[] = [
               "Auditorías de calidad, visitas a fábricas, homologación de proveedores, inspecciones técnicas. Galicia tiene industria repartida entre polígonos, puertos y zonas rurales: A Coruña, Arteixo, Ferrol, Santiago, Vigo, Ourense.",
               "El chófer te recoge en el aeropuerto o en el hotel, encadena las visitas del día y espera lo que haga falta. Tú llegas con la cabeza en la reunión.",
             ],
-            image: "/images/traslados-chofer-coruna.jpg",
-            alt: "Ejecutivo bajando de una berlina con chófer para una visita de empresa",
+            image: "/images/chofer-junto-a-berlina.jpg",
+            alt: "Chófer junto a una berlina preparada para una visita de empresa",
           },
           {
             title: "Desarrollo comercial, ferias y roadshows",
@@ -444,8 +444,8 @@ export const PAGES_MICE: Page[] = [
               "Visitas a clientes en varias ciudades en un mismo día, presentaciones de producto, ferias en IFEVI o ExpoCoruña, reuniones con distribuidores.",
               "Se diseña la ruta para que aproveches cada hora: A Coruña, Santiago, Vigo y Oporto están a menos de tres horas entre sí. Con chófer, el coche se convierte en tu oficina entre reunión y reunión.",
             ],
-            image: "/images/flota-luxe-galicia.jpg",
-            alt: "Berlinas y vans ejecutivas para roadshows comerciales en Galicia",
+            image: "/images/chofer-interior-berlina.webp",
+            alt: "Chófer al volante de una berlina durante una ruta comercial",
           },
           {
             title: "Chófer a disposición por horas o días",
@@ -453,8 +453,8 @@ export const PAGES_MICE: Page[] = [
               "Para directivos, comités de dirección y clientes estratégicos. Un vehículo y un chófer a tu servicio durante la jornada o durante toda la estancia.",
               "Berlina ejecutiva para una persona, berlina de representación para la alta dirección o van Clase V para el comité completo.",
             ],
-            image: "/images/van-ejecutiva-galicia.jpg",
-            alt: "Van ejecutiva Mercedes con chófer a disposición de un comité de dirección",
+            image: "/images/van-mercedes-clase-v.jpg",
+            alt: "Van Mercedes Clase V con chófer a disposición de un comité de dirección",
           },
         ],
       },

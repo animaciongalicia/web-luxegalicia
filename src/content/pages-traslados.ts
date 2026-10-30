@@ -23,8 +23,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Traslados privados",
       title: "Traslados con chófer desde Galicia, hacia donde necesites",
       subtitle: "Tres bases (A Coruña, Santiago y Vigo), Oporto como puerta de entrada y salidas hacia Madrid y Asturias. Precio claro antes de reservar.",
-      image: "/images/traslados-coruna-santiago.jpg",
-      alt: "Berlina con chófer en un traslado entre A Coruña y Santiago",
+      image: "/images/llegada-aeropuerto-coches.webp",
+      alt: "Berlinas con chófer en la zona de llegadas de un aeropuerto",
     },
     blocks: [
       {
@@ -42,9 +42,9 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Desde A Coruña", text: "Toda Galicia, Oporto, Asturias y Madrid desde la base principal.", href: "/traslados-desde-coruna", image: "/images/coruna-torre-hercules.jpg", alt: "Monumento junto a la Torre de Hércules, en A Coruña" },
           { title: "Desde Santiago", text: "Aeropuerto Rosalía de Castro, estación de tren y el final del Camino.", href: "/traslados-desde-santiago", image: "/images/tours-santiago.jpg", alt: "Catedral de Santiago de Compostela" },
           { title: "Desde Vigo", text: "Rías Baixas, Oporto y puerto de cruceros.", href: "/traslados-desde-vigo", image: "/images/playa-rodas-islas-cies-suunia.jpg", alt: "Playa de Rodas en las Islas Cíes frente a Vigo" },
-          { title: "Oporto, puerta de Galicia", text: "Del aeropuerto de Oporto a cualquier punto de Galicia.", href: "/oporto-galicia", image: "/images/traslados-chofer-coruna.jpg", alt: "Traslado con chófer desde el aeropuerto de Oporto" },
+          { title: "Oporto, puerta de Galicia", text: "Del aeropuerto de Oporto a cualquier punto de Galicia.", href: "/oporto-galicia", image: "/images/van-avion-privado.png", alt: "Van con chófer junto a un avión en el aeropuerto" },
           { title: "Camino de Santiago", text: "Inicio de etapas, vehículo de apoyo y regreso para grupos.", href: "/transporte-camino-de-santiago", image: "/images/faro-de-Finisterre-1.jpg", alt: "Faro de Fisterra, final del Camino de Santiago" },
-          { title: "Aeropuertos", text: "Santiago, A Coruña, Vigo y Oporto.", href: "/aeropuertos-galicia", image: "/images/van-ejecutiva-galicia.jpg", alt: "Van ejecutiva esperando en un aeropuerto de Galicia" },
+          { title: "Aeropuertos", text: "Santiago, A Coruña, Vigo y Oporto.", href: "/aeropuertos-galicia", image: "/images/viajero-aeropuerto.webp", alt: "Viajero en un aeropuerto viendo despegar un avión" },
         ],
       },
       { type: "fleet", heading: "Tipos de vehículo" },
@@ -272,8 +272,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Oporto · Puerta de entrada a Galicia",
       title: "De Oporto a Galicia, con chófer y sin complicaciones",
       subtitle: "El aeropuerto de Oporto tiene más conexiones internacionales que ninguno de Galicia. Aterriza allí y llega a Vigo, Santiago o A Coruña puerta a puerta.",
-      image: "/images/traslados-coruna-santiago.jpg",
-      alt: "Berlina con chófer en la autopista entre Oporto y Galicia",
+      image: "/images/chofer-carretera-galicia.jpg",
+      alt: "Chófer conduciendo por autopista entre Oporto y Galicia",
     },
     blocks: [
       {
@@ -404,8 +404,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Autocares y minibuses",
       title: "Alquiler de autocares y minibuses con conductor en Galicia",
       subtitle: "Para congresos, eventos, empresas y grupos. De 8 a cientos de personas, con salidas desde A Coruña, Santiago y Vigo y un solo responsable de toda la operativa.",
-      image: "/images/minibus-galicia.jpg",
-      alt: "Minibús con conductor preparado para un traslado de grupo en Galicia",
+      image: "/images/flota-minibuses-autocar.webp",
+      alt: "Flota de minibuses y autocar con conductor en Galicia",
     },
     blocks: [
       {
@@ -482,8 +482,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Aeropuertos",
       title: "Traslados de aeropuerto en Galicia y Oporto",
       subtitle: "Santiago, A Coruña, Vigo y Oporto. El chófer sigue tu vuelo y te espera en llegadas con tu nombre.",
-      image: "/images/van-ejecutiva-galicia.jpg",
-      alt: "Van ejecutiva con chófer esperando en un aeropuerto",
+      image: "/images/sala-espera-aeropuerto.jpg",
+      alt: "Sala de espera de un aeropuerto con aviones al fondo",
     },
     blocks: [
       {

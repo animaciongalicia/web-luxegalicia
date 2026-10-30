@@ -13,10 +13,10 @@ const organization = {
   "@id": `${SITE_URL}/#organization`,
   name: SITE.name,
   url: SITE_URL,
-  logo: `${SITE_URL}/images/logo-luxegalicia.png`,
+  logo: `${SITE_URL}/images/logo-luxe-galicia.png`,
   image: `${SITE_URL}/images/flota-luxe-galicia.jpg`,
   description:
-    "Transporte con chófer con chófer en Galicia y Oporto para congresos, incentivos, empresas, agencias MICE y tours privados. Berlinas, vans ejecutivas, minibuses y autocares.",
+    "Transporte con chófer en Galicia y Oporto para congresos, incentivos, empresas, agencias MICE y tours privados. Berlinas, vans ejecutivas, minibuses y autocares.",
   telephone: "+34678288284",
   email: SITE.email,
   foundingDate: String(SITE.since),

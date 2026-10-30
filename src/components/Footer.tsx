@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE, whatsappLink } from "@/content/site";
 import type { Lang } from "@/content/types";
 
@@ -101,11 +102,8 @@ export default function Footer({ lang = "es" }: { lang?: Lang }) {
         <div className={`grid gap-10 sm:grid-cols-2 ${lang === "en" ? "lg:grid-cols-5" : "lg:grid-cols-6"}`}>
           {/* Marca + contacto */}
           <div className="lg:col-span-2">
-            <Link href={lang === "en" ? "/en" : "/"} className="inline-flex items-center gap-2.5">
-              <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-lg bg-luxe-800 text-xs font-bold text-white">
-                LG
-              </span>
-              <span className="text-xl font-bold tracking-tight text-gray-900">LUXE GALICIA</span>
+            <Link href={lang === "en" ? "/en" : "/"} className="inline-flex">
+              <Image src="/images/logo-luxe-galicia.png" alt="Luxe Galicia" width={835} height={516} className="h-16 w-auto rounded-lg" />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-500">
               {lang === "en"

@@ -28,7 +28,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "2. Cuántos vehículos necesitas",
-        image: {"src": "/images/flota-luxe-galicia.jpg", "alt": "Berlinas y vans con chófer preparadas para un congreso", "caption": "La flota se dimensiona por el pico de asistentes en una misma franja de 30 minutos."},
+        image: {"src": "/images/flota-berlinas-aparcamiento.jpg", "alt": "Berlinas y vans con chófer preparadas para un congreso", "caption": "La flota se dimensiona por el pico de asistentes en una misma franja de 30 minutos."},
         paragraphs: ["La regla rápida para lanzaderas sede-hotel: calcula el pico de personas que tienen que llegar en la misma franja de 30 minutos y divide por la capacidad del vehículo, sumando un 15 % de margen."],
         list: [
           "1-3 personas: berlina ejecutiva (ponentes, invitados especiales, comité).",
@@ -473,7 +473,7 @@ const GUIAS_BASE: Guide[] = [
       },
       {
         heading: "Oporto, el aeropuerto que más importa en IFEVI",
-        image: {"src": "/images/traslados-coruna-santiago.jpg", "alt": "Berlina con chófer en la autopista entre Oporto y Vigo"},
+        image: {"src": "/images/van-avion-privado.png", "alt": "Van con chófer esperando junto a un avión"},
         paragraphs: [
           "En ferias internacionales, buena parte de los expositores y compradores vuela a Oporto: más conexiones y, a menudo, mejores precios que los aeropuertos gallegos. Eso convierte el traslado Oporto–Vigo en una pieza central del plan de transporte.",
           "La forma más eficiente es agrupar llegadas por franjas horarias en vans o minibuses, con un vehículo de reserva para los vuelos retrasados.",

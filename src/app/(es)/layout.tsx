@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "Transporte con chófer con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans ejecutivas, minibuses y autocares desde 2013.",
-  icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
+    "Transporte con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans ejecutivas, minibuses y autocares desde 2013.",
+  icons: { icon: [{ url: "/icon.png", type: "image/png" }, { url: "/favicon.ico" }], apple: "/apple-touch-icon.png" },
   openGraph: { type: "website", locale: "es_ES", siteName: "Luxe Galicia", images: ["/images/flota-luxe-galicia.jpg"] },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },

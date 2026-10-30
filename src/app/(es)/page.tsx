@@ -10,13 +10,13 @@ import { SITE, SITE_URL, absoluteUrl } from "@/content/site";
 export const metadata: Metadata = {
   title: "Luxe Galicia – Transporte con chófer para congresos, eventos y empresas en Galicia",
   description:
-    "Transporte con chófer con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans ejecutivas, minibuses y autocares. Desde 2013. Presupuesto en 24 h.",
+    "Transporte con chófer en Galicia y Oporto para congresos, incentivos, empresas y agencias MICE. Berlinas, vans ejecutivas, minibuses y autocares. Desde 2013. Presupuesto en 24 h.",
   alternates: { canonical: SITE_URL, languages: { es: SITE_URL, en: absoluteUrl("/en") } },
   openGraph: {
     title: "Luxe Galicia – Transporte con chófer en Galicia",
     description: "Congresos, incentivos, empresas y tours con chófer en Galicia y Oporto.",
     url: SITE_URL,
-    images: [{ url: "/images/flota-luxe-galicia.jpg", width: 1200, height: 630, alt: "Flota con chófer de Luxe Galicia" }],
+    images: [{ url: "/images/flota-berlinas-fila.jpg", width: 1200, height: 630, alt: "Flota con chófer de Luxe Galicia" }],
   },
 };
 
@@ -34,15 +34,15 @@ const destacados = [
     title: "Eventos & MICE",
     text: "Congresos, incentivos y festivales: lanzaderas, aeropuertos, ponentes y cena de gala. Para agencias y organizadores que vienen de fuera.",
     href: "/transporte-eventos-galicia",
-    image: "/images/sala-eventos-empresas.jpg",
-    alt: "Sala de congresos preparada en Galicia",
+    image: "/images/flota-vans-congreso.jpg",
+    alt: "Vans con chófer preparadas para un congreso",
   },
   {
     title: "Empresas",
     text: "Visitas, inspecciones, desarrollo comercial y chófer a disposición por horas o días.",
     href: "/transporte-empresas-galicia",
-    image: "/images/traslados-chofer-coruna.jpg",
-    alt: "Ejecutivo con chófer en una visita de empresa en Galicia",
+    image: "/images/chofer-abriendo-puerta.jpg",
+    alt: "Chófer abriendo la puerta de una berlina a un ejecutivo",
   },
   {
     title: "Tours con chófer",
@@ -74,7 +74,7 @@ const motivos = [
 ];
 
 const faqs = [
-  { question: "¿Qué tipo de servicios de transporte ofrece Luxe Galicia?", answer: "Transporte con chófer con chófer para congresos, incentivos, festivales y eventos corporativos; transporte para empresas (visitas, inspecciones, desarrollo comercial); traslados desde A Coruña, Santiago, Vigo y Oporto; transporte para grupos del Camino de Santiago y tours con chófer por Galicia." },
+  { question: "¿Qué tipo de servicios de transporte ofrece Luxe Galicia?", answer: "Transporte con chófer para congresos, incentivos, festivales y eventos corporativos; transporte para empresas (visitas, inspecciones, desarrollo comercial); traslados desde A Coruña, Santiago, Vigo y Oporto; transporte para grupos del Camino de Santiago y tours con chófer por Galicia." },
   { question: "¿En qué zonas trabajáis?", answer: "Toda Galicia, con bases en A Coruña, Santiago y Vigo, y traslados a Oporto, Asturias, León y Madrid." },
   { question: "¿Cuánto se tarda en recibir un presupuesto?", answer: "Menos de 24 horas laborables. Para urgencias, WhatsApp directo." },
   { question: "¿Trabajáis con agencias de fuera de Galicia?", answer: "Sí. Agencias MICE, DMC y organizadores de Madrid, Barcelona y otros países son el cliente principal, con condiciones específicas y opción de marca blanca." },
@@ -85,7 +85,7 @@ export default function Home() {
     <>
       {/* 1. Hero */}
       <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden lg:min-h-[75vh]">
-        <Image src="/images/flota-luxe-galicia.jpg" alt="Berlinas Mercedes Clase S y vans Clase V de Luxe Galicia" fill className="object-cover" priority quality={75} sizes="100vw" />
+        <Image src="/images/flota-berlinas-fila.jpg" alt="Flota de berlinas y vans con chófer de Luxe Galicia" fill className="object-cover" priority quality={75} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center text-white lg:py-32">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Transporte con chófer · Galicia &amp; Oporto</p>

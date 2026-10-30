@@ -10,13 +10,13 @@ export const PAGES_OTROS: Page[] = [
     slug: "flota",
     metaTitle: "Flota con chófer en Galicia: berlinas, vans, minibuses y autocares",
     metaDescription:
-      "Flota con chófer con chófer disponible en Galicia: berlinas Mercedes Clase E y Clase S, vans Clase V, minibuses y autocares para empresas, congresos y tours.",
+      "Flota con chófer disponible en Galicia: berlinas Mercedes Clase E y Clase S, vans Clase V, minibuses y autocares para empresas, congresos y tours.",
     hero: {
       eyebrow: "Flota",
-      title: "Flota con chófer con chófer en Galicia",
+      title: "Flota con chófer en Galicia",
       subtitle: "De una berlina a una operativa de 500 personas. El vehículo adecuado para cada servicio, con chóferes profesionales.",
-      image: "/images/flota-luxe-galicia.jpg",
-      alt: "Mercedes Clase S y Clase V de la flota Luxe Galicia",
+      image: "/images/flota-berlinas-vans-puente.webp",
+      alt: "Berlinas y vans con chófer de la flota de Luxe Galicia",
     },
     blocks: [
       {
@@ -66,8 +66,8 @@ export const PAGES_OTROS: Page[] = [
       eyebrow: "Presupuesto",
       title: "Pide tu presupuesto",
       subtitle: "Cuéntame el servicio y tienes una propuesta clara en menos de 24 horas laborables. Para urgencias, WhatsApp.",
-      image: "/images/traslados-coruna-santiago.jpg",
-      alt: "Berlina con chófer preparada para un servicio en Galicia",
+      image: "/images/planificacion-transporte-evento.webp",
+      alt: "Planificación del transporte de un evento en una tableta",
     },
     blocks: [
       { type: "quote", heading: "Datos del servicio", intro: "Cuanta más información, más precisa la propuesta. No hace falta tenerlo todo cerrado." },
@@ -88,7 +88,7 @@ export const PAGES_OTROS: Page[] = [
     slug: "transporte-bodas-galicia",
     metaTitle: "Coches con chófer para bodas en Galicia | Luxe Galicia",
     metaDescription:
-      "Coches con chófer para bodas en Galicia: berlinas para los novios y autocares para los invitados entre ceremonia, celebración y alojamiento.",
+      "Coches con chófer para bodas en Galicia: berlinas para los novios, coches clásicos bajo disponibilidad y autocares para los invitados entre ceremonia, celebración y alojamiento.",
     serviceType: "Transporte para bodas",
     hero: {
       eyebrow: "Bodas",
@@ -108,15 +108,31 @@ export const PAGES_OTROS: Page[] = [
       {
         type: "features",
         heading: "Servicios para bodas",
-        columns: 2,
+        columns: 3,
         bg: "gray",
         items: [
           { title: "Novios y familia", text: "Berlina de representación con chófer, decoración discreta y tiempos medidos para las fotos." },
           { title: "Invitados", text: "Autocares y minibuses con horarios de ida y vuelta escalonados, para que nadie conduzca." },
+          { title: "Coches clásicos", text: "Para quien busca una entrada con historia, coches clásicos con conductor bajo disponibilidad. Consulta modelos y fechas." },
+        ],
+      },
+      {
+        type: "zigzag",
+        items: [
+          {
+            title: "El día que no admite retrasos",
+            paragraphs: [
+              "El chófer conoce los tiempos de la ceremonia, las fotos y la llegada al banquete. Tú solo tienes que disfrutar.",
+              "Para los invitados, horarios de vuelta escalonados: el primero al terminar la cena y el último al cierre de la fiesta.",
+            ],
+            image: "/images/berlina-puerta-abierta.jpg",
+            alt: "Berlina con chófer y la puerta abierta esperando a los novios",
+          },
         ],
       },
     ],
     faqs: [
+      { question: "¿Tenéis coches clásicos para bodas?", answer: "Sí, bajo disponibilidad y con conductor. Escribe con la fecha y el lugar y recibes los modelos disponibles." },
       { question: "¿Con cuánta antelación hay que reservar para una boda?", answer: "En temporada alta (mayo a septiembre), con varios meses de antelación. Los sábados se agotan pronto." },
     ],
   },

@@ -33,7 +33,7 @@ export default function HomeEn() {
   return (
     <>
       <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden lg:min-h-[75vh]">
-        <Image src="/images/flota-luxe-galicia.jpg" alt="Mercedes S-Class sedans and V-Class vans" fill className="object-cover" priority quality={75} sizes="100vw" />
+        <Image src="/images/flota-berlinas-fila.jpg" alt="Fleet of chauffeur-driven sedans and vans" fill className="object-cover" priority quality={75} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center text-white lg:py-32">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Ground transportation · Galicia &amp; Porto</p>

@@ -13,8 +13,8 @@ export const PAGES_EN: Page[] = [
       eyebrow: "For MICE agencies & DMCs",
       title: "Your ground transportation partner in Galicia",
       subtitle: "You plan the event from abroad. I move your people on the ground: one point of contact, one invoice, the right vehicles.",
-      image: "/images/flota-luxe-galicia.jpg",
-      alt: "Mercedes S-Class sedans and V-Class vans available in Galicia",
+      image: "/images/flota-berlinas-vans-aerea.jpg",
+      alt: "Fleet of chauffeur-driven sedans and vans in Galicia",
     },
     blocks: [
       {
@@ -67,8 +67,8 @@ export const PAGES_EN: Page[] = [
       eyebrow: "Porto · Gateway to Galicia",
       title: "From Porto to Galicia with a private chauffeur",
       subtitle: "Land in Porto, the best-connected airport in the region, and arrive at your hotel in Vigo, Santiago or A Coruña door to door.",
-      image: "/images/traslados-coruna-santiago.jpg",
-      alt: "Private chauffeur car on the motorway between Porto and Galicia",
+      image: "/images/chofer-carretera-galicia.jpg",
+      alt: "Chauffeur driving on the motorway between Porto and Galicia",
     },
     blocks: [
       {

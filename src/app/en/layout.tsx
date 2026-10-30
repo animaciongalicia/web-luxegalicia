@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     "Ground transportation in Galicia, Spain and Porto: MICE transport, private chauffeur transfers and multi-day chauffeur tours since 2013.",
-  icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
+  icons: { icon: [{ url: "/icon.png", type: "image/png" }, { url: "/favicon.ico" }], apple: "/apple-touch-icon.png" },
   openGraph: { type: "website", locale: "en_GB", siteName: "Luxe Galicia", images: ["/images/flota-luxe-galicia.jpg"] },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },

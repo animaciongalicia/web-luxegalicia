@@ -169,7 +169,7 @@ export const ARTICULOS: Guide[] = [
       },
       {
         heading: "Logística: donde se gana o se pierde un fam trip",
-        image: {"src": "/images/minibus-galicia.jpg", "alt": "Minibús con chófer para un grupo de agentes de viajes"},
+        image: {"src": "/images/minibus-interior.jpg", "alt": "Interior de un minibús con chófer para un grupo de agentes de viajes"},
         paragraphs: [
           "Los participantes de un fam trip son profesionales que organizan viajes. Detectan al momento un retraso, un vehículo inadecuado o una espera innecesaria. Y lo trasladan al destino: si el transporte falla, piensan que Galicia es complicada.",
         ],
@@ -228,8 +228,8 @@ export const ARTICULOS: Guide[] = [
     metaTitle: "De Oporto a Vigo: tren, autobús o traslado privado | Comparativa 2026",
     metaDescription:
       "Cómo ir de Oporto (aeropuerto o ciudad) a Vigo: horarios y duración del tren, autobuses desde el aeropuerto, coche de alquiler y traslado privado. Comparativa clara y consejos.",
-    image: "/images/traslados-coruna-santiago.jpg",
-    alt: "Coche con chófer en la autopista entre Oporto y Vigo",
+    image: "/images/chofer-carretera-galicia.jpg",
+    alt: "Chófer en la autopista entre Oporto y Vigo",
     readMinutes: 7,
     date: "2026-10-31",
     stats: [{"value": "~150 km", "label": "entre Oporto y Vigo"}, {"value": "1 h 35 min", "label": "por carretera desde el aeropuerto"}, {"value": "~2", "label": "trenes directos al día"}, {"value": "-1 h", "label": "Portugal respecto a España"}],
@@ -617,8 +617,8 @@ export const ARTICULOS: Guide[] = [
     metaTitle: "Uber, taxi o chófer en Santiago de Compostela: qué te conviene",
     metaDescription:
       "Cómo moverte en Santiago de Compostela: taxi, VTC por aplicación (Uber, Cabify), autobús o coche con chófer. Desde el aeropuerto, por la ciudad y para grupos o empresas.",
-    image: "/images/traslados-chofer-coruna.jpg",
-    alt: "Coche con chófer esperando a un pasajero en Santiago de Compostela",
+    image: "/images/chofer-conduciendo-berlina.jpg",
+    alt: "Chófer conduciendo una berlina por Santiago de Compostela",
     readMinutes: 6,
     date: "2026-10-31",
     stats: [{"value": "15-20 min", "label": "aeropuerto – centro"}, {"value": "4", "label": "formas de moverte"}],
