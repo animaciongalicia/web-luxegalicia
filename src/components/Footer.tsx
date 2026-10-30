@@ -15,6 +15,7 @@ const COLUMNS: Record<Lang, Column[]> = {
         { name: "Congresos y convenciones", href: "/transporte-congresos-galicia" },
         { name: "Incentivos", href: "/transporte-incentivos-galicia" },
         { name: "Festivales y producciones", href: "/transporte-festivales-producciones" },
+        { name: "Fútbol y eventos deportivos", href: "/transporte-eventos-deportivos" },
         { name: "Transporte para empresas", href: "/transporte-empresas-galicia" },
         { name: "Flota", href: "/flota" },
       ],

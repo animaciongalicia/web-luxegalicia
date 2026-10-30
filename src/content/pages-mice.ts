@@ -31,6 +31,7 @@ export const PAGES_MICE: Page[] = [
           { title: "Congresos y convenciones", text: "Lanzaderas sede-hotel, aeropuertos, ponentes y cena de gala.", href: "/transporte-congresos-galicia", image: "/images/sala-eventos-empresas.jpg", alt: "Sala de congresos en Galicia" },
           { title: "Incentivos", text: "Vans de lujo y minibuses VIP a disposición durante todo el viaje.", href: "/transporte-incentivos-galicia", image: "/images/pazo-eventos-corporativos.jpg", alt: "Pazo gallego para un incentivo" },
           { title: "Festivales y producciones", text: "Artistas, técnicos, giras y rodajes con cambios en tiempo real.", href: "/transporte-festivales-producciones", image: "/images/electronica-GozoFestival.jpg", alt: "Escenario de festival en Galicia" },
+          { title: "Fútbol y eventos deportivos", text: "Peñas, empresas con invitados y equipos: al Deportivo en Riazor o al Celta en Balaídos.", href: "/transporte-eventos-deportivos", image: "/images/van-lujo-galicia.jpg", alt: "Van de lujo con chófer para ir a un partido" },
         ],
       },
       {
@@ -47,7 +48,7 @@ export const PAGES_MICE: Page[] = [
       { type: "quote", heading: "Cuéntame tu evento" },
     ],
     faqs: [
-      { question: "¿Qué tipo de eventos cubrís?", answer: "Congresos, convenciones, incentivos, eventos corporativos, festivales, giras, rodajes y bodas, en toda Galicia y el norte de Portugal." },
+      { question: "¿Qué tipo de eventos cubrís?", answer: "Congresos, convenciones, incentivos, eventos corporativos, festivales, giras, rodajes, partidos de fútbol y eventos deportivos, y bodas, en toda Galicia y el norte de Portugal." },
       { question: "¿Cuántas personas podéis mover en un mismo evento?", answer: "De una berlina para un ponente a operativas de cientos de asistentes con autocares, minibuses, vans y berlinas coordinados." },
       { question: "¿Con cuánta antelación hay que reservar?", answer: "Para eventos de más de 200 personas en temporada alta, de 3 a 6 meses. Para eventos pequeños, de 2 a 4 semanas suele bastar." },
     ],
@@ -333,6 +334,73 @@ export const PAGES_MICE: Page[] = [
       { question: "¿Trabajáis de madrugada?", answer: "Sí. En festivales y giras los traslados de madrugada son la norma, y la operativa se diseña con turnos de chóferes para cumplir los descansos legales." },
       { question: "¿Podéis firmar acuerdos de confidencialidad?", answer: "Sí. En traslados de artistas la discreción es parte del servicio y se firman los acuerdos que la producción necesite." },
       { question: "¿Cubrís festivales fuera de las ciudades?", answer: "Sí, cualquier recinto de Galicia y el norte de Portugal, incluidas ubicaciones rurales con accesos complicados." },
+    ],
+  },
+  {
+    slug: "transporte-eventos-deportivos",
+    metaTitle: "Transporte para partidos del Deportivo y eventos deportivos en Galicia",
+    metaDescription:
+      "Transporte con chófer para ir a ver al Deportivo en Riazor o al Celta en Balaídos: peñas y aficionados visitantes, grupos de empresa con invitados VIP, equipos y eventos deportivos en Galicia.",
+    serviceType: "Transporte para eventos deportivos",
+    hero: {
+      eyebrow: "Fútbol y eventos deportivos",
+      title: "Transporte para ver al Deportivo y grandes eventos deportivos",
+      subtitle: "Con el Dépor de vuelta en Primera, Riazor vuelve a llenarse. Llega al partido sin pelearte por aparcar y vuelve sin esperar un taxi que no llega.",
+      image: "/images/flota-luxe-galicia.jpg",
+      alt: "Flota de berlinas y vans con chófer para ir al estadio",
+    },
+    blocks: [
+      {
+        type: "intro",
+        paragraphs: [
+          "Un partido en Riazor son más de 30.000 personas llegando y saliendo a la vez de un estadio en plena ciudad, junto al paseo marítimo. Aparcar es casi imposible y, al pitido final, los taxis desaparecen.",
+          "Con el Deportivo de nuevo en Primera División llegan aficionados de toda España, empresas que invitan a clientes al partido y grupos que convierten el viaje en un fin de semana en A Coruña. Para todos ellos, el transporte organizado es la diferencia entre disfrutar el partido y sufrirlo.",
+        ],
+      },
+      {
+        type: "features",
+        heading: "Para quién es",
+        columns: 2,
+        bg: "gray",
+        items: [
+          { title: "Peñas y aficionados visitantes", text: "Autocares y minibuses desde tu ciudad, desde el aeropuerto o desde el hotel hasta el estadio, con vuelta coordinada tras el partido." },
+          { title: "Empresas con invitados", text: "Berlinas y vans para llevar a clientes y directivos al palco o a la zona VIP. Una experiencia redonda desde que salen del hotel." },
+          { title: "Fin de semana de fútbol", text: "Aeropuerto, hotel, partido y algo más: A Coruña, Santiago o una excursión con chófer el día siguiente." },
+          { title: "Equipos y organizaciones deportivas", text: "Traslados de plantillas, cuerpos técnicos y organizaciones entre aeropuerto, hotel, entrenamientos y estadio." },
+        ],
+      },
+      {
+        type: "checklist",
+        heading: "Cómo funciona un traslado al partido",
+        items: [
+          "Recogida en hotel, aeropuerto o estación con el margen suficiente para entrar sin prisas.",
+          "Bajada en el punto más cercano permitido según el dispositivo de tráfico del día.",
+          "Punto de encuentro acordado para la vuelta, lejos del atasco de la salida.",
+          "Seguimiento del horario: si hay prórroga o retraso, el chófer espera.",
+          "Vehículos para cualquier grupo: berlina, van de lujo, minibús o autocar.",
+          "También en Balaídos (Vigo) y en otros eventos deportivos de Galicia.",
+        ],
+      },
+      {
+        type: "links",
+        heading: "Más información",
+        items: [
+          { title: "Cómo llegar a Riazor", text: "Accesos, aparcamiento y consejos para grupos el día de partido.", href: "/guias/como-llegar-estadio-riazor" },
+          { title: "Traslados desde A Coruña", text: "Precios orientativos a toda Galicia, Oporto, Asturias y Madrid.", href: "/traslados-desde-coruna" },
+          { title: "Tours con chófer", text: "Convierte el partido en un fin de semana en Galicia.", href: "/tours-con-chofer-galicia" },
+        ],
+      },
+      { type: "quote", heading: "Reserva tu traslado al partido", bg: "gray" },
+    ],
+    cta: {
+      title: "El partido empieza cuando sales del hotel",
+      description: "Dime el partido, cuántos sois y desde dónde salís. Te propongo vehículo y horario.",
+    },
+    faqs: [
+      { question: "¿Podéis llevar a una peña desde otra ciudad hasta Riazor?", answer: "Sí. Autocares y minibuses desde cualquier punto de España, con ida y vuelta el mismo día o con noche en A Coruña." },
+      { question: "¿El chófer espera hasta el final del partido?", answer: "Sí. Se acuerda un punto de encuentro para la vuelta y el chófer ajusta la hora al final real del partido, incluida la prórroga." },
+      { question: "¿Hacéis traslados a partidos del Celta en Balaídos?", answer: "Sí. El servicio funciona igual para Balaídos y para otros eventos deportivos en Galicia." },
+      { question: "¿Con cuánta antelación hay que reservar?", answer: "En cuanto tengas las entradas. Los partidos grandes concentran la demanda de transporte en la ciudad y la flota se agota." },
     ],
   },
   {

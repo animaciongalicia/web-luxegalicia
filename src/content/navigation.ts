@@ -16,6 +16,7 @@ export const NAV: Record<Lang, NavItem[]> = {
         { name: "Congresos y convenciones", href: "/transporte-congresos-galicia" },
         { name: "Incentivos", href: "/transporte-incentivos-galicia" },
         { name: "Festivales y producciones", href: "/transporte-festivales-producciones" },
+        { name: "Fútbol y eventos deportivos", href: "/transporte-eventos-deportivos" },
       ],
     },
     { name: "Empresas", href: "/transporte-empresas-galicia" },

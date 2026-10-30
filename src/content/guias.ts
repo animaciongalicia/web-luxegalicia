@@ -476,6 +476,66 @@ export const GUIAS: Guide[] = [
     ],
   },
   {
+    slug: "como-llegar-estadio-riazor",
+    category: "Sede",
+    title: "Cómo llegar al estadio de Riazor: transporte, aparcamiento y grupos",
+    metaTitle: "Cómo llegar al estadio de Riazor (A Coruña): transporte y aparcamiento",
+    metaDescription:
+      "Guía para llegar al estadio Abanca-Riazor el día de partido del Deportivo: desde el aeropuerto, la estación y el centro, aparcamiento, autocares de peñas y transporte con chófer para grupos.",
+    image: "/images/coruna-torre-hercules.jpg",
+    alt: "Costa de A Coruña cerca del estadio de Riazor",
+    readMinutes: 5,
+    date: "2026-10-31",
+    intro: [
+      "El estadio de Riazor, casa del Deportivo, está en pleno A Coruña, entre las playas de Riazor y Orzán y el paseo marítimo. Tiene capacidad para unos 32.500 espectadores y, con el equipo de vuelta en Primera División, los días de partido la ciudad se llena.",
+      "Su ubicación es una maravilla para ir andando desde el centro y un problema para quien llega en coche o en grupo. Esta guía te ayuda a planificarlo.",
+    ],
+    sections: [
+      {
+        heading: "Tiempos de referencia hasta Riazor",
+        list: [
+          "Desde el centro (plaza de María Pita): ~20 min andando por el paseo marítimo.",
+          "Desde la estación de tren: ~10 min en vehículo.",
+          "Desde el aeropuerto de A Coruña (Alvedro): ~20 min en vehículo.",
+          "Desde el aeropuerto de Santiago: ~55 min.",
+          "Desde el aeropuerto de Oporto: ~3 h.",
+        ],
+      },
+      {
+        heading: "Aparcamiento: el gran problema",
+        paragraphs: [
+          "El entorno de Riazor es un barrio residencial junto a la playa, con poco aparcamiento en superficie. Los días de partido los aparcamientos públicos cercanos se llenan pronto y el tráfico se corta o se desvía en las calles próximas al estadio.",
+          "Si vienes en coche, llega con mucha antelación o aparca lejos y camina. Si vienes en grupo, lo más cómodo es que te dejen y te recojan.",
+        ],
+      },
+      {
+        heading: "Si vienes en grupo o con una peña",
+        list: [
+          "Los autocares no pueden parar donde quieran: el día de partido hay zonas de estacionamiento y dispositivos de tráfico que fija la organización con la Policía Local.",
+          "Planifica la vuelta: a la salida, decenas de miles de personas salen a la vez y el entorno se colapsa durante un rato.",
+          "Acuerda un punto de encuentro para el regreso algo alejado del estadio.",
+          "Para grupos de empresa con invitados, una van o un minibús con chófer evita perder a la mitad del grupo en la salida.",
+        ],
+      },
+      {
+        heading: "Haz del partido un fin de semana",
+        paragraphs: [
+          "Muchos aficionados que vienen de fuera aprovechan para conocer A Coruña o Santiago, o para una excursión con chófer a la Costa da Morte o las Rías Baixas el día siguiente.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "¿Se puede aparcar cerca de Riazor el día de partido?", answer: "Es difícil: los aparcamientos cercanos se llenan pronto y hay calles cortadas. Lo más práctico es llegar a pie desde el centro o con un transporte que te deje y te recoja." },
+      { question: "¿Cuánto se tarda del aeropuerto de A Coruña a Riazor?", answer: "Unos 20 minutos en vehículo en condiciones normales. Los días de partido, conviene sumar margen por el tráfico." },
+      { question: "¿Dónde aparcan los autocares de las peñas visitantes?", answer: "En las zonas que se habilitan para cada partido según el dispositivo de seguridad. Un proveedor local conoce el procedimiento y coordina la llegada." },
+    ],
+    related: [
+      { title: "Transporte para partidos y eventos deportivos", href: "/transporte-eventos-deportivos" },
+      { title: "Traslados desde A Coruña", href: "/traslados-desde-coruna" },
+      { title: "Tours con chófer por Galicia", href: "/tours-con-chofer-galicia" },
+    ],
+  },
+  {
     slug: "transporte-cidade-da-cultura",
     category: "Sede",
     title: "Transporte para eventos en la Cidade da Cultura (Santiago)",
