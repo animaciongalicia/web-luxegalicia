@@ -53,6 +53,19 @@ export const PRECIOS: Record<string, Precio> = {
   "oporto-sanxenxo": { ...vacio },
   "oporto-santiago": { ...vacio },
   "oporto-coruna": { ...vacio },
+  // Madrid ⇄ Galicia
+  "madrid-ourense": { ...vacio },
+  "madrid-lugo": { ...vacio },
+  "madrid-vigo": { ...vacio },
+  "madrid-coruna": { ...vacio },
+  "madrid-santiago": { ...vacio },
+  "madrid-pontevedra": { ...vacio },
+  // Lisboa (aeropuerto) ⇄ Galicia
+  "lisboa-oporto": { ...vacio },
+  "lisboa-vigo": { ...vacio },
+  "lisboa-pontevedra": { ...vacio },
+  "lisboa-santiago": { ...vacio },
+  "lisboa-coruna": { ...vacio },
 };
 
 export function formatPrecio(value: number | null | undefined, lang: "es" | "en" = "es") {

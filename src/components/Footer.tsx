@@ -29,6 +29,8 @@ const COLUMNS: Record<Lang, Column[]> = {
         { name: "Desde Santiago", href: "/traslados-desde-santiago" },
         { name: "Desde Vigo", href: "/traslados-desde-vigo" },
         { name: "Oporto", href: "/oporto-galicia" },
+        { name: "Lisboa", href: "/traslados-lisboa-galicia" },
+        { name: "Madrid", href: "/traslados-madrid-galicia" },
         { name: "Camino de Santiago", href: "/transporte-camino-de-santiago" },
         { name: "Aeropuertos", href: "/aeropuertos-galicia" },
         { name: "Autocares", href: "/alquiler-autocar-con-conductor-galicia" },
@@ -64,6 +66,7 @@ const COLUMNS: Record<Lang, Column[]> = {
       links: [
         { name: "MICE & agencies", href: "/en/mice-ground-transportation" },
         { name: "Porto ⇄ Galicia", href: "/en/porto-galicia-private-chauffeur" },
+        { name: "Lisbon ⇄ Galicia", href: "/en/lisbon-galicia-private-transfer" },
         { name: "Chauffeur tours", href: "/en/galicia-chauffeur-tours" },
       ],
     },

@@ -15,14 +15,14 @@ const PRECIO_FAQ = {
 export const PAGES_TRASLADOS: Page[] = [
   {
     slug: "traslados",
-    metaTitle: "Traslados con chófer en Galicia, Oporto, Madrid y Asturias",
+    metaTitle: "Traslados con chófer en Galicia, Oporto, Lisboa, Madrid y Asturias",
     metaDescription:
-      "Traslados privados con chófer desde A Coruña, Santiago y Vigo a toda Galicia, Oporto, Asturias y Madrid. Berlinas, vans ejecutivas, minibuses y autocares. Precios orientativos.",
+      "Traslados privados con chófer desde A Coruña, Santiago y Vigo a toda Galicia, Oporto, Lisboa, Asturias y Madrid. Berlinas, vans ejecutivas, minibuses y autocares. Precios orientativos.",
     serviceType: "Traslados privados con chófer",
     hero: {
       eyebrow: "Traslados privados",
       title: "Traslados con chófer desde Galicia, hacia donde necesites",
-      subtitle: "Tres bases (A Coruña, Santiago y Vigo), Oporto como puerta de entrada y salidas hacia Madrid y Asturias. Precio claro antes de reservar.",
+      subtitle: "Tres bases (A Coruña, Santiago y Vigo), Oporto y Lisboa como puertas de entrada y conexión con Madrid y Asturias. Precio claro antes de reservar.",
       image: "/images/llegada-aeropuerto-coches.webp",
       alt: "Berlinas con chófer en la zona de llegadas de un aeropuerto",
     },
@@ -43,6 +43,8 @@ export const PAGES_TRASLADOS: Page[] = [
           { title: "Desde Santiago", text: "Aeropuerto Rosalía de Castro, estación de tren y el final del Camino.", href: "/traslados-desde-santiago", image: "/images/tours-santiago.jpg", alt: "Catedral de Santiago de Compostela" },
           { title: "Desde Vigo", text: "Rías Baixas, Oporto y puerto de cruceros.", href: "/traslados-desde-vigo", image: "/images/playa-rodas-islas-cies-suunia.jpg", alt: "Playa de Rodas en las Islas Cíes frente a Vigo" },
           { title: "Oporto, puerta de Galicia", text: "Del aeropuerto de Oporto a cualquier punto de Galicia.", href: "/oporto-galicia", image: "/images/van-avion-privado.jpg", alt: "Van con chófer junto a un avión en el aeropuerto" },
+          { title: "Desde Madrid", text: "De Barajas, la estación o tu hotel a cualquier punto de Galicia.", href: "/traslados-madrid-galicia", image: "/images/van-clase-v-carretera.webp", alt: "Van ejecutiva en autopista camino de Galicia" },
+          { title: "Desde Lisboa", text: "Del aeropuerto de Lisboa a Galicia, con parada en Oporto si quieres.", href: "/traslados-lisboa-galicia", image: "/images/van-carretera-galicia.webp", alt: "Van con chófer en carretera hacia Galicia" },
           { title: "Camino de Santiago", text: "Inicio de etapas, vehículo de apoyo y regreso para grupos.", href: "/transporte-camino-de-santiago", image: "/images/faro-de-Finisterre-1.jpg", alt: "Faro de Fisterra, final del Camino de Santiago" },
           { title: "Aeropuertos", text: "Santiago, A Coruña, Vigo y Oporto.", href: "/aeropuertos-galicia", image: "/images/viajero-aeropuerto.webp", alt: "Viajero en un aeropuerto viendo despegar un avión" },
         ],
@@ -325,6 +327,194 @@ export const PAGES_TRASLADOS: Page[] = [
       { question: "¿Podéis recoger a un grupo grande en el aeropuerto de Oporto?", answer: "Sí, con minibuses y autocares, coordinando llegadas escalonadas en varios vuelos." },
       { question: "¿Hacéis el trayecto inverso, de Galicia a Oporto?", answer: "Sí, desde cualquier punto de Galicia al aeropuerto o a la ciudad de Oporto, calculando la salida según tu vuelo." },
     ],
+  },
+  {
+    slug: "traslados-madrid-galicia",
+    metaTitle: "Traslados con chófer de Madrid a Galicia | Santiago, A Coruña, Vigo",
+    metaDescription:
+      "Traslado privado con chófer de Madrid (aeropuerto de Barajas, estaciones u hotel) a Santiago, A Coruña, Vigo, Ourense y toda Galicia. Para grupos, empresas y agencias. Puerta a puerta.",
+    serviceType: "Traslados Madrid - Galicia con chófer",
+    hero: {
+      eyebrow: "Madrid · Galicia",
+      title: "Traslados con chófer de Madrid a Galicia",
+      subtitle: "Desde Barajas, la estación o tu hotel en Madrid hasta Santiago, A Coruña, Vigo u Ourense. Puerta a puerta, sin escalas y sin pelearte con las maletas.",
+      image: "/images/van-clase-v-carretera.webp",
+      alt: "Van ejecutiva con chófer en autopista camino de Galicia",
+    },
+    blocks: [
+      {
+        type: "intro",
+        heading: "Cuándo compensa ir por carretera (y cuándo no)",
+        paragraphs: [
+          "Te voy a decir la verdad: si viajas solo y sin prisa, el tren de alta velocidad de Madrid a Santiago es difícil de batir.",
+          "El chófer gana cuando sois varios, cuando lleváis mucho equipaje, cuando el grupo aterriza en Barajas en un vuelo internacional y no quiere coger otro avión, o cuando el viaje tiene paradas por el camino. Ahí el puerta a puerta se nota, y mucho.",
+          "Luxe Galicia trabaja con agencia colaboradora en Madrid para las recogidas en Barajas, estaciones y hoteles, y coordina toda la operativa hasta cualquier punto de Galicia.",
+        ],
+      },
+      {
+        type: "routes",
+        heading: "Desde Madrid (Barajas o centro)",
+        bg: "gray",
+        rows: [
+          { destino: "Ourense", km: 500, tiempo: "4 h 45 min", precio: "madrid-ourense" },
+          { destino: "Lugo", km: 510, tiempo: "4 h 50 min", precio: "madrid-lugo" },
+          { destino: "Vigo", km: 590, tiempo: "5 h 45 min", precio: "madrid-vigo" },
+          { destino: "A Coruña", km: 595, tiempo: "5 h 45 min", precio: "madrid-coruna" },
+          { destino: "Santiago de Compostela", km: 600, tiempo: "5 h 45 min", precio: "madrid-santiago" },
+          { destino: "Pontevedra", km: 610, tiempo: "6 h", precio: "madrid-pontevedra" },
+        ],
+        note: "Tiempos sin paradas. En trayectos de más de cuatro horas se hace al menos una parada de descanso.",
+      },
+      {
+        type: "table",
+        heading: "Carretera, tren o avión: qué te conviene",
+        head: ["Opción", "Madrid → Santiago", "Mejor para"],
+        rows: [
+          ["Traslado privado", "~5 h 45 min, puerta a puerta", "Grupos, mucho equipaje, paradas, llegadas internacionales a Barajas"],
+          ["Tren de alta velocidad", "Desde unas 3 h, de estación a estación", "Viajeros solos o en pareja con poco equipaje"],
+          ["Avión", "Algo más de 1 h de vuelo, más aeropuertos", "Quien ya está en el aeropuerto y viaja ligero"],
+          ["Coche de alquiler", "~5 h 45 min", "Quien quiere conducir y moverse por libre"],
+        ],
+        note: "Tiempos orientativos. Comprueba horarios y frecuencias de tren y avión en tus fechas.",
+      },
+      {
+        type: "features",
+        heading: "Para quién es",
+        columns: 2,
+        bg: "gray",
+        items: [
+          { title: "Grupos que aterrizan en Barajas", text: "Vuelo internacional a Madrid y, en vez de una conexión más, un minibús o un autocar que los deja en el hotel en Galicia." },
+          { title: "Agencias de Madrid", text: "Grupos, incentivos y congresos en Galicia con salida desde Madrid, coordinados por un solo interlocutor." },
+          { title: "Empresas", text: "Equipos que viajan con material, visitas en varias ciudades por el camino o directivos que trabajan durante el trayecto." },
+          { title: "Familias y equipaje", text: "Maletas, sillas de bebé, bicicletas, palos de golf o mascotas: lo que en un avión complica el viaje, en una van no." },
+        ],
+      },
+      {
+        type: "zigzag",
+        items: [
+          {
+            title: "Paradas que convierten el trayecto en viaje",
+            paragraphs: [
+              "Seis horas de carretera se llevan mejor con una parada que merezca la pena. Hacia A Coruña o Lugo, Astorga o Ponferrada. Hacia Ourense o Vigo, Puebla de Sanabria.",
+              "Dímelo al pedir presupuesto y el itinerario se ajusta: comida incluida en el plan, sin prisas.",
+            ],
+            image: "/images/chofer-interior-berlina.webp",
+            alt: "Chófer al volante durante un trayecto largo por carretera",
+          },
+          {
+            title: "Grupos grandes y agencias",
+            paragraphs: [
+              "Para grupos de más de 20 personas, autocar con conductor. Para equipos más pequeños, minibús o varias vans que pueden separarse a la llegada.",
+              "Si el grupo sigue días en Galicia, el mismo vehículo puede quedarse a disposición durante todo el programa.",
+            ],
+            image: "/images/minibus-interior.jpg",
+            alt: "Interior de un minibús preparado para un grupo",
+          },
+        ],
+      },
+      {
+        type: "links",
+        heading: "Sigue planificando",
+        bg: "gray",
+        items: [
+          { title: "Traslados desde A Coruña", text: "El trayecto inverso y el resto de destinos desde la base principal.", href: "/traslados-desde-coruna" },
+          { title: "Para agencias MICE", text: "Partner de transporte en destino para agencias de Madrid.", href: "/agencias-mice" },
+          { title: "Autocares y minibuses", text: "Grupos de 8 a cientos de personas, con conductor.", href: "/alquiler-autocar-con-conductor-galicia" },
+        ],
+      },
+    ],
+    faqs: [
+      { question: "¿Cuánto se tarda de Madrid a Santiago en coche?", answer: "Alrededor de 5 horas y 45 minutos sin paradas. En trayectos tan largos se hace al menos una parada de descanso." },
+      { question: "¿Compensa frente al tren de alta velocidad?", answer: "Para una o dos personas con poco equipaje, el tren suele ser más rápido y barato. El traslado privado compensa para grupos, con mucho equipaje, con paradas o cuando se llega a Barajas en un vuelo internacional." },
+      { question: "¿Me recogéis en el aeropuerto de Barajas?", answer: "Sí, con seguimiento del vuelo y recibimiento con cartel en la sala de llegadas, o en cualquier estación u hotel de Madrid." },
+      { question: "¿Hacéis el trayecto inverso, de Galicia a Madrid?", answer: "Sí, desde cualquier punto de Galicia a Madrid, calculando la salida según tu vuelo o tu cita." },
+      VEHICULOS_FAQ,
+    ],
+    cta: {
+      title: "¿Vienes de Madrid?",
+      description: "Dime fecha, personas, equipaje y destino en Galicia. Recibes la propuesta en 24 horas.",
+    },
+  },
+  {
+    slug: "traslados-lisboa-galicia",
+    metaTitle: "Traslados con chófer de Lisboa a Galicia | Vigo, Santiago, A Coruña",
+    metaDescription:
+      "Traslado privado con chófer del aeropuerto de Lisboa a Vigo, Santiago de Compostela, A Coruña y toda Galicia, con parada opcional en Oporto o Coimbra. Para viajeros, grupos y agencias.",
+    serviceType: "Traslados Lisboa - Galicia con chófer",
+    alternate: "/en/lisbon-galicia-private-transfer",
+    hero: {
+      eyebrow: "Lisboa · Galicia",
+      title: "Traslados con chófer de Lisboa a Galicia",
+      subtitle: "Del aeropuerto de Lisboa a Vigo, Santiago o A Coruña en un solo vehículo. Y si quieres, con parada en Oporto o Coimbra por el camino.",
+      image: "/images/van-carretera-galicia.webp",
+      alt: "Van ejecutiva con chófer en la carretera hacia Galicia",
+    },
+    blocks: [
+      {
+        type: "intro",
+        heading: "Por qué tanta gente entra a Galicia por Lisboa",
+        paragraphs: [
+          "Lisboa recibe vuelos directos desde Estados Unidos, Canadá y Brasil que Galicia no tiene. Muchos viajeros aterrizan allí y suben hacia el norte: Oporto, el Camino Portugués y Santiago.",
+          "En tren tienes que cambiar en Oporto, y el tramo Oporto – Vigo tiene pocas salidas al día. En coche de alquiler, recargo por devolverlo en otro país y peajes electrónicos. Con chófer, un solo vehículo de la puerta del aeropuerto a la del hotel.",
+          "Luxe Galicia trabaja con agencia colaboradora en Lisboa y coordina toda la operativa hasta cualquier punto de Galicia.",
+        ],
+      },
+      {
+        type: "routes",
+        heading: "Desde el aeropuerto de Lisboa",
+        bg: "gray",
+        rows: [
+          { destino: "Oporto", km: 315, tiempo: "3 h", precio: "lisboa-oporto" },
+          { destino: "Vigo", km: 465, tiempo: "4 h 30 min", precio: "lisboa-vigo" },
+          { destino: "Pontevedra", km: 495, tiempo: "4 h 50 min", precio: "lisboa-pontevedra" },
+          { destino: "Santiago de Compostela", km: 555, tiempo: "5 h 15 min", precio: "lisboa-santiago" },
+          { destino: "A Coruña", km: 625, tiempo: "6 h", precio: "lisboa-coruna" },
+        ],
+        note: "Tiempos sin paradas. En un trayecto así se hace al menos una parada de descanso, y puede ser una parada para ver algo.",
+      },
+      {
+        type: "features",
+        heading: "Paradas que convierten el traslado en parte del viaje",
+        columns: 3,
+        items: [
+          { title: "Coimbra", text: "A unas dos horas de Lisboa. Universidad histórica y casco antiguo: perfecta para comer y estirar las piernas." },
+          { title: "Oporto", text: "A mitad de camino. Un paseo por la Ribeira y comida junto al Douro antes de cruzar a Galicia." },
+          { title: "Valença y Tui", text: "La frontera del Miño y el Camino Portugués. La entrada natural a Galicia para los peregrinos." },
+        ],
+      },
+      {
+        type: "features",
+        heading: "Para quién es",
+        columns: 2,
+        bg: "gray",
+        items: [
+          { title: "Viajeros de Norteamérica y Brasil", text: "Vuelo directo a Lisboa y traslado hasta el hotel en Galicia, sin conexiones ni transbordos." },
+          { title: "Peregrinos del Camino Portugués", text: "Grupos que empiezan en Oporto, Tui o Valença, o que vuelven a Lisboa al terminar en Santiago." },
+          { title: "Agencias y grupos", text: "Programas Portugal – Galicia con minibús o autocar y un único interlocutor para todo el recorrido." },
+          { title: "Empresas", text: "Equipos y clientes que vuelan a Lisboa y tienen la reunión en Vigo, Santiago o A Coruña." },
+        ],
+      },
+      {
+        type: "links",
+        heading: "Sigue planificando",
+        items: [
+          { title: "Oporto ⇄ Galicia", text: "Si tu vuelo llega a Oporto, el trayecto es de 1 h 35 min a 3 h.", href: "/oporto-galicia" },
+          { title: "Camino de Santiago", text: "Inicio de etapa, vehículo de apoyo y regreso para grupos.", href: "/transporte-camino-de-santiago" },
+          { title: "Oporto y Galicia en 5 días", text: "Tour con chófer subiendo por la costa hasta Santiago.", href: "/tours-con-chofer-galicia/oporto-y-galicia-5-dias" },
+        ],
+      },
+    ],
+    faqs: [
+      { question: "¿Cuánto se tarda de Lisboa a Santiago de Compostela por carretera?", answer: "Alrededor de 5 horas y 15 minutos desde el aeropuerto de Lisboa, sin contar paradas." },
+      { question: "¿Se puede parar en Oporto o Coimbra por el camino?", answer: "Sí. Indícalo al pedir presupuesto y el trayecto se planifica con la parada y el tiempo que quieras." },
+      { question: "¿Hay control de fronteras entre Portugal y España?", answer: "No. Ambos países están en el espacio Schengen y no hay controles fronterizos ordinarios." },
+      { question: "¿Los peajes portugueses están incluidos?", answer: "Sí. Los peajes del trayecto van incluidos en el precio confirmado." },
+      { question: "¿Hacéis el trayecto inverso, de Galicia a Lisboa?", answer: "Sí, desde cualquier punto de Galicia al aeropuerto o a la ciudad de Lisboa, calculando la salida según tu vuelo." },
+    ],
+    cta: {
+      title: "¿Aterrizas en Lisboa?",
+      description: "Dime vuelo, personas, equipaje y destino en Galicia. Recibes la propuesta en 24 horas.",
+    },
   },
   {
     slug: "transporte-camino-de-santiago",

@@ -20,7 +20,8 @@ export const metadata: Metadata = {
 const cards = [
   { title: "MICE & agencies", text: "Congresses, incentives and corporate events. One partner on the ground for your whole transport operation.", href: "/en/mice-ground-transportation", image: "/images/sala-eventos-empresas.jpg", alt: "Congress room in Galicia" },
   { title: "Porto ⇄ Galicia", text: "Land in Porto and reach Vigo, Santiago or A Coruña door to door with a private chauffeur.", href: "/en/porto-galicia-private-chauffeur", image: "/images/traslados-coruna-santiago.jpg", alt: "Chauffeur-driven car between Porto and Galicia" },
-  { title: "Chauffeur tours", text: "Galicia in 3, 5 or 7 days in a executive van: Santiago, Albariño country, Atlantic lighthouses.", href: "/en/galicia-chauffeur-tours", image: "/images/tours-rias-baixas.jpg", alt: "Albariño vineyards in the Rías Baixas" },
+  { title: "Lisbon ⇄ Galicia", text: "Fly into Lisbon and reach Santiago, Vigo or A Coruña in one vehicle, with an optional stop in Porto.", href: "/en/lisbon-galicia-private-transfer", image: "/images/van-carretera-galicia.webp", alt: "Executive van on the road from Lisbon to Galicia" },
+  { title: "Chauffeur tours", text: "Galicia in 3, 5 or 7 days in an executive van: Santiago, Albariño country, Atlantic lighthouses.", href: "/en/galicia-chauffeur-tours", image: "/images/tours-rias-baixas.jpg", alt: "Albariño vineyards in the Rías Baixas" },
 ];
 
 const faqs = [

@@ -28,6 +28,8 @@ export const NAV: Record<Lang, NavItem[]> = {
         { name: "Desde Santiago", href: "/traslados-desde-santiago" },
         { name: "Desde Vigo", href: "/traslados-desde-vigo" },
         { name: "Oporto, puerta de Galicia", href: "/oporto-galicia" },
+        { name: "Desde Lisboa", href: "/traslados-lisboa-galicia" },
+        { name: "Desde Madrid", href: "/traslados-madrid-galicia" },
         { name: "Camino de Santiago", href: "/transporte-camino-de-santiago" },
         { name: "Aeropuertos", href: "/aeropuertos-galicia" },
         { name: "Autocares y minibuses", href: "/alquiler-autocar-con-conductor-galicia" },
@@ -53,6 +55,7 @@ export const NAV: Record<Lang, NavItem[]> = {
   en: [
     { name: "MICE & Agencies", href: "/en/mice-ground-transportation" },
     { name: "Porto ⇄ Galicia", href: "/en/porto-galicia-private-chauffeur" },
+    { name: "Lisbon ⇄ Galicia", href: "/en/lisbon-galicia-private-transfer" },
     { name: "Chauffeur tours", href: "/en/galicia-chauffeur-tours" },
   ],
 };

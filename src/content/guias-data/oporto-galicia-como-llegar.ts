@@ -19,7 +19,7 @@ export const guia: Guide = {
   ],
   intro: [
     "Oporto es la gran puerta internacional del noroeste. Más vuelos, a menudo más baratos y con conexiones que Galicia no tiene, como las de Norteamérica.",
-    "El problema llega al aterrizar: ¿y ahora cómo llego a Vigo, a Santiago o a A Coruña? Tienes cuatro opciones. Te las comparo sin rodeos.",
+    "El problema llega al aterrizar: ¿y ahora cómo llego a Vigo, a Santiago o a A Coruña? Tienes cuatro opciones. Te las comparo sin rodeos. Y si tu vuelo llega a Lisboa, mira el [traslado privado de Lisboa a Santiago y Vigo](/traslados-lisboa-galicia).",
   ],
   summary: [
     "Por carretera: 1 h 35 min a Vigo, 2 h 20 min a Santiago y 3 h a A Coruña.",

@@ -109,6 +109,76 @@ export const PAGES_EN: Page[] = [
     ],
   },
   {
+    slug: "lisbon-galicia-private-transfer",
+    lang: "en",
+    metaTitle: "Lisbon to Santiago de Compostela & Galicia private transfer",
+    metaDescription:
+      "Private chauffeur transfers from Lisbon airport to Santiago de Compostela, Vigo, A Coruña and all of Galicia, with optional stops in Porto or Coimbra. Flight tracking and fixed price.",
+    serviceType: "Lisbon to Galicia private transfers",
+    alternate: "/traslados-lisboa-galicia",
+    hero: {
+      eyebrow: "Lisbon · Galicia",
+      title: "From Lisbon to Galicia with a private chauffeur",
+      subtitle: "One vehicle from Lisbon airport to your hotel in Santiago, Vigo or A Coruña. Stop in Porto or Coimbra on the way if you like.",
+      image: "/images/van-carretera-galicia.webp",
+      alt: "Executive van with chauffeur on the road to Galicia",
+    },
+    blocks: [
+      {
+        type: "intro",
+        heading: "Why so many travelers reach Galicia through Lisbon",
+        paragraphs: [
+          "Lisbon has direct flights from the US, Canada and Brazil that Galicia simply does not have. Many travelers land there and head north: Porto, the Portuguese Camino and Santiago de Compostela.",
+          "By train you change in Porto, and the Porto – Vigo line only runs a couple of times a day. A rental car means cross-border drop-off fees and electronic tolls. With a private chauffeur, one vehicle takes you from the arrivals hall to your hotel door.",
+          "Luxe Galicia works with a partner agency in Lisbon and coordinates the whole journey to anywhere in Galicia.",
+        ],
+      },
+      {
+        type: "routes",
+        heading: "From Lisbon airport",
+        bg: "gray",
+        rows: [
+          { destino: "Porto", km: 315, tiempo: "3 h", precio: "lisboa-oporto" },
+          { destino: "Vigo", km: 465, tiempo: "4 h 30 min", precio: "lisboa-vigo" },
+          { destino: "Pontevedra", km: 495, tiempo: "4 h 50 min", precio: "lisboa-pontevedra" },
+          { destino: "Santiago de Compostela", km: 555, tiempo: "5 h 15 min", precio: "lisboa-santiago" },
+          { destino: "A Coruña", km: 625, tiempo: "6 h", precio: "lisboa-coruna" },
+        ],
+        note: "Driving times without stops. On a journey this long there is always at least one rest stop, and it can be one worth making.",
+      },
+      {
+        type: "features",
+        heading: "Stops that turn a transfer into part of the trip",
+        columns: 3,
+        items: [
+          { title: "Coimbra", text: "About two hours from Lisbon. A historic university town, perfect for lunch and a short walk." },
+          { title: "Porto", text: "Halfway there. A stroll along the Ribeira and lunch by the Douro before crossing into Galicia." },
+          { title: "Valença and Tui", text: "The Minho river border and the Portuguese Camino: the natural gateway to Galicia for pilgrims." },
+        ],
+      },
+      {
+        type: "checklist",
+        heading: "Included in every transfer",
+        bg: "gray",
+        items: [
+          "Flight tracking: your driver adjusts to your real arrival time.",
+          "Meet and greet with a name sign in arrivals.",
+          "Tolls, fuel and reasonable waiting time.",
+          "Executive sedan, executive van, minibus or coach depending on your group.",
+          "English-speaking drivers on request.",
+          "Optional stops on the way, planned in advance.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How long does it take from Lisbon to Santiago de Compostela?", answer: "About 5 hours 15 minutes by road from Lisbon airport, not counting stops." },
+      { question: "Can we stop in Porto or Coimbra on the way?", answer: "Yes. Mention it when you request a quote and the journey is planned with the stop and the time you want." },
+      { question: "Is there a border check between Portugal and Spain?", answer: "No. Both countries are in the Schengen area, so there are no routine border controls." },
+      { question: "Are Portuguese tolls included?", answer: "Yes. Tolls are included in the confirmed price." },
+      { question: "Can you take a Camino group from Lisbon to the start of the Portuguese Way?", answer: "Yes. Transfers to Porto, Tui or Valença for groups of any size, and the return trip from Santiago." },
+    ],
+  },
+  {
     slug: "galicia-chauffeur-tours",
     lang: "en",
     metaTitle: "Galicia private chauffeur tours: 3, 5 and 7 days | Luxe Galicia",
