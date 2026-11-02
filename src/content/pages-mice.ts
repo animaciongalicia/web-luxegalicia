@@ -400,14 +400,14 @@ export const PAGES_MICE: Page[] = [
   },
   {
     slug: "transporte-empresas-galicia",
-    metaTitle: "Transporte para empresas en Galicia | Chófer y factura mensual única",
+    metaTitle: "Transporte y traslados para empresas en toda Galicia | Luxe Galicia",
     metaDescription:
       "Transporte con conductor para empresas en Galicia: chófer para directivos, recogida de clientes y proveedores, visitas e inspecciones, cenas y eventos de empresa. Cuenta de empresa y factura mensual.",
     serviceType: "Transporte ejecutivo para empresas",
     hero: {
       eyebrow: "Empresas",
       title: "Transporte para empresas en Galicia",
-      subtitle: "Para las empresas de aquí y para las que vienen de fuera. Directivos, clientes, visitas y eventos de empresa, con un solo proveedor y una factura al mes.",
+      subtitle: "Para las empresas de aquí y para las que vienen de fuera. Directivos, clientes, visitas y eventos de empresa, con un solo proveedor.",
       image: "/images/chofer-abriendo-puerta.jpg",
       alt: "Chófer abriendo la puerta de una berlina a un ejecutivo",
     },

@@ -58,7 +58,11 @@ export type Tour = {
   vehicle: string;
   summary: string;
   intro: string[];
-  stops: { title: string; text: string }[];
+  /** Los momentos del tour, en una frase cada uno. Usar 4 para que la rejilla quede cuadrada. */
+  highlights: { title: string; text: string }[];
+  stops: { title: string; text: string; image?: { src: string; alt: string } }[];
+  /** Datos prácticos para la columna lateral (mejor época, para quién, carretera, consejo). */
+  practical: { label: string; value: string }[];
   includes: string[];
   notIncluded: string[];
   faqs: Faq[];
