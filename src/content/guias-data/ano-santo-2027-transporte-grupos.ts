@@ -111,7 +111,7 @@ export const guia: Guide = {
   related: [
     { title: "Transporte en el Camino de Santiago para grupos", href: "/guias/transporte-camino-de-santiago" },
     { title: "Camino Portugués por la costa para grupos", href: "/guias/camino-portugues-costa-etapas-grupos" },
-    { title: "Traslados privados desde Santiago", href: "/traslados-desde-santiago" },
+    { title: "Apertura de la Puerta Santa: cómo ir con un grupo", href: "/guias/apertura-puerta-santa-2026-santiago" },
     { title: "Transporte para eventos en Galicia", href: "/transporte-eventos-galicia" },
   ],
 };

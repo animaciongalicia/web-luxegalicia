@@ -11,6 +11,7 @@ import { guia as comoLlegarEstadioRiazor } from "./como-llegar-estadio-riazor";
 import { guia as transporteCidadeDaCultura } from "./transporte-cidade-da-cultura";
 import { guia as transporteExpocoruna } from "./transporte-expocoruna";
 import { guia as anoSanto2027TransporteGrupos } from "./ano-santo-2027-transporte-grupos";
+import { guia as aperturaPuertaSanta2026Santiago } from "./apertura-puerta-santa-2026-santiago";
 import { guia as famTripGaliciaComoOrganizarlo } from "./fam-trip-galicia-como-organizarlo";
 import { guia as oportoVigoTrenAutobusTraslado } from "./oporto-vigo-tren-autobus-traslado";
 import { guia as caminoPortuguesCostaEtapasGrupos } from "./camino-portugues-costa-etapas-grupos";
@@ -34,6 +35,7 @@ export const GUIAS_DATA: Guide[] = [
   transporteCidadeDaCultura,
   transporteExpocoruna,
   anoSanto2027TransporteGrupos,
+  aperturaPuertaSanta2026Santiago,
   famTripGaliciaComoOrganizarlo,
   oportoVigoTrenAutobusTraslado,
   caminoPortuguesCostaEtapasGrupos,

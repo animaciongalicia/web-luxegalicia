@@ -358,6 +358,7 @@ export const PAGES_TRASLADOS: Page[] = [
         rows: [
           { destino: "Ourense", km: 500, tiempo: "4 h 45 min", precio: "madrid-ourense" },
           { destino: "Lugo", km: 510, tiempo: "4 h 50 min", precio: "madrid-lugo" },
+          { destino: "Sarria (inicio del Camino Francés)", km: 510, tiempo: "5 h", precio: "madrid-sarria" },
           { destino: "Vigo", km: 590, tiempo: "5 h 45 min", precio: "madrid-vigo" },
           { destino: "A Coruña", km: 595, tiempo: "5 h 45 min", precio: "madrid-coruna" },
           { destino: "Santiago de Compostela", km: 600, tiempo: "5 h 45 min", precio: "madrid-santiago" },
@@ -426,6 +427,7 @@ export const PAGES_TRASLADOS: Page[] = [
     faqs: [
       { question: "¿Cuánto se tarda de Madrid a Santiago en coche?", answer: "Alrededor de 5 horas y 45 minutos sin paradas. En trayectos tan largos se hace al menos una parada de descanso." },
       { question: "¿Compensa frente al tren de alta velocidad?", answer: "Para una o dos personas con poco equipaje, el tren suele ser más rápido y barato. El traslado privado compensa para grupos, con mucho equipaje, con paradas o cuando se llega a Barajas en un vuelo internacional." },
+      { question: "¿Podéis llevar a un grupo de Barajas a Sarria para empezar el Camino?", answer: "Sí. Son unos 510 km y alrededor de 5 horas por la A-6, sin transbordos y con el equipaje y los bastones en el maletero. Para grupos, minibús o autocar." },
       { question: "¿Me recogéis en el aeropuerto de Barajas?", answer: "Sí, con seguimiento del vuelo y recibimiento con cartel en la sala de llegadas, o en cualquier estación u hotel de Madrid." },
       { question: "¿Hacéis el trayecto inverso, de Galicia a Madrid?", answer: "Sí, desde cualquier punto de Galicia a Madrid, calculando la salida según tu vuelo o tu cita." },
       VEHICULOS_FAQ,
@@ -465,6 +467,7 @@ export const PAGES_TRASLADOS: Page[] = [
         bg: "gray",
         rows: [
           { destino: "Oporto", km: 315, tiempo: "3 h", precio: "lisboa-oporto" },
+          { destino: "Valença / Tui (inicio del Camino Portugués)", km: 425, tiempo: "4 h", precio: "lisboa-tui" },
           { destino: "Vigo", km: 465, tiempo: "4 h 30 min", precio: "lisboa-vigo" },
           { destino: "Pontevedra", km: 495, tiempo: "4 h 50 min", precio: "lisboa-pontevedra" },
           { destino: "Santiago de Compostela", km: 555, tiempo: "5 h 15 min", precio: "lisboa-santiago" },

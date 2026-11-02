@@ -139,6 +139,7 @@ export const PAGES_EN: Page[] = [
         bg: "gray",
         rows: [
           { destino: "Porto", km: 315, tiempo: "3 h", precio: "lisboa-oporto" },
+          { destino: "Valença / Tui (Portuguese Camino start)", km: 425, tiempo: "4 h", precio: "lisboa-tui" },
           { destino: "Vigo", km: 465, tiempo: "4 h 30 min", precio: "lisboa-vigo" },
           { destino: "Pontevedra", km: 495, tiempo: "4 h 50 min", precio: "lisboa-pontevedra" },
           { destino: "Santiago de Compostela", km: 555, tiempo: "5 h 15 min", precio: "lisboa-santiago" },

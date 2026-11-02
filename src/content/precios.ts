@@ -56,12 +56,14 @@ export const PRECIOS: Record<string, Precio> = {
   // Madrid ⇄ Galicia
   "madrid-ourense": { ...vacio },
   "madrid-lugo": { ...vacio },
+  "madrid-sarria": { ...vacio },
   "madrid-vigo": { ...vacio },
   "madrid-coruna": { ...vacio },
   "madrid-santiago": { ...vacio },
   "madrid-pontevedra": { ...vacio },
   // Lisboa (aeropuerto) ⇄ Galicia
   "lisboa-oporto": { ...vacio },
+  "lisboa-tui": { ...vacio },
   "lisboa-vigo": { ...vacio },
   "lisboa-pontevedra": { ...vacio },
   "lisboa-santiago": { ...vacio },
