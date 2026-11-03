@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "transporte-palacio-congresos-santiago",
   category: "Sede",
   title: "Transporte para eventos en el Palacio de Congresos de Santiago",
-  metaTitle: "Transporte para congresos en el Palacio de Congresos de Santiago",
+  metaTitle: "Transporte en el Palacio de Congresos de Santiago: guía",
   metaDescription:
-    "Cómo organizar el transporte de un congreso en el Palacio de Congresos de Santiago de Compostela: lanzaderas con el casco histórico y los hoteles, aeropuerto, tiempos y cenas.",
+    "Transporte para un congreso en el Palacio de Congresos de Santiago: lanzaderas con el casco histórico y los hoteles, aeropuerto, tiempos y cenas.",
   image: "/images/catedral-santiago-alameda.jpg",
   alt: "Santiago de Compostela, sede de congresos",
   readMinutes: 6,

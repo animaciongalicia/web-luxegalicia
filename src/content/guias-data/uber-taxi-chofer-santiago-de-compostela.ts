@@ -3,10 +3,10 @@ import type { Guide } from "../types";
 export const guia: Guide = {
   slug: "uber-taxi-chofer-santiago-de-compostela",
   category: "Artículo",
-  title: "Uber, taxi o chófer en Santiago de Compostela: qué te conviene en cada caso",
-  metaTitle: "Uber, taxi o chófer en Santiago de Compostela: qué te conviene",
+  title: "Uber, taxi o chófer en Santiago: qué te conviene en cada caso",
+  metaTitle: "Uber, taxi o chófer en Santiago: qué te conviene",
   metaDescription:
-    "Cómo moverte en Santiago de Compostela: taxi, VTC por aplicación (Uber, Cabify), autobús o coche con chófer. Desde el aeropuerto, por la ciudad y para grupos o empresas.",
+    "Cómo moverte en Santiago de Compostela: taxi, Uber o Cabify, autobús o coche con chófer. Desde el aeropuerto, por la ciudad y para grupos.",
   image: "/images/chofer-conduciendo-berlina.jpg",
   alt: "Chófer conduciendo una berlina por Santiago de Compostela",
   readMinutes: 5,

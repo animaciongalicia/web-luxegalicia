@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "fam-trip-galicia-como-organizarlo",
   category: "Artículo",
   title: "Fam trip en Galicia: cómo organizarlo para que el agente vuelva queriendo vender el destino",
-  metaTitle: "Fam trip en Galicia: cómo organizarlo para que funcione | Guía práctica",
+  metaTitle: "Fam trip en Galicia: cómo organizarlo para que funcione",
   metaDescription:
-    "Cómo organizar un fam trip en Galicia para agentes de viajes, organizadores MICE o prensa: objetivos, programa tipo de 3 días, logística, errores habituales y cómo medir el resultado.",
+    "Cómo organizar un fam trip en Galicia para agentes, organizadores MICE o prensa: objetivos, programa de 3 días, logística, errores y resultados.",
   image: "/images/pazo-galicia-jardines.jpg",
   alt: "Pazo gallego con jardines, parada habitual de un fam trip",
   readMinutes: 7,

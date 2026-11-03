@@ -8,12 +8,12 @@ import JsonLd from "@/components/JsonLd";
 import { SITE, SITE_URL, absoluteUrl } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Luxe Galicia – Transporte corporativo y para eventos en Galicia",
+  title: "Luxe Galicia | Transporte corporativo y eventos en Galicia",
   description:
-    "Servicios de transporte corporativo y para eventos en Galicia y Oporto: congresos, incentivos, empresas y agencias MICE. Berlinas, vans, minibuses y autocares con conductor desde 2013.",
+    "Transporte corporativo y para eventos en Galicia y Oporto: congresos, incentivos, empresas y agencias MICE. Berlinas, vans, minibuses y autocares.",
   alternates: { canonical: SITE_URL, languages: { es: SITE_URL, en: absoluteUrl("/en"), "x-default": SITE_URL } },
   openGraph: { locale: "es_ES", siteName: "Luxe Galicia",
-    title: "Luxe Galicia – Transporte corporativo y para eventos en Galicia",
+    title: "Luxe Galicia | Transporte corporativo y eventos en Galicia",
     description: "Congresos, incentivos, empresas y traslados con conductor en Galicia y Oporto.",
     url: SITE_URL,
     images: [{ url: "/images/flota-berlinas-fila.jpg", width: 1200, height: 630, alt: "Flota con chófer de Luxe Galicia" }],

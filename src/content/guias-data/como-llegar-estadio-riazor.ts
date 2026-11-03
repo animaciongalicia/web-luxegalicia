@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "como-llegar-estadio-riazor",
   category: "Sede",
   title: "Cómo llegar al estadio de Riazor: transporte, aparcamiento y grupos",
-  metaTitle: "Cómo llegar al estadio de Riazor (A Coruña): transporte y aparcamiento",
+  metaTitle: "Cómo llegar al estadio de Riazor: transporte y aparcamiento",
   metaDescription:
-    "Cómo llegar al estadio Abanca-Riazor el día de partido del Deportivo: desde el aeropuerto, la estación y el centro, aparcamiento, autocares de peñas y transporte con chófer para grupos.",
+    "Cómo llegar a Riazor el día de partido del Deportivo: desde el aeropuerto, la estación y el centro, aparcamiento, autocares de peñas y grupos.",
   image: "/images/coruna-torre-hercules.jpg",
   alt: "Paseo marítimo de A Coruña, junto a la Torre de Hércules",
   readMinutes: 5,

@@ -6,7 +6,7 @@ export const guia: Guide = {
   title: "Conxemar 2027: cómo moverse en Vigo durante la feria",
   metaTitle: "Conxemar 2027: transporte, aeropuertos y hoteles en Vigo",
   metaDescription:
-    "Guía práctica para expositores y visitantes de Conxemar en Vigo: cómo llegar a IFEVI, qué aeropuerto elegir (Vigo, Santiago u Oporto), dónde alojarse y cómo organizar traslados.",
+    "Conxemar 2027 en Vigo para expositores y visitantes: cómo llegar a IFEVI, qué aeropuerto elegir, dónde alojarse y cómo organizar los traslados.",
   image: "/images/puerto-rias-baixas.jpg",
   alt: "Puerto pesquero en la ría, la Galicia del mar que reúne Conxemar",
   readMinutes: 6,

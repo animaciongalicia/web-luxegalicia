@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "galicia-con-chofer",
   category: "Guía",
   title: "Moverse por Galicia con chófer: distancias, rutas y tiempos",
-  metaTitle: "Moverse por Galicia con chófer: distancias, rutas y tiempos reales",
+  metaTitle: "Moverse por Galicia con chófer: distancias y tiempos reales",
   metaDescription:
-    "Distancias y tiempos reales entre las ciudades de Galicia y Oporto, rutas recomendadas y cuándo compensa viajar con chófer frente a coche de alquiler o transporte público.",
+    "Distancias y tiempos reales entre las ciudades de Galicia y Oporto, rutas recomendadas y cuándo compensa el chófer frente al coche de alquiler.",
   image: "/images/van-ejecutiva-galicia.jpg",
   alt: "Van ejecutiva con chófer recorriendo Galicia",
   readMinutes: 7,

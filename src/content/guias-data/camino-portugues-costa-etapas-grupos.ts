@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "camino-portugues-costa-etapas-grupos",
   category: "Artículo",
   title: "Camino Portugués por la costa: etapas y logística para grupos",
-  metaTitle: "Camino Portugués por la costa: etapas, km y logística para grupos",
+  metaTitle: "Camino Portugués por la costa: etapas y logística de grupo",
   metaDescription:
-    "Camino Portugués por la costa de Oporto a Santiago: distancia, etapas por tramos, opción corta desde Baiona y cómo organizar transporte, vehículo de apoyo y regreso para grupos.",
+    "Camino Portugués por la costa: distancia, etapas, opción corta desde Baiona y cómo organizar transporte, vehículo de apoyo y regreso para grupos.",
   image: "/images/parador-baiona.jpg",
   alt: "Baiona, etapa del Camino Portugués por la costa",
   readMinutes: 8,

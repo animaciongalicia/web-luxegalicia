@@ -6,7 +6,7 @@ export const PAGES_EN: Page[] = [
     lang: "en",
     metaTitle: "MICE ground transportation in Galicia, Spain | Luxe Galicia",
     metaDescription:
-      "Ground transportation partner in Galicia for MICE agencies and DMCs: sedans, executive vans, minibuses and coaches, on-site coordinator, single invoice, quote within 24 hours.",
+      "Ground transportation partner in Galicia for MICE agencies and DMCs: sedans to coaches, on-site coordinator, single invoice and a quote within 24 hours.",
     serviceType: "MICE ground transportation",
     alternate: "/agencias-mice",
     hero: {
@@ -57,9 +57,9 @@ export const PAGES_EN: Page[] = [
   {
     slug: "porto-galicia-private-chauffeur",
     lang: "en",
-    metaTitle: "Porto to Galicia private chauffeur | Santiago, Vigo, A Coruña",
+    metaTitle: "Porto to Galicia private chauffeur: Santiago, Vigo, Coruña",
     metaDescription:
-      "Private chauffeur transfers from Porto airport and city to Santiago de Compostela, Vigo, the Rías Baixas and A Coruña. Flight tracking, meet and greet, fixed price.",
+      "Private chauffeur transfers from Porto airport to Santiago de Compostela, Vigo, the Rías Baixas and A Coruña. Flight tracking, meet and greet, fixed price.",
     serviceType: "Porto to Galicia private transfers",
     alternate: "/oporto-galicia",
     hero: {
@@ -113,7 +113,7 @@ export const PAGES_EN: Page[] = [
     lang: "en",
     metaTitle: "Lisbon to Santiago de Compostela & Galicia private transfer",
     metaDescription:
-      "Private chauffeur transfers from Lisbon airport to Santiago de Compostela, Vigo, A Coruña and all of Galicia, with optional stops in Porto or Coimbra. Flight tracking and fixed price.",
+      "Private transfers from Lisbon airport to Santiago de Compostela, Vigo and A Coruña, with optional stops in Porto or Coimbra. Flight tracking, fixed price.",
     serviceType: "Lisbon to Galicia private transfers",
     alternate: "/traslados-lisboa-galicia",
     hero: {
@@ -182,9 +182,9 @@ export const PAGES_EN: Page[] = [
   {
     slug: "galicia-chauffeur-tours",
     lang: "en",
-    metaTitle: "Galicia private chauffeur tours: 3, 5 and 7 days | Luxe Galicia",
+    metaTitle: "Galicia private chauffeur tours: 3, 5 and 7 days",
     metaDescription:
-      "Private chauffeur tours of Galicia, Spain: 3, 5 and 7-day itineraries and day trips to the Rías Baixas, Ribeira Sacra, Santiago de Compostela and the Cíes Islands.",
+      "Private chauffeur tours of Galicia, Spain: 3, 5 and 7-day itineraries and day trips to the Rías Baixas, Ribeira Sacra, Santiago and the Cíes Islands.",
     serviceType: "Private chauffeur tours in Galicia",
     alternate: "/tours-con-chofer-galicia",
     hero: {

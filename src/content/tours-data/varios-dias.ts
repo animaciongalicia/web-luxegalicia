@@ -8,7 +8,7 @@ export const TOURS_VARIOS_DIAS: Tour[] = [
     name: "Galicia en 3 días con chófer",
     metaTitle: "Galicia en 3 días con chófer privado: Santiago y Rías Baixas",
     metaDescription:
-      "Tour privado de 3 días por Galicia con chófer: Santiago de Compostela, Rías Baixas, Combarro, Cambados, A Toxa y Pontevedra. Salida desde Santiago, Vigo u Oporto.",
+      "Tour privado de 3 días por Galicia con chófer: Santiago, Rías Baixas, Combarro, Cambados, A Toxa y Pontevedra. Salida desde Santiago, Vigo u Oporto.",
     image: "/images/tours-santiago.jpg",
     alt: "Plaza del Obradoiro y catedral de Santiago de Compostela",
     duration: "3 días",
@@ -60,7 +60,7 @@ export const TOURS_VARIOS_DIAS: Tour[] = [
     slug: "galicia-5-dias",
     kind: "varios-dias",
     name: "Galicia en 5 días con chófer",
-    metaTitle: "Galicia en 5 días con chófer: A Coruña, Costa da Morte, Santiago y Rías Baixas",
+    metaTitle: "Galicia en 5 días con chófer: costa, Santiago y Rías Baixas",
     metaDescription:
       "Tour privado de 5 días por Galicia con chófer: A Coruña, Costa da Morte y Fisterra, Santiago de Compostela, Rías Baixas y Vigo. En berlina o van ejecutiva.",
     image: "/images/tours-costa-da-morte.jpg",
@@ -123,9 +123,9 @@ export const TOURS_VARIOS_DIAS: Tour[] = [
     slug: "galicia-7-dias",
     kind: "varios-dias",
     name: "Galicia en 7 días con chófer",
-    metaTitle: "Galicia en 7 días con chófer privado | Ruta completa en van ejecutiva",
+    metaTitle: "Galicia en 7 días con chófer: ruta completa en van ejecutiva",
     metaDescription:
-      "Tour privado de 7 días por Galicia con chófer: A Coruña, Costa da Morte, Santiago, Rías Baixas, Ribeira Sacra, Lugo y Playa de las Catedrales. Van ejecutiva o berlina.",
+      "Tour privado de 7 días por Galicia con chófer: Costa da Morte, Santiago, Rías Baixas, Ribeira Sacra, Lugo y Playa de las Catedrales.",
     image: "/images/ribeira-sacra-bodegas-top.jpg",
     alt: "Viñedos en bancales sobre el cañón del Sil en la Ribeira Sacra",
     duration: "7 días",
@@ -182,7 +182,7 @@ export const TOURS_VARIOS_DIAS: Tour[] = [
     slug: "oporto-y-galicia-5-dias",
     kind: "varios-dias",
     name: "Oporto y Galicia en 5 días con chófer",
-    metaTitle: "Oporto y Galicia en 5 días con chófer privado | Tour en van ejecutiva",
+    metaTitle: "Oporto y Galicia en 5 días con chófer privado",
     metaDescription:
       "Tour privado de 5 días con chófer desde Oporto: Valença y Tui, Baiona, Vigo e Islas Cíes, Rías Baixas y Santiago de Compostela. Ideal si vuelas a Oporto.",
     image: "/images/parador-baiona.jpg",

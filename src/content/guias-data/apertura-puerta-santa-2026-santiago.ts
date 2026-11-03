@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "apertura-puerta-santa-2026-santiago",
   category: "Artículo",
   title: "Apertura de la Puerta Santa en Santiago (31 de diciembre de 2026): cómo ir con un grupo",
-  metaTitle: "Apertura de la Puerta Santa 2026 en Santiago: transporte y consejos para grupos",
+  metaTitle: "Apertura de la Puerta Santa 2026: cómo ir con un grupo",
   metaDescription:
-    "El 31 de diciembre de 2026 se abre la Puerta Santa de la catedral de Santiago y empieza el Año Santo 2027. Cómo llegar con un grupo, dónde alojarse, accesos al casco histórico y cómo volver.",
+    "El 31 de diciembre de 2026 se abre la Puerta Santa en Santiago. Cómo llegar con un grupo, dónde alojarse, accesos al casco histórico y cómo volver.",
   image: "/images/catedral-santiago-alameda.jpg",
   alt: "Catedral de Santiago de Compostela vista desde la Alameda",
   readMinutes: 4,

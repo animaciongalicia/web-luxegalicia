@@ -3,10 +3,10 @@ import type { Guide } from "../types";
 export const guia: Guide = {
   slug: "transporte-camino-de-santiago",
   category: "Guía",
-  title: "Transporte en el Camino de Santiago para grupos: guía práctica",
-  metaTitle: "Transporte en el Camino de Santiago para grupos: guía práctica",
+  title: "Transporte en el Camino de Santiago para grupos: guía",
+  metaTitle: "Transporte en el Camino de Santiago para grupos: guía",
   metaDescription:
-    "Cómo organizar el transporte de un grupo en el Camino de Santiago: llegar al inicio de etapa (Sarria, Tui, Oporto, Ferrol), vehículo de apoyo, equipaje y regreso desde Santiago.",
+    "Cómo organizar el transporte de un grupo en el Camino: llegar a Sarria, Tui, Oporto o Ferrol, vehículo de apoyo, equipaje y regreso desde Santiago.",
   image: "/images/faro-de-Finisterre-1.jpg",
   alt: "Faro de Fisterra, final del Camino de Santiago",
   readMinutes: 8,

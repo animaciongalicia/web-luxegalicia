@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "organizar-evento-en-galicia-agencias",
   category: "Guía",
   title: "Organizar un evento en Galicia desde fuera: guía para agencias",
-  metaTitle: "Organizar un evento en Galicia: guía para agencias MICE de fuera",
+  metaTitle: "Organizar un evento en Galicia: guía para agencias MICE",
   metaDescription:
-    "Guía para agencias MICE de Madrid, Barcelona y extranjero que organizan eventos en Galicia: ciudades y sedes, aeropuertos, distancias, temporadas, proveedores y calendario de trabajo.",
+    "Guía para agencias MICE que organizan eventos en Galicia desde fuera: ciudades y sedes, aeropuertos, distancias, temporadas, proveedores y calendario.",
   image: "/images/planificacion-transporte-evento.webp",
   alt: "Planificación del transporte de un evento en una tableta",
   readMinutes: 10,

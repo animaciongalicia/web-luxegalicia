@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "oporto-galicia-como-llegar",
   category: "Guía",
   title: "Cómo ir de Oporto a Galicia: tren, autobús, coche o chófer",
-  metaTitle: "Cómo ir de Oporto a Galicia (Vigo, Santiago, A Coruña): opciones",
+  metaTitle: "Cómo ir de Oporto a Galicia: Vigo, Santiago y A Coruña",
   metaDescription:
-    "Cómo ir del aeropuerto de Oporto a Vigo, Santiago de Compostela o A Coruña: tren, autobús, coche de alquiler o traslado privado con chófer. Tiempos, ventajas y desventajas.",
+    "Cómo ir del aeropuerto de Oporto a Vigo, Santiago o A Coruña: tren, autobús, coche de alquiler o traslado privado. Tiempos, ventajas e inconvenientes.",
   image: "/images/traslados-coruna-santiago.jpg",
   alt: "Coche con chófer en la carretera entre Oporto y Galicia",
   readMinutes: 7,

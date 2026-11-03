@@ -6,7 +6,7 @@ export const guia: Guide = {
   title: "Transporte para ferias y eventos en ExpoCoruña",
   metaTitle: "Transporte para ferias y eventos en ExpoCoruña (A Coruña)",
   metaDescription:
-    "Cómo organizar el transporte de una feria, congreso o gran evento en ExpoCoruña: ubicación, tiempos desde los aeropuertos de Alvedro, Santiago y Oporto, lanzaderas y montaje.",
+    "Transporte para una feria o gran evento en ExpoCoruña: ubicación, tiempos desde Alvedro, Santiago y Oporto, lanzaderas hotel-recinto y montaje.",
   image: "/images/traslados-coruna-eventos.jpg",
   alt: "Vans con chófer preparadas para una feria en A Coruña",
   readMinutes: 6,

@@ -3,9 +3,9 @@ import type { Page } from "./types";
 export const PAGES_MICE: Page[] = [
   {
     slug: "transporte-eventos-galicia",
-    metaTitle: "Transporte para eventos en Galicia | Congresos, incentivos y festivales",
+    metaTitle: "Transporte para eventos en Galicia | Congresos e incentivos",
     metaDescription:
-      "Empresa de transporte para eventos en Galicia: congresos, incentivos, festivales y eventos corporativos. Berlinas, vans ejecutivas, minibuses y autocares con coordinación en destino.",
+      "Transporte para eventos en Galicia: congresos, incentivos, festivales y eventos de empresa. Berlinas, vans, minibuses y autocares, con coordinador en destino.",
     serviceType: "Transporte para eventos",
     hero: {
       eyebrow: "Eventos",
@@ -56,7 +56,7 @@ export const PAGES_MICE: Page[] = [
     slug: "agencias-mice",
     metaTitle: "Transporte para agencias MICE en Galicia | Luxe Galicia",
     metaDescription:
-      "Partner de transporte en Galicia para agencias MICE de Madrid, Barcelona y extranjero. Flota de 1 a 500 personas, coordinador en destino, factura única y presupuesto en 24 h.",
+      "Partner de transporte en Galicia para agencias MICE de Madrid, Barcelona y fuera de España. De 1 a 500 personas, coordinador en destino y factura única.",
     serviceType: "Ground transportation for MICE agencies",
     alternate: "/en/mice-ground-transportation",
     hero: {
@@ -143,9 +143,9 @@ export const PAGES_MICE: Page[] = [
   },
   {
     slug: "transporte-congresos-galicia",
-    metaTitle: "Transporte para congresos en Galicia | Lanzaderas y traslados",
+    metaTitle: "Transporte para congresos en Galicia: lanzaderas y traslados",
     metaDescription:
-      "Transporte para congresos y convenciones en Galicia: lanzaderas sede-hotel, traslados de aeropuerto, cenas de gala y ponentes e invitados especiales. Palexco, Santiago, Vigo. Presupuesto en 24 h.",
+      "Transporte para congresos en Galicia: lanzaderas sede-hotel, aeropuertos, ponentes y cena de gala. Palexco, Santiago y Vigo. Presupuesto en 24 horas.",
     serviceType: "Transporte para congresos",
     hero: {
       eyebrow: "Congresos y convenciones",
@@ -218,9 +218,9 @@ export const PAGES_MICE: Page[] = [
   },
   {
     slug: "transporte-incentivos-galicia",
-    metaTitle: "Transporte para viajes de incentivo en Galicia | Luxe Galicia",
+    metaTitle: "Transporte para viajes de incentivo en Galicia",
     metaDescription:
-      "Movilidad con chófer para viajes de incentivo en Galicia: vans ejecutivas, minibuses y berlinas con chófer para grupos de empresa. Rías Baixas, Ribeira Sacra, Santiago.",
+      "Transporte con chófer para viajes de incentivo en Galicia: vans, minibuses y berlinas a disposición del grupo. Rías Baixas, Ribeira Sacra y Santiago.",
     serviceType: "Transporte para viajes de incentivo",
     hero: {
       eyebrow: "Viajes de incentivo",
@@ -273,7 +273,7 @@ export const PAGES_MICE: Page[] = [
     slug: "transporte-festivales-producciones",
     metaTitle: "Transporte para festivales, giras y rodajes en Galicia",
     metaDescription:
-      "Transporte para festivales, conciertos, giras y rodajes en Galicia: artistas, técnicos, producción y invitados. Operativa coordinada con producción y cambios en tiempo real.",
+      "Transporte para festivales, conciertos, giras y rodajes en Galicia: artistas, técnicos e invitados, coordinado con producción y con cambios en tiempo real.",
     serviceType: "Transporte para festivales y producciones",
     hero: {
       eyebrow: "Festivales · Giras · Rodajes",
@@ -333,9 +333,9 @@ export const PAGES_MICE: Page[] = [
   },
   {
     slug: "transporte-eventos-deportivos",
-    metaTitle: "Transporte para partidos del Deportivo y eventos deportivos en Galicia",
+    metaTitle: "Transporte a partidos del Deportivo y eventos deportivos",
     metaDescription:
-      "Transporte con chófer para ir a ver al Deportivo en Riazor o al Celta en Balaídos: peñas y aficionados visitantes, grupos de empresa con invitados, equipos y eventos deportivos en Galicia.",
+      "Transporte para ver al Deportivo en Riazor o al Celta en Balaídos: autocares para peñas, vans para empresas con invitados y equipos deportivos.",
     serviceType: "Transporte para eventos deportivos",
     hero: {
       eyebrow: "Fútbol y eventos deportivos",
@@ -400,9 +400,9 @@ export const PAGES_MICE: Page[] = [
   },
   {
     slug: "transporte-empresas-galicia",
-    metaTitle: "Transporte y traslados para empresas en toda Galicia | Luxe Galicia",
+    metaTitle: "Transporte y traslados para empresas en toda Galicia",
     metaDescription:
-      "Transporte con conductor para empresas en Galicia: chófer para directivos, recogida de clientes y proveedores, visitas e inspecciones, cenas y eventos de empresa. Cuenta de empresa y factura mensual.",
+      "Transporte para empresas en Galicia: chófer para directivos, recogida de clientes, visitas, inspecciones y eventos de empresa. Cuenta de empresa.",
     serviceType: "Transporte ejecutivo para empresas",
     hero: {
       eyebrow: "Empresas",

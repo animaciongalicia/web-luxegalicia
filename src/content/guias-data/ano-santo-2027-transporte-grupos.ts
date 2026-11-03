@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "ano-santo-2027-transporte-grupos",
   category: "Artículo",
   title: "Año Santo 2027: cómo organizar el transporte de grupos y eventos en Galicia",
-  metaTitle: "Xacobeo 2027: cómo organizar el transporte de grupos y eventos en Galicia",
+  metaTitle: "Xacobeo 2027: transporte de grupos y eventos en Galicia",
   metaDescription:
-    "Guía para agencias, empresas y organizadores: fechas clave del Año Santo 2027, cómo afecta al transporte en Santiago y Galicia, cuándo reservar y cómo mover grupos sin colapsos.",
+    "Año Santo 2027: fechas clave, cómo afecta al transporte en Santiago y Galicia, cuándo reservar y cómo mover grupos y eventos sin colapsos.",
   image: "/images/tours-santiago.jpg",
   alt: "Plaza del Obradoiro y catedral de Santiago, centro del Año Santo 2027",
   readMinutes: 8,

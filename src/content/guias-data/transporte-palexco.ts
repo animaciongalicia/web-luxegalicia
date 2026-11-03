@@ -4,9 +4,9 @@ export const guia: Guide = {
     slug: "transporte-palexco",
     category: "Sede",
     title: "Transporte para congresos en Palexco (A Coruña): la guía completa",
-    metaTitle: "Transporte para congresos en Palexco, A Coruña | Guía completa",
+    metaTitle: "Transporte para congresos en Palexco (A Coruña): guía",
     metaDescription:
-      "Guía para organizar el transporte de un congreso en Palexco (A Coruña): llegadas por Alvedro, Santiago, Oporto y tren, hoteles, lanzaderas, ponentes, cena de gala y días de crucero.",
+      "Transporte para un congreso en Palexco (A Coruña): llegadas por Alvedro, Santiago u Oporto, lanzaderas, ponentes, cena de gala y días de crucero.",
     image: "/images/sala-eventos-empresas.jpg",
     alt: "Sala preparada para las sesiones de un congreso",
     readMinutes: 7,

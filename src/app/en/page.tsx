@@ -12,7 +12,7 @@ const URL = absoluteUrl("/en");
 export const metadata: Metadata = {
   title: "Luxe Galicia – Ground transportation in Galicia & Porto",
   description:
-    "Professional chauffeur services in Galicia, Spain and Porto: MICE ground transportation, Porto–Galicia transfers and private chauffeur tours. Sedans, executive vans, minibuses and coaches since 2013.",
+    "Chauffeur services in Galicia, Spain and Porto: MICE ground transportation, Porto–Galicia transfers and private tours. Sedans, vans, minibuses, coaches.",
   alternates: { canonical: URL, languages: { es: SITE_URL, en: URL, "x-default": SITE_URL } },
   openGraph: { url: URL, locale: "en_GB", images: [{ url: "/images/flota-luxe-galicia.jpg", alt: "Luxe Galicia chauffeur fleet" }] },
 };

@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "calendario-congresos-ferias-galicia-2027",
   category: "Artículo",
   title: "Calendario de congresos y ferias en Galicia 2027",
-  metaTitle: "Calendario de congresos y ferias en Galicia 2027 | A Coruña, Santiago, Vigo",
+  metaTitle: "Calendario de congresos y ferias en Galicia 2027",
   metaDescription:
-    "Calendario 2027 de congresos, ferias y grandes eventos profesionales en A Coruña, Santiago de Compostela y Vigo: fechas, sedes y claves de transporte para cada uno.",
+    "Congresos, ferias y grandes eventos de 2027 en A Coruña, Santiago y Vigo: fechas, sedes y claves de transporte para cada uno.",
   image: "/images/finca-montesqueiro-corporativo-presentacion.jpg",
   alt: "Salón preparado para un evento profesional en Galicia",
   readMinutes: 5,

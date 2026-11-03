@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "viaje-incentivos-galicia",
   category: "Artículo",
   title: "Viaje de incentivos en Galicia: qué funciona, qué no y cómo mover al grupo",
-  metaTitle: "Viaje de incentivos en Galicia: qué funciona y cómo organizarlo",
+  metaTitle: "Viaje de incentivos en Galicia: qué funciona y cómo hacerlo",
   metaDescription:
-    "Cómo diseñar un viaje de incentivos en Galicia que motive de verdad: experiencias que funcionan, errores habituales, programa tipo de 3 días y cómo organizar el transporte del grupo.",
+    "Cómo diseñar un viaje de incentivos en Galicia: experiencias que funcionan, errores habituales, programa de 3 días y transporte del grupo.",
   image: "/images/pazo-eventos-corporativos.jpg",
   alt: "Pazo gallego preparado para un viaje de incentivos",
   readMinutes: 7,

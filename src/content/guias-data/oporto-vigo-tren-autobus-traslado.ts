@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "oporto-vigo-tren-autobus-traslado",
   category: "Artículo",
   title: "De Oporto a Vigo: tren, autobús, coche o traslado privado. Qué compensa",
-  metaTitle: "De Oporto a Vigo: tren, autobús o traslado privado | Comparativa",
+  metaTitle: "De Oporto a Vigo: tren, autobús o traslado privado",
   metaDescription:
-    "Cómo ir de Oporto (aeropuerto o ciudad) a Vigo: horarios y duración del tren, autobuses desde el aeropuerto, coche de alquiler y traslado privado. Comparativa clara y consejos.",
+    "Cómo ir de Oporto a Vigo: tren desde Campanhã, autobús desde el aeropuerto, coche de alquiler o traslado privado. Tiempos reales y qué compensa.",
   image: "/images/chofer-carretera-galicia.jpg",
   alt: "Chófer en la autopista entre Oporto y Vigo",
   readMinutes: 6,

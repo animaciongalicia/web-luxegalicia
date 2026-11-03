@@ -72,6 +72,10 @@ const WP_WILDCARDS = [
 ];
 
 const nextConfig = {
+  // The trailing slash is handled in redirects() below, so every old URL resolves in one hop
+  // instead of two (Next's own slash redirect first, then the old-URL redirect).
+  skipTrailingSlashRedirect: true,
+
   images: {
     // WebP only: AVIF is slow to encode and made first loads lag on Vercel.
     formats: ["image/webp"],
@@ -103,8 +107,13 @@ const nextConfig = {
       { source: from, destination: to, permanent: true },
       { source: `${from}/`, destination: to, permanent: true },
     ]);
-    const wildcards = WP_WILDCARDS.map(([source, destination]) => ({ source, destination, permanent: true }));
-    return [...exact, ...wildcards];
+    const wildcards = WP_WILDCARDS.flatMap(([source, destination]) => [
+      { source, destination, permanent: true },
+      { source: `${source}/`, destination, permanent: true },
+    ]);
+    // Any other URL ending in "/" goes to the same URL without it.
+    const trailingSlash = { source: "/:path+/", destination: "/:path+", permanent: true };
+    return [...exact, ...wildcards, trailingSlash];
   },
 };
 

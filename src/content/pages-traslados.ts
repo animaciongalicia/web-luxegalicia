@@ -15,9 +15,9 @@ const PRECIO_FAQ = {
 export const PAGES_TRASLADOS: Page[] = [
   {
     slug: "traslados",
-    metaTitle: "Traslados con chófer en Galicia, Oporto, Lisboa, Madrid y Asturias",
+    metaTitle: "Traslados con chófer: Galicia, Oporto, Lisboa y Madrid",
     metaDescription:
-      "Traslados privados con chófer desde A Coruña, Santiago y Vigo a toda Galicia, Oporto, Lisboa, Asturias y Madrid. Berlinas, vans ejecutivas, minibuses y autocares. Precios orientativos.",
+      "Traslados privados con chófer desde A Coruña, Santiago y Vigo a toda Galicia, Oporto, Lisboa, Asturias y Madrid. Berlinas, vans, minibuses y autocares.",
     serviceType: "Traslados privados con chófer",
     hero: {
       eyebrow: "Traslados privados",
@@ -57,7 +57,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "traslados-desde-coruna",
     metaTitle: "Traslados con chófer desde A Coruña | Precios orientativos",
     metaDescription:
-      "Traslados privados con chófer desde A Coruña a Santiago, Vigo, Lugo, Ourense, Oporto, Asturias y Madrid. Berlinas, vans ejecutivas, minibuses y autocares. Tabla de precios.",
+      "Traslados privados con chófer desde A Coruña a Santiago, Vigo, Lugo, Ourense, Oporto, Asturias y Madrid. Tiempos y precios orientativos por trayecto.",
     serviceType: "Traslados con chófer desde A Coruña",
     hero: {
       eyebrow: "Base principal · A Coruña",
@@ -123,7 +123,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "traslados-desde-santiago",
     metaTitle: "Traslados con chófer desde Santiago de Compostela | Precios",
     metaDescription:
-      "Traslados privados con chófer desde Santiago de Compostela y su aeropuerto a A Coruña, Vigo, Rías Baixas, Ourense, Lugo, Oporto, Asturias y Madrid. Precios orientativos.",
+      "Traslados privados desde Santiago de Compostela y su aeropuerto a A Coruña, Vigo, Rías Baixas, Ourense, Oporto y Madrid. Precios orientativos.",
     serviceType: "Traslados con chófer desde Santiago de Compostela",
     hero: {
       eyebrow: "Santiago de Compostela",
@@ -189,7 +189,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "traslados-desde-vigo",
     metaTitle: "Traslados con chófer desde Vigo a Oporto y Galicia | Precios",
     metaDescription:
-      "Traslados privados con chófer desde Vigo a Oporto, Rías Baixas, Santiago, Ourense y A Coruña. Recogida en aeropuerto de Peinador y puerto de cruceros. Precios orientativos.",
+      "Traslados privados desde Vigo a Oporto, Rías Baixas, Santiago, Ourense y A Coruña. Recogida en el aeropuerto de Peinador y en el puerto de cruceros.",
     serviceType: "Traslados con chófer desde Vigo",
     hero: {
       eyebrow: "Vigo · Rías Baixas",
@@ -265,9 +265,9 @@ export const PAGES_TRASLADOS: Page[] = [
   },
   {
     slug: "oporto-galicia",
-    metaTitle: "Oporto ⇄ Galicia con chófer | Traslados desde el aeropuerto de Oporto",
+    metaTitle: "Oporto ⇄ Galicia con chófer | Traslado desde el aeropuerto",
     metaDescription:
-      "Traslados privados con chófer entre Oporto (aeropuerto y ciudad) y Galicia: Vigo, Rías Baixas, Santiago y A Coruña. Para empresas, agencias y viajeros. Berlinas, vans y minibuses.",
+      "Traslados privados entre el aeropuerto de Oporto y Galicia: Vigo, Rías Baixas, Santiago y A Coruña. Para empresas, agencias y viajeros.",
     serviceType: "Traslados Oporto - Galicia con chófer",
     alternate: "/en/porto-galicia-private-chauffeur",
     hero: {
@@ -330,9 +330,9 @@ export const PAGES_TRASLADOS: Page[] = [
   },
   {
     slug: "traslados-madrid-galicia",
-    metaTitle: "Traslados con chófer de Madrid a Galicia | Santiago, A Coruña, Vigo",
+    metaTitle: "Traslado privado de Madrid a Galicia: Santiago, Coruña, Vigo",
     metaDescription:
-      "Traslado privado con chófer de Madrid (aeropuerto de Barajas, estaciones u hotel) a Santiago, A Coruña, Vigo, Ourense y toda Galicia. Para grupos, empresas y agencias. Puerta a puerta.",
+      "Traslado privado de Madrid (Barajas, estaciones u hotel) a Santiago, A Coruña, Vigo, Ourense o Sarria. Para grupos, empresas y agencias, puerta a puerta.",
     serviceType: "Traslados Madrid - Galicia con chófer",
     hero: {
       eyebrow: "Madrid · Galicia",
@@ -439,9 +439,9 @@ export const PAGES_TRASLADOS: Page[] = [
   },
   {
     slug: "traslados-lisboa-galicia",
-    metaTitle: "Traslados con chófer de Lisboa a Galicia | Vigo, Santiago, A Coruña",
+    metaTitle: "Traslado privado de Lisboa a Galicia: Vigo, Santiago, Coruña",
     metaDescription:
-      "Traslado privado con chófer del aeropuerto de Lisboa a Vigo, Santiago de Compostela, A Coruña y toda Galicia, con parada opcional en Oporto o Coimbra. Para viajeros, grupos y agencias.",
+      "Traslado privado del aeropuerto de Lisboa a Vigo, Santiago, A Coruña o Tui, con parada opcional en Oporto o Coimbra. Para viajeros, grupos y agencias.",
     serviceType: "Traslados Lisboa - Galicia con chófer",
     alternate: "/en/lisbon-galicia-private-transfer",
     hero: {
@@ -521,9 +521,9 @@ export const PAGES_TRASLADOS: Page[] = [
   },
   {
     slug: "transporte-camino-de-santiago",
-    metaTitle: "Transporte para el Camino de Santiago | Grupos, vans y minibuses",
+    metaTitle: "Transporte para grupos del Camino de Santiago",
     metaDescription:
-      "Transporte para grupos del Camino de Santiago: traslado al inicio de etapa (Sarria, Tui, Oporto, Ferrol, O Cebreiro), vehículo de apoyo, equipaje y regreso desde Santiago o Fisterra.",
+      "Transporte para grupos del Camino de Santiago: traslado a Sarria, Tui, Oporto o Ferrol, vehículo de apoyo, equipaje y regreso desde Santiago.",
     serviceType: "Transporte para el Camino de Santiago",
     hero: {
       eyebrow: "Camino de Santiago",
@@ -589,7 +589,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "alquiler-autocar-con-conductor-galicia",
     metaTitle: "Alquiler de autocares y minibuses con conductor en Galicia",
     metaDescription:
-      "Alquiler de autocares y minibuses con conductor en Galicia para congresos, eventos, empresas, excursiones y traslados de grupos. Salidas desde A Coruña, Santiago y Vigo.",
+      "Alquiler de autocares y minibuses con conductor en Galicia para congresos, eventos, empresas y excursiones. Salidas desde A Coruña, Santiago y Vigo.",
     serviceType: "Alquiler de autocares con conductor",
     hero: {
       eyebrow: "Autocares y minibuses",
@@ -664,9 +664,9 @@ export const PAGES_TRASLADOS: Page[] = [
   },
   {
     slug: "aeropuertos-galicia",
-    metaTitle: "Traslados aeropuerto con chófer: Santiago, A Coruña, Vigo y Oporto",
+    metaTitle: "Traslados al aeropuerto: Santiago, Coruña, Vigo y Oporto",
     metaDescription:
-      "Traslados privados desde y hacia los aeropuertos de Santiago (SCQ), A Coruña (LCG), Vigo (VGO) y Oporto (OPO). Tiempos a cada ciudad, seguimiento del vuelo, recibimiento con cartel y grupos.",
+      "Traslados privados a los aeropuertos de Santiago, A Coruña, Vigo y Oporto: tiempos a cada ciudad, seguimiento del vuelo y recibimiento con cartel.",
     serviceType: "Traslados de aeropuerto con chófer",
     hero: {
       eyebrow: "Aeropuertos",
@@ -780,7 +780,7 @@ export const PAGES_TRASLADOS: Page[] = [
     slug: "excursiones-cruceros-galicia",
     metaTitle: "Excursiones privadas para cruceros en A Coruña y Vigo",
     metaDescription:
-      "Excursiones privadas con chófer para pasajeros de crucero desde los puertos de A Coruña y Vigo: Santiago de Compostela, Rías Baixas, Baiona y A Coruña. Regreso garantizado antes del embarque.",
+      "Excursiones privadas para pasajeros de crucero desde A Coruña y Vigo: Santiago, Rías Baixas, Baiona y la ciudad. Regreso al barco antes del embarque.",
     serviceType: "Excursiones privadas para cruceros",
     hero: {
       eyebrow: "Cruceros · A Coruña · Vigo",

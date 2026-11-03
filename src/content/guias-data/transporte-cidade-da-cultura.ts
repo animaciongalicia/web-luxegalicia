@@ -6,7 +6,7 @@ export const guia: Guide = {
   title: "Transporte para eventos en la Cidade da Cultura (Santiago)",
   metaTitle: "Transporte para eventos en la Cidade da Cultura de Santiago",
   metaDescription:
-    "Cómo organizar el transporte de un evento en la Cidade da Cultura de Galicia (monte Gaiás, Santiago): acceso, tiempos desde el centro y el aeropuerto, lanzaderas y cenas de gala.",
+    "Transporte para un evento en la Cidade da Cultura (Santiago): acceso, tiempos desde el centro y el aeropuerto, lanzaderas y cenas de gala.",
   image: "/images/mirador-galicia.jpg",
   alt: "Mirador sobre el paisaje gallego cerca de Santiago",
   readMinutes: 5,

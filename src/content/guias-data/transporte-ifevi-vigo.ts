@@ -6,7 +6,7 @@ export const guia: Guide = {
   title: "Transporte para ferias y congresos en IFEVI (Vigo)",
   metaTitle: "Transporte para ferias y eventos en IFEVI, Vigo",
   metaDescription:
-    "Cómo organizar el transporte para una feria o congreso en IFEVI (Vigo): ubicación junto al aeropuerto de Peinador, tiempos desde Vigo, Santiago y Oporto, lanzaderas y montaje.",
+    "Transporte para una feria o congreso en IFEVI (Vigo): junto al aeropuerto de Peinador, tiempos desde Vigo, Santiago y Oporto, lanzaderas y montaje.",
   image: "/images/galicia-fest-vigo.jpg",
   alt: "Vista del puerto de Vigo durante un gran evento",
   readMinutes: 6,

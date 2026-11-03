@@ -9,7 +9,7 @@ const ACTUALIZADO = "octubre de 2026";
 export const PAGES_OTROS: Page[] = [
   {
     slug: "flota",
-    metaTitle: "Flota con chófer en Galicia: berlinas, vans, minibuses y autocares",
+    metaTitle: "Flota con chófer: berlinas, vans, minibuses y autocares",
     metaDescription:
       "Flota con chófer disponible en Galicia: berlinas Mercedes Clase E y Clase S, vans Clase V, minibuses y autocares para empresas, congresos y tours.",
     hero: {
@@ -60,9 +60,9 @@ export const PAGES_OTROS: Page[] = [
   },
   {
     slug: "presupuesto",
-    metaTitle: "Contacto y presupuesto de transporte en Galicia | Luxe Galicia",
+    metaTitle: "Contacto y presupuesto de transporte en Galicia",
     metaDescription:
-      "Contacto y presupuesto de transporte corporativo y para eventos en Galicia y Oporto. Respuesta en menos de 24 horas laborables. Teléfono, WhatsApp o formulario.",
+      "Contacto y presupuesto de transporte corporativo y para eventos en Galicia y Oporto. Respuesta en menos de 24 horas por teléfono, WhatsApp o email.",
     hero: {
       eyebrow: "Contacto",
       title: "Contacto y presupuesto",
@@ -89,7 +89,7 @@ export const PAGES_OTROS: Page[] = [
     slug: "transporte-bodas-galicia",
     metaTitle: "Coches con chófer para bodas en Galicia | Luxe Galicia",
     metaDescription:
-      "Coches con chófer para bodas en Galicia: berlinas para los novios, coches clásicos bajo disponibilidad y autocares para los invitados entre ceremonia, celebración y alojamiento.",
+      "Coches con chófer para bodas en Galicia: berlina o coche clásico para los novios y autocares para los invitados entre ceremonia, banquete y hotel.",
     serviceType: "Transporte para bodas",
     hero: {
       eyebrow: "Bodas",

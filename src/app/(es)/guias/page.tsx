@@ -11,7 +11,7 @@ import { serif } from "@/lib/fonts";
 export const metadata: Metadata = {
   title: "Guías de transporte y eventos en Galicia | Luxe Galicia",
   description:
-    "Guías prácticas para organizar el transporte de congresos, eventos, viajes de empresa y grupos en Galicia y Oporto: sedes, aeropuertos, distancias y logística.",
+    "Guías para organizar el transporte de congresos, eventos, viajes de empresa y grupos en Galicia y Oporto: sedes, aeropuertos, distancias y logística.",
   alternates: { canonical: absoluteUrl("/guias") },
 };
 

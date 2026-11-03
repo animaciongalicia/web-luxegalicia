@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "transporte-congresos-eventos-galicia",
   category: "Guía",
   title: "Transporte para congresos y eventos en Galicia: la guía completa",
-  metaTitle: "Transporte para congresos y eventos en Galicia: guía completa",
+  metaTitle: "Transporte para congresos y eventos en Galicia: guía",
   metaDescription:
-    "Cómo planificar el transporte de un congreso o evento en Galicia: cuántos vehículos necesitas, plazos, aeropuertos, sedes, lanzaderas, cena de gala y los errores que más caro salen.",
+    "Cómo planificar el transporte de un congreso en Galicia: cuántos vehículos necesitas, plazos, aeropuertos, lanzaderas, cena de gala y errores caros.",
   image: "/images/flota-vans-congreso.jpg",
   alt: "Vans con chófer preparadas en la entrada de un congreso en Galicia",
   readMinutes: 9,

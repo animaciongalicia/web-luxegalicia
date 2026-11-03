@@ -12,9 +12,9 @@ import { absoluteUrl } from "@/content/site";
 const URL = absoluteUrl("/tours-con-chofer-galicia");
 
 export const metadata: Metadata = {
-  title: "Tours con chófer por Galicia: 3, 5 y 7 días y excursiones de un día",
+  title: "Tours con chófer por Galicia: 3, 5, 7 días y excursiones",
   description:
-    "Tours privados con chófer por Galicia en van ejecutiva o berlina: rutas de 3, 5 y 7 días y excursiones a Rías Baixas, Ribeira Sacra, Ourense termal y Vigo e Islas Cíes.",
+    "Tours privados con chófer por Galicia: rutas de 3, 5 y 7 días y excursiones a Rías Baixas, Ribeira Sacra, Costa da Morte e Islas Cíes.",
   alternates: { canonical: URL, languages: { es: URL, en: absoluteUrl("/en/galicia-chauffeur-tours"), "x-default": URL } },
   openGraph: { locale: "es_ES", siteName: "Luxe Galicia", url: URL, images: ["/images/tours-rias-baixas.jpg"] },
 };

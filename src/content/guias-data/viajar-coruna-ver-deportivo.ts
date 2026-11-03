@@ -4,9 +4,9 @@ export const guia: Guide = {
   slug: "viajar-coruna-ver-deportivo",
   category: "Artículo",
   title: "Viajar a A Coruña a ver al Deportivo: guía para aficionados visitantes",
-  metaTitle: "Viajar a A Coruña para ver al Deportivo en Riazor: guía práctica",
+  metaTitle: "Viajar a A Coruña a ver al Deportivo: guía práctica",
   metaDescription:
-    "Guía para aficionados y peñas que viajan a A Coruña a un partido en Riazor: cómo llegar en avión, tren o autocar, dónde alojarse, el día de partido y qué hacer en la ciudad.",
+    "Para aficionados y peñas que viajan a ver al Deportivo: cómo llegar a A Coruña, dónde dormir, el día de partido en Riazor y qué hacer en la ciudad.",
   image: "/images/traslados-chofer-coruna.jpg",
   alt: "Minibús con conductor para grupos de aficionados en A Coruña",
   readMinutes: 6,
