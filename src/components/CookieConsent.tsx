@@ -53,7 +53,23 @@ export default function CookieConsent({ lang = "es" }: { lang?: "es" | "en" }) {
       consentGranted = localStorage.getItem("cookie-consent") === "accepted";
     } catch {}
 
-    initGA4(consentGranted);
+    // Analytics no compite con la carga de la página: se inyecta con la
+    // primera interacción (scroll, toque, tecla) o, como tarde, a los 4 s
+    // de terminar la carga. Así no resta en LCP ni en TBT.
+    const events = ["scroll", "pointerdown", "keydown", "touchstart"] as const;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    const start = () => {
+      events.forEach((e) => window.removeEventListener(e, start));
+      window.removeEventListener("load", schedule);
+      if (timer) clearTimeout(timer);
+      let granted = consentGranted;
+      try { granted = localStorage.getItem("cookie-consent") === "accepted"; } catch {}
+      initGA4(granted);
+    };
+    const schedule = () => { timer = setTimeout(start, 4000); };
+    events.forEach((e) => window.addEventListener(e, start, { once: true, passive: true }));
+    if (document.readyState === "complete") schedule();
+    else window.addEventListener("load", schedule, { once: true });
 
     if (!consentGranted) {
       try {
@@ -65,6 +81,12 @@ export default function CookieConsent({ lang = "es" }: { lang?: "es" | "en" }) {
         setVisible(true);
       }
     }
+
+    return () => {
+      events.forEach((e) => window.removeEventListener(e, start));
+      window.removeEventListener("load", schedule);
+      if (timer) clearTimeout(timer);
+    };
   }, []);
 
   const accept = () => {
