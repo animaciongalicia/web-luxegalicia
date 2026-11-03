@@ -66,7 +66,7 @@ export const FLOTA: Vehicle[] = [
     models: "Autocares de gran turismo",
     uses: "Congresos, incentivos, festivales y traslados masivos.",
     usesEn: "Congresses, incentives, festivals and large transfers.",
-    image: "/images/autocar-conductor.png",
+    image: "/images/autocar-conductor.jpg",
     alt: "Autocar de gran turismo para traslados de grupos en Galicia",
   },
 ];

@@ -54,7 +54,7 @@ export const guia: Guide = {
     },
     {
       heading: "Si vienes en grupo o con una peña",
-      image: { src: "/images/autocar-conductor.png", alt: "Autocar con conductor para el desplazamiento de una peña" },
+      image: { src: "/images/autocar-conductor.jpg", alt: "Autocar con conductor para el desplazamiento de una peña" },
       list: [
         "Los autocares no paran donde quieren: el día de partido hay zonas de estacionamiento y un dispositivo de tráfico que fija la organización con la Policía Local.",
         "Planifica la vuelta: a la salida, decenas de miles de personas salen a la vez y el entorno se colapsa un rato.",

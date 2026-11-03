@@ -33,12 +33,12 @@ const faqs = [
 export default function HomeEn() {
   return (
     <>
-      <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden lg:min-h-[75vh]">
-        <Image src="/images/flota-berlinas-fila.jpg" alt="Fleet of chauffeur-driven sedans and vans" fill className="object-cover" priority quality={75} sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
-        <div className="relative z-10 mx-auto max-w-5xl px-6 py-24 text-center text-white lg:py-32">
+      <section className="relative flex min-h-[55vh] items-center justify-center overflow-hidden pt-16 lg:min-h-[60vh]">
+        <Image src="/images/flota-berlinas-fila.jpg" alt="Fleet of chauffeur-driven sedans and vans" fill className="object-cover object-[center_85%]" priority quality={75} sizes="100vw" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+        <div className="relative z-10 mx-auto max-w-4xl px-6 py-20 text-center text-white lg:py-28">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Ground transportation · Galicia &amp; Porto</p>
-          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">Professional chauffeur services in Galicia, Spain</h1>
+          <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">Professional chauffeur services in Galicia, Spain</h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg md:text-xl">
             For MICE agencies, companies and travellers. Sedans, executive vans, minibuses and coaches, one point of contact and everything coordinated, from one passenger to five hundred.
           </p>
