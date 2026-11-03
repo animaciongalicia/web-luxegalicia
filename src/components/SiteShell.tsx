@@ -20,7 +20,7 @@ const organization = {
   telephone: "+34678288284",
   email: SITE.email,
   foundingDate: String(SITE.since),
-  address: { "@type": "PostalAddress", addressLocality: "A Coruña", addressRegion: "Galicia", addressCountry: "ES" },
+  address: { "@type": "PostalAddress", streetAddress: "Ronda de Montealto, 4", postalCode: "15002", addressLocality: "A Coruña", addressRegion: "Galicia", addressCountry: "ES" },
   areaServed: [
     { "@type": "AdministrativeArea", name: "Galicia" },
     { "@type": "City", name: "Porto" },

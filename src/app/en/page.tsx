@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Luxe Galicia – Ground transportation in Galicia & Porto",
   description:
     "Professional chauffeur services in Galicia, Spain and Porto: MICE ground transportation, Porto–Galicia transfers and private chauffeur tours. Sedans, executive vans, minibuses and coaches since 2013.",
-  alternates: { canonical: URL, languages: { es: SITE_URL, en: URL } },
+  alternates: { canonical: URL, languages: { es: SITE_URL, en: URL, "x-default": SITE_URL } },
   openGraph: { url: URL, locale: "en_GB", images: [{ url: "/images/flota-luxe-galicia.jpg", alt: "Luxe Galicia chauffeur fleet" }] },
 };
 
@@ -34,7 +34,7 @@ export default function HomeEn() {
   return (
     <>
       <section className="relative flex min-h-[55vh] items-center justify-center overflow-hidden pt-16 lg:min-h-[60vh]">
-        <Image src="/images/flota-berlinas-fila.jpg" alt="Fleet of chauffeur-driven sedans and vans" fill className="object-cover object-[center_85%]" priority quality={75} sizes="100vw" />
+        <Image src="/images/flota-berlinas-fila.jpg" alt="Fleet of chauffeur-driven sedans and vans" fill className="object-cover object-[center_85%]" priority quality={70} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         <div className="relative z-10 mx-auto max-w-4xl px-6 py-20 text-center text-white lg:py-28">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Ground transportation · Galicia &amp; Porto</p>
@@ -43,7 +43,7 @@ export default function HomeEn() {
             For MICE agencies, companies and travellers. Sedans, executive vans, minibuses and coaches, one point of contact and everything coordinated, from one passenger to five hundred.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="#quote" className="inline-flex items-center gap-2 rounded-lg bg-luxe-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-700 hover:shadow-lg">
+            <Link href="#quote" className="inline-flex items-center gap-2 rounded-lg bg-luxe-700 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-800 hover:shadow-lg">
               Get a quote
             </Link>
             <Link href="/en/mice-ground-transportation" className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10">

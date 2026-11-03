@@ -169,22 +169,22 @@ export default function Footer({ lang = "es" }: { lang?: Lang }) {
               {lang === "en" ? "All rights reserved." : "Todos los derechos reservados."}
             </p>
             {(SITE.legalName || SITE.taxId || SITE.address) && (
-              <p className="text-gray-400">
+              <p className="text-gray-500">
                 {[SITE.legalName, SITE.taxId && `CIF ${SITE.taxId}`, SITE.address].filter(Boolean).join(" · ")}
               </p>
             )}
-            <p className="text-gray-400">
+            <p className="text-gray-500">
               {lang === "en" ? "DMC partner: " : "Partner DMC: "}
               <a href={SITE.suuniaUrl} className="hover:text-luxe-700">Suunia</a>
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/aviso-legal" className="text-gray-400 transition-colors hover:text-luxe-700">
+              <Link href="/aviso-legal" className="text-gray-500 transition-colors hover:text-luxe-700">
                 Aviso legal
               </Link>
-              <Link href="/politica-privacidad" className="text-gray-400 transition-colors hover:text-luxe-700">
+              <Link href="/politica-privacidad" className="text-gray-500 transition-colors hover:text-luxe-700">
                 {lang === "en" ? "Privacy policy" : "Política de privacidad"}
               </Link>
-              <Link href="/politica-cookies" className="text-gray-400 transition-colors hover:text-luxe-700">
+              <Link href="/politica-cookies" className="text-gray-500 transition-colors hover:text-luxe-700">
                 {lang === "en" ? "Cookie policy" : "Política de cookies"}
               </Link>
             </div>

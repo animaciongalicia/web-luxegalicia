@@ -109,7 +109,7 @@ export function FleetGrid({ lang = "es" }: { lang?: Lang }) {
       {(w) => FLOTA.map((v) => (
         <article key={v.key} className={`flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm ${w}`}>
           <div className="relative h-48 bg-gray-100">
-            <Image src={v.image} alt={v.alt} fill className="object-cover" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+            <Image quality={60} src={v.image} alt={v.alt} fill className="object-cover" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
           </div>
           <div className="p-6">
             <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">{v.pax}</p>
@@ -273,7 +273,7 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
               {block.items.map((item, i) => (
                 <AnimateOnScroll key={item.title} className="grid items-center gap-8 md:grid-cols-2">
                   <div className={`relative h-72 overflow-hidden rounded-2xl ${i % 2 === 1 ? "md:order-2" : ""}`}>
-                    <Image src={item.image} alt={item.alt} fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
+                    <Image quality={60} src={item.image} alt={item.alt} fill className="object-cover" sizes="(min-width: 768px) 50vw, 100vw" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold tracking-tight text-gray-900">{item.title}</h3>
@@ -317,7 +317,7 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
                   item.image ? (
                     <Link key={item.href + item.title} href={item.href} className={`group stagger-child flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${w}`}>
                       <div className="relative h-56 shrink-0 overflow-hidden">
-                        <Image src={item.image} alt={item.alt || item.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                        <Image quality={60} src={item.image} alt={item.alt || item.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
                       </div>
                       <div className="flex flex-1 flex-col p-6">
                         <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>

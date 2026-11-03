@@ -10,7 +10,8 @@ import { TOURS, getTour } from "@/content/tours";
 import { SITE, SITE_URL, absoluteUrl, whatsappLink } from "@/content/site";
 import { serif } from "@/lib/fonts";
 
-export const dynamicParams = false;
+// true: las URLs desconocidas llegan a la página y notFound() muestra la 404 propia.
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return TOURS.map((t) => ({ tour: t.slug }));
@@ -24,7 +25,7 @@ export function generateMetadata({ params }: { params: { tour: string } }): Meta
     title: tour.metaTitle,
     description: tour.metaDescription,
     alternates: { canonical: url },
-    openGraph: { title: tour.metaTitle, description: tour.metaDescription, url, images: [{ url: tour.image, alt: tour.alt }] },
+    openGraph: { locale: "es_ES", siteName: "Luxe Galicia", title: tour.metaTitle, description: tour.metaDescription, url, images: [{ url: tour.image, alt: tour.alt }] },
   };
 }
 
@@ -46,7 +47,7 @@ export default function TourPage({ params }: { params: { tour: string } }) {
     <>
       {/* Cabecera */}
       <section className="relative flex min-h-[62vh] items-end overflow-hidden pt-16">
-        <Image src={tour.image} alt={tour.alt} fill priority quality={75} sizes="100vw" className="object-cover" />
+        <Image src={tour.image} alt={tour.alt} fill priority quality={70} sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/10" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-10 pt-24 text-white lg:px-8">
           <nav aria-label="Ruta de navegación" className="text-sm text-white/70">
@@ -83,7 +84,7 @@ export default function TourPage({ params }: { params: { tour: string } }) {
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {tour.highlights.map((h, i) => (
                 <div key={h.title} className="rounded-2xl border border-gray-100 bg-gray-50/70 p-6">
-                  <p className="text-sm font-semibold tracking-widest text-luxe-600">{String(i + 1).padStart(2, "0")}</p>
+                  <p className="text-sm font-semibold tracking-widest text-luxe-700">{String(i + 1).padStart(2, "0")}</p>
                   <h3 className="mt-2 font-semibold text-gray-900">{h.title}</h3>
                   <p className="mt-2 text-[15px] leading-relaxed text-gray-600">{h.text}</p>
                 </div>
@@ -103,7 +104,7 @@ export default function TourPage({ params }: { params: { tour: string } }) {
                   <p className="mt-2 text-[17px] leading-relaxed text-gray-600">{rich(s.text)}</p>
                   {s.image && (
                     <div className="relative mt-5 aspect-[16/9] overflow-hidden rounded-2xl bg-gray-100">
-                      <Image src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 1024px) 700px, 100vw" />
+                      <Image quality={60} src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 1024px) 700px, 100vw" />
                     </div>
                   )}
                 </li>
@@ -165,7 +166,7 @@ export default function TourPage({ params }: { params: { tour: string } }) {
             {others.map((t) => (
               <Link key={t.slug} href={`/tours-con-chofer-galicia/${t.slug}`} className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
                 <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-                  <Image src={t.image} alt={t.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 768px) 33vw, 100vw" />
+                  <Image quality={60} src={t.image} alt={t.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 768px) 33vw, 100vw" />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">{t.duration}</p>

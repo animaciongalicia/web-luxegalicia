@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "Luxe Galicia – Transporte corporativo y para eventos en Galicia",
   description:
     "Servicios de transporte corporativo y para eventos en Galicia y Oporto: congresos, incentivos, empresas y agencias MICE. Berlinas, vans, minibuses y autocares con conductor desde 2013.",
-  alternates: { canonical: SITE_URL, languages: { es: SITE_URL, en: absoluteUrl("/en") } },
-  openGraph: {
+  alternates: { canonical: SITE_URL, languages: { es: SITE_URL, en: absoluteUrl("/en"), "x-default": SITE_URL } },
+  openGraph: { locale: "es_ES", siteName: "Luxe Galicia",
     title: "Luxe Galicia – Transporte corporativo y para eventos en Galicia",
     description: "Congresos, incentivos, empresas y traslados con conductor en Galicia y Oporto.",
     url: SITE_URL,
@@ -85,7 +85,7 @@ export default function Home() {
     <>
       {/* 1. Hero */}
       <section className="relative flex min-h-[55vh] items-center justify-center overflow-hidden pt-16 lg:min-h-[60vh]">
-        <Image src="/images/flota-berlinas-fila.jpg" alt="Flota de berlinas y vans con chófer de Luxe Galicia" fill className="object-cover object-[center_85%]" priority quality={75} sizes="100vw" />
+        <Image src="/images/flota-berlinas-fila.jpg" alt="Flota de berlinas y vans con chófer de Luxe Galicia" fill className="object-cover object-[center_85%]" priority quality={70} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         <div className="relative z-10 mx-auto max-w-4xl px-6 py-20 text-center text-white lg:py-28">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-amber-300">Congresos · Empresas · Traslados · Galicia &amp; Oporto</p>
@@ -96,7 +96,7 @@ export default function Home() {
             Berlinas, vans ejecutivas, minibuses y autocares con chófer. Una sola llamada, un único interlocutor y toda la operativa resuelta, de una persona a quinientas.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href="/presupuesto" className="inline-flex items-center gap-2 rounded-lg bg-luxe-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-700 hover:shadow-lg">
+            <Link href="/presupuesto" className="inline-flex items-center gap-2 rounded-lg bg-luxe-700 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-800 hover:shadow-lg">
               Pedir presupuesto
             </Link>
             <Link href="/agencias-mice" className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:border-white hover:bg-white/10">
@@ -161,7 +161,7 @@ export default function Home() {
             {destacados.map((d) => (
               <Link key={d.href} href={d.href} className="group stagger-child overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                 <div className="relative h-56 overflow-hidden">
-                  <Image src={d.image} alt={d.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 768px) 33vw, 100vw" />
+                  <Image quality={60} src={d.image} alt={d.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 768px) 33vw, 100vw" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-gray-900">{d.title}</h3>

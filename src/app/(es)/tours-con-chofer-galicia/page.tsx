@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   title: "Tours con chófer por Galicia: 3, 5 y 7 días y excursiones de un día",
   description:
     "Tours privados con chófer por Galicia en van ejecutiva o berlina: rutas de 3, 5 y 7 días y excursiones a Rías Baixas, Ribeira Sacra, Ourense termal y Vigo e Islas Cíes.",
-  alternates: { canonical: URL, languages: { es: URL, en: absoluteUrl("/en/galicia-chauffeur-tours") } },
-  openGraph: { url: URL, images: ["/images/tours-rias-baixas.jpg"] },
+  alternates: { canonical: URL, languages: { es: URL, en: absoluteUrl("/en/galicia-chauffeur-tours"), "x-default": URL } },
+  openGraph: { locale: "es_ES", siteName: "Luxe Galicia", url: URL, images: ["/images/tours-rias-baixas.jpg"] },
 };
 
 const faqs = [
@@ -31,7 +31,7 @@ export default function ToursPage() {
   return (
     <>
       <section className="relative flex min-h-[60vh] items-end overflow-hidden pt-16">
-        <Image src="/images/tours-rias-baixas.jpg" alt="Viñedos de albariño en las Rías Baixas" fill priority quality={75} sizes="100vw" className="object-cover" />
+        <Image src="/images/tours-rias-baixas.jpg" alt="Viñedos de albariño en las Rías Baixas" fill priority quality={70} sizes="100vw" className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-12 pt-24 text-white lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-300">Tours privados con chófer</p>
@@ -62,7 +62,7 @@ export default function ToursPage() {
             {multi.map((t) => (
               <Link key={t.slug} href={`/tours-con-chofer-galicia/${t.slug}`} className="group overflow-hidden rounded-3xl bg-white shadow-sm transition-shadow hover:shadow-lg">
                 <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
-                  <Image src={t.image} alt={t.alt} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(min-width: 768px) 50vw, 100vw" />
+                  <Image quality={60} src={t.image} alt={t.alt} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(min-width: 768px) 50vw, 100vw" />
                   <span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-gray-900">{t.duration}</span>
                 </div>
                 <div className="p-7">
@@ -92,7 +92,7 @@ export default function ToursPage() {
             {(w) => day.map((t) => (
               <Link key={t.slug} href={`/tours-con-chofer-galicia/${t.slug}`} className={`group flex flex-col ${w}`}>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gray-100">
-                  <Image src={t.image} alt={t.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+                  <Image quality={60} src={t.image} alt={t.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
                 </div>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-wider text-luxe-700">{t.duration} · desde {t.base.split(",")[0]}</p>
                 <h3 className={`${serif.className} mt-1 text-xl font-semibold leading-snug text-gray-900 group-hover:text-luxe-800`}>{t.name}</h3>

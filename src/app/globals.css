@@ -28,7 +28,7 @@
     @apply inline-flex items-center gap-2 rounded-lg bg-luxe-700 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-luxe-800 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-luxe-600 focus-visible:ring-offset-2;
   }
   .btn-whatsapp {
-    @apply inline-flex items-center gap-2 rounded-lg bg-green-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-700 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2;
+    @apply inline-flex items-center gap-2 rounded-lg bg-green-700 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-800 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2;
   }
   .btn-outline {
     @apply inline-flex items-center gap-2 rounded-lg border-2 border-luxe-700 px-6 py-3 text-sm font-semibold text-luxe-700 transition-all duration-300 hover:bg-luxe-700 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-luxe-600 focus-visible:ring-offset-2;

@@ -26,7 +26,7 @@ export default function HeroPage({
         fill
         className="object-cover"
         priority
-        quality={75}
+        quality={70}
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
@@ -45,7 +45,7 @@ export default function HeroPage({
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href={lang === "en" ? "/en#quote" : "/presupuesto"}
-            className="inline-flex items-center gap-2 rounded-lg bg-luxe-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-700 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+            className="inline-flex items-center gap-2 rounded-lg bg-luxe-700 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-luxe-800 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
           >
             {lang === "en" ? "Get a quote" : "Pedir presupuesto"}
           </Link>

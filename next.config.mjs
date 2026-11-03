@@ -44,6 +44,12 @@ const WP_WILDCARDS = [
   ["/limusinas-para-promocion-y-marketing", "/transporte-empresas-galicia"],
   ["/limusinas-para-promocion-y-marketing/:path+", "/transporte-empresas-galicia"],
   ["/:slug(limusinas-[^/]+)", "/transporte-bodas-galicia"],
+  // Web todavía más antigua (Blogger): /AAAA/MM/entrada.html y /p/pagina.html
+  ["/p/flota.html", "/flota"],
+  ["/p/limusinas-en-vigo.html", "/traslados-desde-vigo"],
+  ["/:year(\\d{4})/:month(\\d{2})/servicio-de-alquiler-de-vehiculos-para.html", "/transporte-eventos-galicia"],
+  ["/:year(\\d{4})/:month(\\d{2})/:slug*", "/transporte-bodas-galicia"],
+  ["/p/:slug*", "/transporte-bodas-galicia"],
   ["/:slug(limusinas-[^/]+)/:path+", "/transporte-bodas-galicia"],
   ["/p/presupuestos-y-tarifas.html", "/presupuesto"],
   ["/wp-content/:path*", "/flota"],

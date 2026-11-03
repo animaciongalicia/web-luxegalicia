@@ -12,7 +12,8 @@ import { SITE, SITE_URL, absoluteUrl, whatsappLink } from "@/content/site";
 import { serif } from "@/lib/fonts";
 import { rich } from "@/components/RichText";
 
-export const dynamicParams = false;
+// true: las URLs desconocidas llegan a la página y notFound() muestra la 404 propia.
+export const dynamicParams = true;
 
 function slugify(text: string) {
   return text
@@ -54,7 +55,7 @@ export function generateMetadata({ params }: { params: { guia: string } }): Meta
     title: g.metaTitle,
     description: g.metaDescription,
     alternates: { canonical: url },
-    openGraph: { type: "article", title: g.metaTitle, description: g.metaDescription, url, images: [{ url: g.image, alt: g.alt }] },
+    openGraph: { locale: "es_ES", siteName: "Luxe Galicia", type: "article", title: g.metaTitle, description: g.metaDescription, url, images: [{ url: g.image, alt: g.alt }] },
   };
 }
 
@@ -70,7 +71,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
     <>
       {/* Hero */}
       <section className="relative flex min-h-[58vh] items-end overflow-hidden pt-16">
-        <Image src={g.image} alt={g.alt} fill className="object-cover" priority quality={75} sizes="100vw" />
+        <Image src={g.image} alt={g.alt} fill className="object-cover" priority quality={70} sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/20" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-12 pt-24 text-white lg:px-8">
           <nav aria-label="Ruta de navegación" className="text-sm text-white/70">
@@ -144,7 +145,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
             {g.sections.map((s, i) => (
               <div key={s.heading}>
                 <section id={slugify(s.heading)} className="mt-16 scroll-mt-24">
-                  <p className="text-sm font-semibold tracking-widest text-luxe-600">{String(i + 1).padStart(2, "0")}</p>
+                  <p className="text-sm font-semibold tracking-widest text-luxe-700">{String(i + 1).padStart(2, "0")}</p>
                   <h2 className={`${serif.className} mt-1 text-2xl font-semibold leading-snug text-gray-900 sm:text-3xl`}>{cleanHeading(s.heading)}</h2>
                   {s.paragraphs?.map((p) => (
                     <p key={p} className="mt-4 text-[17px] leading-relaxed text-gray-600">{rich(p)}</p>
@@ -184,7 +185,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                   {s.image && (
                     <figure className="mt-8">
                       <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-gray-100">
-                        <Image src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 1024px) 736px, 100vw" />
+                        <Image quality={60} src={s.image.src} alt={s.image.alt} fill className="object-cover" sizes="(min-width: 1024px) 736px, 100vw" />
                       </div>
                       {s.image.caption && <figcaption className="mt-3 text-sm italic text-gray-500">{s.image.caption}</figcaption>}
                     </figure>
@@ -207,7 +208,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
 
                 {g.service && i === serviceAfter && (
                   <aside className="relative mt-16 overflow-hidden rounded-2xl">
-                    <Image src={g.image} alt="" fill className="object-cover" sizes="736px" />
+                    <Image quality={60} src={g.image} alt="" fill className="object-cover" sizes="736px" />
                     <div className="absolute inset-0 bg-luxe-950/85" />
                     <div className="relative flex flex-col gap-5 p-8 text-white sm:flex-row sm:items-center sm:justify-between sm:p-10">
                       <div>
@@ -233,7 +234,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
                   <ol className="mt-4 space-y-3 text-sm">
                     {g.sections.map((s, i) => (
                       <li key={s.heading} className="flex gap-3">
-                        <span className="font-semibold text-luxe-600">{String(i + 1).padStart(2, "0")}</span>
+                        <span className="font-semibold text-luxe-700">{String(i + 1).padStart(2, "0")}</span>
                         <a href={`#${slugify(s.heading)}`} className="leading-snug text-gray-600 hover:text-luxe-700">{cleanHeading(s.heading)}</a>
                       </li>
                     ))}
@@ -262,7 +263,7 @@ export default function GuiaPage({ params }: { params: { guia: string } }) {
             {related.map((r) => (
               <Link key={r.href} href={r.href} className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
                 <div className="relative h-36 overflow-hidden bg-gray-100">
-                  <Image src={r.image} alt={r.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 25vw, 50vw" />
+                  <Image quality={60} src={r.image} alt={r.alt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(min-width: 1024px) 25vw, 50vw" />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <p className="text-xs font-semibold uppercase tracking-wider text-luxe-700">{r.label}</p>

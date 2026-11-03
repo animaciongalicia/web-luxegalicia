@@ -16,8 +16,8 @@ export function pageMetadata(page: Page): Metadata {
   const url = absoluteUrl(path);
   const languages: Record<string, string> | undefined = page.alternate
     ? page.lang === "en"
-      ? { es: absoluteUrl(page.alternate), en: url }
-      : { es: url, en: absoluteUrl(page.alternate) }
+      ? { es: absoluteUrl(page.alternate), en: url, "x-default": absoluteUrl(page.alternate) }
+      : { es: url, en: absoluteUrl(page.alternate), "x-default": url }
     : undefined;
   return {
     title: page.metaTitle,
