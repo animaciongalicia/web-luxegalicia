@@ -155,7 +155,7 @@ export const TOURS_VARIOS_DIAS: Tour[] = [
       {
         title: "Ribeira Sacra",
         text: "Miradores del cañón del Sil, monasterio de Santo Estevo, catamarán en temporada y bodega de mencía.",
-        image: { src: "/images/tours-ribeira-sacra.jpg", alt: "Cañón del Sil en la Ribeira Sacra" },
+        image: { src: "/images/ribeira-sacra-aerea.jpg", alt: "Vista aérea del río y los viñedos de la Ribeira Sacra" },
       },
       {
         title: "Lugo y A Mariña",

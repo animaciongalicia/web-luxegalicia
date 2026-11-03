@@ -16,8 +16,8 @@ export const PAGES_OTROS: Page[] = [
       eyebrow: "Flota",
       title: "Flota con chófer en Galicia",
       subtitle: "De una berlina a una operativa de 500 personas. El vehículo adecuado para cada servicio, con chóferes profesionales.",
-      image: "/images/flota-berlinas-vans-puente.webp",
-      alt: "Berlinas y vans con chófer de la flota de Luxe Galicia",
+      image: "/images/flota-berlina-van-evento.jpg",
+      alt: "Berlina Mercedes Clase S y van Clase V con chófer preparadas para un evento",
     },
     blocks: [
       {

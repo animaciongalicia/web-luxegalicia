@@ -66,8 +66,8 @@ export const PAGES_EN: Page[] = [
       eyebrow: "Porto · Gateway to Galicia",
       title: "From Porto to Galicia with a private chauffeur",
       subtitle: "Land in Porto, the best-connected airport in the region, and arrive at your hotel in Vigo, Santiago or A Coruña door to door.",
-      image: "/images/chofer-carretera-galicia.jpg",
-      alt: "Chauffeur driving on the motorway between Porto and Galicia",
+      image: "/images/oporto-ribeira-portugal.jpg",
+      alt: "Porto riverside, the Ribeira on the Douro",
     },
     blocks: [
       {

@@ -195,8 +195,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Vigo · Rías Baixas",
       title: "Traslados con chófer desde Vigo",
       subtitle: "A Oporto en menos de dos horas, a las Rías Baixas en media hora y a Santiago en una. Recogida en aeropuerto, estación y puerto de cruceros.",
-      image: "/images/playa-rodas-islas-cies-suunia.jpg",
-      alt: "Islas Cíes frente a Vigo",
+      image: "/images/vigo-puente-rande.jpg",
+      alt: "Puente de Rande sobre la ría de Vigo",
     },
     blocks: [
       {
@@ -274,8 +274,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Oporto · Puerta de entrada a Galicia",
       title: "De Oporto a Galicia, con chófer y sin complicaciones",
       subtitle: "El aeropuerto de Oporto tiene más conexiones internacionales que ninguno de Galicia. Aterriza allí y llega a Vigo, Santiago o A Coruña puerta a puerta.",
-      image: "/images/chofer-carretera-galicia.jpg",
-      alt: "Chófer conduciendo por autopista entre Oporto y Galicia",
+      image: "/images/oporto-ribeira-portugal.jpg",
+      alt: "La Ribeira de Oporto junto al río Duero",
     },
     blocks: [
       {
@@ -529,8 +529,8 @@ export const PAGES_TRASLADOS: Page[] = [
       eyebrow: "Camino de Santiago",
       title: "Transporte para grupos del Camino de Santiago",
       subtitle: "Tú caminas. El resto, resuelto: llegada al inicio de etapa, vehículo de apoyo y regreso desde Santiago o Fisterra.",
-      image: "/images/faro-de-Finisterre-1.jpg",
-      alt: "Faro de Fisterra al atardecer, final del Camino de Santiago",
+      image: "/images/camino-peregrinos-galicia.jpg",
+      alt: "Peregrinos caminando por un bosque en el Camino de Santiago",
     },
     blocks: [
       {

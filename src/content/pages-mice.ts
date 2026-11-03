@@ -226,8 +226,8 @@ export const PAGES_MICE: Page[] = [
       eyebrow: "Viajes de incentivo",
       title: "Transporte con chófer para incentivos en Galicia",
       subtitle: "Un incentivo se recuerda por los detalles. El vehículo, el chófer y la puntualidad también cuentan.",
-      image: "/images/pazo-eventos-corporativos.jpg",
-      alt: "Pazo gallego preparado para un evento de incentivo de empresa",
+      image: "/images/pazo-evento-interior.jpg",
+      alt: "Comedor de un pazo gallego preparado para la cena de un incentivo",
     },
     blocks: [
       {
@@ -279,8 +279,8 @@ export const PAGES_MICE: Page[] = [
       eyebrow: "Festivales · Giras · Rodajes",
       title: "Transporte para festivales y producciones en Galicia",
       subtitle: "Artistas, técnicos y equipos de producción moviéndose a contrarreloj. Aquí el margen de error es cero.",
-      image: "/images/electronica-GozoFestival.jpg",
-      alt: "Escenario de un festival de música en Galicia",
+      image: "/images/concierto-festival-galicia.jpg",
+      alt: "Concierto multitudinario en un festival en Galicia",
     },
     blocks: [
       {

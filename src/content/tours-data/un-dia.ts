@@ -71,9 +71,9 @@ export const TOURS_UN_DIA: Tour[] = [
       { title: "Viticultura heroica", text: "Cata de mencía en una bodega de la D.O. Ribeira Sacra." },
     ],
     stops: [
-      { title: "Miradores del Sil", text: "Los Balcóns de Madrid y el mirador de Cabezoás, con el cañón a vista de pájaro.", image: { src: "/images/ribeira-sacra-bodegas-top.jpg", alt: "Viñedos en bancales sobre el cañón del Sil" } },
+      { title: "Miradores del Sil", text: "Los Balcóns de Madrid y el mirador de Cabezoás, con el cañón a vista de pájaro.", image: { src: "/images/ribeira-sacra-canon-sil.jpg", alt: "Cañón del Sil desde un mirador de la Ribeira Sacra" } },
       { title: "Monasterio de Santo Estevo", text: "Paseo por los claustros del monasterio benedictino, hoy parador, y café con vistas al bosque." },
-      { title: "Catamarán por el Sil", text: "Recorrido por el cañón desde el río, en temporada. Es la mejor forma de ver los viñedos en bancales." },
+      { title: "Catamarán por el Sil", text: "Recorrido por el cañón desde el río, en temporada. Es la mejor forma de ver los viñedos en bancales.", image: { src: "/images/ribeira-sacra-aerea.jpg", alt: "Vista aérea del río y los viñedos de la Ribeira Sacra" } },
       { title: "Bodega de mencía", text: "Visita y cata en una bodega familiar. Si el día lo permite, parada en Monforte de Lemos al regreso.", image: { src: "/images/monforte-de-lemos.jpg", alt: "Monforte de Lemos, puerta de la Ribeira Sacra" } },
     ],
     practical: [
@@ -161,7 +161,7 @@ export const TOURS_UN_DIA: Tour[] = [
     stops: [
       { title: "Puerto de Vigo", text: "Barco a las Islas Cíes, unos cuarenta minutos de travesía." },
       { title: "Islas Cíes", text: "Playa de Rodas, sendero al faro y miradores del parque nacional.", image: { src: "/images/tours-islas-cies.jpg", alt: "Islas Cíes desde el mirador" } },
-      { title: "Vigo", text: "A la vuelta, mirador de O Castro, casco viejo y ostras en la rúa da Pescadería.", image: { src: "/images/cruceros-vigo-traslados.jpg", alt: "Vista de Vigo y su puerto al atardecer" } },
+      { title: "Vigo", text: "A la vuelta, mirador de O Castro, casco viejo y ostras en la rúa da Pescadería.", image: { src: "/images/vigo-puerto-aerea.jpg", alt: "Vista aérea de Vigo y su puerto" } },
       { title: "Baiona (alternativa)", text: "Si no hay barcos, la fortaleza de Monterreal y el paseo de Baiona." },
     ],
     practical: [
@@ -230,8 +230,8 @@ export const TOURS_UN_DIA: Tour[] = [
     metaTitle: "Excursión privada a Santiago de Compostela con chófer",
     metaDescription:
       "Excursión privada de un día a Santiago de Compostela con chófer desde A Coruña, Vigo, Rías Baixas u Oporto: catedral, Obradoiro, casco histórico y mercado de abastos.",
-    image: "/images/tours-santiago.jpg",
-    alt: "Catedral de Santiago de Compostela y plaza del Obradoiro",
+    image: "/images/santiago-obradoiro-catedral.jpg",
+    alt: "Catedral de Santiago de Compostela desde la plaza del Obradoiro",
     duration: "6-8 horas",
     distance: "~150-460 km",
     base: "A Coruña, Vigo, Rías Baixas u Oporto",
@@ -406,8 +406,8 @@ export const TOURS_UN_DIA: Tour[] = [
     metaTitle: "Tour privado norte de Portugal desde Galicia: Valença, Braga y Guimarães",
     metaDescription:
       "Excursión privada con chófer desde Vigo o las Rías Baixas al norte de Portugal: Valença, Ponte de Lima, Braga y Guimarães. Un día en Portugal sin conducir.",
-    image: "/images/van-ejecutiva-galicia.jpg",
-    alt: "Van ejecutiva con chófer para una excursión al norte de Portugal",
+    image: "/images/oporto-ribeira-portugal.jpg",
+    alt: "Casas de colores de la Ribeira de Oporto, en el norte de Portugal",
     duration: "9-10 horas",
     distance: "~300 km",
     base: "Vigo, Pontevedra o Rías Baixas",
@@ -470,7 +470,7 @@ export const TOURS_UN_DIA: Tour[] = [
     stops: [
       { title: "Pazo de Oca", text: "Jardines, estanques y el conjunto señorial más visitado de Galicia.", image: { src: "/images/pazo-galicia-jardines.jpg", alt: "Jardín de un pazo gallego" } },
       { title: "Castillo de Soutomaior", text: "Castillo medieval y jardín botánico con una gran colección de camelias." },
-      { title: "Pazo vinícola en el Salnés", text: "Visita y cata de albariño en un pazo con bodega propia.", image: { src: "/images/pazo-rural-galicia.jpg", alt: "Pazo rural gallego entre viñedos" } },
+      { title: "Pazo vinícola en el Salnés", text: "Visita y cata de albariño en un pazo con bodega propia.", image: { src: "/images/pazo-vinedos-galicia.jpg", alt: "Pazo gallego entre viñedos de albariño" } },
       { title: "Pazo de Santa Cruz de Rivadulla (alternativa)", text: "Jardín histórico cerca de Santiago, si se sale desde allí." },
     ],
     practical: [

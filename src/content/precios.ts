@@ -4,6 +4,14 @@
  * PENDIENTE: rellenar con las tarifas reales. Mientras un valor sea null,
  * la web muestra "Consultar". Basta con cambiar el número aquí: todas las
  * tablas de traslados se actualizan solas.
+ *
+ * REGLA DE PRECIOS:
+ * - Siempre se publican como "desde" (formatPrecio ya lo añade).
+ * - Las tarifas de proveedores son coste, nunca precio de venta: el precio
+ *   publicado va como mínimo un 20-30 % por encima del coste del proveedor.
+ * - Sumar al coste lo que el proveedor excluye (peajes, dietas del chófer,
+ *   IVA) antes de aplicar el margen: la web promete peajes incluidos.
+ * - Las tarifas de proveedores no se publican ni se suben al repositorio.
  */
 export type VehicleKey = "berlina" | "van" | "minibus" | "autocar";
 
