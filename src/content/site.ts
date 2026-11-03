@@ -1,4 +1,11 @@
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.luxegalicia.com").replace(/\/$/, "");
+// Accepts the env value with or without protocol ("www.luxegalicia.com" works too).
+function normalizeSiteUrl(raw: string | undefined) {
+  const value = (raw || "").trim().replace(/\/+$/, "");
+  if (!value) return "https://www.luxegalicia.com";
+  return /^https?:\/\//i.test(value) ? value : `https://${value}`;
+}
+
+export const SITE_URL = normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
 
 export const SITE = {
   name: "Luxe Galicia",
