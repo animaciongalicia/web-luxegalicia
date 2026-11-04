@@ -32,7 +32,6 @@ export const NAV: Record<Lang, NavItem[]> = {
         { name: "Desde Madrid", href: "/traslados-madrid-galicia" },
         { name: "Camino de Santiago", href: "/transporte-camino-de-santiago" },
         { name: "Aeropuertos", href: "/aeropuertos-galicia" },
-        { name: "Autocares y minibuses", href: "/alquiler-autocar-con-conductor-galicia" },
       ],
     },
     {
@@ -49,7 +48,16 @@ export const NAV: Record<Lang, NavItem[]> = {
         { name: "Excursiones para cruceros", href: "/excursiones-cruceros-galicia" },
       ],
     },
-    { name: "Flota", href: "/flota" },
+    {
+      name: "Flota",
+      href: "/flota",
+      children: [
+        { name: "Chófer privado", href: "/chofer-privado-galicia" },
+        { name: "Van con conductor", href: "/alquiler-van-con-conductor-galicia" },
+        { name: "Minibús con conductor", href: "/alquiler-minibus-con-conductor-galicia" },
+        { name: "Autocar con conductor", href: "/alquiler-autocar-con-conductor-galicia" },
+      ],
+    },
     { name: "Guías", href: "/guias" },
   ],
   en: [

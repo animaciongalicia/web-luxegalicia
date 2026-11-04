@@ -33,7 +33,8 @@ const COLUMNS: Record<Lang, Column[]> = {
         { name: "Madrid", href: "/traslados-madrid-galicia" },
         { name: "Camino de Santiago", href: "/transporte-camino-de-santiago" },
         { name: "Aeropuertos", href: "/aeropuertos-galicia" },
-        { name: "Autocares", href: "/alquiler-autocar-con-conductor-galicia" },
+        { name: "Chófer privado", href: "/chofer-privado-galicia" },
+        { name: "Minibuses y autocares", href: "/alquiler-minibus-con-conductor-galicia" },
       ],
     },
     {

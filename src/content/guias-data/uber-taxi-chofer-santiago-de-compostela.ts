@@ -63,7 +63,7 @@ export const guia: Guide = {
       heading: "Coche con chófer reservado",
       image: { src: "/images/chofer-puerta-detalle.jpg", alt: "Chófer abriendo la puerta de una berlina" },
       paragraphs: [
-        "Un chófer reservado no es solo un traslado. Sigue tu vuelo, te espera en llegadas con tu nombre y, si lo contratas por horas o por días, te acompaña en toda tu agenda.",
+        "Un chófer reservado no es solo un traslado. Sigue tu vuelo, te espera en llegadas con tu nombre y, si lo contratas por horas o por días, te acompaña en toda tu agenda. Es lo que se conoce como [chófer privado en Galicia](/chofer-privado-galicia): coche con conductor reservado para ti.",
         "Es lo lógico cuando sois varios (el precio es por vehículo), cuando tienes varias reuniones en el día, cuando llegas de madrugada o cuando no te puedes permitir esperar.",
       ],
       list: [

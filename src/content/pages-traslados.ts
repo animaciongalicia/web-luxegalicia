@@ -587,9 +587,9 @@ export const PAGES_TRASLADOS: Page[] = [
   },
   {
     slug: "alquiler-autocar-con-conductor-galicia",
-    metaTitle: "Alquiler de autocares y minibuses con conductor en Galicia",
+    metaTitle: "Alquiler de autocar con conductor en Galicia | Grupos y eventos",
     metaDescription:
-      "Alquiler de autocares y minibuses con conductor en Galicia para congresos, eventos, empresas y excursiones. Salidas desde A Coruña, Santiago y Vigo.",
+      "Alquiler de autocar con conductor en Galicia para congresos, eventos, empresas, peregrinaciones y excursiones. De 20 a 55 plazas, desde A Coruña, Santiago y Vigo.",
     serviceType: "Alquiler de autocares con conductor",
     hero: {
       eyebrow: "Autocares y minibuses",
@@ -612,7 +612,7 @@ export const PAGES_TRASLADOS: Page[] = [
         columns: 3,
         bg: "gray",
         items: [
-          { title: "Minibús · 8-19 plazas", text: "Grupos medianos, visitas técnicas, comités y traslados de aeropuerto. Ágil en cascos urbanos y carreteras secundarias." },
+          { title: "Minibús · 8-19 plazas", text: "Grupos medianos, visitas técnicas, comités y traslados de aeropuerto. Tiene página propia: [alquiler de minibús con conductor](/alquiler-minibus-con-conductor-galicia)." },
           { title: "Midibús · 20-35 plazas", text: "Grupos de empresa, excursiones y lanzaderas con hoteles de tamaño medio." },
           { title: "Autocar · hasta 55 plazas", text: "Congresos, eventos y traslados de grupos grandes. Para más personas, varios autocares coordinados." },
         ],

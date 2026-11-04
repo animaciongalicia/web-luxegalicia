@@ -71,7 +71,7 @@ export const guia: Guide = {
         "Si hay hoteles en A Coruña o en las Rías Baixas, autocares directos con horario fijo.",
       ],
       after: [
-        "Para los bloques grandes, lo que funciona son las [lanzaderas en autocar para congresos en Santiago](/transporte-congresos-galicia). Para los hoteles más alejados, un [minibús con conductor](/alquiler-autocar-con-conductor-galicia) llena mejor y gasta menos.",
+        "Para los bloques grandes, lo que funciona son las [lanzaderas en autocar para congresos en Santiago](/transporte-congresos-galicia). Para los hoteles más alejados, un [minibús con conductor](/alquiler-minibus-con-conductor-galicia) llena mejor y gasta menos.",
       ],
       tip: "En el Año Santo 2027 cuenta con más asistentes alojados fuera de Santiago.",
     },

@@ -614,7 +614,7 @@ export const PAGES_MICE: Page[] = [
         items: [
           "Un contacto para todos los servicios del año, sin buscar taxis ni favores.",
           "Factura a nombre de la empresa, mensual si trabajas con frecuencia.",
-          "Chófer por horas, por jornada o por días.",
+          "[Chófer privado](/chofer-privado-galicia) por horas, por jornada o por días.",
           "Del traslado de una persona al evento de 300.",
           "Seguimiento de vuelos y trenes: si se retrasa, se espera.",
           "Chóferes discretos, puntuales y con experiencia con directivos.",

@@ -30,10 +30,12 @@ export const PAGES_OTROS: Page[] = [
       { type: "fleet", heading: "Vehículos disponibles", bg: "gray" },
       {
         type: "links",
-        heading: "Grupos grandes",
+        heading: "Alquiler con conductor por tipo de vehículo",
         items: [
-          { title: "Autocares y minibuses con conductor", text: "Para congresos, eventos, excursiones y traslados de grupos en toda Galicia.", href: "/alquiler-autocar-con-conductor-galicia" },
-          { title: "Transporte para congresos", text: "Lanzaderas, aeropuertos y cena de gala.", href: "/transporte-congresos-galicia" },
+          { title: "Chófer privado", text: "Berlina con conductor por trayecto, por horas o por días.", href: "/chofer-privado-galicia" },
+          { title: "Van con conductor", text: "Hasta 7 personas y todo su equipaje en un solo vehículo.", href: "/alquiler-van-con-conductor-galicia" },
+          { title: "Minibús con conductor", text: "Grupos de 8 a 19 personas que viajan juntos.", href: "/alquiler-minibus-con-conductor-galicia" },
+          { title: "Autocar con conductor", text: "De 20 a 55 plazas para congresos, eventos y excursiones.", href: "/alquiler-autocar-con-conductor-galicia" },
         ],
       },
       {
