@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import CardGrid from "@/components/CardGrid";
-import { GUIAS, getGuia } from "@/content/guias";
+import { guiasPublicadas, getGuia } from "@/content/guias";
 import type { Guide } from "@/content/types";
 import { absoluteUrl } from "@/content/site";
 import { serif } from "@/lib/fonts";
@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     "Guías para organizar el transporte de congresos, eventos, viajes de empresa y grupos en Galicia y Oporto: sedes, aeropuertos, distancias y logística.",
   alternates: { canonical: absoluteUrl("/guias") },
 };
+
+// Se regenera cada hora para incluir las guías programadas el día de su fecha.
+export const revalidate = 3600;
 
 const FEATURED = "ano-santo-2027-transporte-grupos";
 
@@ -33,6 +36,8 @@ function Meta({ g }: { g: Guide }) {
 
 export default function GuiasPage() {
   const featured = getGuia(FEATURED)!;
+  // Lo más reciente primero dentro de cada sección.
+  const guias = [...guiasPublicadas()].sort((a, b) => b.date.localeCompare(a.date));
   return (
     <>
       <section className="bg-luxe-950 px-6 pb-14 pt-32 text-white lg:px-8">
@@ -68,7 +73,7 @@ export default function GuiasPage() {
       </section>
 
       {SECTIONS.map((sec) => {
-        const items = GUIAS.filter((x) => x.category === sec.category && x.slug !== FEATURED);
+        const items = guias.filter((x) => x.category === sec.category && x.slug !== FEATURED);
         return (
           <section key={sec.id} id={sec.id} className="scroll-mt-20 bg-white px-6 py-16 lg:px-8">
             <div className="mx-auto max-w-6xl">

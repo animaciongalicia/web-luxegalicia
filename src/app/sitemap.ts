@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { PAGES_ES, PAGES_EN } from "@/content/pages";
 import { TOURS } from "@/content/tours";
-import { GUIAS } from "@/content/guias";
+import { guiasPublicadas } from "@/content/guias";
 import { absoluteUrl } from "@/content/site";
 
 // Real update dates: set the date when a section's content changes, not on every deploy.
@@ -25,6 +25,9 @@ const PRIORITY: Record<string, number> = {
   "traslados-desde-vigo": 0.85,
 };
 
+// Se regenera cada hora para incluir las guías programadas el día de su fecha.
+export const revalidate = 3600;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const entry = (path: string, priority: number, changeFrequency: "weekly" | "monthly" = "monthly", lastModified: Date = PAGES_UPDATED) => ({
     url: absoluteUrl(path),
@@ -38,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/tours-con-chofer-galicia", 0.85, "monthly", TOURS_UPDATED),
     ...TOURS.map((t) => entry(`/tours-con-chofer-galicia/${t.slug}`, t.slug === "pazos-y-camelias" ? 0.4 : 0.7, "monthly", TOURS_UPDATED)),
     entry("/guias", 0.7, "weekly"),
-    ...GUIAS.map((g) =>
+    ...guiasPublicadas().map((g) =>
       entry(`/guias/${g.slug}`, g.slug === "transporte-palexco" ? 0.85 : g.slug === "como-llegar-estadio-riazor" ? 0.75 : g.category === "Guía" ? 0.75 : 0.65, "monthly", new Date(g.date))
     ),
     entry("/en", 0.8),

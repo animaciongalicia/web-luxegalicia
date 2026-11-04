@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import CTASection from "@/components/CTASection";
 import { DataTable, FaqSection } from "@/components/Blocks";
 import JsonLd from "@/components/JsonLd";
-import { GUIAS, getGuia } from "@/content/guias";
+import { guiasPublicadas, getGuia } from "@/content/guias";
 import { PAGES_ES } from "@/content/pages";
 import { TOURS } from "@/content/tours";
 import { SITE, SITE_URL, absoluteUrl, whatsappLink } from "@/content/site";
@@ -14,6 +14,8 @@ import { rich } from "@/components/RichText";
 
 // true: las URLs desconocidas llegan a la página y notFound() muestra la 404 propia.
 export const dynamicParams = true;
+// Cada hora se regenera: así una guía programada aparece sola el día de su fecha.
+export const revalidate = 3600;
 
 function slugify(text: string) {
   return text
@@ -44,7 +46,7 @@ function formatDate(iso: string) {
 }
 
 export function generateStaticParams() {
-  return GUIAS.map((g) => ({ guia: g.slug }));
+  return guiasPublicadas().map((g) => ({ guia: g.slug }));
 }
 
 export function generateMetadata({ params }: { params: { guia: string } }): Metadata {

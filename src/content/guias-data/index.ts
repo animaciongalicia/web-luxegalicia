@@ -20,6 +20,11 @@ import { guia as conxemarTransporteVigo } from "./conxemar-transporte-vigo";
 import { guia as uberTaxiChoferSantiagoDeCompostela } from "./uber-taxi-chofer-santiago-de-compostela";
 import { guia as viajarCorunaVerDeportivo } from "./viajar-coruna-ver-deportivo";
 import { guia as calendarioCongresosFeriasGalicia2027 } from "./calendario-congresos-ferias-galicia-2027";
+// Posts programados (se publican solos el lunes de su fecha).
+import { guia as busAeropuertoSantiago } from "./bus-aeropuerto-santiago";
+import { guia as cenaNavidadEmpresaTransporte } from "./cena-navidad-empresa-transporte";
+import { guia as comoLlegarASarriaCamino } from "./como-llegar-a-sarria-camino";
+import { guia as escalaCruceroCoruna } from "./escala-crucero-coruna";
 
 // Orden de aparición en /guias: esenciales, sedes y artículos.
 export const GUIAS_DATA: Guide[] = [
@@ -44,4 +49,8 @@ export const GUIAS_DATA: Guide[] = [
   uberTaxiChoferSantiagoDeCompostela,
   viajarCorunaVerDeportivo,
   calendarioCongresosFeriasGalicia2027,
+  busAeropuertoSantiago,
+  cenaNavidadEmpresaTransporte,
+  comoLlegarASarriaCamino,
+  escalaCruceroCoruna,
 ];
