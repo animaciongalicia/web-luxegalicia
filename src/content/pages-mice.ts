@@ -44,6 +44,27 @@ export const PAGES_MICE: Page[] = [
           { title: "Ejecución", text: "Coordinación en tiempo real y cierre con informe." },
         ],
       },
+      {
+        type: "intro",
+        heading: "Lo que de verdad decide el transporte de un evento",
+        paragraphs: [
+          "No es el número de asistentes. Es cómo se mueven. Doscientas personas en un solo hotel junto a la sede se resuelven con dos autocares. Doscientas personas repartidas en seis hoteles, con llegadas por Santiago, A Coruña y Oporto, necesitan un plan de verdad.",
+          "Por eso el primer paso nunca es pedir precio de un autocar. Es entender el programa: horarios de sesiones, cenas, actividades y quién necesita un vehículo a disposición. Con eso se decide la flota, las rutas y el margen para los imprevistos, que en Galicia tienen nombre propio: lluvia, cascos históricos cerrados al tráfico y carreteras secundarias más lentas de lo que dice el navegador.",
+          "Si organizas la celebración de tu equipo, la cena de Navidad o la visita de una delegación, el [transporte para eventos de empresa en Galicia](/transporte-empresas-galicia) funciona con la misma lógica. Y si el evento es una boda, el [transporte de invitados para bodas](/transporte-bodas-galicia) también se planifica así: ida escalonada y vuelta sin que nadie conduzca.",
+        ],
+      },
+      {
+        type: "table",
+        heading: "Qué vehículo encaja con cada parte del evento",
+        head: ["Necesidad", "Vehículo", "Por qué"],
+        rows: [
+          ["Ponentes, autoridades, dirección", "Berlina ejecutiva o de representación", "Puntualidad, discreción y trato personal"],
+          ["Grupos de 4 a 7 personas", "Van ejecutiva", "Todos juntos y con equipaje"],
+          ["Grupos de 8 a 19 personas", "Minibús", "Flexible y fácil de mover por ciudad"],
+          ["Lanzaderas y grandes grupos", "Autocar de 35 a 55 plazas", "Mueve a muchos asistentes en una sola rotación"],
+        ],
+        note: "Tienes todos los detalles en la [guía de transporte para congresos y eventos](/guias/transporte-congresos-eventos-galicia).",
+      },
       { type: "fleet", heading: "Flota disponible para eventos", bg: "gray" },
     ],
     faqs: [
@@ -125,6 +146,26 @@ export const PAGES_MICE: Page[] = [
         ],
       },
       {
+        type: "features",
+        heading: "Los errores que más veo en agencias que organizan desde fuera",
+        intro: "No son errores de principiante. Son errores de quien no conoce el terreno. Y en Galicia se pagan.",
+        columns: 2,
+        bg: "gray",
+        items: [
+          { title: "Calcular tiempos con el navegador", text: "Entre ciudades la autopista va bien. Fuera de ella, curvas, niebla y pueblos sin desvío. Suma siempre un margen del 20 %." },
+          { title: "Olvidar los cascos históricos", text: "En Santiago, Pontevedra o Lugo los vehículos no entran al centro. Hay que pactar dónde baja el grupo y cuánto camina." },
+          { title: "Un solo aeropuerto en el plan", text: "Tus asistentes llegan por Santiago, A Coruña, Vigo y Oporto. Si el plan solo cubre uno, los demás improvisan." },
+          { title: "Reservar tarde en temporada alta", text: "De mayo a octubre, y más en Año Santo, la flota de calidad se agota. Para grupos grandes, de tres a seis meses de antelación." },
+        ],
+      },
+      {
+        type: "intro",
+        paragraphs: [
+          "Si es tu primer evento en Galicia, empieza por la [guía para organizar un evento en Galicia desde fuera](/guias/organizar-evento-en-galicia-agencias): sedes, aeropuertos y plazos reales. Y si antes quieres enseñar el destino a tus clientes, el [fam trip en Galicia](/guias/fam-trip-galicia-como-organizarlo) es la mejor forma de venderlo con conocimiento.",
+          "Y una cosa más: no necesitas cerrar todo el programa para pedir propuesta. Con fechas aproximadas, número de asistentes y ciudad, ya puedo darte una estimación de flota y reservar capacidad mientras terminas de cuadrar el resto.",
+        ],
+      },
+      {
         type: "suunia",
         text: "¿Además necesitas hoteles, restauración o actividades? Suunia, DMC partner, organiza el programa completo en destino.",
       },
@@ -187,6 +228,16 @@ export const PAGES_MICE: Page[] = [
           "¿Hay cena de gala o actividades fuera de la ciudad?",
           "¿Qué porcentaje llega por Santiago, A Coruña, Vigo u Oporto?",
           "¿Qué perfiles necesitan vehículo a disposición todo el día?",
+        ],
+      },
+      {
+        type: "intro",
+        heading: "Los tres momentos en los que un congreso se la juega",
+        paragraphs: [
+          "El primero es la llegada. El jueves por la tarde aterrizan doscientos asistentes en cuatro aeropuertos distintos, con retrasos que nadie controla. Si nadie sigue los vuelos, el congreso empieza con gente enfadada en una parada de taxis.",
+          "El segundo es la primera sesión de la mañana. Todo el mundo sale del hotel a la misma hora. Si las lanzaderas no están dimensionadas para ese pico, la inauguración empieza con media sala vacía. La solución es sencilla: más vehículos en la primera rotación y menos durante el día.",
+          "El tercero es la cena de gala. Se sube a la vez y se vuelve a horas distintas. Por eso la vuelta se organiza en salidas escalonadas, la primera quince minutos después del servicio y la última al cierre. Muchas cenas se celebran en pazos o en la Cidade da Cultura, fuera del centro: ahí el transporte deja de ser un extra y pasa a ser imprescindible.",
+          "Si tus ponentes vuelan desde fuera, revisa qué [aeropuerto de Galicia les conviene según la sede](/aeropuertos-galicia). Y si estás eligiendo fecha, consulta el [calendario de congresos y ferias en Galicia 2027](/guias/calendario-congresos-ferias-galicia-2027) para no coincidir con otro gran evento en la misma ciudad.",
         ],
       },
       {
@@ -259,6 +310,36 @@ export const PAGES_MICE: Page[] = [
         ],
       },
       {
+        type: "steps",
+        heading: "Un incentivo de tres días, contado desde el transporte",
+        bg: "gray",
+        items: [
+          { title: "Llegada", text: "Recogida en el aeropuerto con cartel de la empresa y traslado al hotel. Primera impresión resuelta." },
+          { title: "Día de experiencias", text: "Van o minibús a disposición: barco por la ría, bodega de albariño y cena en un pazo, sin horarios rígidos." },
+          { title: "Día libre o Santiago", text: "Vehículos en espera para quien quiere comprar, pasear o volver antes al hotel." },
+          { title: "Salida", text: "Traslados escalonados según los vuelos de cada participante. Nadie espera al último." },
+        ],
+      },
+      {
+        type: "checklist",
+        heading: "Lo que separa un incentivo de una excursión",
+        intro: "El grupo no lo dice, pero lo nota. Y luego lo cuenta.",
+        items: [
+          "El mismo chófer durante todo el programa: conoce al grupo, sus horarios y sus manías.",
+          "Vehículos proporcionados al grupo: un autocar enorme para doce personas parece una excursión escolar.",
+          "Nunca más de dos horas de carretera al día, repartidas en tramos cortos.",
+          "Plan B a cubierto cada día: en Galicia llueve y el premio no se puede estropear.",
+          "Agua, paraguas y margen en cada parada. Detalles pequeños que se recuerdan.",
+          "Un responsable de transporte en contacto directo con la [agencia MICE que organiza el viaje](/agencias-mice).",
+        ],
+      },
+      {
+        type: "intro",
+        paragraphs: [
+          "Tienes el programa completo, con lo que funciona y lo que no, en la guía del [viaje de incentivos en Galicia](/guias/viaje-incentivos-galicia).",
+        ],
+      },
+      {
         type: "suunia",
         text: "El programa completo del incentivo (hoteles, experiencias, gastronomía) lo diseña Suunia, DMC partner.",
       },
@@ -315,6 +396,28 @@ export const PAGES_MICE: Page[] = [
         ],
       },
       {
+        type: "intro",
+        heading: "Festivales en Galicia: el reto está en la geografía",
+        paragraphs: [
+          "Galicia tiene festivales grandes en sitios pequeños. Viveiro, la Illa de Arousa o el Monte do Gozo reciben en un fin de semana a decenas de miles de personas, con carreteras pensadas para el tráfico de un pueblo. El artista que aterriza en Santiago o en A Coruña puede tener una hora y media de trayecto hasta el escenario. Y la vuelta, de madrugada.",
+          "Por eso aquí el transporte se planifica hacia atrás: desde la hora de la actuación hasta el aterrizaje, con margen para el atasco de acceso al recinto, que en las horas punta puede doblar los tiempos. La prueba de sonido, el catering y la rueda de prensa se encajan dentro de ese plan, no al revés.",
+          "Para giras con varias fechas, el mismo equipo de chóferes acompaña toda la ruta. Conocen al artista, a su gente y sus necesidades, y eso evita que cada ciudad empiece de cero. Si la banda llega por Portugal, el [aeropuerto de Oporto](/oporto-galicia) es una puerta de entrada habitual, a hora y media de Vigo.",
+        ],
+      },
+      {
+        type: "checklist",
+        heading: "Lo que una productora debe cerrar antes del festival",
+        bg: "gray",
+        items: [
+          "Rider de transporte de cada artista: vehículo, plazas, equipaje e instrumentos.",
+          "Acreditaciones de los vehículos y punto exacto de acceso al backstage.",
+          "Turnos de chóferes para cumplir los descansos en jornadas de madrugada.",
+          "Plan alternativo si el acceso principal al recinto se colapsa.",
+          "Un único canal de coordinación entre producción y transporte.",
+          "Lanzaderas de invitados y prensa separadas de los traslados de artistas.",
+        ],
+      },
+      {
         type: "links",
         heading: "Para profundizar",
         bg: "gray",
@@ -359,7 +462,7 @@ export const PAGES_MICE: Page[] = [
         bg: "gray",
         items: [
           { title: "Peñas y aficionados visitantes", text: "Autocares y minibuses desde tu ciudad, desde el aeropuerto o desde el hotel hasta el estadio, con vuelta coordinada tras el partido." },
-          { title: "Empresas con invitados", text: "Berlinas y vans para llevar a clientes y directivos al palco o a la zona VIP. Una experiencia redonda desde que salen del hotel." },
+          { title: "Empresas con invitados", text: "Berlinas y vans para llevar a clientes y directivos al palco o a la zona de invitados. Una experiencia redonda desde que salen del hotel." },
           { title: "Fin de semana de fútbol", text: "Aeropuerto, hotel, partido y algo más: A Coruña, Santiago o una excursión con chófer el día siguiente." },
           { title: "Equipos y organizaciones deportivas", text: "Traslados de plantillas, cuerpos técnicos y organizaciones entre aeropuerto, hotel, entrenamientos y estadio." },
         ],
@@ -374,6 +477,28 @@ export const PAGES_MICE: Page[] = [
           "Seguimiento del horario: si hay prórroga o retraso, el chófer espera.",
           "Vehículos para cualquier grupo: berlina, van ejecutiva, minibús o autocar.",
           "También en Balaídos (Vigo) y en otros eventos deportivos de Galicia.",
+        ],
+      },
+      {
+        type: "intro",
+        heading: "Más allá del fútbol",
+        paragraphs: [
+          "El fútbol llena estadios, pero Galicia mueve muchos más eventos deportivos durante el año: torneos de base, campeonatos nacionales, regatas en las rías, carreras populares y pruebas de ciclismo. Todos tienen algo en común: equipos y organizaciones que llegan de fuera, con material, horarios cerrados y poco margen.",
+          "Para un equipo visitante el trayecto importa. Un minibús con espacio para el material, un chófer que conoce el acceso al pabellón y una recogida puntual tras el partido evitan que la competición empiece con estrés. Para la organización, un único proveedor que mueve a todos los equipos entre aeropuerto, hoteles y sedes simplifica todo el evento.",
+          "Si tu empresa invita a clientes al partido, el traslado es parte de la experiencia. El [chófer para empresas y directivos en Galicia](/transporte-empresas-galicia) lleva a tus invitados del hotel al palco y de vuelta a la cena, sin que nadie piense en aparcar.",
+          "Y si el evento coincide con otro gran acontecimiento en la ciudad, reserva pronto. Los días de partido grande la demanda de vehículos se dispara y la flota disponible se agota antes que las entradas.",
+        ],
+      },
+      {
+        type: "table",
+        heading: "Qué vehículo según tu grupo",
+        bg: "gray",
+        head: ["Grupo", "Vehículo recomendado"],
+        rows: [
+          ["Directivos e invitados de empresa (1-3)", "Berlina ejecutiva"],
+          ["Familia o grupo de amigos (4-7)", "Van ejecutiva"],
+          ["Equipo de base o peña pequeña (8-19)", "Minibús"],
+          ["Peña o club completo (20-55)", "Autocar de gran turismo"],
         ],
       },
       {
@@ -460,6 +585,27 @@ export const PAGES_MICE: Page[] = [
             alt: "Minibuses y autocar preparados para un evento de empresa",
           },
         ],
+      },
+      {
+        type: "intro",
+        heading: "¿Por qué no un taxi o una VTC?",
+        paragraphs: [
+          "Para un trayecto suelto por ciudad, un taxi funciona. El problema empieza cuando tu empresa depende de él. El taxi no espera si el vuelo se retrasa una hora, no encadena cuatro visitas en tres ciudades y no te garantiza el mismo nivel de vehículo dos veces seguidas. En muchos aeropuertos de Galicia, además, la oferta de VTC es escasa o inexistente.",
+          "Con un chófer contratado sabes quién recoge a tu cliente, en qué vehículo y a qué hora. Si el vuelo cambia, el servicio se adapta. Si la reunión se alarga, el chófer espera. Y todo queda en una factura a nombre de la empresa, sin tickets sueltos que justificar a final de mes. Tienes la comparación completa en [Uber, taxi o chófer en Santiago](/guias/uber-taxi-chofer-santiago-de-compostela).",
+        ],
+      },
+      {
+        type: "table",
+        heading: "Los servicios que más piden las empresas",
+        head: ["Servicio", "Fórmula habitual"],
+        rows: [
+          ["Recogida de un cliente en el aeropuerto", "Traslado con seguimiento del vuelo"],
+          ["Día de visitas a fábricas o clientes", "Chófer por jornada con ruta encadenada"],
+          ["Directivo de fuera durante varios días", "Chófer y vehículo a disposición por días"],
+          ["Cena de empresa o convención", "Autocares y minibuses con ida y vuelta escalonadas"],
+          ["Delegación o visita institucional", "Berlinas de representación y van para el equipo"],
+        ],
+        note: "Para convenciones y grandes encuentros, mira el [transporte para eventos en Galicia](/transporte-eventos-galicia).",
       },
       {
         type: "checklist",

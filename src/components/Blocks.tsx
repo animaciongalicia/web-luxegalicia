@@ -151,7 +151,7 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
             {block.heading && <h2 className="heading-section">{block.heading}</h2>}
             <div className={`${block.heading ? "mt-6" : ""} space-y-5 text-lg leading-relaxed text-gray-600`}>
               {block.paragraphs.map((p) => (
-                <p key={p}>{p}</p>
+                <p key={p}>{rich(p)}</p>
               ))}
             </div>
           </AnimateOnScroll>
@@ -164,7 +164,7 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
           <AnimateOnScroll className="mx-auto max-w-5xl">
             <SectionHeading heading={block.heading} intro={block.intro} />
             <DataTable head={block.head} rows={block.rows} />
-            {block.note && <p className="mt-4 text-center text-sm text-gray-500">{block.note}</p>}
+            {block.note && <p className="mt-4 text-center text-sm text-gray-500">{rich(block.note)}</p>}
           </AnimateOnScroll>
         </section>
       );
@@ -219,7 +219,7 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
                 block.items.map((item) => (
                   <div key={item.title} className={`card-elegant stagger-child flex flex-col ${w}`}>
                     <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                    <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.text}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-600">{rich(item.text)}</p>
                   </div>
                 ))
               }
@@ -238,7 +238,7 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
               {block.items.map((item) => (
                 <li key={item} className="flex gap-3 text-gray-600">
                   <CheckIcon />
-                  <span className="leading-relaxed">{item}</span>
+                  <span className="leading-relaxed">{rich(item)}</span>
                 </li>
               ))}
             </ul>
@@ -279,7 +279,7 @@ export function BlockRenderer({ block, lang = "es" }: { block: Block; lang?: Lan
                     <h3 className="text-2xl font-bold tracking-tight text-gray-900">{item.title}</h3>
                     <div className="mt-4 space-y-4 leading-relaxed text-gray-600">
                       {item.paragraphs.map((p) => (
-                        <p key={p}>{p}</p>
+                        <p key={p}>{rich(p)}</p>
                       ))}
                     </div>
                   </div>
