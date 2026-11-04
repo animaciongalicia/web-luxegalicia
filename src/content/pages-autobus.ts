@@ -134,7 +134,7 @@ export const PAGES_AUTOBUS: Page[] = [
   // ─────────────────────────── A CORUÑA ───────────────────────────
   {
     slug: "alquiler-autobus-con-conductor-coruna",
-    metaTitle: "Alquiler de autobús con conductor en A Coruña | Excursiones",
+    metaTitle: "Alquiler de autobús con conductor en A Coruña y comarca",
     metaDescription:
       "Alquiler de autobús y minibús con conductor en A Coruña para excursiones, empresas, bodas, congresos en Palexco y eventos. Costa da Morte, Rías Altas y Santiago.",
     serviceType: "Alquiler de autobús con conductor en A Coruña",
