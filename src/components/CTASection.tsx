@@ -11,7 +11,7 @@ export default function CTASection({
   description?: string;
   lang?: Lang;
 }) {
-  const t = title || (lang === "en" ? "Moving a group around Galicia?" : "¿Tienes un evento en Galicia? Lo movemos todo.");
+  const t = title || (lang === "en" ? "Moving a group around Galicia?" : "¿Tienes un evento en Galicia? Tu transporte, resuelto.");
   const d =
     description ||
     (lang === "en"

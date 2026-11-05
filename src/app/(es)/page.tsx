@@ -81,9 +81,9 @@ const servicios = [
 ];
 
 const partners = [
-  { name: "Suunia", text: "DMC en Galicia: viajes a medida, incentivos y programas completos en destino.", href: SITE.suuniaUrl },
-  { name: "SeaGalicia", text: "Experiencias náuticas y alquiler de barcos con patrón en las Rías Baixas.", href: "https://www.seagalicia.com" },
-  { name: "MilEventosGalicia", text: "Producción de eventos corporativos, cenas de gala y team building.", href: "https://mileventosgalicia.com" },
+  { name: "Suunia", text: "DMC en Galicia: viajes a medida, incentivos y programas completos en destino." },
+  { name: "SeaGalicia", text: "Experiencias náuticas y alquiler de barcos con patrón en las Rías Baixas." },
+  { name: "MilEventosGalicia", text: "Producción de eventos corporativos, cenas de gala y team building." },
 ];
 
 const motivos = [
@@ -232,7 +232,10 @@ export default function Home() {
       </section>
 
       {/* 5. CTA */}
-      <CTASection />
+      <CTASection
+        title="Transporte con conductor en Galicia, de una berlina a 500 personas"
+        description="Eventos, congresos, empresas, bodas y excursiones. Cuéntame fechas, personas y ciudades: tienes una propuesta clara en 24 horas y un único interlocutor de principio a fin."
+      />
 
       {/* 6. Partners */}
       <section className="section-padding bg-gray-50">
@@ -243,10 +246,10 @@ export default function Home() {
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {partners.map((p) => (
-              <a key={p.name} href={p.href} className="card-elegant stagger-child text-center">
+              <div key={p.name} className="card-elegant stagger-child text-center">
                 <h3 className="text-lg font-semibold text-luxe-800">{p.name}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">{p.text}</p>
-              </a>
+              </div>
             ))}
           </div>
         </AnimateOnScroll>

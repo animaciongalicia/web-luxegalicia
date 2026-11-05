@@ -176,7 +176,7 @@ export default function Footer({ lang = "es" }: { lang?: Lang }) {
             )}
             <p className="text-gray-500">
               {lang === "en" ? "DMC partner: " : "Partner DMC: "}
-              <a href={SITE.suuniaUrl} className="hover:text-luxe-700">Suunia</a>
+              Suunia
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/aviso-legal" className="text-gray-500 transition-colors hover:text-luxe-700">
