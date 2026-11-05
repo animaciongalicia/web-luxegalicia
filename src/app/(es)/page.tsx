@@ -7,6 +7,26 @@ import { FaqSection } from "@/components/Blocks";
 import JsonLd from "@/components/JsonLd";
 import { SITE, SITE_URL, absoluteUrl } from "@/content/site";
 
+const alquiler = [
+  {
+    label: "Autobús por ciudad",
+    links: [
+      { name: "A Coruña", href: "/alquiler-autobus-con-conductor-coruna" },
+      { name: "Santiago", href: "/alquiler-autobus-con-conductor-santiago" },
+      { name: "Vigo", href: "/alquiler-autobus-con-conductor-vigo" },
+    ],
+  },
+  {
+    label: "Por vehículo",
+    links: [
+      { name: "Chófer privado", href: "/chofer-privado-galicia" },
+      { name: "Van con conductor", href: "/alquiler-van-con-conductor-galicia" },
+      { name: "Minibús con conductor", href: "/alquiler-minibus-con-conductor-galicia" },
+      { name: "Autocar con conductor", href: "/alquiler-autocar-con-conductor-galicia" },
+    ],
+  },
+];
+
 export const metadata: Metadata = {
   title: "Luxe Galicia | Transporte corporativo y eventos en Galicia",
   description:
@@ -188,6 +208,24 @@ export default function Home() {
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">{s.text}</p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-luxe-700">Ver más →</span>
               </Link>
+            ))}
+          </div>
+
+          {/* Alquiler con conductor: enlaces directos a las páginas comerciales */}
+          <div className="mx-auto mt-12 max-w-4xl border-t border-gray-100 pt-8">
+            <h3 className="text-center text-sm font-semibold uppercase tracking-wider text-gray-500">Alquiler con conductor</h3>
+            {alquiler.map((row) => (
+              <p key={row.label} className="mt-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 text-sm">
+                <span className="text-gray-500">{row.label}:</span>
+                {row.links.map((l, i) => (
+                  <span key={l.href} className="inline-flex items-center gap-2">
+                    <Link href={l.href} className="font-medium text-luxe-700 underline decoration-luxe-200 underline-offset-4 hover:decoration-luxe-600">
+                      {l.name}
+                    </Link>
+                    {i < row.links.length - 1 && <span aria-hidden="true" className="text-gray-300">·</span>}
+                  </span>
+                ))}
+              </p>
             ))}
           </div>
         </AnimateOnScroll>
